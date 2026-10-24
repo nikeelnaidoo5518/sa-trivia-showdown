@@ -4,6 +4,8 @@
 
 A colourful, original South African party game for a shared TV and phone controllers. Compete for fictional game cash with trivia, map and sequence duels, cards and short surprise events. There are no purchases, real-money stakes or cash-outs.
 
+**[Play the live demo](https://nikeelnaidoo5518.github.io/sa-trivia-showdown/)** — choose **Try a playable demo**. The site is deployed on GitHub Pages; internet multiplayer between separate devices still requires the Firebase configuration below.
+
 ![SA Trivia Showdown start menu](docs/screenshots/start-menu.png)
 
 ## Play locally in two minutes
@@ -103,13 +105,13 @@ cd sa-trivia-showdown
 npm ci
 ```
 
-The connected integration can push source but cannot change Pages settings or Actions variables (GitHub returns HTTP 403 for those operations). The owner must configure these settings in GitHub. No private credentials are needed in the repository.
+Pages is configured to deploy through GitHub Actions. A repository administrator can manage Pages settings and add the public Firebase configuration under Actions variables. No private credentials are needed in the repository.
 
 1. In GitHub **Settings → Pages → Build and deployment**, select **GitHub Actions**.
 2. Under **Settings → Secrets and variables → Actions → Variables**, add the five public `VITE_FIREBASE_*` values above. Leaving them empty produces a demo-only website.
 3. Push to `main`, or run **Test and deploy GitHub Pages** manually from Actions.
 4. The workflow installs dependencies, validates all 600 questions, runs engine tests, browser tests and Firebase emulator tests, builds `dist`, then deploys it to Pages. PRs run checks without deploying.
-5. The expected URL is `https://nikeelnaidoo5518.github.io/sa-trivia-showdown/` after a successful deployment. This is an expected address, not evidence of an already-live deployment.
+5. The live URL is <https://nikeelnaidoo5518.github.io/sa-trivia-showdown/>. The demo was checked on this public URL on 24 October 2026, including a full Quick Match, scoring, end credits and the mobile join page.
 
 Vite uses relative asset URLs and joining uses query parameters, so repository subpaths and QR links work without SPA rewrite rules. Firebase rules must be published separately; the Pages workflow never receives Firebase admin credentials.
 
