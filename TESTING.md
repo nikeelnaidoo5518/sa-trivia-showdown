@@ -17,7 +17,7 @@ Checked on 24 October 2026 with Node 24, Chromium (Playwright) and Firebase Auth
 | Responsive layouts     | Screenshots inspected at 1920×1080 TV, 1440×900 desktop and 390×844 phone. Tests additionally use 360×800 and 320×568; small-screen horizontal overflow is checked.                                                                                              |
 | Accessibility controls | Keyboard native controls, map arrow keys/Enter, larger text, sound toggle, reduced animation, written audio fallback, visible locked-answer feedback, modal Escape/focus containment. Full screen-reader and all-browser audits remain future work.              |
 | Build and dependencies | `npm run build` succeeds. Production dependencies report zero known vulnerabilities with `npm audit --omit=dev`. A patched compatible gRPC dependency is pinned through an override; Firestore is not imported into the game.                                    |
-| Deployment             | GitHub Pages Actions workflow included. Repository creation was rejected by the connected GitHub integration. No remote push, Actions run or Pages URL has been verified.                                                                                        |
+| Deployment             | Source pushed to `nikeelnaidoo5518/sa-trivia-showdown`; GitHub Actions started. The integration cannot enable Pages or manage Actions variables (HTTP 403); owner setup and a successful live deployment are still required. |
 
 ## Fixes found through testing
 
@@ -47,4 +47,4 @@ npm run build
 
 ## Owner checks before a public game night
 
-Configure a real Firebase project and deploy the supplied rules. Push the repository, select GitHub Actions for Pages, add the public web configuration variables and confirm the workflow completes. Check the resulting HTTPS URL on the actual TV and physical phones, including scanning the QR with a camera and device-specific speech output. This build did not test physical phone cameras, TV overscan, iOS/Safari voices, internet latency or production Firebase quotas.
+Configure a real Firebase project and deploy the supplied rules. Select GitHub Actions for Pages, add the public web configuration variables and confirm the workflow completes. Check the resulting HTTPS URL on the actual TV and physical phones, including scanning the QR with a camera and device-specific speech output. This build did not test physical phone cameras, TV overscan, iOS/Safari voices, internet latency or production Firebase quotas.

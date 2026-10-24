@@ -95,20 +95,15 @@ The local relay verifies separate per-session reconnect tokens and sends private
 
 ## GitHub repository and Pages deployment
 
-The intended repository is **`nikeelnaidoo5518/sa-trivia-showdown`**. During this build, the connected GitHub integration rejected repository creation with `Resource not accessible by integration (createRepository)`. The source, tests and workflow are ready locally; a repository owner must create the empty repository and grant the integration access, or push from their own authenticated terminal.
-
-Create an empty **public** repository named `sa-trivia-showdown`, then from this project directory:
+The source, tests and deployment workflow are published at **[nikeelnaidoo5518/sa-trivia-showdown](https://github.com/nikeelnaidoo5518/sa-trivia-showdown)**. Clone the existing repository to work on it:
 
 ```sh
-# If you downloaded the source archive, initialise Git first:
-git init -b main
-git add .
-git commit -m "Build playable SA Trivia Showdown v1"
-git remote add origin https://github.com/nikeelnaidoo5518/sa-trivia-showdown.git
-git push -u origin main
+git clone https://github.com/nikeelnaidoo5518/sa-trivia-showdown.git
+cd sa-trivia-showdown
+npm ci
 ```
 
-If this checkout already has a commit and `origin`, only run `git push -u origin main`. Preserve any existing repository contents when integrating this project.
+The connected integration can push source but cannot change Pages settings or Actions variables (GitHub returns HTTP 403 for those operations). The owner must configure these settings in GitHub. No private credentials are needed in the repository.
 
 1. In GitHub **Settings → Pages → Build and deployment**, select **GitHub Actions**.
 2. Under **Settings → Secrets and variables → Actions → Variables**, add the five public `VITE_FIREBASE_*` values above. Leaving them empty produces a demo-only website.
