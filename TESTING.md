@@ -30,6 +30,7 @@ Checked on 24 October 2026 with Node 24, Chromium (Playwright) and Firebase Auth
 - Robot Repair bonuses appear in the round cash ledger.
 - Pause/resume adjusts memory reveal times as well as the activity deadline.
 - The Firebase test runner includes a loopback-only proxy compatibility adapter. It leaves remote proxy routing unchanged and is not included in the web bundle. No installed dependency patch is needed to reproduce tests.
+- The first GitHub browser run exposed a test waiting for the continuously moving money bag to become stationary. The test now uses the bag's keyboard control and selects a repeatable event sequence that always includes it.
 
 ## Reproduce
 

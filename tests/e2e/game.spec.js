@@ -53,9 +53,11 @@ async function answer(phone, e) {
       await phone.getByRole("button", { name: /Take the safe route/ }).click();
     else {
       if (ev.kind === "catch")
+        // This target deliberately never stops moving. Exercise its keyboard
+        // control instead of waiting for Playwright's pointer stability check.
         await phone
           .getByRole("button", { name: "Catch game-money bag" })
-          .click();
+          .press("Enter");
       await phone
         .getByLabel("Your answer", { exact: true })
         .fill(String(ev.a + ev.b));
@@ -111,6 +113,10 @@ test("TV layouts, QR decode, two phones, manual join, reconnect and all ten roun
 }) => {
   const errors = [];
   host.on("pageerror", (e) => errors.push(e.message));
+  // Always include the rolling-bag event so its interaction stays covered.
+  await host.addInitScript(() => {
+    Math.random = () => 0.99;
+  });
   await host.setViewportSize({ width: 1440, height: 900 });
   await host.goto("/");
   await expect(host.getByRole("heading", { name: /SA TRIVIA/ })).toBeVisible();
@@ -171,11 +177,13 @@ test("TV layouts, QR decode, two phones, manual join, reconnect and all ten roun
   await expect(host.locator(".lobby-player")).toHaveCount(2);
   await host.getByRole("button", { name: "Let the showdown begin" }).click();
   const visited = new Set();
+  const events = new Set();
   let steps = 0;
   while (steps++ < 70) {
     const e = await saved(host);
     const s = e.state;
     visited.add(s.rounds[s.roundIndex].id);
+    if (s.phase === "event") events.add(s.event.id);
     if (s.phase === "credits") break;
     if (s.phase === "tutorial") {
       await host.getByRole("button", { name: "Let’s do this" }).click();
@@ -227,6 +235,7 @@ test("TV layouts, QR decode, two phones, manual join, reconnect and all ten roun
     }
   }
   expect(visited.size).toBe(10);
+  expect(events.has("cash")).toBe(true);
   expect(steps).toBeLessThan(70);
   await expect(
     host.getByText("Created by Nikeel Naidoo", { exact: true }),
