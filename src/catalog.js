@@ -96,7 +96,7 @@ export const ROUNDS = [
     eyebrow: "BRING THE HEAT",
     icon: "Flame",
     description:
-      "Remember the recipe, then tap the ingredients in order. Everyone can play.",
+      "Follow the visible recipe and tap the ingredients in order. Everyone can play.",
     kind: "braai",
     count: 1,
   },
@@ -172,7 +172,7 @@ export const EVENTS = [
     icon: "BatteryCharging",
     kind: "repair",
     instruction:
-      "Keep the party powered: repeat the four-switch backup sequence.",
+      "Keep the party powered: follow the visible four-switch backup sequence.",
     reward: 100,
   },
   {
@@ -181,7 +181,7 @@ export const EVENTS = [
     icon: "Bot",
     kind: "repair",
     instruction:
-      "Our fictional traffic robot needs a tune-up. Repeat the repair code.",
+      "Our fictional traffic robot needs a tune-up. Follow the visible repair code.",
     reward: 100,
   },
   {
@@ -206,9 +206,8 @@ export const EVENTS = [
     id: "envelope",
     name: "Mystery Envelope",
     icon: "Mail",
-    kind: "memory",
-    instruction:
-      "Remember the market basket. Pick the item that disappears for R100.",
+    kind: "catch",
+    instruction: "Catch the surprise token, then solve its quick sum for R100.",
     reward: 100,
   },
   {

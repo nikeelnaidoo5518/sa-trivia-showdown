@@ -39,16 +39,25 @@ Without Firebase configuration, production builds use browser-local demo transpo
 - Five-round Quick Match: Warm-Up, Picture This, Map Sprint, Braai Battle, Final Showdown.
 - Solo Team Huddle has two questions linked by category; teams discuss and vote for one shared answer. Majority wins; tied votes use the earliest submission.
 - Six one-use cards: Steal, Cash Shield, Extra Hint, Double Down, Robot Repair, Power Backup. Each opens an effect/confirmation dialog before use.
-- Six optional events: Load-shedding, Broken Robots, Municipal Mayhem, Taxi Detour, Mystery Envelope, Cash-in-Transit Chaos. Events occur after every second completed round, except the final. The event is chosen without repeating until its pool is exhausted.
-- Map and Braai duels in the match; Robot Repair and Market Memory in events; Robot Repair, Market Memory, Drum Beat, Picture Puzzle and Goal Rush in the **How to Play → bonus arcade**. Arcade practice does not alter match scores.
+- Six optional events: Load-shedding, Broken Robots, Municipal Mayhem, Taxi Detour, Mystery Envelope, Cash-in-Transit Chaos. Events occur after every completed round, except the final. The event is chosen without repeating until its pool is exhausted.
+- Map and Braai duels in the match; Robot Repair and catch-and-answer challenges in events; Robot Repair, Drum Beat, Picture Puzzle and Goal Rush in the **How to Play → bonus arcade**. Arcade practice does not alter match scores.
 - Audience answers and duel-winner predictions, round results, team/player standings, winner/tie celebration, Most Correct, Best Duel, Biggest Comeback, Play Again.
 - Original SVG artwork, self-hosted fonts, high-contrast controls, written audio fallbacks, keyboard input, reduced animation, larger text and optional vibration.
+
+## Interactive party update
+
+- Start Game and the demo open a keyboard-accessible Easy / Medium / Hard / Mixed difficulty picker before room creation. Selected difficulty is prioritised before special question formats.
+- Once all competing players answer, the host reveals results automatically after a 1.5-second confirmation interval. Otherwise the normal timer or host reveal control ends the question. Pausing suspends automatic reveal. The TV and phones display round winners, the correct answer and cash changes.
+- Each competitor has two **Confetti Jam** tricks per match. During a round tutorial, choose a rival and confirm. One trick may be used per player per round; teams can target only opponents. The target clears three bursts or waits up to five seconds after play starts. A Cash Shield blocks the trick. These are original game mechanics and visuals.
+- Original synthesised start, question, countdown, event, trick and results sounds play on the host after a user gesture. The existing sound toggle mutes them.
+- Memory-only challenges have been removed from the playable flow. Braai and repair codes remain visible while players follow them; Mystery Envelope is now catch-and-answer. Bonus Market Memory was removed from the menu. Optional mini-game events now appear between every round.
+- The ten-round cash competition, province vote, secret wagers and final cash standings remain the match format; this update does not add a separate tower-climb finale.
 
 ## Controls and scoring
 
 The host starts each round after its tutorial. During a timed activity the host can **Pause**, **Resume**, **Skip**, **Reveal results**, or **End game**. Skipping changes no cash. End game goes to current final scores, then credits. The host can start with unready players if necessary.
 
-Phone buttons only submit the current activity. A confirmation appears after input is accepted. A locked answer or wager cannot be changed. Players receive R500 starting cash. Ordinary correct trivia earns R300; final trivia earns R500. Trivia has no speed bonus. A risk wager is capped at R300, and a final wager at R500, also capped by current cash. Wrong answers lose the wager, plus R100 if Double Down was used. A correct Double Down adds R200. Balances cannot fall below zero.
+Phone buttons only submit the current activity. A confirmation appears after input is accepted. A locked answer or wager cannot be changed. Players receive R500 starting cash. Ordinary correct trivia earns R300; final trivia earns R500. Individual correct trivia answers earn a small speed bonus of up to R30, based on host-received submission time. Team Huddle and audience answers do not earn speed bonuses. A risk wager is capped at R300, and a final wager at R500, also capped by current cash. Wrong answers lose the wager, plus R100 if Double Down was used. A correct Double Down adds R200. Balances cannot fall below zero.
 
 Map Sprint awards R300 within 8 schematic map units, R200 within 16, R75 within 25. Braai Battle awards R40 per correct position and R60 for a perfect sequence. Predictions reward R50 for a winning player, including tied duel winners. Audience participants earn R50 for a correct selected activity; their cash does not enter competitive standings. Robot Repair adds R100 to the round ledger. A steal takes at most R100 from the leading opponent, and a shield blocks one steal or event loss. The highest event loss is R50.
 
@@ -150,7 +159,7 @@ Tests cover QR decoding and following the decoded URL, manual joining, ten-round
 | `src/engine.js`                | Authoritative match state machine and scoring     |
 | `src/transport.js`             | Firebase, local relay and browser demo transports |
 | `src/components/Art.jsx`       | Original SVG scenes and shared symbols            |
-| `src/components/MiniGames.jsx` | Map, sequence, memory and arcade controls         |
+| `src/components/MiniGames.jsx` | Map, visible recipe and arcade controls           |
 | `src/data/`                    | Structured question bank                          |
 | `server/local.mjs`             | Development WebSocket relay                       |
 | `database.rules.json`          | Firebase access rules                             |
@@ -163,7 +172,7 @@ Tests cover QR decoding and following the decoded URL, manual joining, ten-round
 - One host, two fixed teams, one shared display. No account system, matchmaking, chat, host transfer, remote video or persistent global leaderboard.
 - Map geometry is deliberately schematic. Speech quality depends on the browser/device's available voice; text always remains available.
 - Drum Beat, Picture Puzzle and Goal Rush are bonus practice games, not extra rounds inside the standard match.
-- Four optional event slots appear in a standard match, so not all six event types appear in every match.
+- Nine optional event slots appear in a standard match; events are selected without repeating until all six have appeared.
 - Browser automation was run in Chromium. Safari/iOS audio, physical QR scanning and real TV overscan need hardware checks before a large event.
 
 See `THIRD_PARTY.md` for software/font credits. Creator credit is displayed on the start menu, dedicated Credits page, and End Credits.

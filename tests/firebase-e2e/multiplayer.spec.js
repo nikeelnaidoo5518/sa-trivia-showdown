@@ -15,6 +15,7 @@ test("Firebase anonymous auth, room creation, team vote, private input, host res
   await host.reload();
   // Force Firebase via the development emulator build; production uses configured Firebase automatically.
   await host.getByRole("button", { name: "Start Game", exact: true }).click();
+  await host.getByRole("button", { name: "Create room", exact: true }).click();
   await expect(host.locator(".big-room-code")).toBeVisible();
   const code = await host.locator(".big-room-code").innerText();
   const ctx = await browser.newContext({

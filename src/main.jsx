@@ -23,6 +23,7 @@ import {
   SequenceGame,
 } from "./components/MiniGames.jsx";
 import "./style.css";
+import { cue, unlockSound } from "./sound.js";
 
 const read = (key, fallback) => {
   try {
@@ -60,7 +61,8 @@ function App() {
     [demo, setDemo] = useState(false),
     [controller, setController] = useState(false),
     [practice, setPractice] = useState(null),
-    [confirmation, setConfirmation] = useState(null);
+    [confirmation, setConfirmation] = useState(null),
+    [setup, setSetup] = useState(null);
   const engine = useRef(null),
     transport = useRef(null),
     botActions = useRef(new Set()),
@@ -134,7 +136,7 @@ function App() {
       speechSynthesis.cancel();
   }, [settings.sound]);
   useEffect(() => {
-    if (!confirmation && !practice) return;
+    if (!confirmation && !practice && !setup) return;
     const previous = document.activeElement;
     const oldOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
@@ -142,6 +144,7 @@ function App() {
       if (e.key === "Escape") {
         setConfirmation(null);
         setPractice(null);
+        setSetup(null);
         return;
       }
       if (e.key !== "Tab") return;
@@ -167,7 +170,7 @@ function App() {
       document.removeEventListener("keydown", onKey);
       previous?.focus?.();
     };
-  }, [confirmation, practice]);
+  }, [confirmation, practice, setup]);
   useEffect(() => {
     if (!code || !role) return;
     const url = new URL(location.href);
@@ -268,6 +271,48 @@ function App() {
     }
     return () => {};
   }, []);
+  useEffect(() => {
+    const enable = () => {
+      if (settings.sound) unlockSound();
+    };
+    document.addEventListener("pointerdown", enable);
+    document.addEventListener("keydown", enable);
+    return () => {
+      document.removeEventListener("pointerdown", enable);
+      document.removeEventListener("keydown", enable);
+    };
+  }, [settings.sound]);
+  useEffect(() => {
+    if (settings.sound && role === "host" && state)
+      cue(state.phase === "event-results" ? "results" : state.phase);
+  }, [state?.phase, state?.activityId, role, settings.sound]);
+  useEffect(() => {
+    if (
+      !settings.sound ||
+      role !== "host" ||
+      !state ||
+      state.paused ||
+      !["playing", "event"].includes(state.phase)
+    )
+      return;
+    let last;
+    const id = setInterval(() => {
+      const n = Math.ceil((state.deadline - Date.now()) / 1000);
+      if (n > 0 && n <= 5 && n !== last) {
+        cue("tick");
+        last = n;
+      }
+    }, 200);
+    return () => clearInterval(id);
+  }, [state?.deadline, state?.phase, state?.paused, role, settings.sound]);
+  useEffect(() => {
+    if (
+      settings.sound &&
+      role === "host" &&
+      state?.notice?.includes("Confetti")
+    )
+      cue("trick");
+  }, [state?.notice, settings.sound, role]);
   async function startGame(isDemo = false, resume = false) {
     setBusy(true);
     try {
@@ -469,7 +514,7 @@ function App() {
             <div className="menu-actions">
               <button
                 className="btn primary start-button"
-                onClick={() => startGame()}
+                onClick={() => setSetup({ isDemo: false })}
                 disabled={busy}
               >
                 <Icon name="Play" size={24} />
@@ -561,7 +606,7 @@ function App() {
             </div>
             <button
               className="demo-link"
-              onClick={() => startGame(true)}
+              onClick={() => setSetup({ isDemo: true })}
               disabled={busy}
             >
               Try a playable demo <Icon name="ArrowRight" size={18} />
@@ -607,7 +652,7 @@ function App() {
               [
                 "Coins",
                 "3. Know it. Win it.",
-                "Correct answers earn R300. All cash is fictional. Accuracy matters; there are no trivia speed bonuses.",
+                "Correct answers earn R300. All cash is fictional. Knowledge comes first; quick correct answers earn up to R30 extra.",
               ],
               [
                 "Crown",
@@ -641,7 +686,7 @@ function App() {
           <div className="arcade-grid">
             {[
               ["repair", "Bot", "Robot Repair"],
-              ["memory", "ShoppingBasket", "Market Memory"],
+
               ["drum", "Drum", "Drum Beat"],
               ["picture", "Puzzle", "Picture Puzzle"],
               ["goal", "Goal", "Goal Rush"],
@@ -886,6 +931,59 @@ function App() {
               )}
           </main>
         ))}
+      {setup && (
+        <div className="modal-backdrop">
+          <section
+            className="modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="setup-title"
+          >
+            <p className="eyebrow">YOUR SHOW. YOUR CHALLENGE.</p>
+            <h2 id="setup-title">Choose your difficulty</h2>
+            <p>Pick the question level before everyone joins.</p>
+            <div className="difficulty-grid">
+              {[
+                ["easy", "Easy", "A relaxed warm-up"],
+                ["medium", "Medium", "A proper challenge"],
+                ["hard", "Hard", "For local legends"],
+                ["mixed", "Mixed", "A bit of everything"],
+              ].map(([id, name, description]) => (
+                <button
+                  key={id}
+                  className="answer"
+                  aria-pressed={settings.difficulty === id}
+                  onClick={() => setSettings({ ...settings, difficulty: id })}
+                >
+                  <strong>{name}</strong>
+                  <small>{description}</small>
+                </button>
+              ))}
+            </div>
+            <p>
+              Answer on your phone. When everyone locks in, the TV reveals the
+              answer and round winners.
+            </p>
+            <div className="row">
+              <button className="btn secondary" onClick={() => setSetup(null)}>
+                Cancel
+              </button>
+              <button
+                className="btn primary"
+                autoFocus
+                onClick={() => {
+                  const d = setup.isDemo;
+                  setSetup(null);
+                  cue("start");
+                  startGame(d);
+                }}
+              >
+                Create room
+              </button>
+            </div>
+          </section>
+        </div>
+      )}
       {busy && (
         <div className="loading-overlay" role="status">
           <span className="spinner" />
@@ -1411,6 +1509,11 @@ function Tutorial({ state: s, onNext }) {
       <p className="eyebrow">{r.eyebrow}</p>
       <h2>{r.name}</h2>
       <p className="stage-description">{r.description}</p>
+      <p>
+        Choose a Confetti Jam target on your phone before the host starts. Two
+        tricks per match.
+      </p>
+      {s.notice && <p className="notice">{s.notice}</p>}
       <div className="tutorial-points">
         <span>
           <Icon name="Smartphone" size={18} />
@@ -1418,7 +1521,9 @@ function Tutorial({ state: s, onNext }) {
         </span>
         <span>
           <Icon name="Coins" size={18} />
-          {r.id === "final" ? "R500 + your wager" : "Up to R300 per challenge"}
+          {r.id === "final"
+            ? "R500 + your wager"
+            : "R300 + up to R30 for quick trivia"}
         </span>
         {["map", "braai"].includes(r.id) && (
           <span>
@@ -1527,7 +1632,7 @@ function HostActivity({ state: s, settings, onResolve }) {
           <Icon name="Flame" size={64} />
           <h2>Bring your braai game.</h2>
           <p>
-            Remember the recipe on your phone.
+            Follow the visible recipe on your phone.
             <br />
             Tap the ingredients in the right order.
           </p>
@@ -1577,6 +1682,23 @@ function Standings({ state: s }) {
     </section>
   );
 }
+function RoundWinner({ state: s }) {
+  const eligible = s.results.filter((r) =>
+    s.players.some((p) => p.id === r.id && !p.audience),
+  );
+  const best = Math.max(0, ...eligible.map((r) => r.delta));
+  const winners = eligible.filter((r) => r.delta === best && r.correct);
+  return (
+    <div className="round-winners" role="status">
+      <Icon name="Trophy" size={32} />
+      <h3>
+        {winners.length
+          ? `${winners.map((r) => r.name).join(" & ")} ${winners.length === 1 ? "wins" : "win"} this round!`
+          : "Next round, fresh chance!"}
+      </h3>
+    </div>
+  );
+}
 function Results({ state: s, onNext }) {
   return (
     <section className="stage results-stage">
@@ -1599,6 +1721,7 @@ function Results({ state: s, onNext }) {
           </a>
         )}
       </div>
+      <RoundWinner state={s} />
       <div className="result-ledger">
         {s.results.map((r, i) => (
           <div key={r.id + i}>
@@ -1743,6 +1866,11 @@ function Controller({
   setConfirmation,
   embedded = false,
 }) {
+  const [controllerNow, setControllerNow] = useState(Date.now());
+  useEffect(() => {
+    const t = setInterval(() => setControllerNow(Date.now()), 250);
+    return () => clearInterval(t);
+  }, []);
   const [text, setText] = useState(""),
     [pin, setPin] = useState(null),
     [wager, setWager] = useState(100),
@@ -1760,7 +1888,12 @@ function Controller({
   }, [pending]);
   const round = s.rounds[s.roundIndex],
     locked = !!s.receipts[p?.id],
-    disabled = s.paused || locked || connection !== "connected" || pending;
+    disabled =
+      s.paused ||
+      locked ||
+      connection !== "connected" ||
+      pending ||
+      (p?.jam > 0 && controllerNow < p.jamUntil);
   const submit = (value) => {
     setPending(true);
     send({ type: "answer", value });
@@ -1816,6 +1949,19 @@ function Controller({
           Host paused the game
         </div>
       )}
+      {s.phase === "playing" && p.jam > 0 && controllerNow < p.jamUntil && (
+        <div className="jam-panel" role="status">
+          <h3>Confetti Jam!</h3>
+          <p>Clear {p.jam} bursts, or wait five seconds.</p>
+          <button
+            className="btn primary full"
+            disabled={s.paused}
+            onClick={() => send({ type: "unjam" })}
+          >
+            Clear confetti · {p.jam}
+          </button>
+        </div>
+      )}
       {s.phase === "lobby" ? (
         <section className="controller-stage center">
           <div className="round-emblem">
@@ -1841,6 +1987,39 @@ function Controller({
           <p className="eyebrow">ROUND {s.roundIndex + 1}</p>
           <h2>{round.name}</h2>
           <p>{round.description}</p>
+          {!p.audience && (
+            <div className="trick-panel">
+              <h3>Confetti Jam · {p.tricks ?? 2} left</h3>
+              <p>
+                Send a rival three confetti bursts to clear. Lasts at most five
+                seconds. One trick per round; Cash Shield blocks it.
+              </p>
+              {s.players
+                .filter(
+                  (x) =>
+                    x.id !== p.id &&
+                    !x.audience &&
+                    (s.settings.mode !== "teams" || x.team !== p.team),
+                )
+                .map((x) => (
+                  <button
+                    className="btn secondary"
+                    key={x.id}
+                    disabled={p.trickUsed || (p.tricks ?? 2) === 0 || x.jam > 0}
+                    onClick={() =>
+                      setConfirmation({
+                        title: `Jam ${x.name}?`,
+                        text: "Uses one of your two tricks. They can tap three times or wait five seconds to clear it.",
+                        action: () => send({ type: "trick", target: x.id }),
+                      })
+                    }
+                  >
+                    Jam {x.name}
+                  </button>
+                ))}
+            </div>
+          )}
+          {s.notice && <p className="notice">{s.notice}</p>}
           <p className="caption">
             Look up at the TV. The host starts this round.
           </p>
@@ -2053,6 +2232,7 @@ function Controller({
               .map((r) => r.reason)
               .join(" · ")}
           </p>
+          <RoundWinner state={s} />
           <div className="answer-reveal">
             <small>Correct answer</small>
             <b>{s.answer}</b>

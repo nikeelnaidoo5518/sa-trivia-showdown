@@ -209,6 +209,8 @@ export class GameEngine {
       const next = preferred.filter(fn);
       if (next.length) preferred = next;
     };
+    if (s.settings.difficulty !== "mixed")
+      narrow((q) => q.difficulty === s.settings.difficulty);
     if (r.id === "warmup")
       narrow(
         (q) =>
@@ -288,12 +290,16 @@ export class GameEngine {
     this.predictions = {};
     this.question = null;
     for (const p of s.players) {
+      p.jam = 0;
+      p.trickUsed = false;
       p.double = false;
       p.backup = false;
       p.repairActive = false;
     }
   }
   timed(phase, seconds) {
+    if (phase === "playing")
+      for (const p of this.state.players) p.jamUntil = Date.now() + 5000;
     this.state.phase = phase;
     this.state.deadline = Date.now() + seconds * 1000;
     this.state.remaining = seconds * 1000;
@@ -367,7 +373,7 @@ export class GameEngine {
       if (
         s.settings.events &&
         s.roundIndex < s.rounds.length - 1 &&
-        s.roundIndex % 2 === 1
+        s.roundIndex >= 0
       ) {
         return this.startEvent();
       }
@@ -402,6 +408,7 @@ export class GameEngine {
     } else {
       const elapsed = Date.now() - s.pausedAt;
       s.deadline = Date.now() + s.remaining;
+      for (const p of s.players) if (p.jamUntil) p.jamUntil += elapsed;
       if (s.mini?.revealUntil) s.mini.revealUntil += elapsed;
       if (s.event?.revealUntil) s.event.revealUntil += elapsed;
     }
@@ -416,6 +423,18 @@ export class GameEngine {
         p.connected = connected;
         changed = true;
       }
+    }
+    const competitors = s.players.filter((p) => !p.audience);
+    if (
+      !s.paused &&
+      ["playing", "event"].includes(s.phase) &&
+      competitors.length &&
+      competitors.every((p) => s.receipts[p.id]) &&
+      now >=
+        Math.max(...competitors.map((p) => this.inputs[p.id]?.at || now)) + 1500
+    ) {
+      this.resolve();
+      return true;
     }
     if (
       !s.paused &&
@@ -486,6 +505,32 @@ export class GameEngine {
       Date.now() > s.deadline
     )
       throw Error("Time is up.");
+    if (action.type === "trick" && s.phase === "tutorial") {
+      if (p.audience || p.trickUsed || (p.tricks ?? 2) <= 0)
+        throw Error("No trick available this round.");
+      const target = s.players.find(
+        (x) =>
+          x.id === action.target &&
+          x.id !== pid &&
+          !x.audience &&
+          (s.settings.mode !== "teams" || x.team !== p.team),
+      );
+      if (!target || target.jam) throw Error("Choose another rival.");
+      p.tricks = (p.tricks ?? 2) - 1;
+      p.trickUsed = true;
+      if (target.shield) {
+        target.shield = false;
+        s.notice = `${target.name} blocked ${p.name}’s Confetti Jam!`;
+      } else {
+        target.jam = 3;
+        s.notice = `${p.name} sent Confetti Jam to ${target.name}!`;
+      }
+      return;
+    }
+    if (action.type === "unjam" && s.phase === "playing") {
+      p.jam = Math.max(0, (p.jam || 0) - 1);
+      return;
+    }
     if (action.type === "card") return this.useCard(p, action.card);
     if (action.type === "repair" && p.repairActive) {
       p.repairActive = false;
@@ -532,10 +577,16 @@ export class GameEngine {
       return;
     }
     if (action.type === "answer" && ["playing", "event"].includes(s.phase)) {
+      if (p.jam > 0 && Date.now() < p.jamUntil)
+        throw Error("Clear the confetti first.");
       if (s.receipts[pid]) throw Error("Answer already locked.");
       if (JSON.stringify(action.value).length > 3000)
         throw Error("Answer is too long.");
-      this.inputs[pid] = { value: action.value, at: Date.now() };
+      this.inputs[pid] = {
+        value: action.value,
+        at: Date.now(),
+        remaining: Math.max(0, s.deadline - Date.now()),
+      };
       s.receipts[pid] = true;
       return;
     }
@@ -711,7 +762,26 @@ export class GameEngine {
           : submission || shared[p.team] !== undefined
             ? `Incorrect answer${wager ? ` · R${wager} wager lost` : ""}${p.double ? " · Double Down −R100" : ""}`
             : "No answer submitted";
-        if (correct) p.correct++;
+        if (correct) {
+          p.correct++;
+          const speed =
+            !p.audience &&
+            submission &&
+            !(r.id === "huddle" && s.settings.mode === "teams")
+              ? Math.max(
+                  0,
+                  Math.min(
+                    30,
+                    Math.floor(
+                      (submission.remaining ?? s.deadline - submission.at) /
+                        1000,
+                    ),
+                  ),
+                )
+              : 0;
+          delta += speed;
+          if (speed) reason += ` · quick answer +R${speed}`;
+        }
       }
       if (p.audience) {
         delta = correct ? 50 : 0;

@@ -120,24 +120,19 @@ export function SequenceGame({
   disabled,
   limit,
 }) {
-  const [chosen, setChosen] = useState([]),
-    [now, setNow] = useState(Date.now());
-  useEffect(() => {
-    const t = setInterval(() => setNow(Date.now()), 100);
-    return () => clearInterval(t);
-  }, []);
+  const [chosen, setChosen] = useState([]);
   const labels = kind === "braai" ? BRAAI : SWITCH;
   const target = sequence.slice(0, limit || sequence.length),
-    revealing = now < revealUntil;
+    revealing = false;
   return (
     <div className="mini-controller">
       <p className="mini-instruction">
         {revealing
-          ? "Remember this sequence…"
-          : `Tap ${target.length} items in the same order.`}
+          ? "Follow the recipe on screen"
+          : `Follow the visible recipe: tap ${target.length} items in order.`}
       </p>
       <div className="sequence-display">
-        {(revealing ? target : target.map((_, i) => chosen[i])).map((v, i) => (
+        {target.map((v, i) => (
           <span key={i} className={v === undefined ? "empty" : ""}>
             {v === undefined ? "?" : labels[v]}
           </span>
@@ -202,7 +197,7 @@ export function EventGame({ event, player, onSubmit, disabled }) {
       />
     );
   if (event.kind === "memory") {
-    const revealing = now < event.revealUntil;
+    const revealing = true;
     return (
       <div>
         <div className="memory-items">
@@ -210,13 +205,16 @@ export function EventGame({ event, player, onSubmit, disabled }) {
             <span key={x}>{revealing || i !== event.missing ? x : "?"}</span>
           ))}
         </div>
-        <p>Which item disappeared?</p>
+        <p>
+          Tap the market item:{" "}
+          <strong>{["Maize", "Apple", "Bread", "Milk"][event.missing]}</strong>
+        </p>
         <div className="answers">
           {["Maize", "Apple", "Bread", "Milk"].map((x, i) => (
             <button
               key={x}
               className="answer"
-              disabled={disabled || revealing}
+              disabled={disabled}
               onClick={() => onSubmit(i)}
             >
               {x}
@@ -314,7 +312,7 @@ export function PracticeGame({ kind, onExit }) {
             drum: "Drum Beat",
             picture: "Picture Puzzle",
             goal: "Goal Rush",
-            memory: "Market Memory",
+            memory: "Market Match",
             repair: "Robot Repair",
           }[kind]
         }

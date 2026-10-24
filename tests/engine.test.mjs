@@ -228,7 +228,7 @@ test("reconnection preserves nickname, score and cards; restore preserves privat
   assert.equal(p.shield, true);
   assert.equal(p.cards.includes("shield"), false);
   restored.resolve();
-  assert.equal(p.cash, 800);
+  assert.ok(p.cash >= 800 && p.cash <= 830);
 });
 test("recent history avoidance and settings filters hold across matches", () => {
   const a = game({ categories: ["food"], difficulty: "easy" });
@@ -257,4 +257,60 @@ test("short answers accept punctuation, case, diacritics and explicit alternativ
     true,
   );
   assert.equal(scoreAnswer({ answer: "Crème" }, "creme"), true);
+});
+
+test("everyone answering reveals automatically, but never while paused or before the final answer", () => {
+  const e = game();
+  e.start();
+  e.begin();
+  input(e, "a", "answer", e.question.answer);
+  e.tick(Date.now() + 2000);
+  assert.equal(e.state.phase, "playing");
+  input(e, "b", "answer", e.question.answer);
+  e.pause();
+  e.tick(Date.now() + 2000);
+  assert.equal(e.state.phase, "playing");
+  e.pause();
+  e.tick(Date.now() + 2000);
+  assert.equal(e.state.phase, "results");
+  assert.equal(e.state.answer, e.question.answer);
+});
+test("Confetti Jam is bounded, targeted, limited and blocks early submissions", () => {
+  const e = game();
+  e.start();
+  input(e, "a", "trick", null, { target: "b" });
+  assert.equal(e.state.players[1].jam, 3);
+  assert.throws(() => input(e, "a", "trick", null, { target: "b" }));
+  e.begin();
+  assert.throws(() => input(e, "b", "answer", e.question.answer));
+  for (let i = 0; i < 3; i++) input(e, "b", "unjam");
+  input(e, "b", "answer", e.question.answer);
+  assert.ok(e.state.receipts.b);
+  assert.equal(e.state.players[0].tricks, 1);
+});
+test("Cash Shield blocks a trick and easy/medium/hard questions respect the selected level", () => {
+  const e = game();
+  e.start();
+  e.state.players[1].shield = true;
+  input(e, "a", "trick", null, { target: "b" });
+  assert.equal(e.state.players[1].jam, 0);
+  assert.equal(e.state.players[1].shield, false);
+  for (const difficulty of ["easy", "medium", "hard"]) {
+    const g = game({ difficulty });
+    g.start();
+    g.begin();
+    assert.equal(g.question.difficulty, difficulty);
+  }
+});
+
+test("speed reward is capped and does not grow when the host pauses after a submission", () => {
+  const e = game();
+  e.start();
+  e.begin();
+  input(e, "a", "answer", e.question.answer);
+  const before = e.inputs.a.remaining;
+  e.state.deadline += 120000;
+  e.resolve();
+  const row = e.state.results.find((r) => r.id === "a");
+  assert.equal(row.delta, 300 + Math.min(30, Math.floor(before / 1000)));
 });

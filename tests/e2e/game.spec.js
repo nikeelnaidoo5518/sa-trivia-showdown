@@ -127,6 +127,7 @@ test("TV layouts, QR decode, two phones, manual join, reconnect and all ten roun
     fullPage: true,
   });
   await host.getByRole("button", { name: "Start Game", exact: true }).click();
+  await host.getByRole("button", { name: "Create room", exact: true }).click();
   await expect(host.locator(".big-room-code")).toBeVisible();
   const code = await host.locator(".big-room-code").innerText();
   expect(code).toMatch(/^[A-HJ-NP-Z2-9]{6}$/);
@@ -279,6 +280,7 @@ test("quick demo, credits navigation, settings, small screens and bonus arcade",
   await page.getByLabel("Larger text").check();
   await page.getByRole("button", { name: "Back to the party" }).click();
   await page.getByRole("button", { name: "Try a playable demo" }).click();
+  await page.getByRole("button", { name: "Create room", exact: true }).click();
   await expect(page.locator(".lobby-player")).toHaveCount(4);
   expect((await saved(page)).state.rounds.length).toBe(5);
   await page.getByRole("button", { name: "End game", exact: true }).click();
@@ -309,6 +311,7 @@ test("team huddle shares the winning vote and host skip changes no cash", async 
   );
   await host.reload();
   await host.getByRole("button", { name: "Start Game", exact: true }).click();
+  await host.getByRole("button", { name: "Create room", exact: true }).click();
   const code = await host.locator(".big-room-code").innerText();
   const contexts = [];
   const phones = [];
@@ -386,6 +389,7 @@ test("five-round demo is playable through the on-screen phone and credits", asyn
   );
   await page.reload();
   await page.getByRole("button", { name: "Try a playable demo" }).click();
+  await page.getByRole("button", { name: "Create room", exact: true }).click();
   await page.getByRole("button", { name: "Let the showdown begin" }).click();
   const visited = new Set();
   for (let i = 0; i < 30; i++) {
@@ -424,4 +428,50 @@ test("five-round demo is playable through the on-screen phone and credits", asyn
   expect(
     (await saved(page)).state.players.find((p) => p.id === "demo-you").cash,
   ).toBeGreaterThan(500);
+});
+
+test("difficulty choice, rival trick, automatic reveal and round winner", async ({
+  browser,
+  page: host,
+}) => {
+  await host.goto("/");
+  await host.getByRole("button", { name: "Start Game", exact: true }).click();
+  await expect(host.getByRole("dialog")).toBeVisible();
+  await host.getByRole("button", { name: /Hard For local legends/ }).click();
+  await host.getByRole("button", { name: "Create room", exact: true }).click();
+  const code = await host.locator(".big-room-code").innerText();
+  const contexts = [],
+    phones = [];
+  for (const name of ["Zola", "Avi"]) {
+    const ctx = await browser.newContext({
+      viewport: { width: 390, height: 844 },
+    });
+    contexts.push(ctx);
+    const phone = await ctx.newPage();
+    phones.push(phone);
+    await phone.goto(`http://127.0.0.1:5173/?room=${code}`);
+    await phone.getByLabel("Nickname").fill(name);
+    await phone.getByRole("button", { name: "Let me in" }).click();
+    await expect(
+      phone.getByRole("heading", { name: "You’re in!" }),
+    ).toBeVisible();
+  }
+  await host.getByRole("button", { name: "Let the showdown begin" }).click();
+  await phones[0].getByRole("button", { name: "Jam Avi", exact: true }).click();
+  await phones[0].getByRole("button", { name: "Confirm", exact: true }).click();
+  await expect(phones[1].getByText(/Zola sent Confetti Jam/)).toBeVisible();
+  await host.getByRole("button", { name: "Let’s do this" }).click();
+  const e = await saved(host);
+  expect(e.question.difficulty).toBe("hard");
+  for (let n = 3; n > 0; n--) {
+    await phones[1]
+      .getByRole("button", { name: `Clear confetti · ${n}`, exact: true })
+      .click();
+  }
+  await answer(phones[0], e);
+  await answer(phones[1], e);
+  await expect(host.locator(".result-answer")).toBeVisible();
+  await expect(host.locator(".round-winners")).toContainText(/win.*this round/);
+  await expect(phones[0].locator(".answer-reveal")).toBeVisible();
+  for (const ctx of contexts) await ctx.close();
 });
