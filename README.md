@@ -113,7 +113,7 @@ Pages is configured to deploy through GitHub Actions. A repository administrator
 2. Under **Settings → Secrets and variables → Actions → Variables**, add the five public `VITE_FIREBASE_*` values above. When unset, this repository’s workflow uses the hosted game’s public Firebase configuration. Local builds without `.env.local` still use demo transport.
 3. Push to `main`, or run **Test and deploy GitHub Pages** manually from Actions.
 4. The workflow installs dependencies, validates all 600 questions, runs engine tests, browser tests and Firebase emulator tests, builds `dist`, then deploys it to Pages. PRs run checks without deploying.
-5. The live URL is <https://nikeelnaidoo5518.github.io/sa-trivia-showdown/>. The demo was checked on this public URL on 24 October 2026, including a full Quick Match, scoring, end credits and the mobile join page.
+5. The live URL is <https://nikeelnaidoo5518.github.io/sa-trivia-showdown/>. The demo was checked on this public URL on 24 October 2026, including a full Quick Match, scoring, end credits and the mobile join page. Live Firebase room creation, joining from an independent browser, answer delivery and host/phone reconnection were also verified.
 
 Vite uses relative asset URLs and joining uses query parameters, so repository subpaths and QR links work without SPA rewrite rules. Firebase rules must be published separately; the Pages workflow never receives Firebase admin credentials.
 

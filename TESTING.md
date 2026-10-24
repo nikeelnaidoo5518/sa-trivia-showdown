@@ -1,6 +1,6 @@
 # First-version verification
 
-Checked on 24 October 2026 with Node 24, Chromium (Playwright) and Firebase Authentication/Realtime Database emulators. The live GitHub Pages demo was also checked in Chromium. Production Firebase credentials were not available, so internet multiplayer between separate devices remains unverified.
+Checked on 24 October 2026 with Node 24, Chromium (Playwright) and Firebase Authentication/Realtime Database emulators. The live GitHub Pages demo was also checked in Chromium. Live Firebase multiplayer was then verified with independent Chromium browser sessions against the production database and anonymous authentication. Physical-device checks remain below.
 
 **Story:** A host creates a TV room → phones join through QR or a code → the transport delivers private inputs → the host validates and scores → everyone receives updated public state → final scores lead to creator credits.
 
@@ -17,7 +17,7 @@ Checked on 24 October 2026 with Node 24, Chromium (Playwright) and Firebase Auth
 | Responsive layouts     | Screenshots inspected at 1920×1080 TV, 1440×900 desktop and 390×844 phone. Tests additionally use 360×800 and 320×568; small-screen horizontal overflow is checked.                                                                                              |
 | Accessibility controls | Keyboard native controls, map arrow keys/Enter, larger text, sound toggle, reduced animation, written audio fallback, visible locked-answer feedback, modal Escape/focus containment. Full screen-reader and all-browser audits remain future work.              |
 | Build and dependencies | `npm run build` succeeds. Production dependencies report zero known vulnerabilities with `npm audit --omit=dev`. A patched compatible gRPC dependency is pinned through an override; Firestore is not imported into the game.                                    |
-| Deployment             | [GitHub Actions run 40114428308](https://github.com/nikeelnaidoo5518/sa-trivia-showdown/actions/runs/40114428308) passed all checks and deployed Pages. The public HTTPS site completed a five-round demo with scoring and end credits. The mobile join URL prefilled the room correctly at 390×844, without horizontal overflow. No page or asset errors were recorded. |
+| Deployment             | [GitHub Actions run 40114428308](https://github.com/nikeelnaidoo5518/sa-trivia-showdown/actions/runs/40114428308) passed all checks and deployed Pages. [Multiplayer deployment 40127556283](https://github.com/nikeelnaidoo5518/sa-trivia-showdown/actions/runs/40127556283) also passed all checks and deployed the Firebase configuration. The public HTTPS site completed a five-round demo with scoring and end credits. The mobile join URL prefilled the room correctly at 390×844, without horizontal overflow. No page or asset errors were recorded. |
 
 ## Fixes found through testing
 
@@ -46,6 +46,10 @@ npm run build
 
 `docs/screenshots/` contains the start menu, TV question and phone controller captured from browser tests. Screenshots under `test-results/` and Playwright HTML reports are generated, ignored artifacts.
 
+## Live multiplayer verification
+
+The production site created a Firebase room, accepted an anonymous player in a separate 390×844 browser session, showed team membership and ready state, delivered a private answer and published results. Refreshing the phone restored its nickname and cash. Refreshing the host restored the room checkpoint and allowed the next round to start. No browser page errors were recorded. The temporary test room was removed afterward.
+
 ## Owner checks before a public game night
 
-Configure a real Firebase project and deploy the supplied rules. Add the public web configuration variables and rerun the Pages workflow. Check the resulting HTTPS URL on the actual TV and physical phones, including scanning the QR with a camera and device-specific speech output. This build did not test physical phone cameras, TV overscan, iOS/Safari voices, internet multiplayer latency or production Firebase quotas.
+Firebase project `sa-trivia-showdown-5518-f09c4`, anonymous authentication, authorized domains and database rules are deployed on the Spark plan. Check the HTTPS URL on the actual TV and physical phones, including scanning the QR with a camera and device-specific speech output. This build did not test physical phone cameras, TV overscan, iOS/Safari voices, real phone network latency or production Firebase quotas.
