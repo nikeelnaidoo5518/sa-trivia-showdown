@@ -4,7 +4,7 @@
 
 A colourful, original South African party game for a shared TV and phone controllers. Compete for fictional game cash with trivia, map and sequence duels, cards and short surprise events. There are no purchases, real-money stakes or cash-outs.
 
-**[Play the live demo](https://nikeelnaidoo5518.github.io/sa-trivia-showdown/)** — choose **Try a playable demo**. The site is deployed on GitHub Pages; internet multiplayer between separate devices still requires the Firebase configuration below.
+**[Play SA Trivia Showdown](https://nikeelnaidoo5518.github.io/sa-trivia-showdown/)** — choose **Start Game** for a TV room and phone controllers, or **Try a playable demo** for bots and an on-screen controller. The Pages workflow includes the public web configuration for the game’s Firebase project.
 
 ![SA Trivia Showdown start menu](docs/screenshots/start-menu.png)
 
@@ -58,6 +58,8 @@ Phone map controls: tap the map, then **Lock my pin**. Keyboard users focus the 
 
 Firebase's free Spark plan can support small personal game nights within its quotas. Check current Firebase pricing and quotas before larger events. No Cloud Functions or service-account key is needed for this version.
 
+The hosted game uses project `sa-trivia-showdown-5518-f09c4`, with anonymous authentication and a Realtime Database in `europe-west1`. Its access rules and authentication configuration are deployed. `.firebaserc` selects this project for CLI commands. The Pages workflow contains only public client configuration, not login tokens or administrative credentials. For a fork, configure your own project and override all five workflow variables below.
+
 1. Create a Firebase project at <https://console.firebase.google.com/>.
 2. Add a **Web app** and copy its public web configuration.
 3. Under **Authentication → Sign-in method**, enable **Anonymous**. Players never see a login or create an account; the SDK keeps an anonymous session for reconnection.
@@ -108,7 +110,7 @@ npm ci
 Pages is configured to deploy through GitHub Actions. A repository administrator can manage Pages settings and add the public Firebase configuration under Actions variables. No private credentials are needed in the repository.
 
 1. In GitHub **Settings → Pages → Build and deployment**, select **GitHub Actions**.
-2. Under **Settings → Secrets and variables → Actions → Variables**, add the five public `VITE_FIREBASE_*` values above. Leaving them empty produces a demo-only website.
+2. Under **Settings → Secrets and variables → Actions → Variables**, add the five public `VITE_FIREBASE_*` values above. When unset, this repository’s workflow uses the hosted game’s public Firebase configuration. Local builds without `.env.local` still use demo transport.
 3. Push to `main`, or run **Test and deploy GitHub Pages** manually from Actions.
 4. The workflow installs dependencies, validates all 600 questions, runs engine tests, browser tests and Firebase emulator tests, builds `dist`, then deploys it to Pages. PRs run checks without deploying.
 5. The live URL is <https://nikeelnaidoo5518.github.io/sa-trivia-showdown/>. The demo was checked on this public URL on 24 October 2026, including a full Quick Match, scoring, end credits and the mobile join page.
@@ -156,7 +158,7 @@ Tests cover QR decoding and following the decoded URL, manual joining, ten-round
 
 ## First-version limits
 
-- Real internet multiplayer needs the owner’s Firebase project and published rules. No production Firebase project or paid service was provisioned during this build.
+- The hosted game uses Firebase’s free Spark plan. Availability and player capacity remain subject to the project’s quotas; no paid plan was enabled.
 - Host authority and the publicly bundled question bank suit friendly in-room games. This is not a cheat-proof competitive platform. A determined developer can inspect the question bundle; hardening requires server-side question delivery and scoring.
 - One host, two fixed teams, one shared display. No account system, matchmaking, chat, host transfer, remote video or persistent global leaderboard.
 - Map geometry is deliberately schematic. Speech quality depends on the browser/device's available voice; text always remains available.

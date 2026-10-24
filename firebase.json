@@ -1,8 +1,27 @@
 {
-  "database": { "rules": "database.rules.json" },
+  "database": {
+    "rules": "database.rules.json"
+  },
   "emulators": {
-    "auth": { "port": 9099 },
-    "database": { "port": 9000 },
-    "ui": { "enabled": false }
+    "auth": {
+      "port": 9099
+    },
+    "database": {
+      "port": 9000
+    },
+    "ui": {
+      "enabled": false
+    }
+  },
+  "auth": {
+    "authorizedDomains": [
+      "localhost",
+      "nikeelnaidoo5518.github.io",
+      "sa-trivia-showdown-5518-f09c4.firebaseapp.com",
+      "sa-trivia-showdown-5518-f09c4.web.app"
+    ],
+    "providers": {
+      "anonymous": true
+    }
   }
 }
