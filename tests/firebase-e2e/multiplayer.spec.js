@@ -58,3 +58,38 @@ test("Firebase anonymous auth, room creation, team vote, private input, host res
   expect(errors).toEqual([]);
   await ctx.close();
 });
+
+test("Firebase transports a targeted trick between independent phone sessions", async ({
+  browser,
+  page: host,
+}) => {
+  await host.goto("/");
+  await host.getByRole("button", { name: "Start Game", exact: true }).click();
+  await host.getByRole("button", { name: "Create room", exact: true }).click();
+  const code = await host.locator(".big-room-code").innerText();
+  const contexts = [],
+    phones = [];
+  for (const name of ["Zola", "Avi"]) {
+    const ctx = await browser.newContext({
+      viewport: { width: 390, height: 844 },
+    });
+    contexts.push(ctx);
+    const p = await ctx.newPage();
+    phones.push(p);
+    await p.goto(`http://127.0.0.1:5174/?room=${code}`);
+    await p.getByLabel("Nickname").fill(name);
+    await p.getByRole("button", { name: "Let me in" }).click();
+    await expect(p.getByRole("heading", { name: "You’re in!" })).toBeVisible();
+  }
+  await host.getByRole("button", { name: "Let the showdown begin" }).click();
+  await phones[0].getByRole("button", { name: "Jam Avi", exact: true }).click();
+  await phones[0].getByRole("button", { name: "Confirm", exact: true }).click();
+  await expect(phones[1].getByText(/Zola sent Confetti Jam/)).toBeVisible();
+  await host.getByRole("button", { name: "Let’s do this" }).click();
+  for (let n = 3; n > 0; n--)
+    await phones[1]
+      .getByRole("button", { name: `Clear confetti · ${n}`, exact: true })
+      .click();
+  await expect(phones[1].locator(".jam-panel")).toHaveCount(0);
+  for (const ctx of contexts) await ctx.close();
+});

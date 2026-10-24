@@ -30,14 +30,12 @@ test("Firebase: host owns state, players own inputs, submissions stay private", 
   const code = "ABC234",
     path = "rooms/" + code;
   await assertSucceeds(
-    host
-      .ref(path)
-      .set({
-        host: "host",
-        createdAt: Date.now(),
-        expiresAt: Date.now() + 60000,
-        state: { phase: "lobby", players: [] },
-      }),
+    host.ref(path).set({
+      host: "host",
+      createdAt: Date.now(),
+      expiresAt: Date.now() + 60000,
+      state: { phase: "lobby", players: [] },
+    }),
   );
   await assertSucceeds(alice.ref(path + "/host").get());
   await assertSucceeds(alice.ref(path + "/state").get());
@@ -59,14 +57,12 @@ test("Firebase: host owns state, players own inputs, submissions stay private", 
     bob.ref(path + "/members/alice").set({ ...profile, name: "Imposter" }),
   );
   await assertSucceeds(
-    alice
-      .ref(path + "/inputs/alice")
-      .set({
-        id: "1",
-        type: "answer",
-        activityId: "q1",
-        value: "Secret answer",
-      }),
+    alice.ref(path + "/inputs/alice").set({
+      id: "1",
+      type: "answer",
+      activityId: "q1",
+      value: "Secret answer",
+    }),
   );
   await assertSucceeds(host.ref(path + "/inputs/alice").get());
   await assertSucceeds(alice.ref(path + "/inputs/alice").get());
@@ -81,6 +77,21 @@ test("Firebase: host owns state, players own inputs, submissions stay private", 
     alice
       .ref(path + "/members/alice")
       .set({ ...profile, name: "x".repeat(100) }),
+  );
+  await assertSucceeds(
+    alice
+      .ref(path + "/inputs/alice")
+      .set({ id: "trick1", type: "trick", activityId: "q1", target: "bob" }),
+  );
+  await assertFails(
+    alice
+      .ref(path + "/inputs/alice")
+      .set({ id: "trick2", type: "trick", target: { uid: "bob" } }),
+  );
+  await assertFails(
+    bob
+      .ref(path + "/inputs/alice")
+      .set({ id: "trick3", type: "trick", target: "alice" }),
   );
   await assertSucceeds(host.ref(path + "/state").set({ phase: "playing" }));
   await assertSucceeds(
@@ -97,35 +108,29 @@ test("Firebase rejects expired rooms and malformed room codes", async () => {
   const host = env.authenticatedContext("host").database(),
     alice = env.authenticatedContext("alice").database();
   await assertFails(
-    host
-      .ref("rooms/INVALID")
-      .set({
-        host: "host",
-        createdAt: 0,
-        expiresAt: 1,
-        state: { phase: "lobby" },
-      }),
+    host.ref("rooms/INVALID").set({
+      host: "host",
+      createdAt: 0,
+      expiresAt: 1,
+      state: { phase: "lobby" },
+    }),
   );
   await assertSucceeds(
-    host
-      .ref("rooms/EXP234")
-      .set({
-        host: "host",
-        createdAt: 0,
-        expiresAt: 1,
-        state: { phase: "lobby" },
-      }),
+    host.ref("rooms/EXP234").set({
+      host: "host",
+      createdAt: 0,
+      expiresAt: 1,
+      state: { phase: "lobby" },
+    }),
   );
   await assertFails(alice.ref("rooms/EXP234/state").get());
   await assertFails(
-    alice
-      .ref("rooms/EXP234/members/alice")
-      .set({
-        name: "Alice",
-        avatar: "Sun",
-        colour: "red",
-        team: "Ubuntu",
-        audience: false,
-      }),
+    alice.ref("rooms/EXP234/members/alice").set({
+      name: "Alice",
+      avatar: "Sun",
+      colour: "red",
+      team: "Ubuntu",
+      audience: false,
+    }),
   );
 });

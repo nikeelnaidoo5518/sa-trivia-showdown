@@ -31,11 +31,18 @@
             ".write": "auth != null && auth.uid === $uid && root.child('rooms').child($code).child('members').child($uid).exists() && now < root.child('rooms').child($code).child('expiresAt').val()",
             ".validate": "newData.hasChildren(['id','type']) && newData.child('id').isString() && newData.child('type').isString()",
             "$other": {
-              ".validate": "$other === 'id' || $other === 'type' || $other === 'activityId' || $other === 'value' || $other === 'card'"
+              ".validate": "$other === 'id' || $other === 'type' || $other === 'activityId' || $other === 'value' || $other === 'card' || $other === 'target'"
+            },
+            "target": {
+              ".validate": "newData.isString() && newData.val().length > 0 && newData.val().length <= 128"
             }
           }
         },
-        "feedback": { "$uid": { ".read": "auth != null && auth.uid === $uid" } }
+        "feedback": {
+          "$uid": {
+            ".read": "auth != null && auth.uid === $uid"
+          }
+        }
       }
     }
   }
