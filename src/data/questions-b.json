@@ -1,0 +1,3336 @@
+[
+  {
+    "id": "sport-001",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "scramble",
+    "prompt": "Unscramble the nickname of South Africa’s men’s rugby team: KBSGPNROIS",
+    "answer": "Springboks",
+    "fact": "The Springboks represent South Africa in men's international rugby union.",
+    "source": {
+      "title": "SA Rugby: Springboks",
+      "url": "https://springboks.rugby/sa-teams-players/springboks",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    },
+    "clue": "KBSGPNROIS",
+    "acceptedAnswers": ["springboks", "the springboks"]
+  },
+  {
+    "id": "sport-002",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Who captained South Africa to the 1995 men's Rugby World Cup title?",
+    "options": ["Siya Kolisi", "Naas Botha", "Francois Pienaar", "John Smit"],
+    "answer": "Francois Pienaar",
+    "fact": "Pienaar led the host nation to its first Rugby World Cup title.",
+    "source": {
+      "title": "SA Rugby: Springboks",
+      "url": "https://springboks.rugby/sa-teams-players/springboks",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "sport-003",
+    "category": "sport",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "short-answer",
+    "prompt": "Which country did South Africa beat in the 1995 Rugby World Cup final?",
+    "answer": "New Zealand",
+    "fact": "South Africa beat New Zealand 15–12 after extra time.",
+    "source": {
+      "title": "SA Rugby: Springboks",
+      "url": "https://springboks.rugby/sa-teams-players/springboks",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    },
+    "acceptedAnswers": ["new zealand", "all blacks", "the all blacks", "nz"]
+  },
+  {
+    "id": "sport-004",
+    "category": "sport",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which Springbok captain lifted the World Cup in 2007?",
+    "options": [
+      "John Smit",
+      "Francois Pienaar",
+      "Jean de Villiers",
+      "Gary Teichmann"
+    ],
+    "answer": "John Smit",
+    "fact": "John Smit captained the winning 2007 team in France.",
+    "source": {
+      "title": "SA Rugby: Springboks",
+      "url": "https://springboks.rugby/sa-teams-players/springboks",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "sport-005",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which country hosted the 2019 men's Rugby World Cup?",
+    "options": ["South Africa", "France", "Australia", "Japan"],
+    "answer": "Japan",
+    "fact": "The Springboks won their third title at the tournament in Japan.",
+    "source": {
+      "title": "SA Rugby: Springboks",
+      "url": "https://springboks.rugby/sa-teams-players/springboks",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "sport-006",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Who captained the Springboks in both the 2019 and 2023 World Cup finals?",
+    "options": [
+      "Bryan Habana",
+      "Percy Montgomery",
+      "Siya Kolisi",
+      "Victor Matfield"
+    ],
+    "answer": "Siya Kolisi",
+    "fact": "Kolisi led the team to consecutive World Cup titles.",
+    "source": {
+      "title": "SA Rugby: Springboks",
+      "url": "https://springboks.rugby/sa-teams-players/springboks",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "sport-007",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "How many men's Rugby World Cups had South Africa won by the end of 2023?",
+    "options": ["5", "4", "2", "3"],
+    "answer": "4",
+    "fact": "The winning years were 1995, 2007, 2019 and 2023.",
+    "source": {
+      "title": "SA Rugby: Springboks",
+      "url": "https://springboks.rugby/sa-teams-players/springboks",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "sport-008",
+    "category": "sport",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What trophy is awarded to the men's Rugby World Cup winner?",
+    "options": ["Webb Ellis Cup", "Davis Cup", "Ryder Cup", "Stanley Cup"],
+    "answer": "Webb Ellis Cup",
+    "fact": "The Webb Ellis Cup is the men's Rugby World Cup trophy.",
+    "source": {
+      "title": "SA Rugby: Springboks",
+      "url": "https://springboks.rugby/sa-teams-players/springboks",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "sport-009",
+    "category": "sport",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "How many points is a try worth in standard rugby union?",
+    "options": ["3", "4", "6", "5"],
+    "answer": "5",
+    "fact": "A conversion can add another two points after a try.",
+    "source": {
+      "title": "World Rugby: Laws of the game",
+      "url": "https://www.world.rugby/the-game/laws/home",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-010",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "How many players per team start a standard rugby union match on the field?",
+    "options": ["13", "7", "15", "11"],
+    "answer": "15",
+    "fact": "Rugby union's standard form has fifteen players per side.",
+    "source": {
+      "title": "World Rugby: Laws of the game",
+      "url": "https://www.world.rugby/the-game/laws/home",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-011",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In rugby union, may a player deliberately pass the ball forward to a teammate?",
+    "options": ["Only after a try", "No", "Yes", "Only in the first half"],
+    "answer": "No",
+    "fact": "A thrown forward pass is an infringement.",
+    "source": {
+      "title": "World Rugby: Laws of the game",
+      "url": "https://www.world.rugby/the-game/laws/home",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-012",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "How many points does a successful rugby union conversion add?",
+    "options": ["2", "1", "3", "5"],
+    "answer": "2",
+    "fact": "The conversion follows a try and is worth two points.",
+    "source": {
+      "title": "World Rugby: Laws of the game",
+      "url": "https://www.world.rugby/the-game/laws/home",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-013",
+    "category": "sport",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "short-answer",
+    "prompt": "Which year did South Africa host the men's FIFA World Cup?",
+    "answer": "2010",
+    "fact": "South Africa became the first African host of the men's FIFA World Cup.",
+    "source": {
+      "title": "FIFA: 2010 World Cup archive",
+      "url": "https://www.fifa.com/tournaments/mens/worldcup/2010",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    },
+    "acceptedAnswers": ["2010"]
+  },
+  {
+    "id": "sport-014",
+    "category": "sport",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Who scored South Africa's opening goal at the 2010 FIFA World Cup?",
+    "options": [
+      "Benni McCarthy",
+      "Steven Pienaar",
+      "Siphiwe Tshabalala",
+      "Lucas Radebe"
+    ],
+    "answer": "Siphiwe Tshabalala",
+    "fact": "Tshabalala scored against Mexico in the opening match.",
+    "source": {
+      "title": "FIFA: 2010 World Cup archive",
+      "url": "https://www.fifa.com/tournaments/mens/worldcup/2010",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "sport-015",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which national team won the 2010 men's FIFA World Cup in South Africa?",
+    "options": ["Brazil", "Spain", "Netherlands", "Germany"],
+    "answer": "Spain",
+    "fact": "Spain defeated the Netherlands in the final.",
+    "source": {
+      "title": "FIFA: 2010 World Cup archive",
+      "url": "https://www.fifa.com/tournaments/mens/worldcup/2010",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "sport-016",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "Gauteng",
+    "age": "all",
+    "format": "image",
+    "prompt": "In which city was the 2010 FIFA World Cup final played?",
+    "options": ["Johannesburg", "Durban", "Cape Town", "Pretoria"],
+    "answer": "Johannesburg",
+    "fact": "The final took place at Soccer City in Johannesburg.",
+    "source": {
+      "title": "FIFA: 2010 World Cup archive",
+      "url": "https://www.fifa.com/tournaments/mens/worldcup/2010",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    },
+    "imageKey": "stadium",
+    "clue": "This city hosted the final at Soccer City, with its distinctive calabash-inspired stadium. The illustration is a general stadium clue."
+  },
+  {
+    "id": "sport-017",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the nickname of South Africa's men's national football team?",
+    "options": ["Springboks", "Proteas", "Blitzboks", "Bafana Bafana"],
+    "answer": "Bafana Bafana",
+    "fact": "Bafana Bafana is the national men's football team's nickname.",
+    "source": {
+      "title": "South African Football Association",
+      "url": "https://www.safa.net/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-018",
+    "category": "sport",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the nickname of South Africa's women's national football team?",
+    "options": [
+      "Blitzboks",
+      "AmaGlug-glug",
+      "Banyana Banyana",
+      "Bafana Bafana"
+    ],
+    "answer": "Banyana Banyana",
+    "fact": "Banyana Banyana represents South Africa in women's international football.",
+    "source": {
+      "title": "South African Football Association",
+      "url": "https://www.safa.net/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-019",
+    "category": "sport",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "How many players per side start a standard association football match?",
+    "options": ["15", "11", "9", "12"],
+    "answer": "11",
+    "fact": "The eleven include one goalkeeper.",
+    "source": {
+      "title": "IFAB: Laws of the Game",
+      "url": "https://www.theifab.com/laws/latest/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-020",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "How long is a standard adult football match, excluding added time and extra time?",
+    "options": ["90 minutes", "60 minutes", "70 minutes", "100 minutes"],
+    "answer": "90 minutes",
+    "fact": "There are two halves of 45 minutes each.",
+    "source": {
+      "title": "IFAB: Laws of the Game",
+      "url": "https://www.theifab.com/laws/latest/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-021",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In football, which card sends a player off immediately?",
+    "options": ["Yellow", "Green", "Blue", "Red"],
+    "answer": "Red",
+    "fact": "A red card dismisses a player from the match.",
+    "source": {
+      "title": "IFAB: Laws of the Game",
+      "url": "https://www.theifab.com/laws/latest/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-022",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "Gauteng",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which two clubs traditionally contest the Soweto derby?",
+    "options": [
+      "Ajax and SuperSport",
+      "Celtic and Maritzburg",
+      "Kaizer Chiefs and Orlando Pirates",
+      "Sundowns and AmaZulu"
+    ],
+    "answer": "Kaizer Chiefs and Orlando Pirates",
+    "fact": "Chiefs and Pirates are the two clubs associated with the Soweto derby.",
+    "source": {
+      "title": "South African Football Association",
+      "url": "https://www.safa.net/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-023",
+    "category": "sport",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which country did Bafana Bafana beat in the 1996 Africa Cup of Nations final?",
+    "options": ["Cameroon", "Tunisia", "Egypt", "Nigeria"],
+    "answer": "Tunisia",
+    "fact": "South Africa won the final 2–0 on home soil.",
+    "source": {
+      "title": "South African Football Association",
+      "url": "https://www.safa.net/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-024",
+    "category": "sport",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which South African footballer won the UEFA Champions League with Porto in 2004?",
+    "options": [
+      "Benni McCarthy",
+      "Lucas Radebe",
+      "Doctor Khumalo",
+      "Mark Fish"
+    ],
+    "answer": "Benni McCarthy",
+    "fact": "McCarthy was part of Porto's 2004 Champions League squad.",
+    "source": {
+      "title": "South African Football Association",
+      "url": "https://www.safa.net/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-025",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What flower gives South Africa's national cricket teams their nickname?",
+    "options": ["Rose", "Daisy", "Orchid", "Protea"],
+    "answer": "Protea",
+    "fact": "The teams are known as the Proteas.",
+    "source": {
+      "title": "Cricket South Africa",
+      "url": "https://cricket.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-026",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "How many legal deliveries make one over in standard cricket?",
+    "options": ["5", "8", "6", "4"],
+    "answer": "6",
+    "fact": "Wides and no-balls do not count as legal deliveries in an over.",
+    "source": {
+      "title": "MCC: Laws of Cricket",
+      "url": "https://www.lords.org/mcc/the-laws-of-cricket",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-027",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "audio",
+    "prompt": "What is a score of 100 by one batter commonly called?",
+    "options": ["A duck", "A century", "A hat-trick", "A brace"],
+    "answer": "A century",
+    "fact": "A century is a major batting milestone.",
+    "source": {
+      "title": "MCC: Laws of Cricket",
+      "url": "https://www.lords.org/mcc/the-laws-of-cricket",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    },
+    "audioText": "A batter reaches one hundred runs. What cricket milestone is this?",
+    "clue": "Spoken clue: a batter reaches 100 runs. Name the milestone."
+  },
+  {
+    "id": "sport-028",
+    "category": "sport",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is a batter's score of zero commonly called in cricket?",
+    "options": ["A duck", "A birdie", "A try", "An ace"],
+    "answer": "A duck",
+    "fact": "A duck means the batter was dismissed without scoring a run.",
+    "source": {
+      "title": "MCC: Laws of Cricket",
+      "url": "https://www.lords.org/mcc/the-laws-of-cricket",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-029",
+    "category": "sport",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "How many runs are awarded when a fair hit clears the boundary without bouncing?",
+    "options": ["4", "5", "3", "6"],
+    "answer": "6",
+    "fact": "The ball must land beyond the boundary without first touching the ground inside it.",
+    "source": {
+      "title": "MCC: Laws of Cricket",
+      "url": "https://www.lords.org/mcc/the-laws-of-cricket",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-030",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "How many wooden stumps make up one cricket wicket?",
+    "options": ["4", "5", "3", "2"],
+    "answer": "3",
+    "fact": "Two bails sit across three stumps.",
+    "source": {
+      "title": "MCC: Laws of Cricket",
+      "url": "https://www.lords.org/mcc/the-laws-of-cricket",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-031",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does LBW stand for in cricket?",
+    "options": [
+      "Last ball warning",
+      "Leg before wicket",
+      "Long boundary win",
+      "Left bat wide"
+    ],
+    "answer": "Leg before wicket",
+    "fact": "LBW is one way a batter can be dismissed.",
+    "source": {
+      "title": "MCC: Laws of Cricket",
+      "url": "https://www.lords.org/mcc/the-laws-of-cricket",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-032",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which South African is a left-handed opening batter and former long-serving Test captain?",
+    "options": ["Graeme Smith", "Jonty Rhodes", "Allan Donald", "Dale Steyn"],
+    "answer": "Graeme Smith",
+    "fact": "Smith captained South Africa's Test side from 2003 to 2014.",
+    "source": {
+      "title": "Cricket South Africa",
+      "url": "https://cricket.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-033",
+    "category": "sport",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Jonty Rhodes became especially famous for which cricket skill?",
+    "options": ["Wicketkeeping", "Spin bowling", "Umpiring", "Fielding"],
+    "answer": "Fielding",
+    "fact": "Rhodes was celebrated for fast and athletic fielding.",
+    "source": {
+      "title": "Cricket South Africa",
+      "url": "https://cricket.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-034",
+    "category": "sport",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which sport made Jacques Kallis internationally famous?",
+    "options": ["Swimming", "Cycling", "Cricket", "Tennis"],
+    "answer": "Cricket",
+    "fact": "Kallis was a batting and bowling all-rounder.",
+    "source": {
+      "title": "Cricket South Africa",
+      "url": "https://cricket.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-035",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "The Comrades Marathon traditionally connects Durban with which city?",
+    "options": [
+      "Bloemfontein",
+      "Pietermaritzburg",
+      "Johannesburg",
+      "Cape Town"
+    ],
+    "answer": "Pietermaritzburg",
+    "fact": "The race alternates between routes in opposite directions.",
+    "source": {
+      "title": "Comrades Marathon: Museum",
+      "url": "https://comrades.com/comrades-museum",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "sport-036",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In which year was the first Comrades Marathon run?",
+    "options": ["1921", "1900", "1956", "1994"],
+    "answer": "1921",
+    "fact": "The inaugural race was run in 1921.",
+    "source": {
+      "title": "Comrades Marathon: Museum",
+      "url": "https://comrades.com/comrades-museum",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "sport-037",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "The Comrades is longer than a standard marathon. What type of race is it?",
+    "options": ["Sprint", "Triathlon", "Relay only", "Ultramarathon"],
+    "answer": "Ultramarathon",
+    "fact": "An ultramarathon exceeds the standard marathon distance.",
+    "source": {
+      "title": "Comrades Marathon: Museum",
+      "url": "https://comrades.com/comrades-museum",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "sport-038",
+    "category": "sport",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which stroke brought Chad le Clos Olympic gold over 200 metres in 2012?",
+    "options": ["Breaststroke", "Freestyle", "Butterfly", "Backstroke"],
+    "answer": "Butterfly",
+    "fact": "Le Clos won the men's 200-metre butterfly in London.",
+    "source": {
+      "title": "SA Government: London Olympic Games",
+      "url": "https://www.gov.za/events/london-olympic-games",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "sport-039",
+    "category": "sport",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "matching",
+    "prompt": "Match Cameron van der Burgh’s London 2012 gold medal to its swimming stroke.",
+    "options": ["Freestyle", "Breaststroke", "Butterfly", "Backstroke"],
+    "answer": "Breaststroke",
+    "fact": "Van der Burgh won the men's 100-metre breaststroke.",
+    "source": {
+      "title": "SA Government: London Olympic Games",
+      "url": "https://www.gov.za/events/london-olympic-games",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "sport-040",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which South African runner won the men's 400 metres at the 2016 Rio Olympics?",
+    "options": [
+      "Wayde van Niekerk",
+      "Akani Simbine",
+      "Caster Semenya",
+      "Luvo Manyonga"
+    ],
+    "answer": "Wayde van Niekerk",
+    "fact": "Van Niekerk won in a world-record time of 43.03 seconds.",
+    "source": {
+      "title": "World Athletics: Athletes and results",
+      "url": "https://worldathletics.org/athletes",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-041",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which athletics event brought Caster Semenya Olympic gold in London 2012 and Rio 2016?",
+    "options": ["100 metres", "Long jump", "Marathon", "800 metres"],
+    "answer": "800 metres",
+    "fact": "Semenya's two Olympic titles were in the women's 800 metres.",
+    "source": {
+      "title": "Olympics: South Africa",
+      "url": "https://olympics.com/en/olympic-games/olympic-results",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-042",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which South African swimmer won the women's 200-metre breaststroke at Tokyo 2020?",
+    "options": [
+      "Natalie du Toit",
+      "Chad le Clos",
+      "Tatjana Schoenmaker",
+      "Penny Heyns"
+    ],
+    "answer": "Tatjana Schoenmaker",
+    "fact": "The Tokyo 2020 Games were held in 2021.",
+    "source": {
+      "title": "Olympics: South Africa",
+      "url": "https://olympics.com/en/olympic-games/olympic-results",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-043",
+    "category": "sport",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Penny Heyns won both women's breaststroke gold medals at which Olympics?",
+    "options": ["Athens 2004", "Atlanta 1996", "Sydney 2000", "London 2012"],
+    "answer": "Atlanta 1996",
+    "fact": "Heyns won the 100-metre and 200-metre breaststroke titles.",
+    "source": {
+      "title": "Olympics: South Africa",
+      "url": "https://olympics.com/en/olympic-games/olympic-results",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-044",
+    "category": "sport",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which South African golfer is nicknamed the Black Knight?",
+    "options": [
+      "Gary Player",
+      "Ernie Els",
+      "Retief Goosen",
+      "Louis Oosthuizen"
+    ],
+    "answer": "Gary Player",
+    "fact": "Gary Player is known for this nickname and his black golf clothing.",
+    "source": {
+      "title": "The Open: Gary Player",
+      "url": "https://www.theopen.com/players/gary-player",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-045",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Ernie Els is associated with which sport?",
+    "options": ["Rugby", "Boxing", "Cricket", "Golf"],
+    "answer": "Golf",
+    "fact": "Els won major golf championships including the US Open and The Open.",
+    "source": {
+      "title": "Britannica: Sport",
+      "url": "https://www.britannica.com/sports",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-046",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "true-false",
+    "prompt": "Birdie, eagle and bogey are all terms used in golf.",
+    "options": ["True", "False"],
+    "answer": "True",
+    "fact": "These terms compare a hole's score with par.",
+    "source": {
+      "title": "Britannica: Sport",
+      "url": "https://www.britannica.com/sports",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-047",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "How many players from one netball team are on court at a time?",
+    "options": ["9", "7", "5", "6"],
+    "answer": "7",
+    "fact": "Standard netball has seven court positions per team.",
+    "source": {
+      "title": "World Netball: Rules of netball",
+      "url": "https://netball.sport/game/the-rules-of-netball",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-048",
+    "category": "sport",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In standard netball, which pair of positions may score goals?",
+    "options": [
+      "Goal shooter and goal attack",
+      "Centre and wing attack",
+      "Goal keeper and goal defence",
+      "Wing defence and centre"
+    ],
+    "answer": "Goal shooter and goal attack",
+    "fact": "Only GS and GA may shoot, from inside the goal circle.",
+    "source": {
+      "title": "World Netball: Rules of netball",
+      "url": "https://netball.sport/game/the-rules-of-netball",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-049",
+    "category": "sport",
+    "difficulty": "hard",
+    "region": "Western Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which South African city hosted the 2023 Netball World Cup?",
+    "options": ["Polokwane", "Kimberley", "Mbombela", "Cape Town"],
+    "answer": "Cape Town",
+    "fact": "It was the first Netball World Cup held in Africa.",
+    "source": {
+      "title": "World Netball: Rules of netball",
+      "url": "https://netball.sport/game/the-rules-of-netball",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-050",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In tennis, what word is used for a score of zero?",
+    "options": ["Nil-all", "Blank", "Love", "Duck"],
+    "answer": "Love",
+    "fact": "Tennis scoring starts at love, then 15, 30 and 40.",
+    "source": {
+      "title": "Britannica: Sport",
+      "url": "https://www.britannica.com/sports",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-051",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In tennis, what is a serve that the opponent cannot touch called?",
+    "options": ["Birdie", "Ace", "Century", "Try"],
+    "answer": "Ace",
+    "fact": "An ace wins the server a point directly.",
+    "source": {
+      "title": "Britannica: Sport",
+      "url": "https://www.britannica.com/sports",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-052",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which sport uses a shuttlecock?",
+    "options": ["Badminton", "Squash", "Table tennis", "Hockey"],
+    "answer": "Badminton",
+    "fact": "A shuttlecock is struck over a net with rackets.",
+    "source": {
+      "title": "Britannica: Sport",
+      "url": "https://www.britannica.com/sports",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-053",
+    "category": "sport",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In athletics, which event combines running, a hop, a step and a jump?",
+    "options": ["High jump", "Pole vault", "Shot put", "Triple jump"],
+    "answer": "Triple jump",
+    "fact": "The triple jump's three phases are hop, step and jump.",
+    "source": {
+      "title": "World Athletics: Athletes and results",
+      "url": "https://worldathletics.org/athletes",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-054",
+    "category": "sport",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What equipment is passed between runners in a standard track relay?",
+    "options": ["A ball", "A racket", "A baton", "A flag"],
+    "answer": "A baton",
+    "fact": "A baton must be exchanged within the designated zone.",
+    "source": {
+      "title": "World Athletics: Athletes and results",
+      "url": "https://worldathletics.org/athletes",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-055",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "How many metres long is one lap of a standard outdoor athletics track in lane one?",
+    "options": ["500", "400", "200", "300"],
+    "answer": "400",
+    "fact": "Outdoor championship tracks have a 400-metre lap.",
+    "source": {
+      "title": "World Athletics: Athletes and results",
+      "url": "https://worldathletics.org/athletes",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-056",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "ordering",
+    "prompt": "Put the standard triathlon disciplines in race order.",
+    "options": ["Running", "Swimming", "Cycling"],
+    "answer": "Swimming → Cycling → Running",
+    "fact": "The usual order is swim, cycle, then run.",
+    "source": {
+      "title": "Britannica: Sport",
+      "url": "https://www.britannica.com/sports",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-057",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which of these sports is played with a curved stick and a ball on a field?",
+    "options": ["Badminton", "Volleyball", "Basketball", "Hockey"],
+    "answer": "Hockey",
+    "fact": "Field hockey players use the flat side of the stick to play the ball.",
+    "source": {
+      "title": "Britannica: Sport",
+      "url": "https://www.britannica.com/sports",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-058",
+    "category": "sport",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which body part may an outfield football player deliberately use to head the ball?",
+    "options": ["Forearm", "Elbow", "Head", "Hand"],
+    "answer": "Head",
+    "fact": "Heading is legal; deliberate handball is generally an offence.",
+    "source": {
+      "title": "IFAB: Laws of the Game",
+      "url": "https://www.theifab.com/laws/latest/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-059",
+    "category": "sport",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A standard marathon is 42.195 kilometres long. Is it longer than 40 kilometres?",
+    "options": ["Only in summer", "Yes", "No", "Only at sea level"],
+    "answer": "Yes",
+    "fact": "The standard marathon distance is fixed at 42.195 kilometres.",
+    "source": {
+      "title": "World Athletics: Athletes and results",
+      "url": "https://worldathletics.org/athletes",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "sport-060",
+    "category": "sport",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which rugby format has seven players per side on the field?",
+    "options": ["Sevens", "Fifteens", "Test cricket", "Futsal"],
+    "answer": "Sevens",
+    "fact": "South Africa's men's sevens team is nicknamed the Blitzboks.",
+    "source": {
+      "title": "World Rugby: Laws of the game",
+      "url": "https://www.world.rugby/the-game/laws/home",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "music-001",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "audio",
+    "prompt": "Which South African singer is widely known as Mama Africa?",
+    "options": ["Brenda Fassie", "Tyla", "Yvonne Chaka Chaka", "Miriam Makeba"],
+    "answer": "Miriam Makeba",
+    "fact": "Makeba became an international voice for South African music.",
+    "source": {
+      "title": "Library of Congress: Miriam Makeba",
+      "url": "https://www.loc.gov/loc/lcib/1004/makeba.html",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    },
+    "audioText": "This singer was known as Mama Africa and took South African music to audiences around the world. Who was she?",
+    "clue": "Spoken clue: this singer was known as Mama Africa."
+  },
+  {
+    "id": "music-002",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which Miriam Makeba hit shares its title with a dance?",
+    "options": ["Water", "Jerusalema", "Pata Pata", "Weekend Special"],
+    "answer": "Pata Pata",
+    "fact": "Pata Pata is one of Makeba's best-known recordings.",
+    "source": {
+      "title": "Library of Congress: Miriam Makeba",
+      "url": "https://www.loc.gov/loc/lcib/1004/makeba.html",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-003",
+    "category": "music",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "matching",
+    "prompt": "Match Hugh Masekela with the instrument most closely associated with his music.",
+    "options": ["Bassoon", "Trumpet", "Violin", "Harp"],
+    "answer": "Trumpet",
+    "fact": "Masekela also played flugelhorn.",
+    "source": {
+      "title": "SA Tourism: Music of South Africa",
+      "url": "https://www.southafrica.net/gl/en/travel/article/music-of-south-africa-discover-the-rhythmic-heartbeat",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-004",
+    "category": "music",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Abdullah Ibrahim is best known for playing which instrument?",
+    "options": ["Piano", "Trumpet", "Accordion", "Drum kit"],
+    "answer": "Piano",
+    "fact": "Ibrahim is a celebrated South African jazz pianist.",
+    "source": {
+      "title": "SA Tourism: Music of South Africa",
+      "url": "https://www.southafrica.net/gl/en/travel/article/music-of-south-africa-discover-the-rhythmic-heartbeat",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-005",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Who founded Ladysmith Black Mambazo?",
+    "options": [
+      "Hugh Masekela",
+      "Johnny Clegg",
+      "Lucky Dube",
+      "Joseph Shabalala"
+    ],
+    "answer": "Joseph Shabalala",
+    "fact": "Shabalala assembled the group in the early 1960s.",
+    "source": {
+      "title": "Ladysmith Black Mambazo: About",
+      "url": "https://mambazo.com/about",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-006",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which town gives Ladysmith Black Mambazo the first part of its name?",
+    "options": ["Soweto", "Polokwane", "Ladysmith", "Durban"],
+    "answer": "Ladysmith",
+    "fact": "The name refers to Joseph Shabalala's hometown.",
+    "source": {
+      "title": "Ladysmith Black Mambazo: About",
+      "url": "https://mambazo.com/about",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-007",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does a cappella singing primarily use?",
+    "options": [
+      "A full orchestra",
+      "Voices without instrumental accompaniment",
+      "Only guitars",
+      "Only drums"
+    ],
+    "answer": "Voices without instrumental accompaniment",
+    "fact": "Ladysmith Black Mambazo is famous for a cappella performance.",
+    "source": {
+      "title": "Britannica: Music",
+      "url": "https://www.britannica.com/art/music",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "music-008",
+    "category": "music",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does Mambazo mean in the group's isiZulu name?",
+    "options": ["A chopping axe", "Rivers", "Stars", "Mountains"],
+    "answer": "A chopping axe",
+    "fact": "The name uses chopping axes as a metaphor for the group's competitive singing.",
+    "source": {
+      "title": "Ladysmith Black Mambazo: About",
+      "url": "https://mambazo.com/about",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-009",
+    "category": "music",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which international musician collaborated with Ladysmith Black Mambazo on Graceland?",
+    "options": ["David Bowie", "Elton John", "Sting", "Paul Simon"],
+    "answer": "Paul Simon",
+    "fact": "The group also joined the Graceland tour.",
+    "source": {
+      "title": "Library of Congress: Miriam Makeba",
+      "url": "https://www.loc.gov/loc/lcib/1004/makeba.html",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-010",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which South African singer recorded Weekend Special with the Big Dudes?",
+    "options": ["Letta Mbulu", "Lira", "Brenda Fassie", "Miriam Makeba"],
+    "answer": "Brenda Fassie",
+    "fact": "The 1983 release helped launch Fassie's career.",
+    "source": {
+      "title": "SA History Online: Brenda Fassie",
+      "url": "https://sahistory.org.za/people/brenda-nokuzola-fassie",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-011",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the title of Brenda Fassie's 1998 album made with Chicco?",
+    "options": ["Shaka Zulu", "Memeza", "Graceland", "Subconsciously"],
+    "answer": "Memeza",
+    "fact": "Fassie and producer Chicco Twala collaborated on Memeza.",
+    "source": {
+      "title": "SA History Online: Brenda Fassie",
+      "url": "https://sahistory.org.za/people/brenda-nokuzola-fassie",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-012",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "short-answer",
+    "prompt": "Which singer is known as the Princess of Africa?",
+    "answer": "Yvonne Chaka Chaka",
+    "fact": "Yvonne Chaka Chaka became popular across the African continent.",
+    "source": {
+      "title": "UNISA: Yvonne Chaka Chaka",
+      "url": "https://www.unisa.ac.za/sites/corporate/default/Unisa-History-and-Memory-Project/Personalities/All-personalities/Yvonne-Chaka-Chaka",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    },
+    "acceptedAnswers": ["yvonne chaka chaka", "chaka chaka"]
+  },
+  {
+    "id": "music-013",
+    "category": "music",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which artist recorded the hit Umqombothi?",
+    "options": [
+      "Mango Groove",
+      "Black Coffee",
+      "Freshlyground",
+      "Yvonne Chaka Chaka"
+    ],
+    "answer": "Yvonne Chaka Chaka",
+    "fact": "Umqombothi was released in 1988.",
+    "source": {
+      "title": "UNISA: Yvonne Chaka Chaka",
+      "url": "https://www.unisa.ac.za/sites/corporate/default/Unisa-History-and-Memory-Project/Personalities/All-personalities/Yvonne-Chaka-Chaka",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-014",
+    "category": "music",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which music style is Lucky Dube especially associated with internationally?",
+    "options": ["Bluegrass", "Baroque", "Reggae", "Opera"],
+    "answer": "Reggae",
+    "fact": "Dube became a major South African reggae artist.",
+    "source": {
+      "title": "SA History Online: Lucky Dube",
+      "url": "https://sahistory.org.za/people/lucky-philip-dube",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-015",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Johnny Clegg formed Juluka with which musician?",
+    "options": [
+      "Abdullah Ibrahim",
+      "Sipho Mchunu",
+      "Joseph Shabalala",
+      "Hugh Masekela"
+    ],
+    "answer": "Sipho Mchunu",
+    "fact": "Their collaboration blended Zulu musical traditions with other styles.",
+    "source": {
+      "title": "SA History Online: Johnny Clegg",
+      "url": "https://sahistory.org.za/people/jonathan-clegg",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-016",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which band did Johnny Clegg form after Juluka?",
+    "options": ["Savuka", "Stimela", "TKZee", "Mango Groove"],
+    "answer": "Savuka",
+    "fact": "Savuka was a major part of Clegg's later music career.",
+    "source": {
+      "title": "SA History Online: Johnny Clegg",
+      "url": "https://sahistory.org.za/people/jonathan-clegg",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-017",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which Johnny Clegg song is named for a Zulu war band?",
+    "options": ["Water", "Pata Pata", "Waka Waka", "Impi"],
+    "answer": "Impi",
+    "fact": "Impi is often heard at South African sporting events.",
+    "source": {
+      "title": "SA History Online: Johnny Clegg",
+      "url": "https://sahistory.org.za/people/jonathan-clegg",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-018",
+    "category": "music",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which South African artist won the 2024 Grammy for Best African Music Performance with Water?",
+    "options": ["Zahara", "Sho Madjozi", "Tyla", "Lira"],
+    "answer": "Tyla",
+    "fact": "Tyla won the first award in this Grammy category.",
+    "source": {
+      "title": "Recording Academy: Tyla",
+      "url": "https://www.grammy.com/artists/tyla/54172/",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-019",
+    "category": "music",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the title of Black Coffee's album that won a Grammy in 2022?",
+    "options": ["Loliwe", "Subconsciously", "Memeza", "Graceland"],
+    "answer": "Subconsciously",
+    "fact": "It won Best Dance/Electronic Music Album.",
+    "source": {
+      "title": "Recording Academy: Black Coffee",
+      "url": "https://www.grammy.com/artists/black-coffee/37937/",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-020",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which three artists collaborated on the Grammy-winning Bayethe?",
+    "options": [
+      "Wouter Kellerman, Zakes Bantwini and Nomcebo Zikode",
+      "Miriam Makeba, Brenda Fassie and Tyla",
+      "Johnny Clegg, Lucky Dube and Lira",
+      "Hugh Masekela, Abdullah Ibrahim and Black Coffee"
+    ],
+    "answer": "Wouter Kellerman, Zakes Bantwini and Nomcebo Zikode",
+    "fact": "Bayethe won Best Global Music Performance at the 2023 Grammys.",
+    "source": {
+      "title": "SA Government: Bayethe Grammy award",
+      "url": "https://www.gov.za/news/media-statements/sport-arts-and-culture-congratulates-wouter-kellerman-nomcebo-zikode-and",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-021",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Wouter Kellerman is especially known for which instrument?",
+    "options": ["Trombone", "Cello", "Tuba", "Flute"],
+    "answer": "Flute",
+    "fact": "Kellerman is a South African flautist and composer.",
+    "source": {
+      "title": "SA Government: Bayethe Grammy award",
+      "url": "https://www.gov.za/news/media-statements/sport-arts-and-culture-congratulates-wouter-kellerman-nomcebo-zikode-and",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-022",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "teen",
+    "format": "short-answer",
+    "prompt": "Which South African film won the Foreign Language Film Oscar in 2006?",
+    "answer": "Tsotsi",
+    "fact": "The award's category was then called Foreign Language Film.",
+    "source": {
+      "title": "Academy Awards: 2006",
+      "url": "https://www.oscars.org/oscars/ceremonies/2006",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    },
+    "acceptedAnswers": ["tsotsi"]
+  },
+  {
+    "id": "music-023",
+    "category": "music",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "teen",
+    "format": "multiple-choice",
+    "prompt": "Who directed the Oscar-winning film Tsotsi?",
+    "options": ["Jamie Uys", "Gavin Hood", "Neill Blomkamp", "Barry Ralfe"],
+    "answer": "Gavin Hood",
+    "fact": "Hood directed the film adaptation of Athol Fugard's novel.",
+    "source": {
+      "title": "Academy Awards: 2006",
+      "url": "https://www.oscars.org/oscars/ceremonies/2006",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-024",
+    "category": "music",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "teen",
+    "format": "multiple-choice",
+    "prompt": "Which South African-born performer won the 2004 leading-actress Oscar for Monster?",
+    "options": [
+      "Charlize Theron",
+      "Terry Pheto",
+      "Connie Chiume",
+      "Leleti Khumalo"
+    ],
+    "answer": "Charlize Theron",
+    "fact": "Theron won for her performance in Monster.",
+    "source": {
+      "title": "Academy Awards: 2004",
+      "url": "https://www.oscars.org/oscars/ceremonies/2004",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-025",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "teen",
+    "format": "multiple-choice",
+    "prompt": "Which writer's novel was adapted into the film Tsotsi?",
+    "options": ["Zakes Mda", "Alan Paton", "J. M. Coetzee", "Athol Fugard"],
+    "answer": "Athol Fugard",
+    "fact": "Fugard wrote both plays and fiction.",
+    "source": {
+      "title": "SA History Online: Athol Fugard",
+      "url": "https://sahistory.org.za/people/harold-athol-fugard",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-026",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which trio created the play The Island?",
+    "options": [
+      "Tyla, Lira and Zahara",
+      "Trevor Noah, Leon Schuster and Pieter-Dirk Uys",
+      "Athol Fugard, John Kani and Winston Ntshona",
+      "Miriam Makeba, Hugh Masekela and Joseph Shabalala"
+    ],
+    "answer": "Athol Fugard, John Kani and Winston Ntshona",
+    "fact": "The Island was first performed in 1973.",
+    "source": {
+      "title": "Stellenbosch University ESAT: The Island",
+      "url": "https://esat.sun.ac.za/index.php/The_Island",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-027",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "John Kani and Winston Ntshona are especially associated with which performing art?",
+    "options": ["Ice skating", "Theatre", "Ballet only", "Circus juggling"],
+    "answer": "Theatre",
+    "fact": "Their collaborations with Fugard became internationally recognised theatre.",
+    "source": {
+      "title": "SA Government: John Kani",
+      "url": "https://www.gov.za/about-government/bonisile-john-kani-1943",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-028",
+    "category": "music",
+    "difficulty": "medium",
+    "region": "Eastern Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In which Eastern Cape city is the National Arts Festival based?",
+    "options": ["Makhanda", "East London", "Mthatha", "Komani"],
+    "answer": "Makhanda",
+    "fact": "The city was formerly called Grahamstown.",
+    "source": {
+      "title": "National Arts Festival",
+      "url": "https://nationalartsfestival.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "music-029",
+    "category": "music",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does SAMA stand for in South African music?",
+    "options": [
+      "Southern African Mountain Association",
+      "South African Movie Archive",
+      "Singers and Musicians of America",
+      "South African Music Awards"
+    ],
+    "answer": "South African Music Awards",
+    "fact": "The SAMAs honour achievements in South African recorded music.",
+    "source": {
+      "title": "South African Music Awards",
+      "url": "https://samusicawards.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "music-030",
+    "category": "music",
+    "difficulty": "medium",
+    "region": "Gauteng",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In which year did Johannesburg’s Market Theatre open?",
+    "options": ["1966", "1976", "1986", "1996"],
+    "answer": "1976",
+    "fact": "Mannie Manim and Barney Simon founded the Market Theatre in Johannesburg in 1976.",
+    "source": {
+      "title": "Market Theatre: History",
+      "url": "https://markettheatre.co.za/history/",
+      "note": "Opening year and founders checked against the theatre’s own history page, 24 October 2026. Original question wording."
+    }
+  },
+  {
+    "id": "music-031",
+    "category": "music",
+    "difficulty": "medium",
+    "region": "Gauteng",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What was the building used for before it became Johannesburg’s Market Theatre?",
+    "options": [
+      "A fruit market",
+      "A railway station",
+      "A swimming pool",
+      "A cinema"
+    ],
+    "answer": "A fruit market",
+    "fact": "The theatre occupies the former Indian Fruit Market building, which was built in 1913.",
+    "source": {
+      "title": "Market Theatre: History",
+      "url": "https://markettheatre.co.za/history/",
+      "note": "Former building use checked against the theatre’s own history page, 24 October 2026. Original question wording."
+    }
+  },
+  {
+    "id": "music-032",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which comedian wrote the memoir Born a Crime?",
+    "options": ["Trevor Noah", "David Kau", "Marc Lottering", "Riaad Moosa"],
+    "answer": "Trevor Noah",
+    "fact": "Noah's memoir tells stories from his South African childhood.",
+    "source": {
+      "title": "Trevor Noah: Born a Crime",
+      "url": "https://www.trevornoah.com/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "music-033",
+    "category": "music",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does the B stand for in SABC?",
+    "options": ["Banking", "Ballet", "Botanical", "Broadcasting"],
+    "answer": "Broadcasting",
+    "fact": "SABC stands for South African Broadcasting Corporation.",
+    "source": {
+      "title": "South African Broadcasting Corporation",
+      "url": "https://www.sabc.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "music-034",
+    "category": "music",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which genre's name includes the isiZulu plural form for pianos?",
+    "options": ["Opera", "Country", "Amapiano", "Reggae"],
+    "answer": "Amapiano",
+    "fact": "Amapiano developed in South Africa and features prominent keyboard textures.",
+    "source": {
+      "title": "SA Tourism: Music of South Africa",
+      "url": "https://www.southafrica.net/gl/en/travel/article/music-of-south-africa-discover-the-rhythmic-heartbeat",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-035",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which South African dance-music genre became strongly associated with the 1990s township youth scene?",
+    "options": ["Bossa nova", "Kwaito", "Bluegrass", "Flamenco"],
+    "answer": "Kwaito",
+    "fact": "Kwaito became prominent after the end of apartheid.",
+    "source": {
+      "title": "SA Tourism: Music of South Africa",
+      "url": "https://www.southafrica.net/gl/en/travel/article/music-of-south-africa-discover-the-rhythmic-heartbeat",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-036",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which instrument's high, whistling sound is closely linked to kwela?",
+    "options": ["Pennywhistle", "Cello", "Tuba", "Harp"],
+    "answer": "Pennywhistle",
+    "fact": "Kwela is associated with township pennywhistle music.",
+    "source": {
+      "title": "SA Tourism: Music of South Africa",
+      "url": "https://www.southafrica.net/gl/en/travel/article/music-of-south-africa-discover-the-rhythmic-heartbeat",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-037",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which South African band joined Shakira on the official 2010 World Cup song Waka Waka?",
+    "options": ["Mango Groove", "Stimela", "TKZee", "Freshlyground"],
+    "answer": "Freshlyground",
+    "fact": "The official song featured Shakira and Freshlyground.",
+    "source": {
+      "title": "Sony Music: 2010 World Cup song",
+      "url": "https://sony.mediaroom.com/2010-04-27-FIFA-and-Sony-Music-Entertainment-Select-Waka-Waka-This-Time-for-Africa-by-Shakira-Featuring-Freshlyground-as-FIFA-World-Cup-2010-Official-Song",
+      "note": "Original wording; source or indexed excerpt consulted 2026-10-23. Stable historical claim; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-038",
+    "category": "music",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Who was Freshlyground's lead singer when the group performed at the 2010 World Cup?",
+    "options": ["Lira", "Zahara", "Zolani Mahola", "Claire Johnston"],
+    "answer": "Zolani Mahola",
+    "fact": "Mahola fronted Freshlyground during the 2010 World Cup collaboration.",
+    "source": {
+      "title": "Kaizer Chiefs: Zolani Mahola at the World Cup",
+      "url": "https://kaizerchiefs.com/club/chiefs-fan-zolani-mahola-ready-to-wow-world",
+      "note": "Original wording; source or indexed excerpt consulted 2026-10-23. Stable historical claim; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-039",
+    "category": "music",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "true-false",
+    "prompt": "A duet is a piece performed by two musicians.",
+    "options": ["True", "False"],
+    "answer": "True",
+    "fact": "A duet has two performers or two featured parts.",
+    "source": {
+      "title": "Britannica: Music",
+      "url": "https://www.britannica.com/art/music",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "music-040",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "scramble",
+    "prompt": "Unscramble the musical word for the speed of the beat: OPTEM",
+    "answer": "Tempo",
+    "fact": "Tempo describes how fast or slow music moves.",
+    "source": {
+      "title": "Britannica: Music",
+      "url": "https://www.britannica.com/art/music",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    },
+    "clue": "OPTEM",
+    "acceptedAnswers": ["tempo"]
+  },
+  {
+    "id": "music-041",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which South African artist made Nkalakatha a major crossover hit?",
+    "options": ["Lucky Dube", "Hugh Masekela", "Abdullah Ibrahim", "Mandoza"],
+    "answer": "Mandoza",
+    "fact": "Nkalakatha became a widely played South African dance hit.",
+    "source": {
+      "title": "SAnews: Mandoza's music",
+      "url": "https://www.sanews.gov.za/south-africa/mandozas-music-gave-hope-youth",
+      "note": "Original wording; source or indexed excerpt consulted 2026-10-23. Stable historical claim; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-042",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What was the title of Zahara's debut album, released in 2011?",
+    "options": ["Subconsciously", "Graceland", "Loliwe", "Memeza"],
+    "answer": "Loliwe",
+    "fact": "Loliwe helped establish Zahara's recording career.",
+    "source": {
+      "title": "SABC News: Zahara tribute",
+      "url": "https://www.sabcnews.com/sabcnews/zahara-was-a-community-beacon-whose-talent-touched-many-lives/",
+      "note": "Original wording; source or indexed excerpt consulted 2026-10-23. Stable historical claim; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-043",
+    "category": "music",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which band is known for Claire Johnston's lead vocals?",
+    "options": ["Stimela", "Mango Groove", "Ladysmith Black Mambazo", "TKZee"],
+    "answer": "Mango Groove",
+    "fact": "Mango Groove blends pop with South African musical influences.",
+    "source": {
+      "title": "Mango Groove: The band",
+      "url": "https://www.mangogroove.co.za/the-band",
+      "note": "Original wording; source or indexed excerpt consulted 2026-10-23. Stable historical claim; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-044",
+    "category": "music",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Ray Phiri helped found which South African band?",
+    "options": ["Stimela", "Freshlyground", "Mafikizolo", "Bongo Maffin"],
+    "answer": "Stimela",
+    "fact": "Phiri was a founding member and leader of Stimela.",
+    "source": {
+      "title": "SA Government: Tribute to Ray Phiri",
+      "url": "https://www.gov.za/speeches/minister-nathi-mthethwa-pays-tribute-ray-phiri-12-jul-2017-0000",
+      "note": "Original wording; source or indexed excerpt consulted 2026-10-23. Stable historical claim; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-045",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "teen",
+    "format": "multiple-choice",
+    "prompt": "Who directed the science-fiction film District 9?",
+    "options": ["Gavin Hood", "Jamie Uys", "Gavin Rajah", "Neill Blomkamp"],
+    "answer": "Neill Blomkamp",
+    "fact": "Blomkamp directed and co-wrote the film.",
+    "source": {
+      "title": "Sony Pictures: District 9",
+      "url": "https://www.sonypictures.com/movies/district9",
+      "note": "Original wording; source or indexed excerpt consulted 2026-10-23. Stable historical claim; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-046",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "Gauteng",
+    "age": "teen",
+    "format": "image",
+    "prompt": "District 9 places its alien settlement near which South African city?",
+    "options": ["Gqeberha", "Kimberley", "Johannesburg", "Durban"],
+    "answer": "Johannesburg",
+    "fact": "The film's setting draws on Johannesburg.",
+    "source": {
+      "title": "Sony Pictures: District 9",
+      "url": "https://www.sonypictures.com/movies/district9",
+      "note": "Original wording; source or indexed excerpt consulted 2026-10-23. Stable historical claim; no lyrics or borrowed questions."
+    },
+    "imageKey": "city",
+    "clue": "City clue: this is the city of gold, where the film places its alien settlement. The picture is a general city illustration."
+  },
+  {
+    "id": "music-047",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In which category did My Octopus Teacher win an Oscar in 2021?",
+    "options": [
+      "Original Song",
+      "Documentary Feature",
+      "Animated Feature",
+      "Costume Design"
+    ],
+    "answer": "Documentary Feature",
+    "fact": "The South African nature documentary won Documentary Feature.",
+    "source": {
+      "title": "Academy Awards: 2021",
+      "url": "https://www.oscars.org/oscars/ceremonies/2021",
+      "note": "Original wording; source or indexed excerpt consulted 2026-10-23. Stable historical claim; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-048",
+    "category": "music",
+    "difficulty": "medium",
+    "region": "Western Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "My Octopus Teacher follows Craig Foster diving in which Western Cape bay?",
+    "options": ["False Bay", "Algoa Bay", "Richards Bay", "Saldanha Bay"],
+    "answer": "False Bay",
+    "fact": "The documentary follows encounters in the kelp forest off False Bay.",
+    "source": {
+      "title": "Wesgro: My Octopus Teacher",
+      "url": "https://www.wesgro.co.za/corporate/news/2021/from-the-cape-to-the-world-wesgro-congratulates-my-octopus-teacher-for-winning-the-oscar-for-best-documentary-at-the-93rd-academy-awards",
+      "note": "Original wording; source or indexed excerpt consulted 2026-10-23. Stable historical claim; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-049",
+    "category": "music",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which South African animation studio made Khumba and Adventures in Zambezia?",
+    "options": ["Aardman", "Studio Ghibli", "Laika", "Triggerfish"],
+    "answer": "Triggerfish",
+    "fact": "Both features were made by Triggerfish.",
+    "source": {
+      "title": "Triggerfish: Film portfolio",
+      "url": "https://www.triggerfish.com/",
+      "note": "Original wording; source or indexed excerpt consulted 2026-10-23. Stable historical claim; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-050",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "audio",
+    "prompt": "Which Hugh Masekela instrumental topped the US pop chart in 1968?",
+    "options": ["Water", "Nkalakatha", "Grazing in the Grass", "Pata Pata"],
+    "answer": "Grazing in the Grass",
+    "fact": "The instrumental became an international hit.",
+    "source": {
+      "title": "Hugh Masekela: Official biography",
+      "url": "https://hughmasekela.co.za/biography/",
+      "note": "Original wording; source or indexed excerpt consulted 2026-10-23. Stable historical claim; no lyrics or borrowed questions."
+    },
+    "audioText": "Name Hugh Masekela’s instrumental hit that topped the American pop chart in 1968. Its title describes feeding on a grassy field.",
+    "clue": "Spoken clue: Masekela’s 1968 instrumental hit; its title describes feeding on a grassy field."
+  },
+  {
+    "id": "music-051",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which South African performer released the song John Cena in 2019?",
+    "options": ["Lira", "Sho Madjozi", "Tyla", "Miriam Makeba"],
+    "answer": "Sho Madjozi",
+    "fact": "The song followed a widely shared live performance.",
+    "source": {
+      "title": "Apple Music: John Cena",
+      "url": "https://music.apple.com/us/album/john-cena-single/1638208432",
+      "note": "Original wording; source or indexed excerpt consulted 2026-10-23. Stable historical claim; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-052",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Who is the featured vocalist on Master KG's Jerusalema?",
+    "options": [
+      "Nomcebo Zikode",
+      "Zolani Mahola",
+      "Claire Johnston",
+      "Brenda Fassie"
+    ],
+    "answer": "Nomcebo Zikode",
+    "fact": "Nomcebo Zikode sings on the recording credited to Master KG.",
+    "source": {
+      "title": "Shazam: Jerusalema release credits",
+      "url": "https://www.shazam.com/song/1522732266/jerusalema-feat-nomcebo-zikode",
+      "note": "Original wording; source or indexed excerpt consulted 2026-10-23. Stable historical claim; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-053",
+    "category": "music",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which South African artist's autobiography is titled Still Grazing?",
+    "options": [
+      "Trevor Noah",
+      "Johnny Clegg",
+      "Joseph Shabalala",
+      "Hugh Masekela"
+    ],
+    "answer": "Hugh Masekela",
+    "fact": "Masekela published the autobiography in 2004.",
+    "source": {
+      "title": "Hugh Masekela: Official biography",
+      "url": "https://hughmasekela.co.za/biography/",
+      "note": "Original wording; source or indexed excerpt consulted 2026-10-23. Stable historical claim; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "music-054",
+    "category": "music",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which one is a keyboard instrument?",
+    "options": ["Trumpet", "Maraca", "Piano", "Violin"],
+    "answer": "Piano",
+    "fact": "A piano uses keys to operate hammers that strike strings.",
+    "source": {
+      "title": "Britannica: Music",
+      "url": "https://www.britannica.com/art/music",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "music-055",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which singing range is generally lower: bass or soprano?",
+    "options": [
+      "Neither is a voice type",
+      "Bass",
+      "Soprano",
+      "They are always identical"
+    ],
+    "answer": "Bass",
+    "fact": "Bass is a low vocal range; soprano is a high one.",
+    "source": {
+      "title": "Britannica: Music",
+      "url": "https://www.britannica.com/art/music",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "music-056",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is a musical chord?",
+    "options": [
+      "A group of notes sounded together",
+      "Only one isolated drum hit",
+      "A theatre curtain",
+      "A type of ticket"
+    ],
+    "answer": "A group of notes sounded together",
+    "fact": "Chords form part of musical harmony.",
+    "source": {
+      "title": "Britannica: Music",
+      "url": "https://www.britannica.com/art/music",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "music-057",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which word describes the repeating pulse you can clap along to?",
+    "options": ["Script", "Costume", "Venue", "Beat"],
+    "answer": "Beat",
+    "fact": "The beat gives music a regular pulse.",
+    "source": {
+      "title": "Britannica: Music",
+      "url": "https://www.britannica.com/art/music",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "music-058",
+    "category": "music",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In a film's credits, who is primarily responsible for writing the screenplay?",
+    "options": [
+      "Ticket seller",
+      "Boom operator",
+      "Screenwriter",
+      "Projectionist"
+    ],
+    "answer": "Screenwriter",
+    "fact": "The screenplay describes scenes, action and dialogue.",
+    "source": {
+      "title": "Britannica: Music",
+      "url": "https://www.britannica.com/art/music",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "music-059",
+    "category": "music",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is an album in recorded music?",
+    "options": [
+      "A dance step",
+      "A collection of tracks released together",
+      "Only one microphone",
+      "A stage entrance"
+    ],
+    "answer": "A collection of tracks released together",
+    "fact": "Albums bring several recordings into one release.",
+    "source": {
+      "title": "Britannica: Music",
+      "url": "https://www.britannica.com/art/music",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "music-060",
+    "category": "music",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "audio",
+    "prompt": "Which term describes the main tune of a song?",
+    "options": ["Melody", "Venue", "Costume", "Subtitle"],
+    "answer": "Melody",
+    "fact": "A melody is a recognisable sequence of musical notes.",
+    "source": {
+      "title": "Britannica: Music",
+      "url": "https://www.britannica.com/art/music",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    },
+    "audioText": "Name the musical term for the main tune you can sing or hum from a song.",
+    "clue": "Spoken clue: the main tune of a song."
+  },
+  {
+    "id": "food-001",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "short-answer",
+    "prompt": "What baked food is hollowed out to hold the curry in a bunny chow?",
+    "answer": "Bread",
+    "fact": "Curry fills the hollowed bread in this Durban favourite.",
+    "source": {
+      "title": "South African Tourism: Iconic foods",
+      "url": "https://www.southafrica.net/gl/en/travel/article/iconic-south-african-foods-taste-all-the-flavours-of-the-rainbow-nation",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    },
+    "acceptedAnswers": ["bread", "loaf", "loaf of bread", "a loaf of bread"]
+  },
+  {
+    "id": "food-002",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which food is traditionally made by drying strips of seasoned meat?",
+    "options": ["Chakalaka", "Pap", "Biltong", "Melktert"],
+    "answer": "Biltong",
+    "fact": "Biltong is a cured, air-dried meat snack.",
+    "source": {
+      "title": "South African Tourism: Iconic foods",
+      "url": "https://www.southafrica.net/gl/en/travel/article/iconic-south-african-foods-taste-all-the-flavours-of-the-rainbow-nation",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "food-003",
+    "category": "food",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What forms bobotie's characteristic baked topping?",
+    "options": [
+      "Crushed ice",
+      "An egg-based custard",
+      "Chocolate icing",
+      "Whipped cream"
+    ],
+    "answer": "An egg-based custard",
+    "fact": "Bobotie combines spiced mince with an egg-based topping.",
+    "source": {
+      "title": "South African Tourism: Iconic foods",
+      "url": "https://www.southafrica.net/gl/en/travel/article/iconic-south-african-foods-taste-all-the-flavours-of-the-rainbow-nation",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "food-004",
+    "category": "food",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is chakalaka generally served as?",
+    "options": [
+      "A spicy vegetable relish",
+      "A milkshake",
+      "A sweet biscuit",
+      "A plain bread roll"
+    ],
+    "answer": "A spicy vegetable relish",
+    "fact": "Recipes vary, often including vegetables, spices and beans.",
+    "source": {
+      "title": "Visit SA Winelands: Traditional food",
+      "url": "https://visitwinelands.co.za/local-is-lekker-traditional-south-african-food/",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "food-005",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the main grain used to make pap?",
+    "options": ["Rice", "Barley", "Oats", "Maize"],
+    "answer": "Maize",
+    "fact": "Pap is made from maize meal and water.",
+    "source": {
+      "title": "South African Tourism: Iconic foods",
+      "url": "https://www.southafrica.net/gl/en/travel/article/iconic-south-african-foods-taste-all-the-flavours-of-the-rainbow-nation",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "food-006",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does boerewors literally mean in Afrikaans?",
+    "options": ["Milk tart", "Roast potato", "Farmer's sausage", "Sweet bread"],
+    "answer": "Farmer's sausage",
+    "fact": "Boerewors is commonly cooked at a braai.",
+    "source": {
+      "title": "Visit SA Winelands: Traditional food",
+      "url": "https://visitwinelands.co.za/local-is-lekker-traditional-south-african-food/",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "food-007",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "image",
+    "prompt": "What type of pot is traditionally used for potjiekos?",
+    "options": [
+      "A wooden bowl",
+      "A cast-iron pot",
+      "A paper cup",
+      "A shallow glass plate"
+    ],
+    "answer": "A cast-iron pot",
+    "fact": "A potjie is often a small, rounded, three-legged cast-iron pot.",
+    "source": {
+      "title": "Visit SA Winelands: Traditional food",
+      "url": "https://visitwinelands.co.za/local-is-lekker-traditional-south-african-food/",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    },
+    "imageKey": "braai",
+    "clue": "Clue: a rounded, heavy, often three-legged pot sits over the coals. Which material is the traditional pot made from?"
+  },
+  {
+    "id": "food-008",
+    "category": "food",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does melktert mean?",
+    "options": ["Milk tart", "Honey cake", "Cheese bread", "Apple sauce"],
+    "answer": "Milk tart",
+    "fact": "Melktert has a creamy milk-based filling.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-009",
+    "category": "food",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which sweet treat is commonly plaited, fried and soaked in syrup?",
+    "options": ["Rusk", "Vetkoek", "Samoosa", "Koeksister"],
+    "answer": "Koeksister",
+    "fact": "The plaited syrup-soaked koeksister differs from Cape Malay koesisters.",
+    "source": {
+      "title": "Visit SA Winelands: Traditional food",
+      "url": "https://visitwinelands.co.za/local-is-lekker-traditional-south-african-food/",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "food-010",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is a rusk typically like before being dunked in tea?",
+    "options": ["Frozen", "Raw dough", "Dry and crisp", "Liquid"],
+    "answer": "Dry and crisp",
+    "fact": "Rusks are baked and then dried.",
+    "source": {
+      "title": "South African Tourism: Iconic foods",
+      "url": "https://www.southafrica.net/gl/en/travel/article/iconic-south-african-foods-taste-all-the-flavours-of-the-rainbow-nation",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "food-011",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is vetkoek made from?",
+    "options": [
+      "Grilled fish",
+      "Fried dough",
+      "Boiled cabbage",
+      "Dried fruit alone"
+    ],
+    "answer": "Fried dough",
+    "fact": "Vetkoek can have sweet or savoury fillings.",
+    "source": {
+      "title": "Visit SA Winelands: Traditional food",
+      "url": "https://visitwinelands.co.za/local-is-lekker-traditional-south-african-food/",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "food-012",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "Western Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which city is especially associated with the large Gatsby sandwich?",
+    "options": ["Cape Town", "Polokwane", "Kimberley", "Mahikeng"],
+    "answer": "Cape Town",
+    "fact": "Gatsbys are shared sandwiches usually filled generously with chips and other ingredients.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-013",
+    "category": "food",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is amasi?",
+    "options": [
+      "A citrus fruit",
+      "A fried potato",
+      "A dry spice",
+      "Fermented milk"
+    ],
+    "answer": "Fermented milk",
+    "fact": "Amasi is a cultured milk food enjoyed in South Africa.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-014",
+    "category": "food",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "matching",
+    "prompt": "Choose the traditional ingredient pairing for umngqusho.",
+    "options": [
+      "Oats and honey",
+      "Pasta and cheese",
+      "Samp and beans",
+      "Rice and fish"
+    ],
+    "answer": "Samp and beans",
+    "fact": "Samp consists of processed, broken maize kernels.",
+    "source": {
+      "title": "South African Tourism: Iconic foods",
+      "url": "https://www.southafrica.net/gl/en/travel/article/iconic-south-african-foods-taste-all-the-flavours-of-the-rainbow-nation",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "food-015",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What kind of plant food is morogo?",
+    "options": [
+      "A citrus peel",
+      "Leafy greens",
+      "Tree bark",
+      "Only a dried root"
+    ],
+    "answer": "Leafy greens",
+    "fact": "Morogo is a name used for various edible leafy greens.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-016",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "Western Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which ingredient gives waterblommetjiebredie its name?",
+    "options": [
+      "Edible pondweed flowers",
+      "Seaweed flakes",
+      "Pumpkin seeds",
+      "Ground coffee"
+    ],
+    "answer": "Edible pondweed flowers",
+    "fact": "The buds and flowers of Cape pondweed are used in this stew.",
+    "source": {
+      "title": "South African Tourism: Iconic foods",
+      "url": "https://www.southafrica.net/gl/en/travel/article/iconic-south-african-foods-taste-all-the-flavours-of-the-rainbow-nation",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "food-017",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "Western Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Snoek is a type of what?",
+    "options": ["Fruit", "Bread", "Bean", "Fish"],
+    "answer": "Fish",
+    "fact": "Snoek is a familiar fish in Cape food traditions.",
+    "source": {
+      "title": "South African Tourism: Iconic foods",
+      "url": "https://www.southafrica.net/gl/en/travel/article/iconic-south-african-foods-taste-all-the-flavours-of-the-rainbow-nation",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "food-018",
+    "category": "food",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "scramble",
+    "prompt": "Unscramble the word for marinated meat skewers: SASOTIE",
+    "answer": "Sosatie",
+    "fact": "Sosaties are skewers, often made with marinated meat.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    },
+    "clue": "SASOTIE",
+    "acceptedAnswers": ["sosatie", "sosaties"]
+  },
+  {
+    "id": "food-019",
+    "category": "food",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is a naartjie?",
+    "options": [
+      "A kitchen pot",
+      "A small citrus fruit",
+      "A type of sausage",
+      "A leafy cabbage"
+    ],
+    "answer": "A small citrus fruit",
+    "fact": "Naartjie is a South African name for mandarin-type citrus.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-020",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the South African term mielie commonly used for?",
+    "options": ["Maize cob or maize", "A peach", "A mushroom", "A peanut"],
+    "answer": "Maize cob or maize",
+    "fact": "Mielies can be boiled, grilled or processed into meal.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-021",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is rooibos made from?",
+    "options": [
+      "Coffee beans",
+      "Cocoa powder",
+      "Wheat flour",
+      "Leaves and stems of a shrub"
+    ],
+    "answer": "Leaves and stems of a shrub",
+    "fact": "Rooibos is an infusion made from Aspalathus linearis.",
+    "source": {
+      "title": "South African Rooibos Council",
+      "url": "https://sarooibos.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-022",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "true-false",
+    "prompt": "Plain rooibos naturally contains caffeine.",
+    "options": ["True", "False"],
+    "answer": "False",
+    "fact": "Rooibos is naturally caffeine-free.",
+    "source": {
+      "title": "South African Rooibos Council",
+      "url": "https://sarooibos.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-023",
+    "category": "food",
+    "difficulty": "medium",
+    "region": "Western Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which mountain region is especially associated with rooibos growing?",
+    "options": ["Soutpansberg", "Cederberg", "Drakensberg", "Magaliesberg"],
+    "answer": "Cederberg",
+    "fact": "Rooibos grows in the western winter-rainfall region.",
+    "source": {
+      "title": "South African Rooibos Council",
+      "url": "https://sarooibos.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-024",
+    "category": "food",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is a braaibroodjie?",
+    "options": [
+      "A toasted sandwich cooked on a braai",
+      "A type of soup",
+      "A raw fish dish",
+      "A milk drink"
+    ],
+    "answer": "A toasted sandwich cooked on a braai",
+    "fact": "Cheese, tomato and onion are familiar fillings, though recipes vary.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-025",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does the Afrikaans word konfyt mean?",
+    "options": ["Pepper", "Salt", "Flour", "Jam or preserve"],
+    "answer": "Jam or preserve",
+    "fact": "Konfyt is a sweet preserve made from fruit.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-026",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which dish name refers to a stew in Cape food vocabulary?",
+    "options": ["Naartjie", "Samoosa", "Bredie", "Rusk"],
+    "answer": "Bredie",
+    "fact": "Bredies have many varieties, including tomato and waterblommetjie.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-027",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the usual shape of a folded South African samoosa?",
+    "options": ["Long cylinder", "Triangle", "Ring", "Sphere"],
+    "answer": "Triangle",
+    "fact": "Samoosas are filled pastry parcels commonly folded into triangles.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-028",
+    "category": "food",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which ingredient is characteristic of malva pudding?",
+    "options": [
+      "Apricot jam",
+      "Raw cucumber",
+      "Tinned sardines",
+      "Mustard seeds only"
+    ],
+    "answer": "Apricot jam",
+    "fact": "Malva pudding is a baked sponge dessert typically made with apricot jam.",
+    "source": {
+      "title": "Visit SA Winelands: Traditional food",
+      "url": "https://visitwinelands.co.za/local-is-lekker-traditional-south-african-food/",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    }
+  },
+  {
+    "id": "food-029",
+    "category": "food",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the English meaning of roosterkoek?",
+    "options": [
+      "Cold soup",
+      "Milk tart",
+      "Dried meat",
+      "Griddle or grill cake"
+    ],
+    "answer": "Griddle or grill cake",
+    "fact": "Roosterkoek are bread rolls cooked on a grid over coals.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-030",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "audio",
+    "prompt": "Which spice is often dusted over milk tart?",
+    "options": ["Cumin seeds", "Paprika", "Cinnamon", "Black mustard"],
+    "answer": "Cinnamon",
+    "fact": "Cinnamon is a familiar finishing spice for melktert.",
+    "source": {
+      "title": "Visit SA Winelands: Traditional food",
+      "url": "https://visitwinelands.co.za/local-is-lekker-traditional-south-african-food/",
+      "note": "Original question wording; source or its indexed excerpt consulted during content preparation (2026-10-23). Historical claims use the stated year; no lyrics or borrowed questions."
+    },
+    "audioText": "This warm spice is often dusted on top of a milk tart. It comes from tree bark. Name the spice.",
+    "clue": "Spoken clue: a warm spice from tree bark often dusted on milk tart."
+  },
+  {
+    "id": "food-031",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the main ingredient in guacamole served at a party?",
+    "options": ["Beetroot", "Avocado", "Potato", "Banana"],
+    "answer": "Avocado",
+    "fact": "Mashed avocado forms the base of guacamole.",
+    "source": {
+      "title": "Britannica: Food",
+      "url": "https://www.britannica.com/topic/food",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-032",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which fruit is dried to make a raisin?",
+    "options": ["Grape", "Apple", "Plum", "Peach"],
+    "answer": "Grape",
+    "fact": "Raisins are dried grapes.",
+    "source": {
+      "title": "Britannica: Food",
+      "url": "https://www.britannica.com/topic/food",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-033",
+    "category": "food",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which grain is used to make ordinary wheat bread?",
+    "options": ["Rice", "Sorghum", "Millet", "Wheat"],
+    "answer": "Wheat",
+    "fact": "Wheat flour contains gluten-forming proteins that help bread structure.",
+    "source": {
+      "title": "Britannica: Food",
+      "url": "https://www.britannica.com/topic/food",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-034",
+    "category": "food",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What ingredient helps yeasted bread dough rise?",
+    "options": ["Pepper", "Ice", "Yeast", "Salt alone"],
+    "answer": "Yeast",
+    "fact": "Yeast produces carbon dioxide during fermentation.",
+    "source": {
+      "title": "Britannica: Food",
+      "url": "https://www.britannica.com/topic/food",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-035",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which kitchen tool drains water from cooked pasta?",
+    "options": ["Peeler", "Colander", "Rolling pin", "Whisk"],
+    "answer": "Colander",
+    "fact": "A colander's holes let liquid drain away.",
+    "source": {
+      "title": "Britannica: Food",
+      "url": "https://www.britannica.com/topic/food",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-036",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which kitchen tool is best suited to flattening pastry evenly?",
+    "options": ["Rolling pin", "Can opener", "Ladle", "Colander"],
+    "answer": "Rolling pin",
+    "fact": "Rolling pins press dough into an even sheet.",
+    "source": {
+      "title": "Britannica: Food",
+      "url": "https://www.britannica.com/topic/food",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-037",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does simmering mean?",
+    "options": [
+      "Freezing rapidly",
+      "Cooking without any liquid ever",
+      "Beating air into cream",
+      "Cooking gently just below a full boil"
+    ],
+    "answer": "Cooking gently just below a full boil",
+    "fact": "Simmering uses gentle heat with small bubbles.",
+    "source": {
+      "title": "Britannica: Food",
+      "url": "https://www.britannica.com/topic/food",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-038",
+    "category": "food",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the main purpose of a lid while steaming vegetables?",
+    "options": [
+      "Remove all moisture instantly",
+      "Measure salt",
+      "Keep steam around the food",
+      "Make the pot colder"
+    ],
+    "answer": "Keep steam around the food",
+    "fact": "Steam transfers heat to the food.",
+    "source": {
+      "title": "Britannica: Food",
+      "url": "https://www.britannica.com/topic/food",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-039",
+    "category": "food",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which ingredient is made by churning cream?",
+    "options": ["Vinegar", "Butter", "Flour", "Sugar"],
+    "answer": "Butter",
+    "fact": "Churning separates butterfat from the liquid.",
+    "source": {
+      "title": "Britannica: Food",
+      "url": "https://www.britannica.com/topic/food",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-040",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What process turns milk into yoghurt?",
+    "options": [
+      "Fermentation by bacteria",
+      "Grinding into flour",
+      "Freezing into powder",
+      "Dry roasting"
+    ],
+    "answer": "Fermentation by bacteria",
+    "fact": "Yoghurt cultures ferment milk sugars.",
+    "source": {
+      "title": "Britannica: Food",
+      "url": "https://www.britannica.com/topic/food",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-041",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which of these is a pulse?",
+    "options": ["Apple", "Potato", "Cucumber", "Lentil"],
+    "answer": "Lentil",
+    "fact": "Pulses are edible dried seeds of legumes.",
+    "source": {
+      "title": "Britannica: Food",
+      "url": "https://www.britannica.com/topic/food",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-042",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which of these is a root vegetable?",
+    "options": ["Cabbage", "Tomato", "Carrot", "Pea"],
+    "answer": "Carrot",
+    "fact": "The part of the carrot commonly eaten is its storage root.",
+    "source": {
+      "title": "Britannica: Food",
+      "url": "https://www.britannica.com/topic/food",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-043",
+    "category": "food",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the main taste associated with ordinary table sugar?",
+    "options": ["Bitter", "Sweet", "Salty", "Sour"],
+    "answer": "Sweet",
+    "fact": "Sweetness is one of the basic tastes.",
+    "source": {
+      "title": "Britannica: Food",
+      "url": "https://www.britannica.com/topic/food",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-044",
+    "category": "food",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which of these is usually the sour ingredient in a simple salad dressing?",
+    "options": ["Vinegar", "Sugar", "Flour", "Butter"],
+    "answer": "Vinegar",
+    "fact": "Vinegar contains acetic acid.",
+    "source": {
+      "title": "Britannica: Food",
+      "url": "https://www.britannica.com/topic/food",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-045",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What are potatoes cut into thin slices and fried until crisp commonly called in South Africa?",
+    "options": ["Rusks", "Pap", "Samp", "Potato crisps"],
+    "answer": "Potato crisps",
+    "fact": "Crisps are thin and crunchy, unlike thicker hot chips.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-046",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "At a spaza shop, what kind of place are you visiting?",
+    "options": [
+      "A library",
+      "An airport runway",
+      "A small informal retail shop",
+      "A sports stadium"
+    ],
+    "answer": "A small informal retail shop",
+    "fact": "Spaza shops are neighbourhood retailers.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-047",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is a till slip?",
+    "options": [
+      "A banknote",
+      "A purchase receipt",
+      "A bus ticket",
+      "A cooking spoon"
+    ],
+    "answer": "A purchase receipt",
+    "fact": "A till slip records items bought and their prices.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-048",
+    "category": "food",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "If a snack costs R12 and you pay R20, how much change is due?",
+    "options": ["R8", "R6", "R10", "R12"],
+    "answer": "R8",
+    "fact": "20 minus 12 equals 8.",
+    "source": {
+      "title": "SI units and elementary arithmetic",
+      "url": "https://www.bipm.org/en/measurement-units",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-049",
+    "category": "food",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Three friends share a R90 takeaway bill equally. What does each pay?",
+    "options": ["R20", "R25", "R45", "R30"],
+    "answer": "R30",
+    "fact": "90 divided by 3 equals 30.",
+    "source": {
+      "title": "SI units and elementary arithmetic",
+      "url": "https://www.bipm.org/en/measurement-units",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-050",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A recipe needs 500 millilitres of milk. How many litres is that?",
+    "options": ["50 litres", "0.05 litres", "0.5 litres", "5 litres"],
+    "answer": "0.5 litres",
+    "fact": "One litre equals 1,000 millilitres.",
+    "source": {
+      "title": "SI units and elementary arithmetic",
+      "url": "https://www.bipm.org/en/measurement-units",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-051",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "ordering",
+    "prompt": "Arrange these drink volumes from smallest to largest.",
+    "options": ["1 litre", "250 millilitres", "500 millilitres"],
+    "answer": "250 millilitres → 500 millilitres → 1 litre",
+    "fact": "One litre is 1,000 millilitres.",
+    "source": {
+      "title": "SI units and elementary arithmetic",
+      "url": "https://www.bipm.org/en/measurement-units",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-052",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "You halve a recipe that needs 4 eggs. How many eggs do you use?",
+    "options": ["2", "1", "3", "8"],
+    "answer": "2",
+    "fact": "Halving divides each ingredient quantity by two.",
+    "source": {
+      "title": "SI units and elementary arithmetic",
+      "url": "https://www.bipm.org/en/measurement-units",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-053",
+    "category": "food",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A braai starts at 14:00. What time is that on a 12-hour clock?",
+    "options": ["4 pm", "12 pm", "2 am", "2 pm"],
+    "answer": "2 pm",
+    "fact": "Subtract twelve from afternoon 24-hour times.",
+    "source": {
+      "title": "SI units and elementary arithmetic",
+      "url": "https://www.bipm.org/en/measurement-units",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-054",
+    "category": "food",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which of these ingredients comes from bees?",
+    "options": ["Cane sugar", "Corn starch", "Honey", "Maple syrup"],
+    "answer": "Honey",
+    "fact": "Bees make honey from collected nectar.",
+    "source": {
+      "title": "Britannica: Food",
+      "url": "https://www.britannica.com/topic/food",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-055",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which part of a coconut is used to make coconut milk?",
+    "options": [
+      "The tree's bark",
+      "The grated white flesh",
+      "Only the outer husk",
+      "Only the hard shell"
+    ],
+    "answer": "The grated white flesh",
+    "fact": "Coconut milk is extracted from coconut flesh with water.",
+    "source": {
+      "title": "Britannica: Food",
+      "url": "https://www.britannica.com/topic/food",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-056",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is a garnish?",
+    "options": [
+      "A finishing food decoration or accompaniment",
+      "A type of oven fuel",
+      "A broken plate",
+      "A shopping receipt"
+    ],
+    "answer": "A finishing food decoration or accompaniment",
+    "fact": "Garnishes can add flavour as well as presentation.",
+    "source": {
+      "title": "Britannica: Food",
+      "url": "https://www.britannica.com/topic/food",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-057",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which baking ingredient commonly reacts to produce gas and help cakes rise?",
+    "options": [
+      "Table salt",
+      "Cocoa alone",
+      "Icing sugar alone",
+      "Baking powder"
+    ],
+    "answer": "Baking powder",
+    "fact": "Baking powder releases carbon dioxide when activated.",
+    "source": {
+      "title": "Britannica: Food",
+      "url": "https://www.britannica.com/topic/food",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-058",
+    "category": "food",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is a marinade used for?",
+    "options": [
+      "Sharpening a knife",
+      "Cooling the fridge motor",
+      "Flavouring food before cooking",
+      "Washing the floor"
+    ],
+    "answer": "Flavouring food before cooking",
+    "fact": "Marinades can contain oil, acid, herbs and spices.",
+    "source": {
+      "title": "Britannica: Food",
+      "url": "https://www.britannica.com/topic/food",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-059",
+    "category": "food",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "If each player gets two roosterkoek, how many are needed for six players?",
+    "options": ["14", "12", "8", "10"],
+    "answer": "12",
+    "fact": "Six groups of two make twelve.",
+    "source": {
+      "title": "SI units and elementary arithmetic",
+      "url": "https://www.bipm.org/en/measurement-units",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  },
+  {
+    "id": "food-060",
+    "category": "food",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does al dente describe when cooking pasta?",
+    "options": [
+      "Firm to the bite",
+      "Completely raw",
+      "Turned to a paste",
+      "Always served cold"
+    ],
+    "answer": "Firm to the bite",
+    "fact": "Al dente pasta is cooked but retains some firmness.",
+    "source": {
+      "title": "Britannica: Food",
+      "url": "https://www.britannica.com/topic/food",
+      "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
+    }
+  }
+]

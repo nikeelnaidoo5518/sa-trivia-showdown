@@ -1,0 +1,4459 @@
+[
+  {
+    "id": "languages-001",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "After the July 2023 amendment, how many official languages does South Africa recognise?",
+    "options": ["11", "12", "10", "9"],
+    "answer": "12",
+    "fact": "South African Sign Language became the twelfth official language in 2023.",
+    "source": {
+      "title": "South African Government: recognition of SASL",
+      "url": "https://www.gov.za/news/media-statements/minister-zizi-kodwa-south-african-sign-language-being-recognised-official",
+      "note": "Official recognition and language list cross-checked against the 2023 constitutional amendment."
+    }
+  },
+  {
+    "id": "languages-002",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which language gained official recognition in South Africa in July 2023?",
+    "options": [
+      "German",
+      "Portuguese",
+      "French",
+      "South African Sign Language"
+    ],
+    "answer": "South African Sign Language",
+    "fact": "The amendment explicitly recognised South African Sign Language.",
+    "source": {
+      "title": "South African Government: recognition of SASL",
+      "url": "https://www.gov.za/news/media-statements/minister-zizi-kodwa-south-african-sign-language-being-recognised-official",
+      "note": "Official recognition and language list cross-checked against the 2023 constitutional amendment."
+    }
+  },
+  {
+    "id": "languages-003",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which of these is an official South African language?",
+    "options": ["Swedish", "Italian", "Japanese", "Tshivenda"],
+    "answer": "Tshivenda",
+    "fact": "Tshivenda is listed among the country's official languages.",
+    "source": {
+      "title": "South African Government: recognition of SASL",
+      "url": "https://www.gov.za/news/media-statements/minister-zizi-kodwa-south-african-sign-language-being-recognised-official",
+      "note": "Official recognition and language list cross-checked against the 2023 constitutional amendment."
+    }
+  },
+  {
+    "id": "languages-004",
+    "category": "languages",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which spelling names an official South African language?",
+    "options": ["Swahili", "Somali", "siSwati", "Shona"],
+    "answer": "siSwati",
+    "fact": "siSwati is an official language; these other languages are not on South Africa's official list.",
+    "source": {
+      "title": "South African Government: recognition of SASL",
+      "url": "https://www.gov.za/news/media-statements/minister-zizi-kodwa-south-african-sign-language-being-recognised-official",
+      "note": "Official recognition and language list cross-checked against the 2023 constitutional amendment."
+    }
+  },
+  {
+    "id": "languages-005",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which pair consists entirely of official South African languages?",
+    "options": [
+      "Arabic and German",
+      "Sesotho and Setswana",
+      "French and Spanish",
+      "Italian and Portuguese"
+    ],
+    "answer": "Sesotho and Setswana",
+    "fact": "Sesotho and Setswana are both official languages.",
+    "source": {
+      "title": "South African Government: recognition of SASL",
+      "url": "https://www.gov.za/news/media-statements/minister-zizi-kodwa-south-african-sign-language-being-recognised-official",
+      "note": "Official recognition and language list cross-checked against the 2023 constitutional amendment."
+    }
+  },
+  {
+    "id": "languages-006",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "audio",
+    "prompt": "In isiZulu, what does “ngiyabonga” express?",
+    "options": ["Thank you", "Good night", "How much?", "I am lost"],
+    "answer": "Thank you",
+    "fact": "Ngiyabonga is a way to thank someone.",
+    "source": {
+      "title": "Brand South Africa: isiZulu phrasebook",
+      "url": "https://www.brandsouthafrica.com/stay-updated/quick-facts/2013/isizulu-phrasebook-for-tourists/",
+      "note": "Basic lexical meaning cross-checked in the phrasebook; original question wording."
+    },
+    "audioText": "Ngiyabonga.",
+    "clue": "The spoken word is written: ngiyabonga."
+  },
+  {
+    "id": "languages-007",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A friend replies “yebo” in isiZulu. What have they said?",
+    "options": ["No", "Water", "Tomorrow", "Yes"],
+    "answer": "Yes",
+    "fact": "Yebo is the affirmative response.",
+    "source": {
+      "title": "Brand South Africa: isiZulu phrasebook",
+      "url": "https://www.brandsouthafrica.com/stay-updated/quick-facts/2013/isizulu-phrasebook-for-tourists/",
+      "note": "Basic lexical meaning cross-checked in the phrasebook; original question wording."
+    }
+  },
+  {
+    "id": "languages-008",
+    "category": "languages",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does “cha” mean in a simple isiZulu yes-or-no exchange?",
+    "options": ["Please", "No", "Yes", "Hello"],
+    "answer": "No",
+    "fact": "Cha is a negative response.",
+    "source": {
+      "title": "Brand South Africa: isiZulu phrasebook",
+      "url": "https://www.brandsouthafrica.com/stay-updated/quick-facts/2013/isizulu-phrasebook-for-tourists/",
+      "note": "Basic lexical meaning cross-checked in the phrasebook; original question wording."
+    }
+  },
+  {
+    "id": "languages-009",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which isiZulu word is commonly used to greet one person?",
+    "options": ["Yebo", "Sawubona", "Ngiyabonga", "Cha"],
+    "answer": "Sawubona",
+    "fact": "Sawubona is a greeting to one person.",
+    "source": {
+      "title": "Brand South Africa: isiZulu phrasebook",
+      "url": "https://www.brandsouthafrica.com/stay-updated/quick-facts/2013/isizulu-phrasebook-for-tourists/",
+      "note": "Basic lexical meaning cross-checked in the phrasebook; original question wording."
+    }
+  },
+  {
+    "id": "languages-010",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In the phrase “Hamba kahle”, the person addressed is doing what?",
+    "options": ["Leaving", "Sleeping", "Writing", "Eating"],
+    "answer": "Leaving",
+    "fact": "Hamba kahle wishes the departing person well.",
+    "source": {
+      "title": "Brand South Africa: isiZulu phrasebook",
+      "url": "https://www.brandsouthafrica.com/stay-updated/quick-facts/2013/isizulu-phrasebook-for-tourists/",
+      "note": "Basic lexical meaning cross-checked in the phrasebook; original question wording."
+    }
+  },
+  {
+    "id": "languages-011",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "“Sala kahle” is said to the person who is doing what?",
+    "options": [
+      "Reading aloud",
+      "Staying behind",
+      "Starting a meal",
+      "Leaving on a journey"
+    ],
+    "answer": "Staying behind",
+    "fact": "Sala kahle wishes the person staying well.",
+    "source": {
+      "title": "Brand South Africa: isiZulu phrasebook",
+      "url": "https://www.brandsouthafrica.com/stay-updated/quick-facts/2013/isizulu-phrasebook-for-tourists/",
+      "note": "Basic lexical meaning cross-checked in the phrasebook; original question wording."
+    }
+  },
+  {
+    "id": "languages-012",
+    "category": "languages",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "audio",
+    "prompt": "What is the simple English meaning of the isiXhosa greeting “molo”?",
+    "options": ["Goodbye forever", "Thank you", "Hello", "Help me"],
+    "answer": "Hello",
+    "fact": "Molo greets one person.",
+    "source": {
+      "title": "Wild Coast: Xhosa phrasebook",
+      "url": "https://www.wildcoast.co.za/files/XhosaPhrasebook.pdf",
+      "note": "Basic greeting or phrase; meaning cross-checked in the phrasebook. Dialect variants may exist."
+    },
+    "audioText": "Molo.",
+    "clue": "The spoken word is written: molo."
+  },
+  {
+    "id": "languages-013",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does “enkosi” commonly mean in isiXhosa?",
+    "options": ["Water", "No", "Thank you", "Come here"],
+    "answer": "Thank you",
+    "fact": "Enkosi is an expression of thanks.",
+    "source": {
+      "title": "Wild Coast: Xhosa phrasebook",
+      "url": "https://www.wildcoast.co.za/files/XhosaPhrasebook.pdf",
+      "note": "Basic greeting or phrase; meaning cross-checked in the phrasebook. Dialect variants may exist."
+    }
+  },
+  {
+    "id": "languages-014",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which isiXhosa greeting addresses more than one person?",
+    "options": ["Molo", "Enkosi", "Molweni", "Ewe"],
+    "answer": "Molweni",
+    "fact": "Molweni is the plural greeting.",
+    "source": {
+      "title": "Wild Coast: Xhosa phrasebook",
+      "url": "https://www.wildcoast.co.za/files/XhosaPhrasebook.pdf",
+      "note": "Basic greeting or phrase; meaning cross-checked in the phrasebook. Dialect variants may exist."
+    }
+  },
+  {
+    "id": "languages-015",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In Afrikaans and South African English, “dankie” means what?",
+    "options": ["Welcome back", "See you tomorrow", "Thank you", "Excuse me"],
+    "answer": "Thank you",
+    "fact": "Dankie is an expression of thanks.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/entry/dankie/e01909",
+      "note": "Contemporary lexical sense, not a claim that every South African uses this expression. Original wording; dictionary is the verification reference."
+    }
+  },
+  {
+    "id": "languages-016",
+    "category": "languages",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A South African driver says “turn left at the robot”. What is the robot?",
+    "options": [
+      "Parking meter",
+      "Pedestrian bridge",
+      "Traffic light",
+      "Factory machine"
+    ],
+    "answer": "Traffic light",
+    "fact": "Robot is a familiar South African English term for a traffic light.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/entry/robot/e06032",
+      "note": "Contemporary lexical sense, not a claim that every South African uses this expression. Original wording; dictionary is the verification reference."
+    }
+  },
+  {
+    "id": "languages-017",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "When used for a vehicle, what is a “bakkie”?",
+    "options": [
+      "A passenger jet",
+      "A pickup or light utility truck",
+      "A bicycle",
+      "A tram"
+    ],
+    "answer": "A pickup or light utility truck",
+    "fact": "Bakkie has a vehicle sense in South African English.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/entry/bakkie/e00518",
+      "note": "Contemporary lexical sense, not a claim that every South African uses this expression. Original wording; dictionary is the verification reference."
+    }
+  },
+  {
+    "id": "languages-018",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "“Those snacks are lekker!” most likely means the snacks are what?",
+    "options": [
+      "Invisible",
+      "Extremely expensive",
+      "Enjoyable or tasty",
+      "Too far away"
+    ],
+    "answer": "Enjoyable or tasty",
+    "fact": "Lekker expresses approval and can describe pleasant tastes or experiences.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/entry/lekker/e04283",
+      "note": "Contemporary lexical sense, not a claim that every South African uses this expression. Original wording; dictionary is the verification reference."
+    }
+  },
+  {
+    "id": "languages-019",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is “howzit” usually used as?",
+    "options": [
+      "A formal job title",
+      "A unit of money",
+      "A greeting",
+      "A warning sign"
+    ],
+    "answer": "A greeting",
+    "fact": "Howzit is an informal greeting.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/entry/howzit/e03125",
+      "note": "Contemporary lexical sense, not a claim that every South African uses this expression. Original wording; dictionary is the verification reference."
+    }
+  },
+  {
+    "id": "languages-020",
+    "category": "languages",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Someone says “ag shame” sympathetically. What are they most likely expressing?",
+    "options": [
+      "A mathematical result",
+      "Concern or sympathy",
+      "A demand for silence",
+      "A weather forecast"
+    ],
+    "answer": "Concern or sympathy",
+    "fact": "In South African use, shame can express sympathy or endearment.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/entry/shame/e06415",
+      "note": "Contemporary lexical sense, not a claim that every South African uses this expression. Original wording; dictionary is the verification reference."
+    }
+  },
+  {
+    "id": "languages-021",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "If a friend puts on their “takkies”, what are they wearing?",
+    "options": ["A raincoat", "Gloves", "A necktie", "Sports shoes"],
+    "answer": "Sports shoes",
+    "fact": "Takkies are trainers or similar sports shoes.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/entry/tackie/e07050",
+      "note": "Contemporary lexical sense, not a claim that every South African uses this expression. Original wording; dictionary is the verification reference."
+    }
+  },
+  {
+    "id": "languages-022",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What landscape feature is a “koppie”?",
+    "options": ["A small hill", "A glacier", "An ocean trench", "A waterfall"],
+    "answer": "A small hill",
+    "fact": "Koppie is used for a small hill.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/entry/koppie/e04046",
+      "note": "Contemporary lexical sense, not a claim that every South African uses this expression. Original wording; dictionary is the verification reference."
+    }
+  },
+  {
+    "id": "languages-023",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does a “spaza shop” generally refer to?",
+    "options": [
+      "A railway depot",
+      "A small informal convenience shop",
+      "An observatory",
+      "A courthouse"
+    ],
+    "answer": "A small informal convenience shop",
+    "fact": "Spaza is associated with small-scale local retail.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/entry/spaza/e06753",
+      "note": "Contemporary lexical sense, not a claim that every South African uses this expression. Original wording; dictionary is the verification reference."
+    }
+  },
+  {
+    "id": "languages-024",
+    "category": "languages",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which idea is most closely associated with ubuntu?",
+    "options": [
+      "Owning the most property",
+      "Winning at any cost",
+      "Avoiding all neighbours",
+      "Shared humanity and care for others"
+    ],
+    "answer": "Shared humanity and care for others",
+    "fact": "Ubuntu emphasises human relationships and dignity.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/entry/ubuntu/e07415",
+      "note": "Contemporary lexical sense, not a claim that every South African uses this expression. Original wording; dictionary is the verification reference."
+    }
+  },
+  {
+    "id": "languages-025",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is “padkos” packed for?",
+    "options": [
+      "Cleaning a window",
+      "Fixing a bicycle",
+      "Writing an exam",
+      "Eating on a journey"
+    ],
+    "answer": "Eating on a journey",
+    "fact": "Padkos means food or provisions for a trip.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/",
+      "note": "Contemporary lexical sense, not a claim that every South African uses this expression. Original wording; dictionary is the verification reference."
+    }
+  },
+  {
+    "id": "languages-026",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A host invites you to sit on the “stoep”. Where should you go?",
+    "options": [
+      "The cellar floor",
+      "The roof ridge",
+      "The veranda or porch",
+      "The kitchen sink"
+    ],
+    "answer": "The veranda or porch",
+    "fact": "Stoep refers to a porch or veranda.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/entry/stoep/e06909",
+      "note": "Contemporary lexical sense, not a claim that every South African uses this expression. Original wording; dictionary is the verification reference."
+    }
+  },
+  {
+    "id": "languages-027",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does “veld” usually describe?",
+    "options": [
+      "A city bus",
+      "A shopping receipt",
+      "Open countryside or grassland",
+      "A kitchen shelf"
+    ],
+    "answer": "Open countryside or grassland",
+    "fact": "Veld is a South African landscape word.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/entry/veld/e07599",
+      "note": "Contemporary lexical sense, not a claim that every South African uses this expression. Original wording; dictionary is the verification reference."
+    }
+  },
+  {
+    "id": "languages-028",
+    "category": "languages",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In a South African place description, a “dorpie” is a what?",
+    "options": ["Mining tool", "Large ocean", "Snowstorm", "Small town"],
+    "answer": "Small town",
+    "fact": "Dorpie is a diminutive form of dorp.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/entry/dorpie/e02081",
+      "note": "Contemporary lexical sense, not a claim that every South African uses this expression. Original wording; dictionary is the verification reference."
+    }
+  },
+  {
+    "id": "languages-029",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does “platteland” refer to?",
+    "options": [
+      "A harbour entrance",
+      "Rural country districts",
+      "An indoor stadium",
+      "A mountain peak only"
+    ],
+    "answer": "Rural country districts",
+    "fact": "Platteland refers to the countryside.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/entry/platteland/e05683",
+      "note": "Contemporary lexical sense, not a claim that every South African uses this expression. Original wording; dictionary is the verification reference."
+    }
+  },
+  {
+    "id": "languages-030",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "“Eish!” can express which reaction?",
+    "options": [
+      "A fixed price",
+      "An exact departure time",
+      "Surprise or exasperation",
+      "A formal measurement"
+    ],
+    "answer": "Surprise or exasperation",
+    "fact": "Eish is an expressive interjection whose tone depends on context.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/entry/eish/e10058",
+      "note": "Contemporary lexical sense, not a claim that every South African uses this expression. Original wording; dictionary is the verification reference."
+    }
+  },
+  {
+    "id": "languages-031",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "An “indaba” in a discussion context is a what?",
+    "options": [
+      "School uniform",
+      "Road junction",
+      "Cooking pot",
+      "Meeting or conference"
+    ],
+    "answer": "Meeting or conference",
+    "fact": "Indaba can refer to a meeting to discuss matters.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/entry/indaba/e03254",
+      "note": "Contemporary lexical sense, not a claim that every South African uses this expression. Original wording; dictionary is the verification reference."
+    }
+  },
+  {
+    "id": "languages-032",
+    "category": "languages",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "If someone is a computer “fundi”, what does that suggest?",
+    "options": [
+      "They are knowledgeable about computers",
+      "They never use electricity",
+      "They sell only shoes",
+      "They dislike all computers"
+    ],
+    "answer": "They are knowledgeable about computers",
+    "fact": "Fundi refers to someone with expertise.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/entry/fundi/e02506",
+      "note": "Contemporary lexical sense, not a claim that every South African uses this expression. Original wording; dictionary is the verification reference."
+    }
+  },
+  {
+    "id": "languages-033",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In family usage, “gogo” often means what?",
+    "options": ["Grandmother", "Younger brother", "Baby boy", "Father-in-law"],
+    "answer": "Grandmother",
+    "fact": "Gogo is used for a grandmother or older woman.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/entry/gogo/e02710",
+      "note": "Contemporary lexical sense, not a claim that every South African uses this expression. Original wording; dictionary is the verification reference."
+    }
+  },
+  {
+    "id": "languages-034",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What sport is often called “diski” in South African slang?",
+    "options": ["Swimming", "Football", "Tennis", "Cycling"],
+    "answer": "Football",
+    "fact": "Diski is a South African term associated with football.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/entry/diski/e10054",
+      "note": "Contemporary lexical sense, not a claim that every South African uses this expression. Original wording; dictionary is the verification reference."
+    }
+  },
+  {
+    "id": "languages-035",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "matching",
+    "prompt": "Choose the correctly matched informal expression and use.",
+    "options": [
+      "Sharp, sharp — okay or understood",
+      "Sharp, sharp — exactly noon",
+      "Sharp, sharp — never return",
+      "Sharp, sharp — a formal measurement"
+    ],
+    "answer": "Sharp, sharp — okay or understood",
+    "fact": "Sharp can function as informal agreement or acknowledgement.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/",
+      "note": "Contemporary lexical sense, not a claim that every South African uses this expression. Original wording; dictionary is the verification reference."
+    }
+  },
+  {
+    "id": "languages-036",
+    "category": "languages",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Why should “just now” in casual South African conversation not be treated as a stopwatch time?",
+    "options": [
+      "It always means yesterday",
+      "Its timing depends on context",
+      "It is an official time zone",
+      "It always means 60 seconds"
+    ],
+    "answer": "Its timing depends on context",
+    "fact": "Expressions such as just now can have flexible timing.",
+    "source": {
+      "title": "Dictionary of South African English",
+      "url": "https://dsae.co.za/",
+      "note": "Contemporary lexical sense, not a claim that every South African uses this expression. Original wording; dictionary is the verification reference."
+    }
+  },
+  {
+    "id": "languages-037",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What language does the word “Afrikaans” name?",
+    "options": [
+      "A type of currency",
+      "A mountain range",
+      "A province",
+      "An official South African language"
+    ],
+    "answer": "An official South African language",
+    "fact": "Afrikaans is one of South Africa's official languages.",
+    "source": {
+      "title": "South African Government: recognition of SASL",
+      "url": "https://www.gov.za/news/media-statements/minister-zizi-kodwa-south-african-sign-language-being-recognised-official",
+      "note": "Official recognition and language list cross-checked against the 2023 constitutional amendment."
+    }
+  },
+  {
+    "id": "languages-038",
+    "category": "languages",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which item belongs in a list of languages rather than provinces?",
+    "options": ["isiNdebele", "Gauteng", "Limpopo", "Mpumalanga"],
+    "answer": "isiNdebele",
+    "fact": "isiNdebele names a language.",
+    "source": {
+      "title": "South African Government: recognition of SASL",
+      "url": "https://www.gov.za/news/media-statements/minister-zizi-kodwa-south-african-sign-language-being-recognised-official",
+      "note": "Official recognition and language list cross-checked against the 2023 constitutional amendment."
+    }
+  },
+  {
+    "id": "languages-039",
+    "category": "languages",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Complete this official language name: Xi___.",
+    "options": ["itsonga", "tswana", "tsonga", "venda"],
+    "answer": "tsonga",
+    "fact": "The full language name is Xitsonga.",
+    "source": {
+      "title": "South African Government: recognition of SASL",
+      "url": "https://www.gov.za/news/media-statements/minister-zizi-kodwa-south-african-sign-language-being-recognised-official",
+      "note": "Official recognition and language list cross-checked against the 2023 constitutional amendment."
+    }
+  },
+  {
+    "id": "languages-040",
+    "category": "languages",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which written language name contains the sequence “Xhosa”?",
+    "options": ["isiXhosa", "Afrikaans", "Sepedi", "Setswana"],
+    "answer": "isiXhosa",
+    "fact": "isiXhosa is written with the language prefix isi-.",
+    "source": {
+      "title": "South African Government: recognition of SASL",
+      "url": "https://www.gov.za/news/media-statements/minister-zizi-kodwa-south-african-sign-language-being-recognised-official",
+      "note": "Official recognition and language list cross-checked against the 2023 constitutional amendment."
+    }
+  },
+  {
+    "id": "languages-041",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In “The taxi moves slowly”, which word describes how it moves?",
+    "options": ["Moves", "Slowly", "The", "Taxi"],
+    "answer": "Slowly",
+    "fact": "Slowly is an adverb in this sentence.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "languages-042",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In “Our team won the quiz”, which word is the action verb?",
+    "options": ["Won", "Quiz", "Our", "Team"],
+    "answer": "Won",
+    "fact": "Won is the past tense of win.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "languages-043",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which sentence correctly uses the plural of “child”?",
+    "options": [
+      "The childrens played outside.",
+      "The childs played outside.",
+      "The children played outside.",
+      "The childes played outside."
+    ],
+    "answer": "The children played outside.",
+    "fact": "Children is the standard plural of child.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "languages-044",
+    "category": "languages",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Choose the word that means the opposite of “arrive” in a travel story.",
+    "options": ["Enter", "Approach", "Depart", "Reach"],
+    "answer": "Depart",
+    "fact": "Arrive and depart describe opposite stages of a journey.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "languages-045",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which punctuation mark normally ends a direct question?",
+    "options": ["Comma", "Question mark", "Hyphen", "Apostrophe"],
+    "answer": "Question mark",
+    "fact": "A direct written question normally ends with a question mark.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "languages-046",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which word is a synonym of “quick” in “a quick quiz”?",
+    "options": ["Quiet", "Heavy", "Fast", "Square"],
+    "answer": "Fast",
+    "fact": "Fast and quick can share the same meaning here.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "languages-047",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which word names a person, place or thing?",
+    "options": ["Noun", "Conjunction", "Adverb", "Preposition"],
+    "answer": "Noun",
+    "fact": "Noun is the grammatical category for such words.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "languages-048",
+    "category": "languages",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which sentence uses “their” to show possession?",
+    "options": [
+      "Their are ten players.",
+      "The players packed their bags.",
+      "We arrived their yesterday.",
+      "Their going home now."
+    ],
+    "answer": "The players packed their bags.",
+    "fact": "Their is the possessive form used with a plural owner.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "languages-049",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which word completes “The trophy belongs to us; it is ___”?",
+    "options": ["Our", "We", "Ours", "Us"],
+    "answer": "Ours",
+    "fact": "Ours is the possessive pronoun required here.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "languages-050",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "short-answer",
+    "prompt": "What word joins the actions in “We sing and dance”?",
+    "answer": "And",
+    "fact": "And is a coordinating conjunction.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    },
+    "acceptedAnswers": ["and"]
+  },
+  {
+    "id": "languages-051",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which is an abbreviation for “South Africa”?",
+    "options": ["AS", "SA", "AFS", "SFA"],
+    "answer": "SA",
+    "fact": "SA is commonly used as an abbreviation of South Africa.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "languages-052",
+    "category": "languages",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which pair rhymes in ordinary English pronunciation?",
+    "options": [
+      "Map and moon",
+      "Cash and coast",
+      "Team and town",
+      "Game and name"
+    ],
+    "answer": "Game and name",
+    "fact": "Game and name share the same ending sound.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "languages-053",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "scramble",
+    "prompt": "Unscramble MATE into a word meaning a group working together.",
+    "answer": "TEAM",
+    "fact": "MATE rearranges all four letters of TEAM.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    },
+    "clue": "M A T E",
+    "acceptedAnswers": ["team"]
+  },
+  {
+    "id": "languages-054",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which is the correctly spaced place name?",
+    "options": ["South Afr ica", "Sou thAfrica", "South Africa", "SouthAfrica"],
+    "answer": "South Africa",
+    "fact": "The country's English name is written as two words.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "languages-055",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In “Nikeel's game”, what does the apostrophe show?",
+    "options": [
+      "Possession",
+      "A question",
+      "A plural country",
+      "A decimal number"
+    ],
+    "answer": "Possession",
+    "fact": "The apostrophe and s mark possession in this phrase.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "languages-056",
+    "category": "languages",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which is a complete sentence?",
+    "options": [
+      "Because of the rain",
+      "A golden trophy",
+      "Under the table",
+      "The team celebrates."
+    ],
+    "answer": "The team celebrates.",
+    "fact": "The team celebrates has a subject and a finite verb.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "languages-057",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "ordering",
+    "prompt": "Put these South African words in alphabetical order.",
+    "options": ["braai", "bakkie", "bunny", "biltong"],
+    "answer": "bakkie → biltong → braai → bunny",
+    "fact": "After b, the second letters sort as a, i, r, u.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "languages-058",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which word completes “One quiz, two ___”?",
+    "options": ["Quizies", "Quizs", "Quizz", "Quizzes"],
+    "answer": "Quizzes",
+    "fact": "Quizzes is the standard plural spelling.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "languages-059",
+    "category": "languages",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is a “palindrome”?",
+    "options": [
+      "A sequence that reads the same forwards and backwards",
+      "A word with no vowels",
+      "A word borrowed from Afrikaans",
+      "A sentence in two languages"
+    ],
+    "answer": "A sequence that reads the same forwards and backwards",
+    "fact": "Level is one example of a palindrome.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "languages-060",
+    "category": "languages",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which word completes the saying “Practice makes ___”?",
+    "options": ["Yesterday", "Purple", "Silence", "Perfect"],
+    "answer": "Perfect",
+    "fact": "The saying encourages repeated practice to improve a skill.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "science-001",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What kind of telescope is South Africa's MeerKAT?",
+    "options": [
+      "Underwater telescope",
+      "Microscope",
+      "X-ray machine",
+      "Radio telescope"
+    ],
+    "answer": "Radio telescope",
+    "fact": "MeerKAT gathers radio signals from space.",
+    "source": {
+      "title": "SARAO: MeerKAT site",
+      "url": "https://www.sarao.ac.za/visit-meerkat-site/",
+      "note": "Instrument type, location and dish count cross-checked against SARAO."
+    }
+  },
+  {
+    "id": "science-002",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "Northern Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "How many dishes make up the original MeerKAT array?",
+    "options": ["32", "8", "64", "128"],
+    "answer": "64",
+    "fact": "The original MeerKAT array consists of 64 dishes.",
+    "source": {
+      "title": "SARAO: MeerKAT site",
+      "url": "https://www.sarao.ac.za/visit-meerkat-site/",
+      "note": "Instrument type, location and dish count cross-checked against SARAO."
+    }
+  },
+  {
+    "id": "science-003",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "Northern Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which province hosts the MeerKAT telescope site?",
+    "options": ["Gauteng", "Northern Cape", "KwaZulu-Natal", "Free State"],
+    "answer": "Northern Cape",
+    "fact": "MeerKAT is situated in the Karoo in the Northern Cape.",
+    "source": {
+      "title": "SARAO: MeerKAT site",
+      "url": "https://www.sarao.ac.za/visit-meerkat-site/",
+      "note": "Instrument type, location and dish count cross-checked against SARAO."
+    }
+  },
+  {
+    "id": "science-004",
+    "category": "science",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does SALT stand for in South African astronomy?",
+    "options": [
+      "Southern Atlantic Lightning Tracker",
+      "Space Academy Learning Tower",
+      "Southern African Large Telescope",
+      "Solar Array for Local Transport"
+    ],
+    "answer": "Southern African Large Telescope",
+    "fact": "SALT is the Southern African Large Telescope.",
+    "source": {
+      "title": "SAAO: SALT",
+      "url": "https://www.saao.ac.za/explore/our-telescopes/salt/",
+      "note": "Telescope and mirror facts cross-checked against the observatory."
+    }
+  },
+  {
+    "id": "science-005",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "Northern Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Near which town is SALT located?",
+    "options": ["Tzaneen", "Sutherland", "Margate", "Parys"],
+    "answer": "Sutherland",
+    "fact": "SALT operates at the SAAO observing site near Sutherland.",
+    "source": {
+      "title": "SAAO: SALT",
+      "url": "https://www.saao.ac.za/explore/our-telescopes/salt/",
+      "note": "Telescope and mirror facts cross-checked against the observatory."
+    }
+  },
+  {
+    "id": "science-006",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "Northern Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "SALT's primary mirror is assembled from segments of which shape?",
+    "options": ["Circles", "Triangles", "Hexagons", "Pentagons"],
+    "answer": "Hexagons",
+    "fact": "The primary mirror array uses hexagonal segments.",
+    "source": {
+      "title": "SAAO: SALT",
+      "url": "https://www.saao.ac.za/explore/our-telescopes/salt/",
+      "note": "Telescope and mirror facts cross-checked against the observatory."
+    }
+  },
+  {
+    "id": "science-007",
+    "category": "science",
+    "difficulty": "hard",
+    "region": "Northern Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "How many individual mirror segments form SALT's primary mirror array?",
+    "options": ["91", "200", "12", "50"],
+    "answer": "91",
+    "fact": "SALT uses 91 individual hexagonal mirror segments.",
+    "source": {
+      "title": "SAAO: SALT",
+      "url": "https://www.saao.ac.za/explore/our-telescopes/salt/",
+      "note": "Telescope and mirror facts cross-checked against the observatory."
+    }
+  },
+  {
+    "id": "science-008",
+    "category": "science",
+    "difficulty": "medium",
+    "region": "Western Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which South African town hosts SANSA's operational Space Weather Centre?",
+    "options": ["Mahikeng", "Welkom", "Musina", "Hermanus"],
+    "answer": "Hermanus",
+    "fact": "SANSA monitors space weather from Hermanus.",
+    "source": {
+      "title": "SANSA: Space Science",
+      "url": "https://www.sansa.org.za/programmes/space-science/",
+      "note": "Hermanus space-weather centre and programme described by SANSA."
+    }
+  },
+  {
+    "id": "science-009",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Space weather monitoring is especially concerned with activity from which nearby star?",
+    "options": ["Polaris", "Sirius", "Betelgeuse", "The Sun"],
+    "answer": "The Sun",
+    "fact": "Solar activity can affect satellites and communications.",
+    "source": {
+      "title": "SANSA: Space Science",
+      "url": "https://www.sansa.org.za/programmes/space-science/",
+      "note": "Hermanus space-weather centre and programme described by SANSA."
+    }
+  },
+  {
+    "id": "science-010",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does a radio telescope collect?",
+    "options": [
+      "Soil samples",
+      "Radio waves",
+      "Sound travelling through empty space",
+      "Raindrops"
+    ],
+    "answer": "Radio waves",
+    "fact": "Radio waves are electromagnetic radiation, not sound waves.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-011",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A solar panel on a South African roof converts sunlight mainly into what useful output?",
+    "options": ["Magnetic north", "Petrol", "Fresh water", "Electrical energy"],
+    "answer": "Electrical energy",
+    "fact": "Photovoltaic panels convert light energy into electrical energy.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-012",
+    "category": "science",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which device stores electrical energy chemically for later use?",
+    "options": ["Lens", "Tap", "Mirror", "Battery"],
+    "answer": "Battery",
+    "fact": "A battery can supply electricity through chemical reactions.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-013",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What instrument measures temperature at a weather station?",
+    "options": ["Rain gauge", "Thermometer", "Anemometer", "Barometer"],
+    "answer": "Thermometer",
+    "fact": "A thermometer measures temperature.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-014",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does a rain gauge measure?",
+    "options": ["Rainfall", "Air pressure", "Sunset time", "Wind direction"],
+    "answer": "Rainfall",
+    "fact": "A rain gauge measures collected precipitation.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-015",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which instrument measures wind speed?",
+    "options": ["Balance", "Thermometer", "Microscope", "Anemometer"],
+    "answer": "Anemometer",
+    "fact": "An anemometer measures wind speed.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-016",
+    "category": "science",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does a barometer measure?",
+    "options": [
+      "Soil colour",
+      "Sea depth",
+      "Air pressure",
+      "Distance travelled"
+    ],
+    "answer": "Air pressure",
+    "fact": "A barometer measures atmospheric pressure.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-017",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Why does a metal braai grid become hot above the coals?",
+    "options": [
+      "Gravity turns into fire",
+      "Metal cannot conduct heat",
+      "Heat transfers to it",
+      "It creates cold air"
+    ],
+    "answer": "Heat transfers to it",
+    "fact": "Energy transfers from the hot coals and surrounding gases to the grid.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-018",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which material is usually a good electrical conductor?",
+    "options": ["Glass", "Dry rubber", "Plastic", "Copper"],
+    "answer": "Copper",
+    "fact": "Copper is widely used for electrical wiring.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-019",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which material is commonly used as electrical insulation?",
+    "options": ["Copper", "Aluminium", "Plastic", "Iron"],
+    "answer": "Plastic",
+    "fact": "Plastic coatings help insulate wires.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-020",
+    "category": "science",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What force pulls a kicked ball back towards the ground?",
+    "options": [
+      "Evaporation",
+      "Gravity",
+      "Photosynthesis",
+      "Magnetism in every ball"
+    ],
+    "answer": "Gravity",
+    "fact": "Gravity attracts objects towards Earth.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-021",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which simple machine is a ramp?",
+    "options": ["Inclined plane", "Lever", "Wheel and axle", "Pulley"],
+    "answer": "Inclined plane",
+    "fact": "A ramp is an inclined plane.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-022",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the usual unit for electrical power on an appliance label?",
+    "options": ["Watt", "Metre", "Gram", "Litre"],
+    "answer": "Watt",
+    "fact": "Power is measured in watts.",
+    "source": {
+      "title": "BIPM: SI brochure",
+      "url": "https://www.bipm.org/en/publications/si-brochure",
+      "note": "Standard metric-unit relationship; original scenario and wording."
+    }
+  },
+  {
+    "id": "science-023",
+    "category": "science",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What unit measures electric current?",
+    "options": ["Kilogram", "Candela", "Ampere", "Kelvin"],
+    "answer": "Ampere",
+    "fact": "The ampere is the SI unit of electric current.",
+    "source": {
+      "title": "BIPM: SI brochure",
+      "url": "https://www.bipm.org/en/publications/si-brochure",
+      "note": "Standard metric-unit relationship; original scenario and wording."
+    }
+  },
+  {
+    "id": "science-024",
+    "category": "science",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "short-answer",
+    "prompt": "How many metres are in one kilometre?",
+    "answer": "1000",
+    "fact": "The prefix kilo- represents one thousand.",
+    "source": {
+      "title": "BIPM: SI brochure",
+      "url": "https://www.bipm.org/en/publications/si-brochure",
+      "note": "Standard metric-unit relationship; original scenario and wording."
+    },
+    "acceptedAnswers": [
+      "1000",
+      "1,000",
+      "one thousand",
+      "1000 metres",
+      "1000 meters"
+    ]
+  },
+  {
+    "id": "science-025",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "How many millilitres make one litre?",
+    "options": ["100", "10000", "10", "1000"],
+    "answer": "1000",
+    "fact": "One millilitre is one thousandth of a litre.",
+    "source": {
+      "title": "BIPM: SI brochure",
+      "url": "https://www.bipm.org/en/publications/si-brochure",
+      "note": "Standard metric-unit relationship; original scenario and wording."
+    }
+  },
+  {
+    "id": "science-026",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which state of matter has a fixed volume but takes the shape of its container?",
+    "options": ["Gas", "Vacuum", "Plasma only", "Liquid"],
+    "answer": "Liquid",
+    "fact": "A liquid flows while keeping approximately the same volume.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-027",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "short-answer",
+    "prompt": "What is liquid water turning into water vapour called?",
+    "answer": "Evaporation",
+    "fact": "Evaporation changes liquid into vapour.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    },
+    "acceptedAnswers": ["evaporation"]
+  },
+  {
+    "id": "science-028",
+    "category": "science",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Water droplets form on a cold bottle. Which process forms them?",
+    "options": [
+      "Freezing of the bottle",
+      "Condensation",
+      "Photosynthesis",
+      "Combustion"
+    ],
+    "answer": "Condensation",
+    "fact": "Water vapour in the air condenses on the cool surface.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-029",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What change happens when an ice cube becomes liquid water?",
+    "options": ["Melting", "Condensing", "Rusting", "Boiling"],
+    "answer": "Melting",
+    "fact": "Melting changes a solid into a liquid.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-030",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is water's chemical formula?",
+    "options": ["O2", "NaCl", "H2O", "CO2"],
+    "answer": "H2O",
+    "fact": "A water molecule contains two hydrogen atoms and one oxygen atom.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-031",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which gas do green plants take in for photosynthesis?",
+    "options": ["Helium", "Carbon dioxide", "Neon", "Hydrogen"],
+    "answer": "Carbon dioxide",
+    "fact": "Plants use carbon dioxide and water to make sugars during photosynthesis.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-032",
+    "category": "science",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which green pigment helps leaves absorb light?",
+    "options": ["Chlorophyll", "Melanin", "Keratin", "Haemoglobin"],
+    "answer": "Chlorophyll",
+    "fact": "Chlorophyll absorbs light used in photosynthesis.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-033",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "matching",
+    "prompt": "Which plant part is correctly matched with taking up water from soil?",
+    "options": [
+      "Roots — water uptake",
+      "Petals — water uptake from soil",
+      "Fruit skin — water uptake from soil",
+      "Seeds only — water uptake from soil"
+    ],
+    "answer": "Roots — water uptake",
+    "fact": "Roots absorb water and minerals.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-034",
+    "category": "science",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "South African-born Allan Cormack shared a Nobel Prize for work on which medical imaging technique?",
+    "options": [
+      "Computed tomography",
+      "Ultrasound only",
+      "Thermal photography",
+      "Ordinary portrait photography"
+    ],
+    "answer": "Computed tomography",
+    "fact": "Cormack and Godfrey Hounsfield shared the 1979 Nobel Prize for developing computer-assisted tomography.",
+    "source": {
+      "title": "Nobel Prize: Medicine 1979",
+      "url": "https://www.nobelprize.org/prizes/medicine/1979/summary/",
+      "note": "Prize and contribution cross-checked against the Nobel Prize record."
+    }
+  },
+  {
+    "id": "science-035",
+    "category": "science",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does CSIR stand for in South Africa?",
+    "options": [
+      "Council for Scientific and Industrial Research",
+      "Central School of International Rugby",
+      "Council for Solar Irrigation Routes",
+      "Cape Society of Island Rangers"
+    ],
+    "answer": "Council for Scientific and Industrial Research",
+    "fact": "The CSIR conducts scientific research and technological development.",
+    "source": {
+      "title": "CSIR: About us",
+      "url": "https://www.csir.co.za/about-us",
+      "note": "Official organisation name cross-checked against the CSIR."
+    }
+  },
+  {
+    "id": "science-036",
+    "category": "science",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "South Africa's iThemba LABS specialises in science using which major research equipment?",
+    "options": [
+      "Particle accelerators",
+      "Commercial fishing trawlers",
+      "Road toll cameras",
+      "Printing presses"
+    ],
+    "answer": "Particle accelerators",
+    "fact": "iThemba LABS is a facility for accelerator-based science.",
+    "source": {
+      "title": "National Research Foundation: iThemba LABS",
+      "url": "https://www.nrf.ac.za/research/ithemba-labs/",
+      "note": "Facility specialisation cross-checked against the NRF."
+    }
+  },
+  {
+    "id": "science-037",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A bee visits flowers and transfers pollen. What process is this?",
+    "options": ["Fermentation", "Evaporation", "Pollination", "Erosion"],
+    "answer": "Pollination",
+    "fact": "Pollination transfers pollen between flower structures.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-038",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which organism is a decomposer?",
+    "options": [
+      "A granite rock",
+      "A fungus",
+      "A plastic bottle",
+      "A metal spoon"
+    ],
+    "answer": "A fungus",
+    "fact": "Many fungi break down dead organic matter.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-039",
+    "category": "science",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What process gradually wears away and moves soil or rock?",
+    "options": ["Germination", "Photosynthesis", "Condensation", "Erosion"],
+    "answer": "Erosion",
+    "fact": "Water and wind can cause erosion.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-040",
+    "category": "science",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the main purpose of the South African-designed concrete units called dolosse?",
+    "options": [
+      "Protect breakwaters by dissipating wave energy",
+      "Store drinking water inside homes",
+      "Generate electricity from sunlight",
+      "Measure underground temperatures"
+    ],
+    "answer": "Protect breakwaters by dissipating wave energy",
+    "fact": "Dolosse are shaped concrete units used in coastal protection.",
+    "source": {
+      "title": "East London Museum: history of the dolos",
+      "url": "https://elmuseumscience.wordpress.com/2016/08/11/new-insights-into-the-inventor-of-the-dolos/",
+      "note": "Museum account; question avoids disputed individual invention credit."
+    }
+  },
+  {
+    "id": "science-041",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is molten rock called after it reaches Earth's surface?",
+    "options": ["Quartz", "Clay", "Magma", "Lava"],
+    "answer": "Lava",
+    "fact": "Molten rock at the surface is called lava.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-042",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the closest star to Earth?",
+    "options": ["Polaris", "Sirius", "The Sun", "Proxima Centauri"],
+    "answer": "The Sun",
+    "fact": "The Sun is Earth's nearest star.",
+    "source": {
+      "title": "NASA: Solar System",
+      "url": "https://science.nasa.gov/solar-system/",
+      "note": "Stable introductory astronomy; NASA Solar System overview is the verification reference."
+    }
+  },
+  {
+    "id": "science-043",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which planet is known for its prominent ring system?",
+    "options": ["Mars", "Saturn", "Venus", "Mercury"],
+    "answer": "Saturn",
+    "fact": "Saturn has an extensive and conspicuous system of rings.",
+    "source": {
+      "title": "NASA: Solar System",
+      "url": "https://science.nasa.gov/solar-system/",
+      "note": "Stable introductory astronomy; NASA Solar System overview is the verification reference."
+    }
+  },
+  {
+    "id": "science-044",
+    "category": "science",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "ordering",
+    "prompt": "Put these planets in order moving away from the Sun.",
+    "options": ["Mars", "Mercury", "Earth", "Venus"],
+    "answer": "Mercury → Venus → Earth → Mars",
+    "fact": "The first four planets outward from the Sun are Mercury, Venus, Earth and Mars.",
+    "source": {
+      "title": "NASA: Solar System",
+      "url": "https://science.nasa.gov/solar-system/",
+      "note": "Stable introductory astronomy; NASA Solar System overview is the verification reference."
+    }
+  },
+  {
+    "id": "science-045",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is Earth's natural satellite called?",
+    "options": ["The Moon", "Venus", "Sirius", "The Sun"],
+    "answer": "The Moon",
+    "fact": "The Moon is Earth's natural satellite.",
+    "source": {
+      "title": "NASA: Solar System",
+      "url": "https://science.nasa.gov/solar-system/",
+      "note": "Stable introductory astronomy; NASA Solar System overview is the verification reference."
+    }
+  },
+  {
+    "id": "science-046",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What causes Earth's regular cycle of day and night?",
+    "options": [
+      "Clouds hiding the Sun everywhere",
+      "The Sun orbiting Earth daily",
+      "The Moon switching off",
+      "Earth rotating on its axis"
+    ],
+    "answer": "Earth rotating on its axis",
+    "fact": "Earth's rotation brings different places into and out of sunlight.",
+    "source": {
+      "title": "NASA: Solar System",
+      "url": "https://science.nasa.gov/solar-system/",
+      "note": "Stable introductory astronomy; NASA Solar System overview is the verification reference."
+    }
+  },
+  {
+    "id": "science-047",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "About how long does Earth take to orbit the Sun once?",
+    "options": ["One year", "One day", "One month", "One week"],
+    "answer": "One year",
+    "fact": "A year corresponds approximately to one Earth orbit.",
+    "source": {
+      "title": "NASA: Solar System",
+      "url": "https://science.nasa.gov/solar-system/",
+      "note": "Stable introductory astronomy; NASA Solar System overview is the verification reference."
+    }
+  },
+  {
+    "id": "science-048",
+    "category": "science",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which planet is commonly called the Red Planet?",
+    "options": ["Uranus", "Mars", "Jupiter", "Venus"],
+    "answer": "Mars",
+    "fact": "Iron minerals on Mars help give its surface a reddish appearance.",
+    "source": {
+      "title": "NASA: Solar System",
+      "url": "https://science.nasa.gov/solar-system/",
+      "note": "Stable introductory astronomy; NASA Solar System overview is the verification reference."
+    }
+  },
+  {
+    "id": "science-049",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the name of the galaxy that contains our Solar System?",
+    "options": ["Andromeda", "Milky Way", "Whirlpool", "Sombrero"],
+    "answer": "Milky Way",
+    "fact": "The Solar System is part of the Milky Way.",
+    "source": {
+      "title": "NASA: Solar System",
+      "url": "https://science.nasa.gov/solar-system/",
+      "note": "Stable introductory astronomy; NASA Solar System overview is the verification reference."
+    }
+  },
+  {
+    "id": "science-050",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Why can astronauts not hear ordinary sound travelling across empty space?",
+    "options": [
+      "Space has no gravity anywhere",
+      "Sound is always slower than walking",
+      "Sound needs a material medium",
+      "All stars absorb sound"
+    ],
+    "answer": "Sound needs a material medium",
+    "fact": "Sound requires matter through which vibrations can travel.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-051",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which travels faster in air: lightning's light or thunder's sound?",
+    "options": [
+      "The sound",
+      "Neither can travel in air",
+      "The light",
+      "They have equal speeds"
+    ],
+    "answer": "The light",
+    "fact": "Light reaches us much faster than sound.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-052",
+    "category": "science",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A magnet strongly attracts which of these common materials?",
+    "options": ["Paper", "Iron", "Glass", "Wood"],
+    "answer": "Iron",
+    "fact": "Iron is ferromagnetic.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-053",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which energy source is renewable?",
+    "options": ["Crude oil", "Coal", "Wind", "Natural gas"],
+    "answer": "Wind",
+    "fact": "Wind energy is replenished through atmospheric processes.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-054",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the purpose of a water filter?",
+    "options": [
+      "Remove certain impurities",
+      "Create water from nothing",
+      "Change water into oxygen only",
+      "Make every liquid safe instantly"
+    ],
+    "answer": "Remove certain impurities",
+    "fact": "Filters remove particles or substances depending on their design.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-055",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which tool makes very small objects appear larger?",
+    "options": ["Periscope", "Compass", "Microscope", "Stopwatch"],
+    "answer": "Microscope",
+    "fact": "Microscopes reveal detail too small to see unaided.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-056",
+    "category": "science",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which invention allows a driver to see behind using reflected light?",
+    "options": ["Brake pedal", "Fuel tank", "Rear-view mirror", "Tyre tread"],
+    "answer": "Rear-view mirror",
+    "fact": "A mirror redirects light from objects behind the vehicle.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-057",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What type of energy is stored in a stretched elastic band?",
+    "options": [
+      "Nuclear energy only",
+      "Sound energy only",
+      "Elastic potential energy",
+      "Solar energy only"
+    ],
+    "answer": "Elastic potential energy",
+    "fact": "Stretching an elastic material stores potential energy.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-058",
+    "category": "science",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which process turns a seed into a young growing plant?",
+    "options": ["Germination", "Condensation", "Evaporation", "Rusting"],
+    "answer": "Germination",
+    "fact": "Germination begins the growth of a seed.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-059",
+    "category": "science",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A substance with a pH below 7 is generally described as what?",
+    "options": ["Alkaline", "Magnetic", "Neutral", "Acidic"],
+    "answer": "Acidic",
+    "fact": "On the usual aqueous pH scale, values below 7 are acidic.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "science-060",
+    "category": "science",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "When testing whether light affects seedlings, what should be changed deliberately?",
+    "options": [
+      "The amount of light",
+      "The plant species and soil and water",
+      "Only the label colour",
+      "Every condition at once"
+    ],
+    "answer": "The amount of light",
+    "fact": "A fair comparison changes one tested factor while keeping others controlled.",
+    "source": {
+      "title": "Siyavula: Natural Sciences",
+      "url": "https://www.siyavula.com/read/za/natural-sciences",
+      "note": "Stable school-level scientific principle; original South African setting. Consult the relevant topic in the free Natural Sciences textbooks."
+    }
+  },
+  {
+    "id": "childhood-001",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In South African school terminology, which grades form the Foundation Phase?",
+    "options": [
+      "Grades 4 to 6",
+      "Grade R to Grade 3",
+      "Grades 10 to 12",
+      "Grades 7 to 9"
+    ],
+    "answer": "Grade R to Grade 3",
+    "fact": "The Foundation Phase spans Grade R through Grade 3.",
+    "source": {
+      "title": "Department of Basic Education: initial teacher education",
+      "url": "https://www.education.gov.za/Informationfor/Teachers/InitialTeacherEducation/tabid/416/Default.aspx",
+      "note": "School phase boundaries cross-checked against DBE."
+    }
+  },
+  {
+    "id": "childhood-002",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which grades form the Intermediate Phase?",
+    "options": [
+      "Grades R to 3",
+      "Grades 7 to 9",
+      "Grades 10 to 12",
+      "Grades 4 to 6"
+    ],
+    "answer": "Grades 4 to 6",
+    "fact": "The Intermediate Phase is Grades 4, 5 and 6.",
+    "source": {
+      "title": "Department of Basic Education: initial teacher education",
+      "url": "https://www.education.gov.za/Informationfor/Teachers/InitialTeacherEducation/tabid/416/Default.aspx",
+      "note": "School phase boundaries cross-checked against DBE."
+    }
+  },
+  {
+    "id": "childhood-003",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which grades form the Senior Phase?",
+    "options": [
+      "Grades 7 to 9",
+      "Grades 4 to 6",
+      "Grades 1 to 3",
+      "Grades 10 to 12"
+    ],
+    "answer": "Grades 7 to 9",
+    "fact": "The Senior Phase covers Grades 7 through 9.",
+    "source": {
+      "title": "Department of Basic Education: initial teacher education",
+      "url": "https://www.education.gov.za/Informationfor/Teachers/InitialTeacherEducation/tabid/416/Default.aspx",
+      "note": "School phase boundaries cross-checked against DBE."
+    }
+  },
+  {
+    "id": "childhood-004",
+    "category": "childhood",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which grade is commonly called “matric”?",
+    "options": ["Grade 7", "Grade 12", "Grade 10", "Grade 9"],
+    "answer": "Grade 12",
+    "fact": "Matric commonly refers to the final school year, Grade 12.",
+    "source": {
+      "title": "Department of Basic Education: CAPS",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Official curriculum terminology; check the appropriate phase or subject document."
+    }
+  },
+  {
+    "id": "childhood-005",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does DBE stand for in South African schooling?",
+    "options": [
+      "Department of Basic Education",
+      "Daily Book Exchange",
+      "Department of Building Equipment",
+      "District Bus Engine"
+    ],
+    "answer": "Department of Basic Education",
+    "fact": "DBE is the Department of Basic Education.",
+    "source": {
+      "title": "Department of Basic Education: CAPS",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Official curriculum terminology; check the appropriate phase or subject document."
+    }
+  },
+  {
+    "id": "childhood-006",
+    "category": "childhood",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does CAPS stand for in the school curriculum?",
+    "options": [
+      "Classroom Arts and Physical Sports",
+      "Central Awards for Primary Schools",
+      "Children's Annual Play Schedule",
+      "Curriculum and Assessment Policy Statement"
+    ],
+    "answer": "Curriculum and Assessment Policy Statement",
+    "fact": "CAPS sets out curriculum and assessment requirements by subject.",
+    "source": {
+      "title": "Department of Basic Education: CAPS",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Official curriculum terminology; check the appropriate phase or subject document."
+    }
+  },
+  {
+    "id": "childhood-007",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which school subject normally includes map skills and history in the Intermediate Phase?",
+    "options": [
+      "Social Sciences",
+      "Physical Education only",
+      "Mathematics only",
+      "Music only"
+    ],
+    "answer": "Social Sciences",
+    "fact": "Intermediate Phase Social Sciences includes History and Geography.",
+    "source": {
+      "title": "Department of Basic Education: CAPS",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Official curriculum terminology; check the appropriate phase or subject document."
+    }
+  },
+  {
+    "id": "childhood-008",
+    "category": "childhood",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which subject combines physical science and biology topics at school?",
+    "options": [
+      "Tourism",
+      "Business Studies",
+      "Accounting",
+      "Natural Sciences"
+    ],
+    "answer": "Natural Sciences",
+    "fact": "Natural Sciences covers several branches of science.",
+    "source": {
+      "title": "Department of Basic Education: CAPS",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Official curriculum terminology; check the appropriate phase or subject document."
+    }
+  },
+  {
+    "id": "childhood-009",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is a school library mainly used for?",
+    "options": [
+      "Printing banknotes",
+      "Refuelling buses",
+      "Repairing public roads",
+      "Finding and borrowing reading material"
+    ],
+    "answer": "Finding and borrowing reading material",
+    "fact": "Libraries support reading and access to information.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "childhood-010",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which item measures the length of a pencil most directly?",
+    "options": ["Compass for directions", "Ruler", "Whistle", "Thermometer"],
+    "answer": "Ruler",
+    "fact": "A ruler is marked with units of length.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-011",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "At a tuck shop, a snack costs R7. You pay R10. What change is due?",
+    "options": ["R3", "R17", "R4", "R2"],
+    "answer": "R3",
+    "fact": "10 minus 7 equals 3.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-012",
+    "category": "childhood",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A class has 6 rows with 5 learners in each row. How many learners are there?",
+    "options": ["11", "35", "25", "30"],
+    "answer": "30",
+    "fact": "6 multiplied by 5 equals 30.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-013",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Thandi shares 24 marbles equally among 4 friends. How many does each friend get?",
+    "options": ["6", "4", "20", "8"],
+    "answer": "6",
+    "fact": "24 divided by 4 equals 6.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-014",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A school bell rings at 10:15. Break lasts 20 minutes. When does it end?",
+    "options": ["10:25", "11:15", "10:35", "10:45"],
+    "answer": "10:35",
+    "fact": "Adding 20 minutes to 10:15 gives 10:35.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-015",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A netball club buys 3 balls for R40 each. What is the total cost?",
+    "options": ["R43", "R80", "R160", "R120"],
+    "answer": "R120",
+    "fact": "3 multiplied by R40 equals R120.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-016",
+    "category": "childhood",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is half of a 12-slice tray of sandwiches?",
+    "options": ["6 slices", "4 slices", "10 slices", "8 slices"],
+    "answer": "6 slices",
+    "fact": "Half of 12 is 6.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-017",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which fraction is equal to one half?",
+    "options": ["3/4", "2/4", "2/3", "1/4"],
+    "answer": "2/4",
+    "fact": "Two quarters make one half.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-018",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A learner scores 8 out of 10. What percentage is that?",
+    "options": ["90%", "80%", "18%", "8%"],
+    "answer": "80%",
+    "fact": "8 divided by 10, multiplied by 100, is 80.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-019",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "true-false",
+    "prompt": "A square tile has four equal sides.",
+    "options": ["True", "False"],
+    "answer": "True",
+    "fact": "A square has four equal sides.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-020",
+    "category": "childhood",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "How many corners does a triangle have?",
+    "options": ["5", "2", "3", "4"],
+    "answer": "3",
+    "fact": "A triangle has three vertices.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-021",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A school garden is 5 m long and 3 m wide. What is its rectangular area?",
+    "options": [
+      "15 square metres",
+      "30 square metres",
+      "16 square metres",
+      "8 square metres"
+    ],
+    "answer": "15 square metres",
+    "fact": "The area of a rectangle is length multiplied by width.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-022",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A square playground has sides of 4 m. What is its perimeter?",
+    "options": ["20 m", "16 m", "8 m", "12 m"],
+    "answer": "16 m",
+    "fact": "The four sides total 4 + 4 + 4 + 4 metres.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-023",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which number comes next: 3, 6, 9, 12, ___?",
+    "options": ["14", "15", "13", "18"],
+    "answer": "15",
+    "fact": "The sequence increases by 3 each time.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-024",
+    "category": "childhood",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which number is even?",
+    "options": ["49", "35", "28", "17"],
+    "answer": "28",
+    "fact": "28 can be divided by 2 with no remainder.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-025",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which of these numbers is prime?",
+    "options": ["9", "15", "7", "12"],
+    "answer": "7",
+    "fact": "7 has only two positive divisors: 1 and 7.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-026",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is 100 minus 37?",
+    "options": ["53", "73", "67", "63"],
+    "answer": "63",
+    "fact": "Subtracting 30 and then 7 from 100 leaves 63.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-027",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A school bus has 40 seats and 31 are occupied. How many seats are empty?",
+    "options": ["71", "8", "9", "11"],
+    "answer": "9",
+    "fact": "40 minus 31 equals 9.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-028",
+    "category": "childhood",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "short-answer",
+    "prompt": "There are 18 red counters and 12 blue counters. How many counters altogether?",
+    "answer": "30",
+    "fact": "18 plus 12 equals 30.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    },
+    "acceptedAnswers": ["30", "thirty", "30 counters"]
+  },
+  {
+    "id": "childhood-029",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A learner reads 15 pages on Monday and 20 on Tuesday. What is the total?",
+    "options": ["25 pages", "35 pages", "30 pages", "40 pages"],
+    "answer": "35 pages",
+    "fact": "15 plus 20 equals 35.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-030",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A relay covers 400 m in four equal legs. How long is one leg?",
+    "options": ["50 m", "100 m", "200 m", "400 m"],
+    "answer": "100 m",
+    "fact": "400 divided by 4 equals 100.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-031",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which is the largest number: 0.5, 0.25, 0.75, 0.1?",
+    "options": ["0.1", "0.75", "0.5", "0.25"],
+    "answer": "0.75",
+    "fact": "Seventy-five hundredths is the largest of these decimals.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-032",
+    "category": "childhood",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "How many minutes are in a quarter of an hour?",
+    "options": ["25", "15", "10", "20"],
+    "answer": "15",
+    "fact": "An hour has 60 minutes, and one quarter is 15.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-033",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A lunch bottle holds 500 mL. Two full bottles hold how much?",
+    "options": ["100 mL", "1 litre", "5 litres", "250 mL"],
+    "answer": "1 litre",
+    "fact": "Two lots of 500 mL make 1000 mL, or 1 litre.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-034",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A learner has 3 packs of 8 crayons. How many crayons is that?",
+    "options": ["16", "11", "32", "24"],
+    "answer": "24",
+    "fact": "3 multiplied by 8 equals 24.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-035",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Five friends each bring R6 for a class gift. How much do they collect?",
+    "options": ["R30", "R11", "R36", "R25"],
+    "answer": "R30",
+    "fact": "5 multiplied by R6 equals R30.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-036",
+    "category": "childhood",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A 20-question quiz awards one mark per correct answer. You get 75%. How many are correct?",
+    "options": ["12", "15", "10", "18"],
+    "answer": "15",
+    "fact": "Three quarters of 20 equals 15.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-037",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A school race starts at 09:40 and finishes at 10:05. How long did it last?",
+    "options": ["65 minutes", "25 minutes", "35 minutes", "15 minutes"],
+    "answer": "25 minutes",
+    "fact": "There are 20 minutes to 10:00 and 5 more to 10:05.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-038",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which shape has no corners?",
+    "options": ["Triangle", "Circle", "Rectangle", "Square"],
+    "answer": "Circle",
+    "fact": "A circle has a continuous curved boundary.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-039",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "On a standard six-sided die, what is the highest face value?",
+    "options": ["5", "8", "10", "6"],
+    "answer": "6",
+    "fact": "A standard numbered die has faces 1 through 6.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-040",
+    "category": "childhood",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "If a fair coin is tossed once, how many possible face results are there?",
+    "options": ["2", "1", "3", "4"],
+    "answer": "2",
+    "fact": "The two face results are heads and tails.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-041",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which game uses a grid where players hop through numbered spaces?",
+    "options": ["Hopscotch", "Chess", "Hide-and-seek", "Marbles"],
+    "answer": "Hopscotch",
+    "fact": "Hopscotch is played by hopping through a marked pattern.",
+    "source": {
+      "title": "Department of Sport, Arts and Culture: indigenous games",
+      "url": "https://www.dsac.gov.za/",
+      "note": "Traditional-game terminology; rules can vary locally, so the question describes the specific feature being tested."
+    }
+  },
+  {
+    "id": "childhood-042",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which playground game involves finding players who have concealed themselves?",
+    "options": ["Draughts", "Skipping", "Hopscotch", "Hide-and-seek"],
+    "answer": "Hide-and-seek",
+    "fact": "One player searches while the others hide.",
+    "source": {
+      "title": "Department of Sport, Arts and Culture: indigenous games",
+      "url": "https://www.dsac.gov.za/",
+      "note": "Traditional-game terminology; rules can vary locally, so the question describes the specific feature being tested."
+    }
+  },
+  {
+    "id": "childhood-043",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which activity uses a rope swung over a player's head and under their feet?",
+    "options": ["Marbles", "Chess", "Dodgeball", "Skipping"],
+    "answer": "Skipping",
+    "fact": "Skipping involves jumping over a rotating rope.",
+    "source": {
+      "title": "Department of Sport, Arts and Culture: indigenous games",
+      "url": "https://www.dsac.gov.za/",
+      "note": "Traditional-game terminology; rules can vary locally, so the question describes the specific feature being tested."
+    }
+  },
+  {
+    "id": "childhood-044",
+    "category": "childhood",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In a game of marbles, the pieces are usually what shape?",
+    "options": ["Cube-shaped", "Long cylinders", "Spherical", "Flat triangles"],
+    "answer": "Spherical",
+    "fact": "Marbles are small balls.",
+    "source": {
+      "title": "Department of Sport, Arts and Culture: indigenous games",
+      "url": "https://www.dsac.gov.za/",
+      "note": "Traditional-game terminology; rules can vary locally, so the question describes the specific feature being tested."
+    }
+  },
+  {
+    "id": "childhood-045",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In chess, which piece must be protected from checkmate?",
+    "options": ["Knight", "Pawn", "King", "Rook"],
+    "answer": "King",
+    "fact": "Checkmate of the king ends a chess game.",
+    "source": {
+      "title": "Department of Sport, Arts and Culture: indigenous games",
+      "url": "https://www.dsac.gov.za/",
+      "note": "Traditional-game terminology; rules can vary locally, so the question describes the specific feature being tested."
+    }
+  },
+  {
+    "id": "childhood-046",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In chess, which piece moves in an L-shaped pattern?",
+    "options": ["Bishop", "Rook", "Knight", "King"],
+    "answer": "Knight",
+    "fact": "The knight moves two squares in one direction and one perpendicular.",
+    "source": {
+      "title": "Department of Sport, Arts and Culture: indigenous games",
+      "url": "https://www.dsac.gov.za/",
+      "note": "Traditional-game terminology; rules can vary locally, so the question describes the specific feature being tested."
+    }
+  },
+  {
+    "id": "childhood-047",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "How many squares are on a standard chessboard?",
+    "options": ["32", "48", "64", "100"],
+    "answer": "64",
+    "fact": "An 8 by 8 board has 64 squares.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-048",
+    "category": "childhood",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Morabaraba is traditionally played with pieces often called what?",
+    "options": ["Ships", "Cars", "Kings", "Cows"],
+    "answer": "Cows",
+    "fact": "Morabaraba players commonly call the playing pieces cows.",
+    "source": {
+      "title": "South African Government: Indigenous Games Festival",
+      "url": "https://www.gov.za/news/media-advisories/sport-and-recreation-south-africa-hosts-annual-indigenous-games-festival-20",
+      "note": "Game description cross-checked against the government festival explainer; local rule variations are not tested."
+    }
+  },
+  {
+    "id": "childhood-049",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Diketo is especially associated with which objects?",
+    "options": ["Goalposts", "Playing cards", "Tennis rackets", "Small stones"],
+    "answer": "Small stones",
+    "fact": "Diketo is a coordination game using small stones.",
+    "source": {
+      "title": "South African Government: Indigenous Games Festival",
+      "url": "https://www.gov.za/news/media-advisories/sport-and-recreation-south-africa-hosts-annual-indigenous-games-festival-20",
+      "note": "Game description cross-checked against the government festival explainer; local rule variations are not tested."
+    }
+  },
+  {
+    "id": "childhood-050",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which traditional game uses sticks in mock combat under agreed rules?",
+    "options": ["Morabaraba", "Diketo", "Intonga", "Chess"],
+    "answer": "Intonga",
+    "fact": "Intonga is associated with stick fighting.",
+    "source": {
+      "title": "Western Cape: indigenous game descriptions",
+      "url": "https://www.gov.za/address-western-cape-mec-cultural-affairs-sport-and-recreation-occasion-awarding-colours-players",
+      "note": "Intonga described as a stick-fighting game in the official speech."
+    }
+  },
+  {
+    "id": "childhood-051",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What should you do before crossing a road on the walk to school?",
+    "options": [
+      "Assume every driver has seen you",
+      "Look only at your phone",
+      "Stop and check carefully for traffic",
+      "Run without looking"
+    ],
+    "answer": "Stop and check carefully for traffic",
+    "fact": "Checking for traffic is a basic pedestrian-safety habit.",
+    "source": {
+      "title": "Arrive Alive: road safety",
+      "url": "https://www.arrivealive.co.za/",
+      "note": "Standard road-sign or travel terminology. Simplified knowledge question, not a substitute for traffic rules or driver training."
+    }
+  },
+  {
+    "id": "childhood-052",
+    "category": "childhood",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which item helps a cyclist protect their head?",
+    "options": [
+      "A properly fitted helmet",
+      "A school tie",
+      "A scarf only",
+      "An umbrella"
+    ],
+    "answer": "A properly fitted helmet",
+    "fact": "A helmet provides head protection when cycling.",
+    "source": {
+      "title": "Arrive Alive: road safety",
+      "url": "https://www.arrivealive.co.za/",
+      "note": "Standard road-sign or travel terminology. Simplified knowledge question, not a substitute for traffic rules or driver training."
+    }
+  },
+  {
+    "id": "childhood-053",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which word in “Lerato reads a book” names the person?",
+    "options": ["Lerato", "A", "Reads", "Book"],
+    "answer": "Lerato",
+    "fact": "Lerato is the proper noun naming the person.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "childhood-054",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which tool helps find a word's meaning?",
+    "options": ["Dictionary", "Ruler", "Calendar", "Stopwatch"],
+    "answer": "Dictionary",
+    "fact": "A dictionary explains words and their uses.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "childhood-055",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does the contents page of a schoolbook help you find?",
+    "options": [
+      "The weather tomorrow",
+      "The book's weight",
+      "A bus fare",
+      "Sections and their page numbers"
+    ],
+    "answer": "Sections and their page numbers",
+    "fact": "A contents page maps the sections of a book.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "childhood-056",
+    "category": "childhood",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "ordering",
+    "prompt": "Put these page numbers in ascending order.",
+    "options": ["36", "12", "48", "24"],
+    "answer": "12 → 24 → 36 → 48",
+    "fact": "Ascending order goes from smaller to larger values.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-057",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A library lends you a book for 7 days on a Tuesday. On which weekday is 7 days later?",
+    "options": ["Tuesday", "Sunday", "Monday", "Wednesday"],
+    "answer": "Tuesday",
+    "fact": "A full week returns to the same weekday.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-058",
+    "category": "childhood",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "scramble",
+    "prompt": "Unscramble OOLHCS to name a place where pupils learn.",
+    "answer": "SCHOOL",
+    "fact": "School is the standard English spelling.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    },
+    "clue": "O O L H C S",
+    "acceptedAnswers": ["school"]
+  },
+  {
+    "id": "childhood-059",
+    "category": "childhood",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Three teams have scores of 12, 17 and 14. Which score is the median?",
+    "options": ["12", "14", "17", "43"],
+    "answer": "14",
+    "fact": "Ordered as 12, 14, 17, the middle score is 14.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "childhood-060",
+    "category": "childhood",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "You need 4 players per team. How many complete teams can 18 players make?",
+    "options": ["5", "4", "6", "3"],
+    "answer": "4",
+    "fact": "Four teams use 16 players, leaving two players over.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "mixed-001",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the name of South Africa's currency?",
+    "options": ["Shilling", "Dollar", "Rand", "Pula"],
+    "answer": "Rand",
+    "fact": "The rand is South Africa's currency.",
+    "source": {
+      "title": "South African Government: South Africa at a glance",
+      "url": "https://www.gov.za/south-africa-glance",
+      "note": "Rand, ZAR code and decimal subdivision cross-checked against the official country overview."
+    }
+  },
+  {
+    "id": "mixed-002",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "How many cents make one rand?",
+    "options": ["10", "100", "1000", "50"],
+    "answer": "100",
+    "fact": "A rand is divided into 100 cents.",
+    "source": {
+      "title": "South African Government: South Africa at a glance",
+      "url": "https://www.gov.za/south-africa-glance",
+      "note": "Rand, ZAR code and decimal subdivision cross-checked against the official country overview."
+    }
+  },
+  {
+    "id": "mixed-003",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which abbreviation is commonly placed before rand amounts, as in a shop price?",
+    "options": ["P", "R", "S", "K"],
+    "answer": "R",
+    "fact": "R is the common symbol for rand amounts.",
+    "source": {
+      "title": "South African Reserve Bank: banknotes and coin",
+      "url": "https://www.resbank.co.za/en/home/what-we-do/banknotes-and-coin",
+      "note": "Official currency overview and denomination information. Arithmetic questions use fictional values."
+    }
+  },
+  {
+    "id": "mixed-004",
+    "category": "mixed",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which international currency code identifies the South African rand?",
+    "options": ["ZAF", "ZAR", "RSA", "SAR"],
+    "answer": "ZAR",
+    "fact": "ZAR is the ISO currency code for the rand.",
+    "source": {
+      "title": "South African Government: South Africa at a glance",
+      "url": "https://www.gov.za/south-africa-glance",
+      "note": "Rand, ZAR code and decimal subdivision cross-checked against the official country overview."
+    }
+  },
+  {
+    "id": "mixed-005",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which institution issues South African banknotes?",
+    "options": [
+      "Weather Service",
+      "South African Reserve Bank",
+      "National Library",
+      "Electoral Commission"
+    ],
+    "answer": "South African Reserve Bank",
+    "fact": "The SARB has the authority to issue South African currency.",
+    "source": {
+      "title": "South African Reserve Bank: banknotes and coin",
+      "url": "https://www.resbank.co.za/en/home/what-we-do/banknotes-and-coin",
+      "note": "Official currency overview and denomination information. Arithmetic questions use fictional values."
+    }
+  },
+  {
+    "id": "mixed-006",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which of these is a standard South African banknote denomination?",
+    "options": ["R7", "R20", "R15", "R3"],
+    "answer": "R20",
+    "fact": "The standard banknote series includes R10, R20, R50, R100 and R200.",
+    "source": {
+      "title": "South African Reserve Bank: banknotes and coin",
+      "url": "https://www.resbank.co.za/en/home/what-we-do/banknotes-and-coin",
+      "note": "Official currency overview and denomination information. Arithmetic questions use fictional values."
+    }
+  },
+  {
+    "id": "mixed-007",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Whose portrait appears on the front of the upgraded 2023 South African banknote series?",
+    "options": [
+      "Desmond Tutu",
+      "Miriam Makeba",
+      "Nelson Mandela",
+      "Albert Luthuli"
+    ],
+    "answer": "Nelson Mandela",
+    "fact": "The upgraded banknotes retain Nelson Mandela's portrait.",
+    "source": {
+      "title": "South African Reserve Bank: banknotes and coin",
+      "url": "https://www.resbank.co.za/en/home/what-we-do/banknotes-and-coin",
+      "note": "Official currency overview and denomination information. Arithmetic questions use fictional values."
+    }
+  },
+  {
+    "id": "mixed-008",
+    "category": "mixed",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which animal family is shown on the reverse of the upgraded R10 banknote?",
+    "options": ["Rhinoceros", "Elephant", "Lion", "Buffalo"],
+    "answer": "Rhinoceros",
+    "fact": "The upgraded R10 features rhinos.",
+    "source": {
+      "title": "SARB: 2023 currency booklet",
+      "url": "https://www.resbank.co.za/content/dam/sarb/what-we-do/banknotes-and-coin/2023/SARB%20Currency%20Booklet.pdf",
+      "note": "Denomination and animal mapping cross-checked against the official booklet."
+    }
+  },
+  {
+    "id": "mixed-009",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which animal family is shown on the reverse of the upgraded R20 banknote?",
+    "options": ["Elephant", "Rhinoceros", "Leopard", "Lion"],
+    "answer": "Elephant",
+    "fact": "The upgraded R20 features elephants.",
+    "source": {
+      "title": "SARB: 2023 currency booklet",
+      "url": "https://www.resbank.co.za/content/dam/sarb/what-we-do/banknotes-and-coin/2023/SARB%20Currency%20Booklet.pdf",
+      "note": "Denomination and animal mapping cross-checked against the official booklet."
+    }
+  },
+  {
+    "id": "mixed-010",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which animal family is shown on the reverse of the upgraded R50 banknote?",
+    "options": ["Buffalo", "Leopard", "Lion", "Elephant"],
+    "answer": "Lion",
+    "fact": "The upgraded R50 features lions.",
+    "source": {
+      "title": "SARB: 2023 currency booklet",
+      "url": "https://www.resbank.co.za/content/dam/sarb/what-we-do/banknotes-and-coin/2023/SARB%20Currency%20Booklet.pdf",
+      "note": "Denomination and animal mapping cross-checked against the official booklet."
+    }
+  },
+  {
+    "id": "mixed-011",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which animal family is shown on the reverse of the upgraded R100 banknote?",
+    "options": ["Rhinoceros", "Leopard", "Lion", "Buffalo"],
+    "answer": "Buffalo",
+    "fact": "The upgraded R100 features buffalo.",
+    "source": {
+      "title": "SARB: 2023 currency booklet",
+      "url": "https://www.resbank.co.za/content/dam/sarb/what-we-do/banknotes-and-coin/2023/SARB%20Currency%20Booklet.pdf",
+      "note": "Denomination and animal mapping cross-checked against the official booklet."
+    }
+  },
+  {
+    "id": "mixed-012",
+    "category": "mixed",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which animal family is shown on the reverse of the upgraded R200 banknote?",
+    "options": ["Elephant", "Lion", "Buffalo", "Leopard"],
+    "answer": "Leopard",
+    "fact": "The upgraded R200 features leopards.",
+    "source": {
+      "title": "SARB: 2023 currency booklet",
+      "url": "https://www.resbank.co.za/content/dam/sarb/what-we-do/banknotes-and-coin/2023/SARB%20Currency%20Booklet.pdf",
+      "note": "Denomination and animal mapping cross-checked against the official booklet."
+    }
+  },
+  {
+    "id": "mixed-013",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which document is South Africa's supreme law?",
+    "options": [
+      "A tourism brochure",
+      "The Constitution",
+      "A shopping catalogue",
+      "A club newsletter"
+    ],
+    "answer": "The Constitution",
+    "fact": "The Constitution is the supreme law of the Republic.",
+    "source": {
+      "title": "South African Constitution",
+      "url": "https://www.justice.gov.za/legislation/constitution/SAConstitution-web-eng.pdf",
+      "note": "Stable constitutional institution or principle, using original simplified wording; not legal advice."
+    }
+  },
+  {
+    "id": "mixed-014",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which part of the Constitution protects fundamental rights?",
+    "options": [
+      "Contents page only",
+      "National budget",
+      "Bill of Rights",
+      "Road map"
+    ],
+    "answer": "Bill of Rights",
+    "fact": "Chapter 2 is the Bill of Rights.",
+    "source": {
+      "title": "South African Constitution",
+      "url": "https://www.justice.gov.za/legislation/constitution/SAConstitution-web-eng.pdf",
+      "note": "Stable constitutional institution or principle, using original simplified wording; not legal advice."
+    }
+  },
+  {
+    "id": "mixed-015",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which institution's main role is to make national laws?",
+    "options": [
+      "Parliament",
+      "A football club",
+      "A private bank",
+      "A weather station"
+    ],
+    "answer": "Parliament",
+    "fact": "National legislative authority is vested in Parliament.",
+    "source": {
+      "title": "South African Constitution",
+      "url": "https://www.justice.gov.za/legislation/constitution/SAConstitution-web-eng.pdf",
+      "note": "Stable constitutional institution or principle, using original simplified wording; not legal advice."
+    }
+  },
+  {
+    "id": "mixed-016",
+    "category": "mixed",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which institution interprets and applies the law in court cases?",
+    "options": [
+      "A radio station",
+      "A supermarket",
+      "A sports federation",
+      "The courts"
+    ],
+    "answer": "The courts",
+    "fact": "Judicial authority is vested in the courts.",
+    "source": {
+      "title": "South African Constitution",
+      "url": "https://www.justice.gov.za/legislation/constitution/SAConstitution-web-eng.pdf",
+      "note": "Stable constitutional institution or principle, using original simplified wording; not legal advice."
+    }
+  },
+  {
+    "id": "mixed-017",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "South Africa has how many spheres of government?",
+    "options": ["4", "2", "5", "3"],
+    "answer": "3",
+    "fact": "The three spheres are national, provincial and local.",
+    "source": {
+      "title": "South African Constitution",
+      "url": "https://www.justice.gov.za/legislation/constitution/SAConstitution-web-eng.pdf",
+      "note": "Stable constitutional institution or principle, using original simplified wording; not legal advice."
+    }
+  },
+  {
+    "id": "mixed-018",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which sphere includes municipalities?",
+    "options": [
+      "Continental government",
+      "Local government",
+      "National only",
+      "International government"
+    ],
+    "answer": "Local government",
+    "fact": "Municipalities form the local sphere.",
+    "source": {
+      "title": "South African Constitution",
+      "url": "https://www.justice.gov.za/legislation/constitution/SAConstitution-web-eng.pdf",
+      "note": "Stable constitutional institution or principle, using original simplified wording; not legal advice."
+    }
+  },
+  {
+    "id": "mixed-019",
+    "category": "mixed",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which two houses make up South Africa's Parliament?",
+    "options": [
+      "Senate and House of Lords",
+      "National Assembly and National Council of Provinces",
+      "Provincial Treasury and City Council",
+      "Cabinet and Supreme Court"
+    ],
+    "answer": "National Assembly and National Council of Provinces",
+    "fact": "Parliament consists of the National Assembly and the NCOP.",
+    "source": {
+      "title": "South African Constitution",
+      "url": "https://www.justice.gov.za/legislation/constitution/SAConstitution-web-eng.pdf",
+      "note": "Stable constitutional institution or principle, using original simplified wording; not legal advice."
+    }
+  },
+  {
+    "id": "mixed-020",
+    "category": "mixed",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does the “P” in NCOP stand for?",
+    "options": ["Police", "Presidents", "Provinces", "Parks"],
+    "answer": "Provinces",
+    "fact": "NCOP means National Council of Provinces.",
+    "source": {
+      "title": "South African Constitution",
+      "url": "https://www.justice.gov.za/legislation/constitution/SAConstitution-web-eng.pdf",
+      "note": "Stable constitutional institution or principle, using original simplified wording; not legal advice."
+    }
+  },
+  {
+    "id": "mixed-021",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A secret ballot protects which choice?",
+    "options": [
+      "The weather forecast",
+      "How a person votes",
+      "A public match score",
+      "The time on a clock"
+    ],
+    "answer": "How a person votes",
+    "fact": "Secrecy allows voters to make their choice privately.",
+    "source": {
+      "title": "South African Constitution",
+      "url": "https://www.justice.gov.za/legislation/constitution/SAConstitution-web-eng.pdf",
+      "note": "Stable constitutional institution or principle, using original simplified wording; not legal advice."
+    }
+  },
+  {
+    "id": "mixed-022",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What principle means people should be treated equally before the law?",
+    "options": ["Equality", "Acceleration", "Inflation", "Altitude"],
+    "answer": "Equality",
+    "fact": "Equality before the law is protected by the Bill of Rights.",
+    "source": {
+      "title": "South African Constitution",
+      "url": "https://www.justice.gov.za/legislation/constitution/SAConstitution-web-eng.pdf",
+      "note": "Stable constitutional institution or principle, using original simplified wording; not legal advice."
+    }
+  },
+  {
+    "id": "mixed-023",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which holiday falls on 27 April each year?",
+    "options": ["Freedom Day", "Youth Day", "Workers' Day", "Heritage Day"],
+    "answer": "Freedom Day",
+    "fact": "Freedom Day commemorates the 1994 democratic election.",
+    "source": {
+      "title": "South African Government: public holidays",
+      "url": "https://www.gov.za/about-sa/public-holidays",
+      "note": "Annual holiday name/date cross-checked against official calendar; movable holidays are not assigned a fixed date."
+    }
+  },
+  {
+    "id": "mixed-024",
+    "category": "mixed",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which holiday falls on 16 June each year?",
+    "options": ["Human Rights Day", "Heritage Day", "Freedom Day", "Youth Day"],
+    "answer": "Youth Day",
+    "fact": "Youth Day is observed on 16 June.",
+    "source": {
+      "title": "South African Government: public holidays",
+      "url": "https://www.gov.za/about-sa/public-holidays",
+      "note": "Annual holiday name/date cross-checked against official calendar; movable holidays are not assigned a fixed date."
+    }
+  },
+  {
+    "id": "mixed-025",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which international calling code connects a phone call to South Africa?",
+    "options": ["+27", "+44", "+61", "+254"],
+    "answer": "+27",
+    "fact": "South Africa’s country calling code is +27.",
+    "source": {
+      "title": "International Telecommunication Union: Operational Bulletin 1017",
+      "url": "https://www.ituob.org/issues/1017-en/",
+      "note": "Country calling code checked against the ITU bulletin excerpt, 24 October 2026. Original question wording."
+    }
+  },
+  {
+    "id": "mixed-026",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which internet country-code ending belongs to South Africa?",
+    "options": [".za", ".au", ".br", ".ke"],
+    "answer": ".za",
+    "fact": "The .za top-level domain is South Africa’s internet country code.",
+    "source": {
+      "title": "IANA: .za delegation record",
+      "url": "https://www.iana.org/domains/root/db/za",
+      "note": "Country-code delegation checked against IANA and ZA Domain Name Authority, 24 October 2026. Original question wording."
+    }
+  },
+  {
+    "id": "mixed-027",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which public holiday is on 21 March?",
+    "options": [
+      "Human Rights Day",
+      "Heritage Day",
+      "Family Day",
+      "Freedom Day"
+    ],
+    "answer": "Human Rights Day",
+    "fact": "Human Rights Day is observed on 21 March.",
+    "source": {
+      "title": "South African Government: public holidays",
+      "url": "https://www.gov.za/about-sa/public-holidays",
+      "note": "Annual holiday name/date cross-checked against official calendar; movable holidays are not assigned a fixed date."
+    }
+  },
+  {
+    "id": "mixed-028",
+    "category": "mixed",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which public holiday is on 1 May?",
+    "options": ["Youth Day", "New Year's Day", "Heritage Day", "Workers' Day"],
+    "answer": "Workers' Day",
+    "fact": "Workers' Day falls on 1 May.",
+    "source": {
+      "title": "South African Government: public holidays",
+      "url": "https://www.gov.za/about-sa/public-holidays",
+      "note": "Annual holiday name/date cross-checked against official calendar; movable holidays are not assigned a fixed date."
+    }
+  },
+  {
+    "id": "mixed-029",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which public holiday is on 9 August?",
+    "options": [
+      "Freedom Day",
+      "National Women's Day",
+      "Youth Day",
+      "Day of Goodwill"
+    ],
+    "answer": "National Women's Day",
+    "fact": "National Women's Day is observed on 9 August.",
+    "source": {
+      "title": "South African Government: public holidays",
+      "url": "https://www.gov.za/about-sa/public-holidays",
+      "note": "Annual holiday name/date cross-checked against official calendar; movable holidays are not assigned a fixed date."
+    }
+  },
+  {
+    "id": "mixed-030",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the South African public holiday on 26 December called?",
+    "options": [
+      "Family Day",
+      "Day of Goodwill",
+      "Workers' Day",
+      "Heritage Day"
+    ],
+    "answer": "Day of Goodwill",
+    "fact": "Day of Goodwill follows Christmas Day.",
+    "source": {
+      "title": "South African Government: public holidays",
+      "url": "https://www.gov.za/about-sa/public-holidays",
+      "note": "Annual holiday name/date cross-checked against official calendar; movable holidays are not assigned a fixed date."
+    }
+  },
+  {
+    "id": "mixed-031",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which of these holidays moves to a different calendar date each year?",
+    "options": ["Heritage Day", "Freedom Day", "Good Friday", "Youth Day"],
+    "answer": "Good Friday",
+    "fact": "Good Friday follows the date of Easter, rather than a fixed month and day.",
+    "source": {
+      "title": "South African Government: public holidays",
+      "url": "https://www.gov.za/about-sa/public-holidays",
+      "note": "Annual holiday name/date cross-checked against official calendar; movable holidays are not assigned a fixed date."
+    }
+  },
+  {
+    "id": "mixed-032",
+    "category": "mixed",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "true-false",
+    "prompt": "When a public holiday falls on a Sunday in South Africa, the following Monday is also a public holiday.",
+    "options": ["True", "False"],
+    "answer": "True",
+    "fact": "The Act gives public-holiday status to the following Monday.",
+    "source": {
+      "title": "South African Government: public holidays",
+      "url": "https://www.gov.za/about-sa/public-holidays",
+      "note": "Annual holiday name/date cross-checked against official calendar; movable holidays are not assigned a fixed date."
+    }
+  },
+  {
+    "id": "mixed-033",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "On which side of the road do motorists normally drive in South Africa?",
+    "options": ["Right", "Only the middle", "Left", "Either side at any time"],
+    "answer": "Left",
+    "fact": "South African traffic keeps left.",
+    "source": {
+      "title": "Arrive Alive: road safety",
+      "url": "https://www.arrivealive.co.za/",
+      "note": "Standard road-sign or travel terminology. Simplified knowledge question, not a substitute for traffic rules or driver training."
+    }
+  },
+  {
+    "id": "mixed-034",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What shape is a standard STOP sign?",
+    "options": ["Circle", "Octagon", "Pentagon", "Triangle"],
+    "answer": "Octagon",
+    "fact": "A STOP sign has eight sides.",
+    "source": {
+      "title": "Arrive Alive: road safety",
+      "url": "https://www.arrivealive.co.za/",
+      "note": "Standard road-sign or travel terminology. Simplified knowledge question, not a substitute for traffic rules or driver training."
+    }
+  },
+  {
+    "id": "mixed-035",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A red traffic light normally instructs a driver to do what?",
+    "options": ["Stop", "Ignore pedestrians", "Accelerate", "Sound the horn"],
+    "answer": "Stop",
+    "fact": "Red means stop at the appropriate stop line.",
+    "source": {
+      "title": "Arrive Alive: road safety",
+      "url": "https://www.arrivealive.co.za/",
+      "note": "Standard road-sign or travel terminology. Simplified knowledge question, not a substitute for traffic rules or driver training."
+    }
+  },
+  {
+    "id": "mixed-036",
+    "category": "mixed",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is a zebra crossing intended for?",
+    "options": [
+      "Weighing animals",
+      "Aircraft taking off",
+      "Pedestrians crossing a road",
+      "Parking trucks"
+    ],
+    "answer": "Pedestrians crossing a road",
+    "fact": "A zebra crossing is a marked pedestrian crossing.",
+    "source": {
+      "title": "Arrive Alive: road safety",
+      "url": "https://www.arrivealive.co.za/",
+      "note": "Standard road-sign or travel terminology. Simplified knowledge question, not a substitute for traffic rules or driver training."
+    }
+  },
+  {
+    "id": "mixed-037",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which mode of transport runs on rails?",
+    "options": ["Ferry", "Train", "Bicycle", "Minibus"],
+    "answer": "Train",
+    "fact": "Rail vehicles run on tracks.",
+    "source": {
+      "title": "Arrive Alive: road safety",
+      "url": "https://www.arrivealive.co.za/",
+      "note": "Standard road-sign or travel terminology. Simplified knowledge question, not a substitute for traffic rules or driver training."
+    }
+  },
+  {
+    "id": "mixed-038",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A ferry normally travels over what?",
+    "options": ["Only sand", "Water", "Rail tracks", "Overhead cables"],
+    "answer": "Water",
+    "fact": "Ferries carry people or vehicles across water.",
+    "source": {
+      "title": "Arrive Alive: road safety",
+      "url": "https://www.arrivealive.co.za/",
+      "note": "Standard road-sign or travel terminology. Simplified knowledge question, not a substitute for traffic rules or driver training."
+    }
+  },
+  {
+    "id": "mixed-039",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which label indicates a distance, rather than a speed?",
+    "options": ["80 km/h", "250 km", "60 km/h", "100 km/h"],
+    "answer": "250 km",
+    "fact": "Kilometres measure distance; kilometres per hour measure speed.",
+    "source": {
+      "title": "BIPM: SI brochure",
+      "url": "https://www.bipm.org/en/publications/si-brochure",
+      "note": "Standard metric-unit relationship; original scenario and wording."
+    }
+  },
+  {
+    "id": "mixed-040",
+    "category": "mixed",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A map key mainly explains what?",
+    "options": [
+      "Symbols used on the map",
+      "The age of every building",
+      "Tomorrow's weather",
+      "The price of petrol"
+    ],
+    "answer": "Symbols used on the map",
+    "fact": "A map key or legend explains its symbols.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "mixed-041",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "short-answer",
+    "prompt": "On a simple compass rose, which direction lies opposite north?",
+    "answer": "South",
+    "fact": "North and south are opposite cardinal directions.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    },
+    "acceptedAnswers": ["south", "s"]
+  },
+  {
+    "id": "mixed-042",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which direction is halfway between north and east?",
+    "options": ["Northwest", "Southeast", "Southwest", "Northeast"],
+    "answer": "Northeast",
+    "fact": "Northeast is the diagonal direction between north and east.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "mixed-043",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A 24-hour timetable says 18:30. What is this in 12-hour time?",
+    "options": ["6:30 am", "12:30 pm", "8:30 pm", "6:30 pm"],
+    "answer": "6:30 pm",
+    "fact": "18 minus 12 is 6, so 18:30 is 6:30 pm.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "mixed-044",
+    "category": "mixed",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A minibus leaves at 07:20 and travels for 45 minutes. When does it arrive?",
+    "options": ["08:20", "08:05", "07:55", "08:15"],
+    "answer": "08:05",
+    "fact": "40 minutes reaches 08:00, then 5 more reaches 08:05.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "mixed-045",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A fictional taxi fare is R18. Three passengers each pay that fare. What is the total?",
+    "options": ["R36", "R21", "R72", "R54"],
+    "answer": "R54",
+    "fact": "3 multiplied by R18 is R54.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "mixed-046",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A market stall charges R12 per bunch. Four bunches cost what?",
+    "options": ["R16", "R60", "R36", "R48"],
+    "answer": "R48",
+    "fact": "4 multiplied by R12 is R48.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "mixed-047",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A route is 120 km long. You have travelled 75 km. How far remains?",
+    "options": ["35 km", "55 km", "195 km", "45 km"],
+    "answer": "45 km",
+    "fact": "120 minus 75 equals 45.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "mixed-048",
+    "category": "mixed",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A 2-litre jug is shared equally into four cups. How much does each cup receive?",
+    "options": ["750 mL", "250 mL", "500 mL", "1000 mL"],
+    "answer": "500 mL",
+    "fact": "2000 mL divided by four equals 500 mL.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "mixed-049",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A party starts with 50 game-cash tokens and spends 17. How many remain?",
+    "options": ["27", "33", "67", "37"],
+    "answer": "33",
+    "fact": "50 minus 17 is 33.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "mixed-050",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A quiz team earns R100, loses R20 and earns R50. What is its net gain?",
+    "options": ["R170", "R120", "R130", "R70"],
+    "answer": "R130",
+    "fact": "100 minus 20 plus 50 equals 130.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "mixed-051",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the total value of three R5 coins and two R2 coins?",
+    "options": ["R17", "R19", "R25", "R21"],
+    "answer": "R19",
+    "fact": "Three fives make R15; two twos add R4.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "mixed-052",
+    "category": "mixed",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "How many R10 notes total R100?",
+    "options": ["20", "100", "10", "5"],
+    "answer": "10",
+    "fact": "R100 divided by R10 equals ten notes.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "mixed-053",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "If 25% of a 40-person audience chooses teal, how many people choose teal?",
+    "options": ["10", "20", "15", "5"],
+    "answer": "10",
+    "fact": "25% is one quarter, and one quarter of 40 is 10.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "mixed-054",
+    "category": "mixed",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A room code uses six characters. “SA2026” has how many digits?",
+    "options": ["3", "4", "6", "2"],
+    "answer": "4",
+    "fact": "The digits are 2, 0, 2 and 6; S and A are letters.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "mixed-055",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which item is normally scanned by a phone camera to open a game-room link?",
+    "options": ["Analogue clock", "Weather vane", "QR code", "Compass needle"],
+    "answer": "QR code",
+    "fact": "A QR code can encode a web address.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "mixed-056",
+    "category": "mixed",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which action helps protect a private account password?",
+    "options": [
+      "Keeping it secret",
+      "Using a friend's name as proof of ownership",
+      "Posting it in the room chat",
+      "Printing it on a public poster"
+    ],
+    "answer": "Keeping it secret",
+    "fact": "Passwords should not be shared publicly.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "mixed-057",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In a quiz leaderboard, what does “tied” mean?",
+    "options": [
+      "All scores are negative",
+      "The game cannot finish",
+      "Two or more players have equal scores",
+      "One player has no nickname"
+    ],
+    "answer": "Two or more players have equal scores",
+    "fact": "A tie means the compared scores are equal.",
+    "source": {
+      "title": "Original word challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained word or grammar exercise; answer follows directly from the supplied text. CAPS is contextual background, not the source of this original puzzle."
+    }
+  },
+  {
+    "id": "mixed-058",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A match has ten rounds and you have completed seven. How many remain?",
+    "options": ["17", "4", "2", "3"],
+    "answer": "3",
+    "fact": "10 minus 7 equals 3.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "mixed-059",
+    "category": "mixed",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "If every one of 8 players gets 2 cards, how many cards are dealt?",
+    "options": ["18", "10", "12", "16"],
+    "answer": "16",
+    "fact": "8 multiplied by 2 equals 16.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  },
+  {
+    "id": "mixed-060",
+    "category": "mixed",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "ordering",
+    "prompt": "Order these game-cash values from smallest to largest.",
+    "options": ["R20", "R2", "R10", "R5"],
+    "answer": "R2 → R5 → R10 → R20",
+    "fact": "The values increase from 2 to 5 to 10 to 20.",
+    "source": {
+      "title": "Original arithmetic or logic challenge",
+      "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
+      "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
+    }
+  }
+]

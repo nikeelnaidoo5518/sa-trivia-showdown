@@ -1,0 +1,3328 @@
+[
+  {
+    "id": "places-001",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "How many provinces make up South Africa?",
+    "answer": "Nine",
+    "fact": "South Africa has had nine provinces since 1994.",
+    "source": {
+      "title": "South African Government: provinces",
+      "url": "https://www.gov.za/about-sa/south-africas-provinces",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Nine", "Six", "Seven", "Twelve"]
+  },
+  {
+    "id": "places-002",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which province covers the greatest land area?",
+    "answer": "Northern Cape",
+    "fact": "The Northern Cape covers close to one third of the country.",
+    "source": {
+      "title": "South African Government: provinces",
+      "url": "https://www.gov.za/about-sa/south-africas-provinces",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Northern Cape", "Gauteng", "Free State", "Limpopo"]
+  },
+  {
+    "id": "places-003",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which is the smallest province by land area?",
+    "answer": "Gauteng",
+    "fact": "Gauteng is small in area but highly urbanised.",
+    "source": {
+      "title": "South African Government: provinces",
+      "url": "https://www.gov.za/about-sa/south-africas-provinces",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Gauteng", "KwaZulu-Natal", "Mpumalanga", "North West"]
+  },
+  {
+    "id": "places-004",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Eastern Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which city is the provincial capital of the Eastern Cape?",
+    "answer": "Bhisho",
+    "fact": "Bhisho is the seat of the Eastern Cape provincial government.",
+    "source": {
+      "title": "Eastern Cape provincial government",
+      "url": "https://www.ecprov.gov.za/",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Bhisho", "Mthatha", "East London", "Gqeberha"]
+  },
+  {
+    "id": "places-005",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which city is the provincial capital of KwaZulu-Natal?",
+    "answer": "Pietermaritzburg",
+    "fact": "Pietermaritzburg is the provincial capital.",
+    "source": {
+      "title": "KwaZulu-Natal provincial government",
+      "url": "https://www.kznonline.gov.za/",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Pietermaritzburg", "Durban", "Richards Bay", "Newcastle"]
+  },
+  {
+    "id": "places-006",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "North West",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which city is the provincial capital of North West?",
+    "answer": "Mahikeng",
+    "fact": "Mahikeng is the capital of North West.",
+    "source": {
+      "title": "Government: provinces",
+      "url": "https://www.gov.za/provinces",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Mahikeng", "Rustenburg", "Klerksdorp", "Potchefstroom"]
+  },
+  {
+    "id": "places-007",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Limpopo",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which city is the provincial capital of Limpopo?",
+    "answer": "Polokwane",
+    "fact": "Polokwane is the provincial capital of Limpopo.",
+    "source": {
+      "title": "Limpopo provincial government",
+      "url": "https://www.limpopo.gov.za/",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Polokwane", "Musina", "Tzaneen", "Thohoyandou"]
+  },
+  {
+    "id": "places-008",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Mpumalanga",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which city is the provincial capital of Mpumalanga?",
+    "answer": "Mbombela",
+    "fact": "Mbombela was formerly named Nelspruit.",
+    "source": {
+      "title": "Mpumalanga provincial government",
+      "url": "https://www.mpumalanga.gov.za/",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Mbombela", "Emalahleni", "Secunda", "Ermelo"]
+  },
+  {
+    "id": "places-009",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Northern Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which city is the Northern Cape provincial capital?",
+    "answer": "Kimberley",
+    "fact": "Kimberley grew around nineteenth-century diamond mining.",
+    "source": {
+      "title": "Northern Cape provincial government",
+      "url": "https://www.northern-cape.gov.za/",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Kimberley", "Upington", "Springbok", "De Aar"]
+  },
+  {
+    "id": "places-010",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Gauteng",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which province contains Johannesburg?",
+    "answer": "Gauteng",
+    "fact": "Johannesburg is the provincial capital of Gauteng.",
+    "source": {
+      "title": "City of Johannesburg",
+      "url": "https://www.joburg.org.za/",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Gauteng", "Free State", "Limpopo", "North West"]
+  },
+  {
+    "id": "places-011",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Western Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In which city does South Africa’s Parliament have its seat?",
+    "answer": "Cape Town",
+    "fact": "Cape Town is South Africa’s legislative capital.",
+    "source": {
+      "title": "Parliament of South Africa",
+      "url": "https://www.parliament.gov.za/",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Cape Town", "Pretoria", "Durban", "Bloemfontein"]
+  },
+  {
+    "id": "places-012",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Gauteng",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which city is South Africa’s administrative capital?",
+    "answer": "Pretoria",
+    "fact": "The Union Buildings stand in Pretoria.",
+    "source": {
+      "title": "The Presidency: Union Buildings",
+      "url": "https://www.thepresidency.gov.za/union-buildings",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Pretoria", "Cape Town", "Kimberley", "Gqeberha"]
+  },
+  {
+    "id": "places-013",
+    "category": "places",
+    "difficulty": "medium",
+    "region": "Free State",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "The Supreme Court of Appeal is based in which city?",
+    "answer": "Bloemfontein",
+    "fact": "Bloemfontein is traditionally described as the judicial capital.",
+    "source": {
+      "title": "Supreme Court of Appeal",
+      "url": "https://www.supremecourtofappeal.org.za/",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Bloemfontein", "Johannesburg", "Polokwane", "Durban"]
+  },
+  {
+    "id": "places-014",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which independent country is entirely surrounded by South Africa?",
+    "answer": "Lesotho",
+    "fact": "Lesotho is a landlocked mountain kingdom within South Africa’s borders.",
+    "source": {
+      "title": "South African Government: geography",
+      "url": "https://www.gov.za/about-sa/geography-and-climate",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Lesotho", "Eswatini", "Botswana", "Namibia"]
+  },
+  {
+    "id": "places-015",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which ocean lies along South Africa’s west coast?",
+    "answer": "Atlantic Ocean",
+    "fact": "The Atlantic coast includes the West Coast and Namaqualand.",
+    "source": {
+      "title": "South African Government: geography",
+      "url": "https://www.gov.za/about-sa/geography-and-climate",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": [
+      "Atlantic Ocean",
+      "Pacific Ocean",
+      "Arctic Ocean",
+      "Southern Ocean"
+    ]
+  },
+  {
+    "id": "places-016",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Durban’s beaches face which ocean?",
+    "answer": "Indian Ocean",
+    "fact": "Durban lies on South Africa’s eastern coastline.",
+    "source": {
+      "title": "Durban Tourism",
+      "url": "https://visitdurban.travel/",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": [
+      "Indian Ocean",
+      "Atlantic Ocean",
+      "Pacific Ocean",
+      "Arctic Ocean"
+    ]
+  },
+  {
+    "id": "places-017",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Western Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which cape marks the southernmost point of mainland Africa?",
+    "answer": "Cape Agulhas",
+    "fact": "Cape Agulhas is farther south than Cape Point.",
+    "source": {
+      "title": "SANParks: Agulhas",
+      "url": "https://www.sanparks.org/parks/agulhas",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": [
+      "Cape Agulhas",
+      "Cape Point",
+      "Cape of Good Hope",
+      "Cape Recife"
+    ]
+  },
+  {
+    "id": "places-018",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which country shares much of South Africa’s north-western boundary?",
+    "answer": "Namibia",
+    "fact": "The Orange River forms part of the boundary with Namibia.",
+    "source": {
+      "title": "South African Government: geography",
+      "url": "https://www.gov.za/about-sa/geography-and-climate",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Namibia", "Angola", "Zambia", "Malawi"]
+  },
+  {
+    "id": "places-019",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Limpopo",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which country borders South Africa immediately north of Limpopo across the Limpopo River?",
+    "answer": "Zimbabwe",
+    "fact": "Beitbridge connects South Africa and Zimbabwe.",
+    "source": {
+      "title": "Limpopo provincial government",
+      "url": "https://www.limpopo.gov.za/",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Zimbabwe", "Tanzania", "Uganda", "Kenya"]
+  },
+  {
+    "id": "places-020",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Free State",
+    "age": "all",
+    "format": "true-false",
+    "prompt": "True or false: the Free State has a sea coast.",
+    "answer": "False",
+    "fact": "The Free State is an inland province.",
+    "source": {
+      "title": "South African Government: provinces",
+      "url": "https://www.gov.za/about-sa/south-africas-provinces",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["False", "True"]
+  },
+  {
+    "id": "places-021",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Western Cape",
+    "age": "all",
+    "format": "image",
+    "prompt": "A flat summit towers above a city and its harbour. Which landmark fits this clue?",
+    "answer": "Table Mountain",
+    "fact": "Table Mountain’s plateau creates its familiar silhouette.",
+    "source": {
+      "title": "SANParks: Table Mountain",
+      "url": "https://www.sanparks.org/parks/table-mountain",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Table Mountain", "Lion’s Head", "Pilanesberg", "Spion Kop"],
+    "imageKey": "mountain",
+    "clue": "A broad, flat-topped mountain above Cape Town."
+  },
+  {
+    "id": "places-022",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Mpumalanga",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which province is home to Blyde River Canyon?",
+    "answer": "Mpumalanga",
+    "fact": "The canyon is a highlight of the Panorama Route.",
+    "source": {
+      "title": "Mpumalanga Tourism: Blyde River Canyon",
+      "url": "https://www.mpumalanga.com/our-provincial-parks/blyde-river-canyon-nature-reserve",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Mpumalanga", "Northern Cape", "Eastern Cape", "Gauteng"]
+  },
+  {
+    "id": "places-023",
+    "category": "places",
+    "difficulty": "medium",
+    "region": "Mpumalanga",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "The Three Rondavels are rock formations beside which canyon?",
+    "answer": "Blyde River Canyon",
+    "fact": "The Three Rondavels resemble rounded traditional dwellings.",
+    "source": {
+      "title": "Mpumalanga Tourism: Blyde River Canyon",
+      "url": "https://www.mpumalanga.com/our-provincial-parks/blyde-river-canyon-nature-reserve",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": [
+      "Blyde River Canyon",
+      "Fish River Canyon",
+      "Grand Canyon",
+      "Colca Canyon"
+    ]
+  },
+  {
+    "id": "places-024",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Northern Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which river plunges over Augrabies Falls?",
+    "answer": "Orange River",
+    "fact": "Augrabies Falls National Park lies near Upington.",
+    "source": {
+      "title": "SANParks: Augrabies Falls",
+      "url": "https://www.sanparks.org/parks/augrabies-falls",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Orange River", "Limpopo River", "Tugela River", "Sabie River"]
+  },
+  {
+    "id": "places-025",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Free State",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which province contains the sandstone cliffs of Golden Gate Highlands National Park?",
+    "answer": "Free State",
+    "fact": "Golden Gate lies near Clarens in the Maloti Mountains.",
+    "source": {
+      "title": "SANParks: Golden Gate Highlands",
+      "url": "https://www.sanparks.org/parks/golden-gate-highlands",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Free State", "Limpopo", "Gauteng", "Western Cape"]
+  },
+  {
+    "id": "places-026",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Northern Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which country shares the Kgalagadi Transfrontier Park with South Africa?",
+    "answer": "Botswana",
+    "fact": "The park joins protected landscapes in Botswana and South Africa.",
+    "source": {
+      "title": "SANParks: Kgalagadi",
+      "url": "https://www.sanparks.org/parks/kgalagadi",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Botswana", "Zimbabwe", "Lesotho", "Eswatini"]
+  },
+  {
+    "id": "places-027",
+    "category": "places",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which two provinces contain Kruger National Park?",
+    "answer": "Limpopo and Mpumalanga",
+    "fact": "Kruger stretches along South Africa’s north-eastern border.",
+    "source": {
+      "title": "SANParks: Kruger",
+      "url": "https://www.sanparks.org/parks/kruger",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": [
+      "Limpopo and Mpumalanga",
+      "Gauteng and Free State",
+      "Western Cape and Eastern Cape",
+      "North West and Northern Cape"
+    ]
+  },
+  {
+    "id": "places-028",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Northern Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which city is famous for the historic Big Hole diamond-mining site?",
+    "answer": "Kimberley",
+    "fact": "The Big Hole is a reminder of Kimberley’s diamond rush.",
+    "source": {
+      "title": "The Big Hole museum",
+      "url": "https://thebighole.co.za/",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Kimberley", "Durban", "Mbombela", "Mthatha"]
+  },
+  {
+    "id": "places-029",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which mountain range forms much of the high boundary between KwaZulu-Natal and Lesotho?",
+    "answer": "Drakensberg",
+    "fact": "The Maloti-Drakensberg landscape extends across South Africa and Lesotho.",
+    "source": {
+      "title": "UNESCO: Maloti-Drakensberg Park",
+      "url": "https://whc.unesco.org/en/list/985/",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Drakensberg", "Cederberg", "Magaliesberg", "Soutpansberg"]
+  },
+  {
+    "id": "places-030",
+    "category": "places",
+    "difficulty": "medium",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which wetland park on the KwaZulu-Natal coast is a UNESCO World Heritage Site?",
+    "answer": "iSimangaliso",
+    "fact": "iSimangaliso includes Lake St Lucia and coastal ecosystems.",
+    "source": {
+      "title": "UNESCO: iSimangaliso Wetland Park",
+      "url": "https://whc.unesco.org/en/list/914/",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["iSimangaliso", "Pilanesberg", "Tankwa Karoo", "Marakele"]
+  },
+  {
+    "id": "places-031",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Western Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which province contains the Cango Caves near Oudtshoorn?",
+    "answer": "Western Cape",
+    "fact": "The caves lie in limestone in the foothills of the Swartberg.",
+    "source": {
+      "title": "Cango Caves official visitor information",
+      "url": "https://www.cango-caves.co.za/",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Western Cape", "Limpopo", "Gauteng", "Mpumalanga"]
+  },
+  {
+    "id": "places-032",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Eastern Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the current official name of the city formerly called Port Elizabeth?",
+    "answer": "Gqeberha",
+    "fact": "The city’s name changed to Gqeberha in 2021.",
+    "source": {
+      "title": "Government: transformation of heritage landscape",
+      "url": "https://www.gov.za/news/media-statements/sport-arts-and-culture-transformation-our-heritage-landscape-25-feb-2021",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Gqeberha", "Mbombela", "Polokwane", "Mahikeng"]
+  },
+  {
+    "id": "places-033",
+    "category": "places",
+    "difficulty": "medium",
+    "region": "Eastern Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which bay is associated with Gqeberha?",
+    "answer": "Algoa Bay",
+    "fact": "Gqeberha is on the western side of Algoa Bay.",
+    "source": {
+      "title": "Nelson Mandela Bay Tourism",
+      "url": "https://www.nmbt.co.za/",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Algoa Bay", "Table Bay", "Saldanha Bay", "False Bay"]
+  },
+  {
+    "id": "places-034",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Eastern Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which stretch of coast is associated with Coffee Bay and Hole in the Wall?",
+    "answer": "Wild Coast",
+    "fact": "Coffee Bay and Hole in the Wall are Eastern Cape landmarks.",
+    "source": {
+      "title": "Eastern Cape Parks and Tourism Agency",
+      "url": "https://visiteasterncape.co.za/",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Wild Coast", "Dolphin Coast", "West Coast", "Skeleton Coast"]
+  },
+  {
+    "id": "places-035",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which city’s beachfront includes the Golden Mile?",
+    "answer": "Durban",
+    "fact": "The Golden Mile is a popular part of Durban’s beachfront.",
+    "source": {
+      "title": "Durban Tourism",
+      "url": "https://visitdurban.travel/",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Durban", "Cape Town", "Mossel Bay", "East London"]
+  },
+  {
+    "id": "places-036",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Northern Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which South African town is closely associated with the Sutherland astronomical observatory?",
+    "answer": "Sutherland",
+    "fact": "The Southern African Large Telescope stands near Sutherland.",
+    "source": {
+      "title": "South African Astronomical Observatory",
+      "url": "https://www.saao.ac.za/",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Sutherland", "Hermanus", "Parys", "Sabie"]
+  },
+  {
+    "id": "places-037",
+    "category": "places",
+    "difficulty": "medium",
+    "region": "Free State",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which river flows through the town of Parys?",
+    "answer": "Vaal River",
+    "fact": "Parys lies beside the Vaal, near the Vredefort Dome.",
+    "source": {
+      "title": "UNESCO: Vredefort Dome",
+      "url": "https://whc.unesco.org/en/list/1162/",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": [
+      "Vaal River",
+      "Limpopo River",
+      "Olifants River",
+      "Great Fish River"
+    ]
+  },
+  {
+    "id": "places-038",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Western Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which island can visitors reach by ferry from Cape Town to learn about its former prison?",
+    "answer": "Robben Island",
+    "fact": "Robben Island is a World Heritage Site.",
+    "source": {
+      "title": "UNESCO: Robben Island",
+      "url": "https://whc.unesco.org/en/list/916/",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": [
+      "Robben Island",
+      "Dassen Island",
+      "Marion Island",
+      "Bird Island"
+    ]
+  },
+  {
+    "id": "places-039",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Mpumalanga",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which country lies to the east of Mpumalanga and south of Mozambique?",
+    "answer": "Eswatini",
+    "fact": "Eswatini borders both South Africa and Mozambique.",
+    "source": {
+      "title": "South African Government: geography",
+      "url": "https://www.gov.za/about-sa/geography-and-climate",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Eswatini", "Lesotho", "Botswana", "Zambia"]
+  },
+  {
+    "id": "places-040",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Limpopo",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which province reaches South Africa’s northernmost point?",
+    "answer": "Limpopo",
+    "fact": "Limpopo borders Botswana, Zimbabwe and Mozambique.",
+    "source": {
+      "title": "South African Government: provinces",
+      "url": "https://www.gov.za/about-sa/south-africas-provinces",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Limpopo", "Gauteng", "Free State", "KwaZulu-Natal"]
+  },
+  {
+    "id": "places-041",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Limpopo",
+    "age": "all",
+    "format": "scramble",
+    "prompt": "Unscramble this provincial name: OPOP MIL.",
+    "answer": "Limpopo",
+    "fact": "Limpopo takes its name from the river along its northern boundary.",
+    "source": {
+      "title": "South African Government: provinces",
+      "url": "https://www.gov.za/about-sa/south-africas-provinces",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "acceptedAnswers": ["Limpopo"]
+  },
+  {
+    "id": "places-042",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Western Cape",
+    "age": "all",
+    "format": "short-answer",
+    "prompt": "What city name completes this pair: Johannesburg — Jozi; Cape Town — the Mother ____?",
+    "answer": "City",
+    "fact": "Cape Town is widely nicknamed the Mother City.",
+    "source": {
+      "title": "Cape Town Tourism",
+      "url": "https://www.capetown.travel/",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "acceptedAnswers": ["city", "Mother City"]
+  },
+  {
+    "id": "places-043",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "ordering",
+    "prompt": "Place these cities in order from west to east: Durban, Cape Town, Bloemfontein.",
+    "answer": "Cape Town → Bloemfontein → Durban",
+    "fact": "Cape Town is furthest west; Durban is furthest east of these three.",
+    "source": {
+      "title": "Government geography; coordinate comparison",
+      "url": "https://www.gov.za/about-sa/geography-and-climate",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Durban", "Cape Town", "Bloemfontein"]
+  },
+  {
+    "id": "places-044",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "matching",
+    "prompt": "Which province-and-city pair is correct?",
+    "answer": "Eastern Cape — Mthatha",
+    "fact": "Mthatha is an Eastern Cape city.",
+    "source": {
+      "title": "Eastern Cape Parks and Tourism Agency",
+      "url": "https://visiteasterncape.co.za/",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": [
+      "Eastern Cape — Mthatha",
+      "Gauteng — Richards Bay",
+      "Free State — Knysna",
+      "Limpopo — Worcester"
+    ]
+  },
+  {
+    "id": "places-045",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "North West",
+    "age": "all",
+    "format": "audio",
+    "prompt": "Listen to the clue: find the province containing Rustenburg and Sun City.",
+    "answer": "North West",
+    "fact": "Both destinations are in North West.",
+    "source": {
+      "title": "Government: provinces",
+      "url": "https://www.gov.za/provinces",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["North West", "Free State", "Mpumalanga", "Western Cape"],
+    "audioText": "This province contains Rustenburg and Sun City. Which province is it?",
+    "clue": "Rustenburg and Sun City are both in this province."
+  },
+  {
+    "id": "places-046",
+    "category": "places",
+    "difficulty": "medium",
+    "region": "Western Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which mountain range is north of Cape Town and known for ancient rock art and rooibos country?",
+    "answer": "Cederberg",
+    "fact": "The Cederberg is in the Western Cape.",
+    "source": {
+      "title": "CapeNature: Cederberg Wilderness",
+      "url": "https://www.capenature.co.za/reserves/cederberg-wilderness-area",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Cederberg", "Magaliesberg", "Soutpansberg", "Lebombo"]
+  },
+  {
+    "id": "places-047",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Western Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which town is associated with shore-based whale watching on Walker Bay?",
+    "answer": "Hermanus",
+    "fact": "Walker Bay lies along the Overberg coast.",
+    "source": {
+      "title": "CapeNature: Walker Bay",
+      "url": "https://www.capenature.co.za/reserves/walker-bay-nature-reserve",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Hermanus", "Upington", "Dullstroom", "Bethlehem"]
+  },
+  {
+    "id": "places-048",
+    "category": "places",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which warm ocean current flows south-westward along South Africa’s east coast?",
+    "answer": "Agulhas Current",
+    "fact": "The Benguela is the cold current on the west coast.",
+    "source": {
+      "title": "South African Government: geography",
+      "url": "https://www.gov.za/about-sa/geography-and-climate",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": [
+      "Agulhas Current",
+      "Benguela Current",
+      "Humboldt Current",
+      "California Current"
+    ]
+  },
+  {
+    "id": "places-049",
+    "category": "places",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "The Magaliesberg mountains lie mainly in which pair of provinces?",
+    "answer": "Gauteng and North West",
+    "fact": "The Magaliesberg Biosphere spans Gauteng and North West.",
+    "source": {
+      "title": "UNESCO: Magaliesberg Biosphere",
+      "url": "https://www.unesco.org/en/mab/magaliesberg",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": [
+      "Gauteng and North West",
+      "Eastern Cape and Free State",
+      "Limpopo and Western Cape",
+      "Northern Cape and KwaZulu-Natal"
+    ]
+  },
+  {
+    "id": "places-050",
+    "category": "places",
+    "difficulty": "medium",
+    "region": "North West",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which park is built around an ancient volcanic complex near Sun City?",
+    "answer": "Pilanesberg",
+    "fact": "Pilanesberg occupies the remains of an ancient volcanic system.",
+    "source": {
+      "title": "North West Tourism",
+      "url": "https://www.tourismnorthwest.co.za/",
+      "note": "Stable geographical reference. Original question wording; administrative names use current names where established."
+    },
+    "options": ["Pilanesberg", "West Coast", "Addo Elephant", "Tsitsikamma"]
+  },
+  {
+    "id": "places-051",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Western Cape",
+    "age": "all",
+    "format": "map",
+    "prompt": "Map Sprint: locate Cape Town, the city at the foot of Table Mountain.",
+    "answer": "Cape Town",
+    "fact": "Cape Town is in Western Cape.",
+    "source": {
+      "title": "Government provinces; schematic location clue",
+      "url": "https://www.gov.za/about-sa/south-africas-provinces",
+      "note": "City/province geography reference. The x/y target is a deliberately approximate point on the game’s schematic South Africa map, not GPS coordinates."
+    },
+    "mapTarget": {
+      "x": 15,
+      "y": 82
+    }
+  },
+  {
+    "id": "places-052",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "map",
+    "prompt": "Map Sprint: locate Durban, the major coastal city of KwaZulu-Natal.",
+    "answer": "Durban",
+    "fact": "Durban is in KwaZulu-Natal.",
+    "source": {
+      "title": "Government provinces; schematic location clue",
+      "url": "https://www.gov.za/about-sa/south-africas-provinces",
+      "note": "City/province geography reference. The x/y target is a deliberately approximate point on the game’s schematic South Africa map, not GPS coordinates."
+    },
+    "mapTarget": {
+      "x": 83,
+      "y": 58
+    }
+  },
+  {
+    "id": "places-053",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Gauteng",
+    "age": "all",
+    "format": "map",
+    "prompt": "Map Sprint: locate Johannesburg, the inland city also called Jozi.",
+    "answer": "Johannesburg",
+    "fact": "Johannesburg is in Gauteng.",
+    "source": {
+      "title": "Government provinces; schematic location clue",
+      "url": "https://www.gov.za/about-sa/south-africas-provinces",
+      "note": "City/province geography reference. The x/y target is a deliberately approximate point on the game’s schematic South Africa map, not GPS coordinates."
+    },
+    "mapTarget": {
+      "x": 65,
+      "y": 32
+    }
+  },
+  {
+    "id": "places-054",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Gauteng",
+    "age": "all",
+    "format": "map",
+    "prompt": "Map Sprint: locate Pretoria, the city containing the Union Buildings.",
+    "answer": "Pretoria",
+    "fact": "Pretoria is in Gauteng.",
+    "source": {
+      "title": "Government provinces; schematic location clue",
+      "url": "https://www.gov.za/about-sa/south-africas-provinces",
+      "note": "City/province geography reference. The x/y target is a deliberately approximate point on the game’s schematic South Africa map, not GPS coordinates."
+    },
+    "mapTarget": {
+      "x": 67,
+      "y": 24
+    }
+  },
+  {
+    "id": "places-055",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Free State",
+    "age": "all",
+    "format": "map",
+    "prompt": "Map Sprint: locate Bloemfontein, the capital of the Free State.",
+    "answer": "Bloemfontein",
+    "fact": "Bloemfontein is in Free State.",
+    "source": {
+      "title": "Government provinces; schematic location clue",
+      "url": "https://www.gov.za/about-sa/south-africas-provinces",
+      "note": "City/province geography reference. The x/y target is a deliberately approximate point on the game’s schematic South Africa map, not GPS coordinates."
+    },
+    "mapTarget": {
+      "x": 52,
+      "y": 53
+    }
+  },
+  {
+    "id": "places-056",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Eastern Cape",
+    "age": "all",
+    "format": "map",
+    "prompt": "Map Sprint: locate Gqeberha, the city formerly called Port Elizabeth.",
+    "answer": "Gqeberha",
+    "fact": "Gqeberha is in Eastern Cape.",
+    "source": {
+      "title": "Government provinces; schematic location clue",
+      "url": "https://www.gov.za/about-sa/south-africas-provinces",
+      "note": "City/province geography reference. The x/y target is a deliberately approximate point on the game’s schematic South Africa map, not GPS coordinates."
+    },
+    "mapTarget": {
+      "x": 57,
+      "y": 85
+    }
+  },
+  {
+    "id": "places-057",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Limpopo",
+    "age": "all",
+    "format": "map",
+    "prompt": "Map Sprint: locate Polokwane, the capital of Limpopo.",
+    "answer": "Polokwane",
+    "fact": "Polokwane is in Limpopo.",
+    "source": {
+      "title": "Government provinces; schematic location clue",
+      "url": "https://www.gov.za/about-sa/south-africas-provinces",
+      "note": "City/province geography reference. The x/y target is a deliberately approximate point on the game’s schematic South Africa map, not GPS coordinates."
+    },
+    "mapTarget": {
+      "x": 75,
+      "y": 12
+    }
+  },
+  {
+    "id": "places-058",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Mpumalanga",
+    "age": "all",
+    "format": "map",
+    "prompt": "Map Sprint: locate Mbombela, the capital of Mpumalanga.",
+    "answer": "Mbombela",
+    "fact": "Mbombela is in Mpumalanga.",
+    "source": {
+      "title": "Government provinces; schematic location clue",
+      "url": "https://www.gov.za/about-sa/south-africas-provinces",
+      "note": "City/province geography reference. The x/y target is a deliberately approximate point on the game’s schematic South Africa map, not GPS coordinates."
+    },
+    "mapTarget": {
+      "x": 85,
+      "y": 29
+    }
+  },
+  {
+    "id": "places-059",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Northern Cape",
+    "age": "all",
+    "format": "map",
+    "prompt": "Map Sprint: locate Kimberley, the city containing the Big Hole.",
+    "answer": "Kimberley",
+    "fact": "Kimberley is in Northern Cape.",
+    "source": {
+      "title": "Government provinces; schematic location clue",
+      "url": "https://www.gov.za/about-sa/south-africas-provinces",
+      "note": "City/province geography reference. The x/y target is a deliberately approximate point on the game’s schematic South Africa map, not GPS coordinates."
+    },
+    "mapTarget": {
+      "x": 39,
+      "y": 49
+    }
+  },
+  {
+    "id": "places-060",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "Northern Cape",
+    "age": "all",
+    "format": "map",
+    "prompt": "Map Sprint: locate Upington, the Northern Cape town beside the Orange River.",
+    "answer": "Upington",
+    "fact": "Upington is in Northern Cape.",
+    "source": {
+      "title": "Government provinces; schematic location clue",
+      "url": "https://www.gov.za/about-sa/south-africas-provinces",
+      "note": "City/province geography reference. The x/y target is a deliberately approximate point on the game’s schematic South Africa map, not GPS coordinates."
+    },
+    "mapTarget": {
+      "x": 20,
+      "y": 40
+    }
+  },
+  {
+    "id": "history-001",
+    "category": "history",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In which year did South Africa hold its first national democratic election with universal adult suffrage?",
+    "answer": "1994",
+    "fact": "The April 1994 election marked the democratic transition.",
+    "source": {
+      "title": "Government: milestones of democracy",
+      "url": "https://www.gov.za/issues/20years/milestones-20-years-freedom",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["1994", "1984", "1990", "2004"]
+  },
+  {
+    "id": "history-002",
+    "category": "history",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which annual public holiday marks the democratic election of April 1994?",
+    "answer": "Freedom Day",
+    "fact": "Freedom Day is observed on 27 April.",
+    "source": {
+      "title": "Government: public holidays",
+      "url": "https://www.gov.za/about-sa/public-holidays",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["Freedom Day", "Heritage Day", "Workers’ Day", "Youth Day"]
+  },
+  {
+    "id": "history-003",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "Eastern Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In which Eastern Cape village was Nelson Mandela born?",
+    "answer": "Mvezo",
+    "fact": "Mandela was born in Mvezo on 18 July 1918.",
+    "source": {
+      "title": "Nelson Mandela Foundation: biography",
+      "url": "https://www.nelsonmandela.org/biography",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["Mvezo", "Qunu", "Hogsback", "Coffee Bay"]
+  },
+  {
+    "id": "history-004",
+    "category": "history",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Nelson Mandela was released from prison in which year?",
+    "answer": "1990",
+    "fact": "He was released on 11 February 1990.",
+    "source": {
+      "title": "Nelson Mandela Foundation: learners timeline",
+      "url": "https://www.nelsonmandela.org/learners-timeline",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["1990", "1976", "1985", "1994"]
+  },
+  {
+    "id": "history-005",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "Gauteng",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Where was Nelson Mandela inaugurated as president in May 1994?",
+    "answer": "Union Buildings",
+    "fact": "The ceremony took place at the Union Buildings in Pretoria.",
+    "source": {
+      "title": "Nelson Mandela Foundation: learners timeline",
+      "url": "https://www.nelsonmandela.org/learners-timeline",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": [
+      "Union Buildings",
+      "Castle of Good Hope",
+      "Constitution Hill",
+      "City Hall in Durban"
+    ]
+  },
+  {
+    "id": "history-006",
+    "category": "history",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the title of Nelson Mandela’s famous autobiography?",
+    "answer": "Long Walk to Freedom",
+    "fact": "Long Walk to Freedom was published in 1994.",
+    "source": {
+      "title": "Nelson Mandela Foundation: biography",
+      "url": "https://www.nelsonmandela.org/biography",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": [
+      "Long Walk to Freedom",
+      "Cry, the Beloved Country",
+      "Country of My Skull",
+      "The Conservationist"
+    ]
+  },
+  {
+    "id": "history-007",
+    "category": "history",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which clan name is widely used as a respectful name for Nelson Mandela?",
+    "answer": "Madiba",
+    "fact": "Madiba is Mandela’s clan name.",
+    "source": {
+      "title": "Nelson Mandela Foundation: names",
+      "url": "https://www.nelsonmandela.org/names",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["Madiba", "Mzilikazi", "Shaka", "Moshoeshoe"]
+  },
+  {
+    "id": "history-008",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Who became the first African recipient of the Nobel Peace Prize, for 1960?",
+    "answer": "Albert Luthuli",
+    "fact": "The 1960 prize was presented to Luthuli in 1961.",
+    "source": {
+      "title": "Nobel Prize: Albert Lutuli facts",
+      "url": "https://www.nobelprize.org/prizes/peace/1960/lutuli/facts/",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": [
+      "Albert Luthuli",
+      "Desmond Tutu",
+      "Nelson Mandela",
+      "Steve Biko"
+    ]
+  },
+  {
+    "id": "history-009",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which South African church leader received the 1984 Nobel Peace Prize?",
+    "answer": "Desmond Tutu",
+    "fact": "Tutu was honoured for opposition to apartheid through peaceful means.",
+    "source": {
+      "title": "Nobel Prize: Desmond Tutu facts",
+      "url": "https://www.nobelprize.org/prizes/peace/1984/tutu/facts/",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": [
+      "Desmond Tutu",
+      "Trevor Huddleston",
+      "Beyers Naudé",
+      "Allan Boesak"
+    ]
+  },
+  {
+    "id": "history-010",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Who shared the 1993 Nobel Peace Prize with Nelson Mandela?",
+    "answer": "F. W. de Klerk",
+    "fact": "The award recognised work towards a democratic South Africa.",
+    "source": {
+      "title": "Nobel Prize: Peace Prize 1993",
+      "url": "https://www.nobelprize.org/prizes/peace/1993/summary/",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": [
+      "F. W. de Klerk",
+      "Oliver Tambo",
+      "Albert Luthuli",
+      "Walter Sisulu"
+    ]
+  },
+  {
+    "id": "history-011",
+    "category": "history",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which South African writer won the 1991 Nobel Prize in Literature?",
+    "answer": "Nadine Gordimer",
+    "fact": "Gordimer wrote novels and short stories.",
+    "source": {
+      "title": "Nobel Prize: Nadine Gordimer",
+      "url": "https://www.nobelprize.org/prizes/literature/1991/gordimer/facts/",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["Nadine Gordimer", "Bessie Head", "Zakes Mda", "Athol Fugard"]
+  },
+  {
+    "id": "history-012",
+    "category": "history",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which South African-born novelist received the 2003 Nobel Prize in Literature?",
+    "answer": "J. M. Coetzee",
+    "fact": "Coetzee’s novels include Disgrace and Life & Times of Michael K.",
+    "source": {
+      "title": "Nobel Prize: J. M. Coetzee",
+      "url": "https://www.nobelprize.org/prizes/literature/2003/coetzee/facts/",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": [
+      "J. M. Coetzee",
+      "Alan Paton",
+      "André Brink",
+      "Es’kia Mphahlele"
+    ]
+  },
+  {
+    "id": "history-013",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In which year was South Africa’s final democratic Constitution signed into law?",
+    "answer": "1996",
+    "fact": "It was signed on 10 December 1996 and took effect in February 1997.",
+    "source": {
+      "title": "Department of Justice: Constitution",
+      "url": "https://www.justice.gov.za/constitution/",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["1996", "1990", "1994", "2000"]
+  },
+  {
+    "id": "history-014",
+    "category": "history",
+    "difficulty": "hard",
+    "region": "Gauteng",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "At which place did Mandela sign the Constitution in December 1996?",
+    "answer": "Sharpeville",
+    "fact": "Sharpeville was chosen for the signing ceremony.",
+    "source": {
+      "title": "Constitutional Court: signing into law",
+      "url": "https://www.concourt.org.za/index.php/54-the-certification-process/constitution-is-signed-into-law",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["Sharpeville", "Robben Island", "Ulundi", "Kimberley"]
+  },
+  {
+    "id": "history-015",
+    "category": "history",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which chapter of South Africa’s Constitution contains the Bill of Rights?",
+    "answer": "Chapter 2",
+    "fact": "The Bill of Rights includes equality, dignity and freedom.",
+    "source": {
+      "title": "Constitution of the Republic of South Africa",
+      "url": "https://www.justice.gov.za/constitution/SAConstitution-web-eng.pdf",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["Chapter 2", "Chapter 1", "Chapter 5", "Chapter 9"]
+  },
+  {
+    "id": "history-016",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "Gauteng",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which Johannesburg heritage site is home to the Constitutional Court?",
+    "answer": "Constitution Hill",
+    "fact": "Constitution Hill preserves former prison buildings alongside the court.",
+    "source": {
+      "title": "Constitution Hill",
+      "url": "https://www.constitutionhill.org.za/",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": [
+      "Constitution Hill",
+      "Gold Reef City",
+      "Liliesleaf",
+      "Freedom Park"
+    ]
+  },
+  {
+    "id": "history-017",
+    "category": "history",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "true-false",
+    "prompt": "True or false: equality before the law is protected in the Bill of Rights.",
+    "answer": "True",
+    "fact": "Section 9 protects equality before the law.",
+    "source": {
+      "title": "Constitution, section 9",
+      "url": "https://www.justice.gov.za/constitution/SAConstitution-web-eng.pdf",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["True", "False"]
+  },
+  {
+    "id": "history-018",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Who chaired South Africa’s Truth and Reconciliation Commission?",
+    "answer": "Desmond Tutu",
+    "fact": "The commission heard accounts of apartheid-era human rights violations.",
+    "source": {
+      "title": "Department of Justice: Truth and Reconciliation Commission",
+      "url": "https://www.justice.gov.za/trc/",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["Desmond Tutu", "Thabo Mbeki", "Ahmed Kathrada", "Chris Hani"]
+  },
+  {
+    "id": "history-019",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "Gauteng",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "The Freedom Charter was adopted at a gathering in which place in 1955?",
+    "answer": "Kliptown",
+    "fact": "The Congress of the People gathered in Kliptown.",
+    "source": {
+      "title": "Apartheid Museum: Speaking of Freedom",
+      "url": "https://www.apartheidmuseum.org/exhibitions/speaking-of-freedom",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["Kliptown", "Sharpeville", "Langa", "Bo-Kaap"]
+  },
+  {
+    "id": "history-020",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In which year did thousands of women march to the Union Buildings against pass laws?",
+    "answer": "1956",
+    "fact": "The march took place on 9 August 1956.",
+    "source": {
+      "title": "Government: Women’s Month",
+      "url": "https://www.gov.za/womens-month",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["1956", "1946", "1966", "1976"]
+  },
+  {
+    "id": "history-021",
+    "category": "history",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "On what date is National Women’s Day observed?",
+    "answer": "9 August",
+    "fact": "The date commemorates the 1956 women’s march.",
+    "source": {
+      "title": "Government: public holidays",
+      "url": "https://www.gov.za/about-sa/public-holidays",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["9 August", "1 May", "24 September", "16 December"]
+  },
+  {
+    "id": "history-022",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "teen",
+    "format": "multiple-choice",
+    "prompt": "Youth Day recalls the student uprising that began in Soweto in which year?",
+    "answer": "1976",
+    "fact": "Youth Day is observed on 16 June.",
+    "source": {
+      "title": "Government: Youth Month",
+      "url": "https://www.gov.za/youth-month",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["1976", "1960", "1985", "1994"]
+  },
+  {
+    "id": "history-023",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which date is Human Rights Day in South Africa?",
+    "answer": "21 March",
+    "fact": "The day remembers the 1960 Sharpeville events and affirms human rights.",
+    "source": {
+      "title": "Government: public holidays",
+      "url": "https://www.gov.za/about-sa/public-holidays",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["21 March", "27 April", "18 July", "9 August"]
+  },
+  {
+    "id": "history-024",
+    "category": "history",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which holiday invites South Africans to celebrate their diverse cultural heritage on 24 September?",
+    "answer": "Heritage Day",
+    "fact": "Heritage Day recognises the country’s varied cultural traditions.",
+    "source": {
+      "title": "Government: public holidays",
+      "url": "https://www.gov.za/about-sa/public-holidays",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["Heritage Day", "Family Day", "Freedom Day", "Workers’ Day"]
+  },
+  {
+    "id": "history-025",
+    "category": "history",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the name of the public holiday on 16 December?",
+    "answer": "Day of Reconciliation",
+    "fact": "The holiday promotes reconciliation and national unity.",
+    "source": {
+      "title": "Government: public holidays",
+      "url": "https://www.gov.za/about-sa/public-holidays",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": [
+      "Day of Reconciliation",
+      "Day of Goodwill",
+      "Youth Day",
+      "Heritage Day"
+    ]
+  },
+  {
+    "id": "history-026",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Who designed the South African flag first flown in April 1994?",
+    "answer": "Fred Brownell",
+    "fact": "Brownell served as South Africa’s State Herald.",
+    "source": {
+      "title": "The Presidency: South African flag",
+      "url": "https://www.presidency.gov.za/south-african-flag",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": [
+      "Fred Brownell",
+      "Gerard Sekoto",
+      "William Kentridge",
+      "Irma Stern"
+    ]
+  },
+  {
+    "id": "history-027",
+    "category": "history",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "How many colours appear on the South African national flag?",
+    "answer": "Six",
+    "fact": "They are black, gold, green, white, red and blue.",
+    "source": {
+      "title": "Government: national flag",
+      "url": "https://www.gov.za/about-sa/national-flag",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["Six", "Four", "Five", "Seven"]
+  },
+  {
+    "id": "history-028",
+    "category": "history",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "The national coat of arms motto is written in which language?",
+    "answer": "/Xam",
+    "fact": "The motto is commonly translated as “diverse people unite”.",
+    "source": {
+      "title": "Government: national coat of arms",
+      "url": "https://www.gov.za/about-sa/national-coat-arms",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["/Xam", "Latin", "Afrikaans", "Portuguese"]
+  },
+  {
+    "id": "history-029",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which bird spreads its wings near the top of the national coat of arms?",
+    "answer": "Secretarybird",
+    "fact": "The secretarybird appears above the protea.",
+    "source": {
+      "title": "Government: national coat of arms",
+      "url": "https://www.gov.za/about-sa/national-coat-arms",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["Secretarybird", "Blue crane", "Ostrich", "African penguin"]
+  },
+  {
+    "id": "history-030",
+    "category": "history",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In which year was the current national coat of arms introduced?",
+    "answer": "2000",
+    "fact": "It was unveiled on Freedom Day, 27 April 2000.",
+    "source": {
+      "title": "Government: national coat of arms",
+      "url": "https://www.gov.za/about-sa/national-coat-arms",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["2000", "1961", "1990", "2010"]
+  },
+  {
+    "id": "history-031",
+    "category": "history",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which idea best expresses ubuntu?",
+    "answer": "Shared humanity and care for others",
+    "fact": "Ubuntu emphasises humanity through relationships with other people.",
+    "source": {
+      "title": "Department of Justice: National Unity and Reconciliation",
+      "url": "https://www.justice.gov.za/trc/legal/interim.htm",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": [
+      "Shared humanity and care for others",
+      "Only individual wealth matters",
+      "Competition in every situation",
+      "A type of railway ticket"
+    ]
+  },
+  {
+    "id": "history-032",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "image",
+    "prompt": "The ancient rock paintings of the Drakensberg are closely associated with which people?",
+    "answer": "San",
+    "fact": "San rock art contributes to the heritage value of the Maloti-Drakensberg Park.",
+    "source": {
+      "title": "UNESCO: Maloti-Drakensberg Park",
+      "url": "https://whc.unesco.org/en/list/985/",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["San", "Vikings", "Aztecs", "Inuit"],
+    "imageKey": "mountain",
+    "clue": "Mountain rock shelters preserve paintings made by hunter-gatherer communities."
+  },
+  {
+    "id": "history-033",
+    "category": "history",
+    "difficulty": "hard",
+    "region": "Northern Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "The Richtersveld cultural landscape preserves the pastoral traditions of which community?",
+    "answer": "Nama",
+    "fact": "Seasonal livestock movement is part of the Nama cultural landscape.",
+    "source": {
+      "title": "UNESCO: Richtersveld Cultural and Botanical Landscape",
+      "url": "https://whc.unesco.org/en/list/1265/",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["Nama", "Maori", "Sami", "Inca"]
+  },
+  {
+    "id": "history-034",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Bright geometric house painting is especially associated with which South African artistic tradition?",
+    "answer": "Ndebele",
+    "fact": "Ndebele artists use bold shapes and colour in wall painting and beadwork.",
+    "source": {
+      "title": "SA History Online: Esther Mahlangu",
+      "url": "https://sahistory.org.za/people/esther-mahlangu",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": [
+      "Ndebele",
+      "Venetian glass",
+      "Japanese ukiyo-e",
+      "Mayan stone carving"
+    ]
+  },
+  {
+    "id": "history-035",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which artist is internationally known for paintings rooted in Ndebele designs?",
+    "answer": "Esther Mahlangu",
+    "fact": "Mahlangu learned Ndebele painting from her mother and grandmother.",
+    "source": {
+      "title": "Esther Mahlangu official biography",
+      "url": "https://esthermahlangu.com/",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": [
+      "Esther Mahlangu",
+      "Marlene Dumas",
+      "Mary Sibande",
+      "Irma Stern"
+    ]
+  },
+  {
+    "id": "history-036",
+    "category": "history",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is oral history?",
+    "answer": "History recorded through spoken memories",
+    "fact": "Oral histories preserve personal and community experiences.",
+    "source": {
+      "title": "National Archives: oral history programme",
+      "url": "https://www.nationalarchives.gov.za/node/473",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": [
+      "History recorded through spoken memories",
+      "A map showing only rivers",
+      "A list of railway fares",
+      "A recipe written in code"
+    ]
+  },
+  {
+    "id": "history-037",
+    "category": "history",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which is an example of intangible cultural heritage?",
+    "answer": "A storytelling tradition",
+    "fact": "Intangible heritage includes practices and knowledge passed between generations.",
+    "source": {
+      "title": "UNESCO: intangible cultural heritage",
+      "url": "https://ich.unesco.org/en/what-is-intangible-heritage-00003",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": [
+      "A storytelling tradition",
+      "A brick wall",
+      "A stone bridge",
+      "A fossil skull"
+    ]
+  },
+  {
+    "id": "history-038",
+    "category": "history",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What do archivists primarily preserve?",
+    "answer": "Records of lasting value",
+    "fact": "Archives preserve records that help people understand the past.",
+    "source": {
+      "title": "National Archives and Records Service of South Africa",
+      "url": "https://www.nationalarchives.gov.za/",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": [
+      "Records of lasting value",
+      "Only newly printed adverts",
+      "Only edible ingredients",
+      "Only live sports scores"
+    ]
+  },
+  {
+    "id": "history-039",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "teen",
+    "format": "multiple-choice",
+    "prompt": "Which 1913 law severely restricted Black South Africans’ land ownership?",
+    "answer": "Natives Land Act",
+    "fact": "The 1913 law laid a foundation for later land dispossession.",
+    "source": {
+      "title": "Government: land reform history",
+      "url": "https://www.gov.za/issues/land-reform",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": [
+      "Natives Land Act",
+      "Public Holidays Act",
+      "National Water Act",
+      "Basic Conditions of Employment Act"
+    ]
+  },
+  {
+    "id": "history-040",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "teen",
+    "format": "multiple-choice",
+    "prompt": "In which year did the National Party come to power and begin formalising apartheid policy?",
+    "answer": "1948",
+    "fact": "Apartheid built on earlier racial segregation.",
+    "source": {
+      "title": "Government: history",
+      "url": "https://www.gov.za/about-sa/history",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["1948", "1910", "1961", "1994"]
+  },
+  {
+    "id": "history-041",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "South Africa became a republic in which year?",
+    "answer": "1961",
+    "fact": "The republic was declared on 31 May 1961.",
+    "source": {
+      "title": "DIRCO: chronological reference points",
+      "url": "https://dirco.gov.za/paris/chronological-points-of-reference/",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["1961", "1910", "1948", "1994"]
+  },
+  {
+    "id": "history-042",
+    "category": "history",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In which year was the Union of South Africa formed?",
+    "answer": "1910",
+    "fact": "The Union joined the Cape, Natal, Transvaal and Orange Free State.",
+    "source": {
+      "title": "Government: history",
+      "url": "https://www.gov.za/about-sa/history",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["1910", "1852", "1886", "1934"]
+  },
+  {
+    "id": "history-043",
+    "category": "history",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which mineral discovery on the Witwatersrand in 1886 transformed Johannesburg’s early growth?",
+    "answer": "Gold",
+    "fact": "The Witwatersrand goldfields drove rapid industrial development.",
+    "source": {
+      "title": "Government: history",
+      "url": "https://www.gov.za/about-sa/history",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["Gold", "Uranium", "Tin", "Salt"]
+  },
+  {
+    "id": "history-044",
+    "category": "history",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which trading company established a refreshment station at the Cape in 1652?",
+    "answer": "Dutch East India Company",
+    "fact": "The station supplied ships travelling between Europe and Asia.",
+    "source": {
+      "title": "Government: history",
+      "url": "https://www.gov.za/about-sa/history",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": [
+      "Dutch East India Company",
+      "Hudson’s Bay Company",
+      "British South Africa Company",
+      "South Sea Company"
+    ]
+  },
+  {
+    "id": "history-045",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "Eastern Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "The British settlers of 1820 are especially associated with which present-day province?",
+    "answer": "Eastern Cape",
+    "fact": "Many settled in the Albany district around present-day Makhanda.",
+    "source": {
+      "title": "SA History Online: political changes 1750–1820",
+      "url": "https://sahistory.org.za/article/political-changes-1750-1820",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["Eastern Cape", "Gauteng", "Limpopo", "North West"]
+  },
+  {
+    "id": "history-046",
+    "category": "history",
+    "difficulty": "hard",
+    "region": "KwaZulu-Natal",
+    "age": "teen",
+    "format": "multiple-choice",
+    "prompt": "The 1879 Battle of Isandlwana was part of which war?",
+    "answer": "Anglo-Zulu War",
+    "fact": "Zulu forces defeated a British force at Isandlwana.",
+    "source": {
+      "title": "SA History Online: political changes and the Anglo-Zulu War",
+      "url": "https://sahistory.org.za/article/political-changes-1750-1820",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": [
+      "Anglo-Zulu War",
+      "First World War",
+      "South African War of 1899–1902",
+      "Crimean War"
+    ]
+  },
+  {
+    "id": "history-047",
+    "category": "history",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "teen",
+    "format": "multiple-choice",
+    "prompt": "The South African War, also called the Second Anglo-Boer War, began in which year?",
+    "answer": "1899",
+    "fact": "The war lasted from 1899 to 1902.",
+    "source": {
+      "title": "Government: history",
+      "url": "https://www.gov.za/about-sa/history",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["1899", "1879", "1914", "1939"]
+  },
+  {
+    "id": "history-048",
+    "category": "history",
+    "difficulty": "hard",
+    "region": "Free State",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In which city was the organisation later called the ANC founded in 1912?",
+    "answer": "Bloemfontein",
+    "fact": "It began as the South African Native National Congress.",
+    "source": {
+      "title": "SA History Online: ANC history",
+      "url": "https://sahistory.org.za/article/african-national-congress-anc",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["Bloemfontein", "Cape Town", "Durban", "Kimberley"]
+  },
+  {
+    "id": "history-049",
+    "category": "history",
+    "difficulty": "hard",
+    "region": "KwaZulu-Natal",
+    "age": "teen",
+    "format": "multiple-choice",
+    "prompt": "What tax helped spark the 1906 Bambatha rebellion in Natal?",
+    "answer": "Poll tax",
+    "fact": "The rebellion opposed colonial taxation and rule.",
+    "source": {
+      "title": "SA History Online: Bambatha rebellion",
+      "url": "https://sahistory.org.za/article/bambatha-rebellion-1906",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["Poll tax", "Airport tax", "Carbon tax", "Tourist bed levy"]
+  },
+  {
+    "id": "history-050",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "Western Cape",
+    "age": "teen",
+    "format": "multiple-choice",
+    "prompt": "Which Cape Town museum preserves memories of a community forcibly removed under apartheid?",
+    "answer": "District Six Museum",
+    "fact": "The museum shares residents’ stories of District Six.",
+    "source": {
+      "title": "District Six Museum",
+      "url": "https://www.districtsix.co.za/",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": [
+      "District Six Museum",
+      "Ditsong National Museum of Natural History",
+      "KwaMuhle Museum",
+      "Albany Museum"
+    ]
+  },
+  {
+    "id": "history-051",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "Gauteng",
+    "age": "teen",
+    "format": "multiple-choice",
+    "prompt": "Which Johannesburg neighbourhood suffered forced removals beginning in 1955 and was once renamed Triomf?",
+    "answer": "Sophiatown",
+    "fact": "The name Sophiatown was later restored.",
+    "source": {
+      "title": "SA History Online: Sophiatown",
+      "url": "https://sahistory.org.za/place/sophiatown",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["Sophiatown", "Sandton", "Rosebank", "Melville"]
+  },
+  {
+    "id": "history-052",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "Gauteng",
+    "age": "teen",
+    "format": "multiple-choice",
+    "prompt": "The Hector Pieterson Museum is in which Johannesburg area?",
+    "answer": "Soweto",
+    "fact": "The museum commemorates the 1976 student uprising.",
+    "source": {
+      "title": "City of Johannesburg: Hector Pieterson Museum",
+      "url": "https://www.joburg.org.za/",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["Soweto", "Midrand", "Sandton", "Alexandra"]
+  },
+  {
+    "id": "history-053",
+    "category": "history",
+    "difficulty": "hard",
+    "region": "Gauteng",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which Rivonia farm served as a secret meeting place for anti-apartheid activists?",
+    "answer": "Liliesleaf",
+    "fact": "The 1963 raid on Liliesleaf preceded the Rivonia Trial.",
+    "source": {
+      "title": "Liliesleaf heritage site",
+      "url": "https://liliesleaf.co.za/",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["Liliesleaf", "Spier", "Vergelegen", "Boschendal"]
+  },
+  {
+    "id": "history-054",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "Limpopo",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A celebrated gold object found at Mapungubwe is shaped like which animal?",
+    "answer": "Rhinoceros",
+    "fact": "The small rhinoceros is made from gold foil over a core.",
+    "source": {
+      "title": "Metropolitan Museum of Art: Mapungubwe",
+      "url": "https://www.metmuseum.org/essays/mapungubwe-ca-1050-1270",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": ["Rhinoceros", "Giraffe", "Lion", "Zebra"]
+  },
+  {
+    "id": "history-055",
+    "category": "history",
+    "difficulty": "hard",
+    "region": "Limpopo",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which imported objects help show that Mapungubwe participated in long-distance trade?",
+    "answer": "Glass beads and porcelain",
+    "fact": "Mapungubwe traded regional resources into wider Indian Ocean networks.",
+    "source": {
+      "title": "UNESCO: Mapungubwe Cultural Landscape",
+      "url": "https://whc.unesco.org/en/list/1099/",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": [
+      "Glass beads and porcelain",
+      "Plastic bottles and vinyl records",
+      "Steam engines and radios",
+      "Printed bank cards and batteries"
+    ]
+  },
+  {
+    "id": "history-056",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "Gauteng",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What makes the Cradle of Humankind especially important to researchers?",
+    "answer": "Fossils of ancient human relatives",
+    "fact": "The fossil sites help explain human evolution.",
+    "source": {
+      "title": "UNESCO: Fossil Hominid Sites of South Africa",
+      "url": "https://whc.unesco.org/en/list/915/",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": [
+      "Fossils of ancient human relatives",
+      "Medieval sailing ships",
+      "Roman amphitheatres",
+      "Viking longhouses"
+    ]
+  },
+  {
+    "id": "history-057",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "ordering",
+    "prompt": "Order these events from earliest to latest.",
+    "answer": "Union formed in 1910 → Republic declared in 1961 → Democratic election in 1994",
+    "fact": "These three events mark different stages in South Africa’s political history.",
+    "source": {
+      "title": "DIRCO: chronological reference points",
+      "url": "https://dirco.gov.za/paris/chronological-points-of-reference/",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": [
+      "Democratic election in 1994",
+      "Union formed in 1910",
+      "Republic declared in 1961"
+    ]
+  },
+  {
+    "id": "history-058",
+    "category": "history",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "scramble",
+    "prompt": "Unscramble the surname of the artist who painted Song of the Pick: KOSOTE.",
+    "answer": "Sekoto",
+    "fact": "Gerard Sekoto painted scenes of South African everyday life.",
+    "source": {
+      "title": "SA History Online: Song of the Pick",
+      "url": "https://sahistory.org.za/node/149581",
+      "note": "The work is attributed to Gerard Sekoto. Original scramble question; letters checked against the answer."
+    },
+    "acceptedAnswers": ["Sekoto", "Gerard Sekoto"]
+  },
+  {
+    "id": "history-059",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "matching",
+    "prompt": "Which person-and-role pairing is correct?",
+    "answer": "Lilian Ngoyi — Women’s March leader",
+    "fact": "Lilian Ngoyi was one of the leaders of the 1956 women’s march.",
+    "source": {
+      "title": "SA History Online: Lillian Masediba Ngoyi",
+      "url": "https://sahistory.org.za/people/lillian-masediba-ngoyi",
+      "note": "Biographical source identifies the march leaders; original matching question."
+    },
+    "options": [
+      "Lilian Ngoyi — Women’s March leader",
+      "Gerard Sekoto — Antarctic explorer",
+      "Fred Brownell — Nobel novelist",
+      "Esther Mahlangu — first prime minister"
+    ]
+  },
+  {
+    "id": "history-060",
+    "category": "history",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "audio",
+    "prompt": "Listen to the clue and name the leader: a prisoner for 27 years, then South Africa’s first democratically elected president.",
+    "answer": "Nelson Mandela",
+    "fact": "Mandela served as president from 1994 to 1999.",
+    "source": {
+      "title": "Nelson Mandela Foundation: biography",
+      "url": "https://www.nelsonmandela.org/biography",
+      "note": "Stable historical or cultural reference; original question wording. Dates refer to the named event, not later commemorations."
+    },
+    "options": [
+      "Nelson Mandela",
+      "Albert Luthuli",
+      "Desmond Tutu",
+      "Steve Biko"
+    ],
+    "audioText": "I spent twenty-seven years in prison, then became South Africa’s first democratically elected president. Who am I?",
+    "clue": "27 years in prison; first democratically elected South African president."
+  },
+  {
+    "id": "nature-001",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which antelope is South Africa’s national animal?",
+    "answer": "Springbok",
+    "fact": "The springbok is adapted to open, relatively dry landscapes.",
+    "source": {
+      "title": "Government: national symbols",
+      "url": "https://www.gov.za/faq/national-symbols/where-do-i-find-information-national-symbols",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Springbok", "Impala", "Kudu", "Gemsbok"]
+  },
+  {
+    "id": "nature-002",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which is South Africa’s national bird?",
+    "answer": "Blue crane",
+    "fact": "The blue crane has long, elegant wing plumes.",
+    "source": {
+      "title": "National Archives: secondary national symbols",
+      "url": "https://www.nationalarchives.gov.za/secondary-national-symbols",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Blue crane", "Secretarybird", "African fish eagle", "Ostrich"]
+  },
+  {
+    "id": "nature-003",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which is South Africa’s national fish?",
+    "answer": "Galjoen",
+    "fact": "The galjoen is associated with rocky coastal waters.",
+    "source": {
+      "title": "National Archives: secondary national symbols",
+      "url": "https://www.nationalarchives.gov.za/secondary-national-symbols",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Galjoen", "Snoek", "Yellowfin tuna", "Sardine"]
+  },
+  {
+    "id": "nature-004",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "image",
+    "prompt": "A large flower head forms a pink-and-cream crown. Which national flower fits the clue?",
+    "answer": "King protea",
+    "fact": "The king protea’s scientific name is Protea cynaroides.",
+    "source": {
+      "title": "Government: national symbols",
+      "url": "https://www.gov.za/faq/national-symbols/where-do-i-find-information-national-symbols",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["King protea", "Arum lily", "Daisy", "Strelitzia"],
+    "imageKey": "flower",
+    "clue": "South Africa’s national flower, with a large crown-like head."
+  },
+  {
+    "id": "nature-005",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which tree is South Africa’s national tree?",
+    "answer": "Real yellowwood",
+    "fact": "Real yellowwood is an indigenous forest tree.",
+    "source": {
+      "title": "National Archives: secondary national symbols",
+      "url": "https://www.nationalarchives.gov.za/secondary-national-symbols",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Real yellowwood", "Baobab", "Jacaranda", "Marula"]
+  },
+  {
+    "id": "nature-006",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which animal belongs to the traditional Big Five?",
+    "answer": "Buffalo",
+    "fact": "The Big Five are buffalo, elephant, leopard, lion and rhinoceros.",
+    "source": {
+      "title": "SANParks: Kruger five things to seek",
+      "url": "https://www.sanparks.org/parks/kruger/useful-information/5-things-to-seek",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Buffalo", "Giraffe", "Cheetah", "Hippopotamus"]
+  },
+  {
+    "id": "nature-007",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "true-false",
+    "prompt": "True or false: African penguins can fly through the air.",
+    "answer": "False",
+    "fact": "Penguin wings are adapted for swimming.",
+    "source": {
+      "title": "SANBI: African penguin",
+      "url": "https://www.sanbi.org/animal-of-the-week/african-penguin/",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["False", "True"]
+  },
+  {
+    "id": "nature-008",
+    "category": "nature",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which animal’s donkey-like call gave it the old nickname “jackass penguin”?",
+    "answer": "African penguin",
+    "fact": "African penguins make loud braying calls.",
+    "source": {
+      "title": "SANBI: African penguin",
+      "url": "https://www.sanbi.org/animal-of-the-week/african-penguin/",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["African penguin", "Cape gannet", "Kelp gull", "Blue crane"]
+  },
+  {
+    "id": "nature-009",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Cape fur seals belong to which animal group?",
+    "answer": "Mammals",
+    "fact": "Fur seals breathe air and feed their pups milk.",
+    "source": {
+      "title": "Two Oceans Aquarium: Cape fur seal",
+      "url": "https://www.aquarium.co.za/animals/cape-fur-seal",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Mammals", "Fish", "Reptiles", "Amphibians"]
+  },
+  {
+    "id": "nature-010",
+    "category": "nature",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does a southern right whale use to filter small prey from seawater?",
+    "answer": "Baleen plates",
+    "fact": "Southern right whales are baleen whales.",
+    "source": {
+      "title": "NOAA Fisheries: southern right whale",
+      "url": "https://www.fisheries.noaa.gov/species/southern-right-whale",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": [
+      "Baleen plates",
+      "A row of sharp teeth",
+      "External gills",
+      "A shell"
+    ]
+  },
+  {
+    "id": "nature-011",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which part of a whale must reach the surface for it to breathe?",
+    "answer": "Blowhole",
+    "fact": "Whales use lungs, so they must breathe air.",
+    "source": {
+      "title": "NOAA Fisheries: southern right whale",
+      "url": "https://www.fisheries.noaa.gov/species/southern-right-whale",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Blowhole", "Tail fluke", "Dorsal fin", "Flipper"]
+  },
+  {
+    "id": "nature-012",
+    "category": "nature",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A great white shark’s skeleton is made mainly of what?",
+    "answer": "Cartilage",
+    "fact": "Sharks and rays have cartilaginous skeletons.",
+    "source": {
+      "title": "NOAA Fisheries: white shark",
+      "url": "https://www.fisheries.noaa.gov/species/white-shark",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Cartilage", "Wood", "Solid iron", "Hard bone"]
+  },
+  {
+    "id": "nature-013",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "How many arms does an octopus have?",
+    "answer": "Eight",
+    "fact": "Octopuses use their arms to explore, move and catch food.",
+    "source": {
+      "title": "Two Oceans Aquarium: common octopus",
+      "url": "https://www.aquarium.co.za/animals/common-octopus",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Eight", "Six", "Ten", "Twelve"]
+  },
+  {
+    "id": "nature-014",
+    "category": "nature",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A sea anemone in a South African rock pool is what kind of living thing?",
+    "answer": "An animal",
+    "fact": "Anemones are related to jellyfish and corals.",
+    "source": {
+      "title": "Two Oceans Aquarium: marine animal reference",
+      "url": "https://www.aquarium.co.za/animals",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["An animal", "A flowering plant", "A seaweed", "A fungus"]
+  },
+  {
+    "id": "nature-015",
+    "category": "nature",
+    "difficulty": "hard",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which ocean giant has a flexible, leathery carapace rather than a hard shell covered in scutes?",
+    "answer": "Leatherback turtle",
+    "fact": "Leatherbacks are the largest living sea turtles.",
+    "source": {
+      "title": "NOAA Fisheries: leatherback turtle",
+      "url": "https://www.fisheries.noaa.gov/species/leatherback-turtle",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": [
+      "Leatherback turtle",
+      "Green turtle",
+      "Loggerhead turtle",
+      "Hawksbill turtle"
+    ]
+  },
+  {
+    "id": "nature-016",
+    "category": "nature",
+    "difficulty": "medium",
+    "region": "Western Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What type of organism forms the underwater kelp forests of the Cape coast?",
+    "answer": "Brown algae",
+    "fact": "Kelp provides habitat for many marine animals.",
+    "source": {
+      "title": "Two Oceans Aquarium: Kelp Forest Exhibit",
+      "url": "https://www.aquarium.co.za/exhibits",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Brown algae", "Flowering shrubs", "Mosses", "Corals"]
+  },
+  {
+    "id": "nature-017",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "The annual sardine run involves huge shoals of which animals?",
+    "answer": "Fish",
+    "fact": "Sardine shoals attract many predators along the east coast.",
+    "source": {
+      "title": "South African Association for Marine Biological Research: sardine run reference",
+      "url": "https://saambr.org.za/",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Fish", "Squid", "Dolphins", "Jellyfish"]
+  },
+  {
+    "id": "nature-018",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "Western Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which vegetation type is especially associated with the Cape Floristic Region?",
+    "answer": "Fynbos",
+    "fact": "Fynbos is famous for its rich plant diversity.",
+    "source": {
+      "title": "UNESCO: Cape Floral Region Protected Areas",
+      "url": "https://whc.unesco.org/en/list/1007/",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": [
+      "Fynbos",
+      "Arctic tundra",
+      "Tropical rainforest",
+      "Mangrove swamp"
+    ]
+  },
+  {
+    "id": "nature-019",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "Western Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Rooibos tea comes from which kind of plant?",
+    "answer": "A shrub",
+    "fact": "Aspalathus linearis is the rooibos shrub.",
+    "source": {
+      "title": "SANBI PlantZAfrica: Aspalathus linearis",
+      "url": "https://pza.sanbi.org/aspalathus-linearis",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["A shrub", "A seaweed", "A mushroom", "A palm"]
+  },
+  {
+    "id": "nature-020",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "Limpopo",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which tree of northern South Africa is known for an enormous, swollen trunk?",
+    "answer": "Baobab",
+    "fact": "Baobabs store water in their trunks.",
+    "source": {
+      "title": "SANBI PlantZAfrica: Adansonia digitata",
+      "url": "https://pza.sanbi.org/adansonia-digitata",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Baobab", "Silver birch", "Norfolk pine", "English oak"]
+  },
+  {
+    "id": "nature-021",
+    "category": "nature",
+    "difficulty": "medium",
+    "region": "Northern Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "The quiver tree belongs to which broad plant group?",
+    "answer": "Tree aloes",
+    "fact": "Its scientific name is Aloidendron dichotomum.",
+    "source": {
+      "title": "SANBI: Aloidendron dichotomum",
+      "url": "https://nssl.sanbi.org.za/species/aloidendron-dichotomum",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Tree aloes", "Palms", "Pines", "Ferns"]
+  },
+  {
+    "id": "nature-022",
+    "category": "nature",
+    "difficulty": "medium",
+    "region": "Eastern Cape",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Spekboom stores water in its thick leaves. What term describes this adaptation?",
+    "answer": "Succulent",
+    "fact": "Spekboom is also known as Portulacaria afra.",
+    "source": {
+      "title": "SANBI PlantZAfrica: Portulacaria afra",
+      "url": "https://pza.sanbi.org/portulacaria-afra",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Succulent", "Parasitic", "Aquatic", "Deciduous only"]
+  },
+  {
+    "id": "nature-023",
+    "category": "nature",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What do the sticky leaves of indigenous sundews help them catch?",
+    "answer": "Small insects",
+    "fact": "Sundews are carnivorous plants in the genus Drosera.",
+    "source": {
+      "title": "SANBI PlantZAfrica: Drosera trinervia",
+      "url": "https://pza.sanbi.org/drosera-trinervia",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Small insects", "Large fish", "Falling rocks", "Bird eggs"]
+  },
+  {
+    "id": "nature-024",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which indigenous flower is also called the bird-of-paradise flower?",
+    "answer": "Strelitzia",
+    "fact": "Strelitzia reginae has striking orange and blue flowers.",
+    "source": {
+      "title": "SANBI PlantZAfrica: Strelitzia reginae",
+      "url": "https://pza.sanbi.org/strelitzia-reginae",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Strelitzia", "Dandelion", "Sunflower", "Lavender"]
+  },
+  {
+    "id": "nature-025",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which bird found in South Africa is the world’s largest living bird?",
+    "answer": "Ostrich",
+    "fact": "Ostriches are powerful runners but cannot fly.",
+    "source": {
+      "title": "San Diego Zoo Wildlife Alliance: ostrich",
+      "url": "https://animals.sandiegozoo.org/animals/ostrich",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Ostrich", "Blue crane", "Secretarybird", "Kori bustard"]
+  },
+  {
+    "id": "nature-026",
+    "category": "nature",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which long-legged bird catches prey on the ground and can strike with powerful kicks?",
+    "answer": "Secretarybird",
+    "fact": "Secretarybirds spend much of their hunting time on foot.",
+    "source": {
+      "title": "SANBI: secretarybird",
+      "url": "https://www.sanbi.org/animal-of-the-week/secretarybird/",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Secretarybird", "African penguin", "Kelp gull", "Sunbird"]
+  },
+  {
+    "id": "nature-027",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which bird group is well known for weaving hanging grass nests?",
+    "answer": "Weavers",
+    "fact": "Male weavers often build elaborate woven nests.",
+    "source": {
+      "title": "Biodiversity and Development Institute: southern masked weaver",
+      "url": "https://thebdi.org/2022/03/04/southern-masked-weaver-ploceus-velatus/",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Weavers", "Penguins", "Ostriches", "Vultures"]
+  },
+  {
+    "id": "nature-028",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "The long, curved bills of many sunbirds help them reach what food?",
+    "answer": "Flower nectar",
+    "fact": "Sunbirds also eat small insects.",
+    "source": {
+      "title": "SANBI: Walter Sisulu Garden seasons",
+      "url": "https://www.sanbi.org/gardens/walter-sisulu/garden-information/seasons/",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Flower nectar", "Tree bark", "Large bones", "Sea urchins"]
+  },
+  {
+    "id": "nature-029",
+    "category": "nature",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Cape vultures mainly feed on what?",
+    "answer": "Carrion",
+    "fact": "Carrion means the remains of dead animals.",
+    "source": {
+      "title": "BirdLife South Africa: Cape vulture",
+      "url": "https://www.birdlife.org.za/red-data-book/red-list/cape-vulture/",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Carrion", "Grass seeds", "Flower nectar", "Seaweed"]
+  },
+  {
+    "id": "nature-030",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "An African fish eagle is most closely associated with hunting which prey?",
+    "answer": "Fish",
+    "fact": "Fish eagles often perch near lakes, rivers and dams.",
+    "source": {
+      "title": "BirdLife South Africa: African fish eagle",
+      "url": "https://www.birdlife.org.za/red-data-book/red-list/african-fish-eagle/",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Fish", "Termites only", "Large antelope", "Tree leaves"]
+  },
+  {
+    "id": "nature-031",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What helps a giraffe reach high leaves?",
+    "answer": "A long neck and tongue",
+    "fact": "Giraffes are browsers that feed largely on leaves.",
+    "source": {
+      "title": "San Diego Zoo Wildlife Alliance: giraffe",
+      "url": "https://animals.sandiegozoo.org/animals/giraffe",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": [
+      "A long neck and tongue",
+      "Webbed feet",
+      "A digging snout",
+      "A hard shell"
+    ]
+  },
+  {
+    "id": "nature-032",
+    "category": "nature",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "An elephant’s trunk combines its nose with which other body part?",
+    "answer": "Upper lip",
+    "fact": "The muscular trunk is used for smelling, drinking and grasping.",
+    "source": {
+      "title": "San Diego Zoo Wildlife Alliance: elephant",
+      "url": "https://animals.sandiegozoo.org/animals/elephant",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Upper lip", "Ear", "Tongue", "Lower jaw"]
+  },
+  {
+    "id": "nature-033",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Elephant tusks are enlarged examples of what?",
+    "answer": "Teeth",
+    "fact": "Tusks are modified incisor teeth.",
+    "source": {
+      "title": "San Diego Zoo Wildlife Alliance: elephant",
+      "url": "https://animals.sandiegozoo.org/animals/elephant",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Teeth", "Claws", "Horns", "Finger bones"]
+  },
+  {
+    "id": "nature-034",
+    "category": "nature",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Rhino horn is made mainly of which substance, also found in human fingernails?",
+    "answer": "Keratin",
+    "fact": "Rhino horn is not made of bone.",
+    "source": {
+      "title": "Save the Rhino: rhino horn",
+      "url": "https://www.savetherhino.org/rhino-info/rhino-horn/",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Keratin", "Ivory", "Bone marrow", "Calcium carbonate"]
+  },
+  {
+    "id": "nature-035",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the main food of a white rhinoceros?",
+    "answer": "Grass",
+    "fact": "The white rhino’s wide mouth suits grazing.",
+    "source": {
+      "title": "SANParks: white rhino",
+      "url": "https://www.sanparks.org/conservation/parks/marakele-national-park/primary-consumers-herbivores/white-rhino",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Grass", "Fish", "Fruit only", "Insects"]
+  },
+  {
+    "id": "nature-036",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which cat has dark tear-like lines running from its eyes towards its mouth?",
+    "answer": "Cheetah",
+    "fact": "These facial markings help identify cheetahs.",
+    "source": {
+      "title": "SANBI: cheetah",
+      "url": "https://www.sanbi.org/animal-of-the-week/cheetah/",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Cheetah", "Lion", "Leopard", "Caracal"]
+  },
+  {
+    "id": "nature-037",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which spotted cat often carries prey into trees?",
+    "answer": "Leopard",
+    "fact": "Leopards are strong climbers and may store prey above ground.",
+    "source": {
+      "title": "SANBI: leopard",
+      "url": "https://www.sanbi.org/animal-of-the-week/leopard/",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Leopard", "Cheetah", "Serval", "African wildcat"]
+  },
+  {
+    "id": "nature-038",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is a social group of lions commonly called?",
+    "answer": "A pride",
+    "fact": "Lions are unusually social cats.",
+    "source": {
+      "title": "San Diego Zoo Wildlife Alliance: lion",
+      "url": "https://animals.sandiegozoo.org/animals/lion",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["A pride", "A shoal", "A swarm", "A pod"]
+  },
+  {
+    "id": "nature-039",
+    "category": "nature",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which native predator is famous for cooperative pack hunting and a mottled coat?",
+    "answer": "African wild dog",
+    "fact": "African wild dogs are also called painted dogs.",
+    "source": {
+      "title": "SANBI: African wild dog",
+      "url": "https://www.sanbi.org/animal-of-the-week/african-wild-dog/",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["African wild dog", "Caracal", "Aardvark", "Honey badger"]
+  },
+  {
+    "id": "nature-040",
+    "category": "nature",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Meerkats belong to which family of mammals?",
+    "answer": "Mongooses",
+    "fact": "Meerkats live in social groups in dry southern African habitats.",
+    "source": {
+      "title": "San Diego Zoo Wildlife Alliance: meerkat",
+      "url": "https://animals.sandiegozoo.org/animals/meerkat",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Mongooses", "Cats", "Bears", "Deer"]
+  },
+  {
+    "id": "nature-041",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which mammal found in South Africa is covered in overlapping scales?",
+    "answer": "Pangolin",
+    "fact": "Pangolin scales are made of keratin.",
+    "source": {
+      "title": "SANBI: Temminck’s ground pangolin",
+      "url": "https://www.sanbi.org/animal-of-the-week/temmincks-ground-pangolin/",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Pangolin", "Porcupine", "Aardvark", "Mongoose"]
+  },
+  {
+    "id": "nature-042",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does an aardvark mainly eat?",
+    "answer": "Ants and termites",
+    "fact": "Aardvarks use strong claws to open insect nests.",
+    "source": {
+      "title": "SANBI: Orycteropus afer",
+      "url": "https://www.sanbi.org/animal-of-the-week/orycteropus-afer/",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": [
+      "Ants and termites",
+      "Grass and leaves",
+      "Fish and frogs",
+      "Fruit and nuts"
+    ]
+  },
+  {
+    "id": "nature-043",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "true-false",
+    "prompt": "True or false: a porcupine can shoot its quills like arrows.",
+    "answer": "False",
+    "fact": "Quills can detach on contact, but porcupines do not shoot them.",
+    "source": {
+      "title": "San Diego Zoo Wildlife Alliance: porcupine",
+      "url": "https://animals.sandiegozoo.org/animals/porcupine",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["False", "True"]
+  },
+  {
+    "id": "nature-044",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A dassie is another name for which animal?",
+    "answer": "Rock hyrax",
+    "fact": "Dassies often bask on warm rocks.",
+    "source": {
+      "title": "San Diego Zoo Wildlife Alliance: rock hyrax",
+      "url": "https://animals.sandiegozoo.org/animals/rock-hyrax",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Rock hyrax", "Ground squirrel", "Meerkat", "Cape hare"]
+  },
+  {
+    "id": "nature-045",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Why do hippos spend much of the day in water or mud?",
+    "answer": "To keep cool and protect their skin",
+    "fact": "Hippos usually leave the water to graze, often at night.",
+    "source": {
+      "title": "San Diego Zoo Wildlife Alliance: hippopotamus",
+      "url": "https://animals.sandiegozoo.org/animals/hippo",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": [
+      "To keep cool and protect their skin",
+      "To breathe through gills",
+      "To grow a shell",
+      "To catch only fish"
+    ]
+  },
+  {
+    "id": "nature-046",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which feature can researchers use to identify individual zebras?",
+    "answer": "Their stripe patterns",
+    "fact": "Each zebra has a distinctive pattern of stripes.",
+    "source": {
+      "title": "San Diego Zoo Wildlife Alliance: zebra",
+      "url": "https://animals.sandiegozoo.org/animals/zebra",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": [
+      "Their stripe patterns",
+      "Identical ear tags at birth",
+      "The number of hooves",
+      "One shared spot pattern"
+    ]
+  },
+  {
+    "id": "nature-047",
+    "category": "nature",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "The springbok’s distinctive high, stiff-legged leap is called what?",
+    "answer": "Pronking",
+    "fact": "Springbok can perform repeated leaps with an arched back.",
+    "source": {
+      "title": "SANParks: Golden Gate Highlands mammals",
+      "url": "https://www.sanparks.org/parks/golden-gate-highlands/explore/fauna-flora/mammals",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Pronking", "Paddling", "Basking", "Burrowing"]
+  },
+  {
+    "id": "nature-048",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "true-false",
+    "prompt": "True or false: bats are mammals.",
+    "answer": "True",
+    "fact": "Bats are the only mammals capable of sustained powered flight.",
+    "source": {
+      "title": "SANBI species library; established mammal classification",
+      "url": "https://www.sanbi.org/animal-of-the-week/",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["True", "False"]
+  },
+  {
+    "id": "nature-049",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Nile crocodiles reproduce by doing what?",
+    "answer": "Laying eggs",
+    "fact": "Female crocodiles build nests and guard their young.",
+    "source": {
+      "title": "San Diego Zoo Wildlife Alliance: crocodilians",
+      "url": "https://animals.sandiegozoo.org/animals/crocodilian",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": [
+      "Laying eggs",
+      "Giving birth to live pups",
+      "Budding like plants",
+      "Splitting in two"
+    ]
+  },
+  {
+    "id": "nature-050",
+    "category": "nature",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What unusual ability do chameleons have with their eyes?",
+    "answer": "They can move them largely independently",
+    "fact": "Independent eye movement helps chameleons scan their surroundings.",
+    "source": {
+      "title": "San Diego Zoo Wildlife Alliance: chameleon",
+      "url": "https://animals.sandiegozoo.org/animals/chameleon",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": [
+      "They can move them largely independently",
+      "They can remove them",
+      "They see only underwater",
+      "They have no eyelids"
+    ]
+  },
+  {
+    "id": "nature-051",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What is the young aquatic stage of a frog commonly called?",
+    "answer": "Tadpole",
+    "fact": "Many tadpoles change dramatically as they develop into adult frogs.",
+    "source": {
+      "title": "San Diego Zoo Wildlife Alliance: frog and toad",
+      "url": "https://animals.sandiegozoo.org/animals/frog-and-toad",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Tadpole", "Chick", "Nymph", "Calf"]
+  },
+  {
+    "id": "nature-052",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which insect helps recycle animal dung by burying or using it?",
+    "answer": "Dung beetle",
+    "fact": "Dung beetles return nutrients to the soil.",
+    "source": {
+      "title": "San Diego Zoo Wildlife Alliance: dung beetle",
+      "url": "https://animals.sandiegozoo.org/animals/dung-beetle",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Dung beetle", "Mosquito", "Dragonfly", "Moth"]
+  },
+  {
+    "id": "nature-053",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What service do honeybees provide when they move pollen between flowers?",
+    "answer": "Pollination",
+    "fact": "Pollination helps many plants produce seeds.",
+    "source": {
+      "title": "SANBI: Cape honeybee",
+      "url": "https://www.sanbi.org/animal-of-the-week/cape-honeybee/",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Pollination", "Erosion", "Condensation", "Weathering"]
+  },
+  {
+    "id": "nature-054",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "ordering",
+    "prompt": "Place these butterfly life stages in order.",
+    "answer": "Egg → Caterpillar → Pupa → Adult butterfly",
+    "fact": "Butterflies undergo complete metamorphosis.",
+    "source": {
+      "title": "San Diego Zoo Safari Park: butterfly",
+      "url": "https://sdzsafaripark.org/animals/butterfly",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Adult butterfly", "Pupa", "Egg", "Caterpillar"]
+  },
+  {
+    "id": "nature-055",
+    "category": "nature",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What does “endemic to South Africa” mean for a species?",
+    "answer": "It occurs naturally only in South Africa",
+    "fact": "Endemic species have restricted natural distributions.",
+    "source": {
+      "title": "SANBI biodiversity reference; standard ecological definition",
+      "url": "https://www.sanbi.org/biodiversity/",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": [
+      "It occurs naturally only in South Africa",
+      "It was introduced from every continent",
+      "It lives only in cities",
+      "It is always extinct"
+    ]
+  },
+  {
+    "id": "nature-056",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which term describes the variety of living things in an area?",
+    "answer": "Biodiversity",
+    "fact": "Biodiversity includes variety within species, between species and among ecosystems.",
+    "source": {
+      "title": "Convention on Biological Diversity: definitions",
+      "url": "https://www.cbd.int/convention/articles/?a=cbd-02",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Biodiversity", "Longitude", "Evaporation", "Altitude"]
+  },
+  {
+    "id": "nature-057",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "matching",
+    "prompt": "Which pairing correctly links a South African wild cat to a distinctive feature?",
+    "answer": "Caracal — black ear tufts",
+    "fact": "Caracals have long black tufts on the tips of their ears.",
+    "source": {
+      "title": "SANBI: caracal",
+      "url": "https://www.sanbi.org/animal-of-the-week/caracal/",
+      "note": "Stable species identification, confirmed in SANBI profile; original matching question."
+    },
+    "options": [
+      "Caracal — black ear tufts",
+      "Lion — antlers",
+      "Leopard — striped coat",
+      "Cheetah — tusks"
+    ]
+  },
+  {
+    "id": "nature-058",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "scramble",
+    "prompt": "Unscramble the name of a striped animal: RABEZ.",
+    "answer": "Zebra",
+    "fact": "Both plains zebras and mountain zebras occur in South Africa.",
+    "source": {
+      "title": "SANParks: Mountain Zebra National Park",
+      "url": "https://www.sanparks.org/parks/mountain-zebra",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "acceptedAnswers": ["zebra"]
+  },
+  {
+    "id": "nature-059",
+    "category": "nature",
+    "difficulty": "medium",
+    "region": "National",
+    "age": "all",
+    "format": "short-answer",
+    "prompt": "Type the name of the habitat formed where a river meets the sea and fresh and salt water mix.",
+    "answer": "Estuary",
+    "fact": "Estuaries provide nursery habitat for many fish.",
+    "source": {
+      "title": "NOAA Ocean Service: estuaries",
+      "url": "https://oceanservice.noaa.gov/facts/estuary.html",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "acceptedAnswers": ["estuary", "an estuary"]
+  },
+  {
+    "id": "nature-060",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "National",
+    "age": "all",
+    "format": "audio",
+    "prompt": "Listen to this clue: I am a spotted scavenger and hunter, and some of my calls sound like laughter.",
+    "answer": "Spotted hyena",
+    "fact": "Spotted hyenas are capable hunters as well as scavengers.",
+    "source": {
+      "title": "San Diego Zoo Wildlife Alliance: spotted hyena",
+      "url": "https://animals.sandiegozoo.org/animals/spotted-hyena",
+      "note": "Stable natural-history reference; original question wording. Uses established anatomy, behaviour or identification, not changeable population estimates."
+    },
+    "options": ["Spotted hyena", "Meerkat", "Warthog", "Jackal"],
+    "audioText": "I am a spotted scavenger and hunter. Some of my calls sound like laughter. Which animal am I?",
+    "clue": "Spotted coat; hunts and scavenges; famous for laughter-like calls."
+  }
+]
