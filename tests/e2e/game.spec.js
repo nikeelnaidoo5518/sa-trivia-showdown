@@ -473,6 +473,7 @@ test("quiz host characters speak questions and can repeat them", async ({
 }) => {
   await page.addInitScript(() => {
     window.__spokenQuestions = [];
+    window.__spokenDetails = [];
     window.SpeechSynthesisUtterance = class {
       constructor(text) {
         this.text = text;
@@ -482,8 +483,24 @@ test("quiz host characters speak questions and can repeat them", async ({
       configurable: true,
       value: {
         cancel() {},
+        getVoices() {
+          return [
+            {
+              name: "English (South Africa) Natural",
+              lang: "en-ZA",
+              voiceURI: "za-natural",
+            },
+          ];
+        },
         speak(utterance) {
           window.__spokenQuestions.push(utterance.text);
+          window.__spokenDetails.push({
+            text: utterance.text,
+            rate: utterance.rate,
+            pitch: utterance.pitch,
+            lang: utterance.lang,
+            voiceURI: utterance.voice?.voiceURI,
+          });
         },
       },
     });
@@ -497,8 +514,20 @@ test("quiz host characters speak questions and can repeat them", async ({
   const prompt = (await saved(page)).state.question.prompt;
   await expect(page.locator(".scene-announcer-mascots")).toBeVisible();
   await expect
-    .poll(async () => page.evaluate(() => window.__spokenQuestions))
-    .toContain(`Question. ${prompt}`);
+    .poll(async () =>
+      page.evaluate(
+        (question) =>
+          window.__spokenDetails.find((item) => item.text.endsWith(question)) ||
+          null,
+        prompt,
+      ),
+    )
+    .toMatchObject({
+      rate: 0.98,
+      pitch: 1,
+      lang: "en-ZA",
+      voiceURI: "za-natural",
+    });
   await page
     .getByRole("button", { name: "Read the question aloud again" })
     .click();

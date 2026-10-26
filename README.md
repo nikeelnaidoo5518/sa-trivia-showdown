@@ -67,7 +67,7 @@ Phone buttons only submit the current activity. A confirmation appears after inp
 
 Map Sprint awards R300 within 8 schematic map units, R200 within 16, R75 within 25. Braai Battle awards R40 per correct position and R60 for a perfect sequence. Predictions reward R50 for a winning player, including tied duel winners. Audience participants earn R50 for a correct selected activity; their cash does not enter competitive standings. Robot Repair adds R100 to the round ledger. A steal takes at most R100 from the leading opponent, and a shield blocks one steal or event loss. The highest event loss is R50.
 
-Phone map controls: tap the map, then **Lock my pin**. Keyboard users focus the map, move with arrow keys, press Enter to place the pin, then activate the lock button. Ordering challenges use buttons in the chosen order; Reset allows changes before submission. When sound is enabled, Zola reads each TV trivia question aloud automatically; the host can replay it with **Hear again**. Turn this off with **Read questions aloud** in Settings. Browser voices and pronunciation vary by device. Spoken clues remain optional and play only after a tap.
+Phone map controls: tap the map, then **Lock my pin**. Keyboard users focus the map, move with arrow keys, press Enter to place the pin, then activate the lock button. Ordering challenges use buttons in the chosen order; Reset allows changes before submission. When sound is enabled, Zola introduces each TV question in a conversational style; the host can replay it with **Hear again**. The voice picker in Settings prefers natural English voices and South African English when available. Speech quality and installed voices depend on the device; for the most natural delivery, install an enhanced English voice in the TV or browser device's text-to-speech settings. Turn reading off with **Read questions aloud**. Spoken clues remain optional and play only after a tap.
 
 ## Firebase for internet multiplayer
 
@@ -163,6 +163,7 @@ Tests cover QR decoding and following the decoded URL, manual joining, ten-round
 | ------------------------------ | ------------------------------------------------- |
 | `src/main.jsx`                 | Menus, lobby, TV views, phone controller, credits |
 | `src/engine.js`                | Authoritative match state machine and scoring     |
+| `src/speech.js`                | Natural-voice selection and question narration   |
 | `src/transport.js`             | Firebase, local relay and browser demo transports |
 | `src/components/Art.jsx`       | Original SVG scenes and shared symbols            |
 | `src/components/MiniGames.jsx` | Map, visible recipe and arcade controls           |

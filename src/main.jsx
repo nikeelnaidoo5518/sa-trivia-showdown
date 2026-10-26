@@ -30,6 +30,12 @@ import {
 } from "./components/MiniGames.jsx";
 import "./style.css";
 import { cue, startGameMusic, stopGameMusic, unlockSound } from "./sound.js";
+import {
+  cancelSpeech,
+  englishVoices,
+  hostQuestionText,
+  speak,
+} from "./speech.js";
 
 const read = (key, fallback) => {
   try {
@@ -179,13 +185,12 @@ function App() {
     return () => document.removeEventListener("keydown", onRemoteKey);
   }, [tvMode, role]);
   useEffect(() => {
-    if (!settings.sound && "speechSynthesis" in window)
-      speechSynthesis.cancel();
+    if (!settings.sound) cancelSpeech();
   }, [settings.sound]);
   useEffect(() => {
     const prompt = state?.question?.prompt;
     if (!prompt || !("speechSynthesis" in window)) return;
-    speechSynthesis.cancel();
+    cancelSpeech();
     if (
       screen === "game" &&
       role !== "player" &&
@@ -194,17 +199,23 @@ function App() {
       settings.sound &&
       settings.readQuestions
     )
-      speak(`Question. ${prompt}`, true);
-    return () => speechSynthesis.cancel();
+      speak(
+        hostQuestionText(prompt, state?.question?.id || state?.activityId),
+        true,
+        settings.speechVoice,
+      );
+    return cancelSpeech;
   }, [
     screen,
     role,
     state?.phase,
     state?.paused,
     state?.activityId,
+    state?.question?.id,
     state?.question?.prompt,
     settings.sound,
     settings.readQuestions,
+    settings.speechVoice,
   ]);
   useEffect(() => {
     if (!confirmation && !practice && !setup) return;
@@ -1053,8 +1064,12 @@ function App() {
                     onResolve={() => hostAction("next")}
                     onRepeat={() =>
                       speak(
-                        `Question. ${state.question?.prompt || ""}`,
+                        hostQuestionText(
+                          state.question?.prompt,
+                          state.question?.id || state.activityId,
+                        ),
                         settings.sound,
+                        settings.speechVoice,
                       )
                     }
                   />
@@ -1274,6 +1289,17 @@ function Page({ title, eyebrow, back, children, narrow }) {
 }
 function Settings({ settings: s, setSettings }) {
   const update = (k, v) => setSettings({ ...s, [k]: v });
+  const [voices, setVoices] = useState(() => englishVoices());
+  useEffect(() => {
+    const refresh = () => setVoices(englishVoices());
+    refresh();
+    globalThis.speechSynthesis?.addEventListener?.("voiceschanged", refresh);
+    return () =>
+      globalThis.speechSynthesis?.removeEventListener?.(
+        "voiceschanged",
+        refresh,
+      );
+  }, []);
   return (
     <div className="settings-grid">
       <section className="panel">
@@ -1348,6 +1374,25 @@ function Settings({ settings: s, setSettings }) {
       </section>
       <section className="panel">
         <h3>Your comfort</h3>
+        <label>
+          Question voice
+          <select
+            value={s.speechVoice || ""}
+            onChange={(e) => update("speechVoice", e.target.value)}
+          >
+            <option value="">Automatic · clearest English voice</option>
+            {voices.map((voice) => (
+              <option key={voice.voiceURI} value={voice.voiceURI}>
+                {voice.name} · {voice.lang}
+              </option>
+            ))}
+          </select>
+          <small>
+            The game prefers a natural voice and South African English when your
+            device offers one. Voice quality depends on its installed speech
+            voices.
+          </small>
+        </label>
         {[
           [
             "events",
@@ -1362,7 +1407,7 @@ function Settings({ settings: s, setSettings }) {
           [
             "readQuestions",
             "Read questions aloud",
-            "Zola reads every TV trivia question. A listen-again button is on screen.",
+            "Zola introduces each TV question with a more conversational delivery. A listen-again button is on screen.",
           ],
           [
             "reducedMotion",
@@ -1830,19 +1875,6 @@ function FinalLadder({ questionIndex = 0 }) {
     </div>
   );
 }
-function speak(text, enabled) {
-  if (enabled && "speechSynthesis" in window) {
-    speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = "en-ZA";
-    u.rate = 0.92;
-    u.pitch = 1.04;
-    const voices = speechSynthesis.getVoices?.() || [];
-    u.voice =
-      voices.find((voice) => voice.lang.toLowerCase() === "en-za") || null;
-    speechSynthesis.speak(u);
-  }
-}
 function QuestionMedia({ q, settings }) {
   if (!q) return null;
   return (
@@ -1854,7 +1886,11 @@ function QuestionMedia({ q, settings }) {
           <button
             className="btn secondary"
             onClick={() =>
-              speak(q.audioText || q.clue || q.prompt, settings.sound)
+              speak(
+                q.audioText || q.clue || q.prompt,
+                settings.sound,
+                settings.speechVoice,
+              )
             }
             disabled={!settings.sound}
           >
