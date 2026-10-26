@@ -170,15 +170,26 @@ Tests cover QR decoding and following the decoded URL, manual joining, ten-round
 | `server/local.mjs`             | Development WebSocket relay                       |
 | `database.rules.json`          | Firebase access rules                             |
 | `.github/workflows/pages.yml`  | Checks and GitHub Pages deployment                |
+| `android/`                     | Landscape Android TV / Google TV / Fire TV wrapper |
 
 ## TV app options
 
-The current game can run as a website on a TV with a modern browser. For supported Android/Chromium devices, the manifest provides a home-screen web app that opens in TV view. Try the URL with `?tv=1` to preview the larger layout and remote navigation. A packaged app for an app store is a separate final step: Android TV/Fire TV can use a thin Android wrapper around the hosted game, while Samsung and LG require their own Tizen and webOS packages, signing and device testing. The same Firebase phone controllers can stay in the browser for every option. Keep the TV browser awake and signed in during a game.
+### Android TV / Google TV / Fire TV APK
+
+**[Download the latest SA Trivia Showdown TV APK](https://github.com/nikeelnaidoo5518/sa-trivia-showdown/releases/latest/download/SA-Trivia-Showdown-TV.apk)** · [See all releases](https://github.com/nikeelnaidoo5518/sa-trivia-showdown/releases)
+
+The landscape APK opens the hosted game directly in TV view, supports a TV remote's arrow and select buttons, hides phone-only system chrome, and keeps the screen awake while playing. It needs an internet connection; the APK is a lightweight TV launcher for the live game, not an offline copy. Phone players still join by scanning the TV's QR code or entering its room code in their phone browser.
+
+To install, download the APK on an Android/Google TV or Fire TV device and open it, or transfer it from a computer with Android TV's **Install unknown apps** option enabled. The exact menu name varies by device. This sideload package is not a Play Store or Amazon Appstore submission. It is not compatible with Samsung Tizen or LG webOS. No APK signing key is stored in this repository; the GitHub build creates a standard sideloadable debug-signed package.
+
+The Android TV project is in `android/`. To build it locally, install JDK 17, Gradle 8.9, and Android SDK platform 35/build tools, then run `gradle -p android assembleDebug`; the APK is written to `android/app/build/outputs/apk/debug/app-debug.apk`. The **Build Android TV APK** GitHub Actions workflow builds and publishes a versioned release on changes to `android/`, or when run manually from the repository's Actions page. The stable download link above always targets the latest release asset.
+
+The same hosted app can still be opened in a TV browser at `https://nikeelnaidoo5518.github.io/sa-trivia-showdown/?tv=1`. Samsung and LG require their own Tizen and webOS packages and store review. Keep the TV device online and signed in during play.
 
 ## First-version limits
 
 - The hosted game uses Firebase’s free Spark plan. Availability and player capacity remain subject to the project’s quotas; no paid plan was enabled.
-- TV view and the installable web manifest are included, but no native TV APK or Samsung/LG store package has been built or submitted. Test the actual TV remote, sound, screen overscan and browser compatibility on the target model before a game night.
+- The Android TV APK is a sideload build, not a store submission. Actual remote behavior, sound and screen overscan still need a check on the target TV model. Samsung/LG store packages have not been built.
 - Host authority and the publicly bundled question bank suit friendly in-room games. This is not a cheat-proof competitive platform. A determined developer can inspect the question bundle; hardening requires server-side question delivery and scoring.
 - One host, two fixed teams, one shared display. No account system, matchmaking, chat, host transfer, remote video or persistent global leaderboard.
 - Map geometry is deliberately schematic. Speech quality depends on the browser/device's available voice; text always remains available.

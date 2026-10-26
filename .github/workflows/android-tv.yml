@@ -1,0 +1,43 @@
+name: Build Android TV APK
+on:
+  push:
+    branches: [main]
+    paths:
+      - "android/**"
+      - ".github/workflows/android-tv.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: android-tv-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: android-actions/setup-android@v3
+        with:
+          packages: "platform-tools platforms;android-35 build-tools;35.0.0"
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.9"
+      - name: Build TV package
+        run: gradle --no-daemon -p android assembleDebug
+      - name: Publish APK download
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="tv-v1.0.${GITHUB_RUN_NUMBER}"
+          version="1.0.${GITHUB_RUN_NUMBER}"
+          apk="SA-Trivia-Showdown-TV.apk"
+          cp android/app/build/outputs/apk/debug/app-debug.apk "$apk"
+          gh release create "$tag" "$apk#SA Trivia Showdown TV APK" \
+            --target "$GITHUB_SHA" \
+            --title "SA Trivia Showdown TV v${version}" \
+            --notes "Landscape Android TV / Google TV / Fire TV package. Requires an internet connection and loads the live game. Install by sideloading the attached APK." \
+            --latest

@@ -8,3 +8,6 @@ playwright-report/
 *.log
 .firebase/
 coverage/
+android/.gradle/
+android/local.properties
+android/app/build/
