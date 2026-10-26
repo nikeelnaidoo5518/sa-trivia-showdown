@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="960" y1="0" x2="960" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#211044"/>
+      <stop offset=".52" stop-color="#52336D"/>
+      <stop offset=".83" stop-color="#B05D70"/>
+      <stop offset="1" stop-color="#F0A36E"/>
+    </linearGradient>
+    <linearGradient id="water" x1="860" y1="610" x2="1010" y2="1040" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#559BA0"/>
+      <stop offset="1" stop-color="#263D64"/>
+    </linearGradient>
+    <linearGradient id="coast" x1="1580" y1="570" x2="1610" y2="1020" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38A9B4"/>
+      <stop offset="1" stop-color="#17465F"/>
+    </linearGradient>
+    <linearGradient id="hill" x1="1000" y1="525" x2="1100" y2="1040" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#386668"/>
+      <stop offset="1" stop-color="#172C4A"/>
+    </linearGradient>
+    <pattern id="cityWindows" width="31" height="35" patternUnits="userSpaceOnUse">
+      <rect x="7" y="8" width="7" height="10" rx="2" fill="#FFC96A" fill-opacity=".66"/>
+      <rect x="20" y="20" width="6" height="8" rx="2" fill="#71D5C9" fill-opacity=".48"/>
+    </pattern>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1920v1080H0z"/>
+  <circle cx="1298" cy="377" r="104" fill="#FFD17C" fill-opacity=".79"/>
+  <circle cx="1298" cy="377" r="151" stroke="#FFD17C" stroke-opacity=".18" stroke-width="2"/>
+  <g fill="#F8D2BD" fill-opacity=".18">
+    <path d="M156 270c41-47 110-41 142-8 30-37 97-39 130 2 37-15 77 6 86 42H121c3-16 16-29 35-36Zm1118 42c37-39 91-34 117-3 30-27 82-27 111 4 32-9 65 10 70 37h-430c4-18 17-31 35-38Z"/>
+    <path d="M667 201c28-29 73-29 98-5 24-25 70-26 96 4 28-9 55 6 60 27H644c2-12 10-21 23-26Z"/>
+  </g>
+  <g fill="#FBE3C9" fill-opacity=".64">
+    <path d="m281 163 5 13 14 5-14 4-5 14-5-14-13-4 13-5Zm1167 37 4 10 11 4-11 3-4 11-4-11-11-3 11-4Zm269 70 3 8 9 3-9 3-3 9-3-9-9-3 9-3Zm-687-82 3 8 9 3-9 3-3 9-3-9-9-3 9-3Z"/>
+  </g>
+  <!-- Drakensberg ridgeline and inland hills -->
+  <path fill="#736083" fill-opacity=".88" d="m0 620 122-86 78 46 135-180 86 107 97-63 136 131 109-171 72 97 95-47 112 126 117-155 95 89 90-55 96 99 113-143 109 99 108-45 79 72v341H0z"/>
+  <path fill="#96727C" fill-opacity=".68" d="m184 569 150-169 88 108 44-36-46 10-79-66-91 110Zm564 22 95-141 69 93 69-31-67 15-72-58Zm481-10 117-155 94 89-94-40-59-33Z"/>
+  <path fill="#4C6370" fill-opacity=".9" d="M0 642q197-94 365-47 152 42 288-16 179-79 364-13 136 48 246-13 190-105 389 6 141 73 268 24v303H0Z"/>
+  <path fill="#6A7671" fill-opacity=".65" d="M0 685q196-93 369-34 146 50 286-9 181-75 366-9 124 44 242-16 183-93 373 9 147 77 284 34v146H0Z"/>
+  <!-- Dam and its gently curved shoreline -->
+  <path fill="url(#water)" d="M0 716q208-32 384 5 196 41 372-10 177-52 365 10 115 38 243 9v350H0Z"/>
+  <path d="M0 724q208-32 384 5 196 41 372-10 177-52 365 10 115 38 243 9" stroke="#D6BC9D" stroke-opacity=".58" stroke-width="13"/>
+  <g stroke="#A5DFD3" stroke-opacity=".39" stroke-linecap="round">
+    <path d="M124 787h203m47 40h147m-255 69h116m324-100h185m-64 76h102m207-55h126m-949 154h236m387-38h181m122 53h120" stroke-width="4"/>
+    <path d="M67 902h92m397-99h76m605 163h132m-1103 7h125" stroke-width="2"/>
+  </g>
+  <g fill="#F7D88E" fill-opacity=".82">
+    <path d="m372 782 27 37h-54Zm-9 40h18v5h-18Z"/>
+    <path d="m1091 833 22 31h-44Zm-7 34h15v4h-15Z"/>
+  </g>
+  <!-- A bright KZN town, rooftops, and a welcoming waterfront -->
+  <g stroke="#292342" stroke-width="5" stroke-linejoin="round">
+    <path fill="#DB9D70" d="M272 654V541h83v113z"/>
+    <path fill="#A97169" d="m260 543 54-47 53 47Z"/>
+    <path fill="#F1C58D" d="M352 658V486h102v172z"/>
+    <path fill="#C57B70" d="M452 661V526h105v135z"/>
+    <path fill="#E8AD7B" d="M541 663V450h128v213z"/>
+    <path fill="#8F6976" d="m528 451 77-55 78 55Z"/>
+    <path fill="#F0BE7E" d="M649 663V507h91v156z"/>
+    <path fill="#D38A73" d="M735 665V473h107v192z"/>
+    <path fill="#E9B37C" d="M827 666V530h100v136z"/>
+    <path fill="#BC7C76" d="M911 663V482h104v181z"/>
+    <path fill="#F1C58D" d="M1001 659V445h129v214z"/>
+    <path fill="#CB856F" d="M1113 658V511h108v147z"/>
+    <path fill="#E8B276" d="M1209 660V480h103v180z"/>
+    <path fill="#D18B70" d="M1297 656V532h91v124z"/>
+    <path fill="#F0BF82" d="M1370 654V499h103v155z"/>
+  </g>
+  <g fill="url(#cityWindows)" opacity=".75">
+    <path d="M272 541h83v113h-83zM352 486h102v172H352zM452 526h105v135H452zM541 450h128v213H541zM649 507h91v156h-91zM735 473h107v192H735zM827 530h100v136H827zM911 482h104v181H911zM1001 445h129v214h-129zM1113 511h108v147h-108zM1209 480h103v180h-103zM1297 532h91v124h-91zM1370 499h103v155h-103z"/>
+  </g>
+  <!-- Harbour cranes and distant container port -->
+  <g stroke="#F4C27A" stroke-opacity=".75" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M1512 661V414m0 8 119-54m-119 11h146m-125 11 111 53m-132-18h160m-159 0 30 236m129-236-20 236"/>
+    <path d="M1702 661V454m0 8 94-40m-94 31h116m-101 13 90 40m-105-17h126m-127 0 24 172m101-172-19 172"/>
+  </g>
+  <g fill="#DE9A67" fill-opacity=".86">
+    <path d="M1480 630h184v33h-184zM1690 632h146v31h-146zM1531 600h40v30h-40zM1580 600h40v30h-40zM1730 603h40v29h-40zM1778 603h40v29h-40z"/>
+  </g>
+  <!-- Durban's open coast at the far side of town -->
+  <path fill="url(#coast)" d="M1476 677q135-42 232-1 109 47 212 9v395h-444Z"/>
+  <path d="M1475 678q135-42 232-1 109 47 212 9" stroke="#E6C5A0" stroke-width="12" stroke-opacity=".74"/>
+  <path d="M1484 724q138-22 247 20 99 38 187 13M1490 787q137-20 244 19 102 38 185 15M1492 853q141-21 243 19 104 39 186 15M1492 924q145-21 245 19 103 39 184 15" stroke="#A9E2D8" stroke-width="4" stroke-opacity=".33"/>
+  <!-- Sugar-cane fields and jacaranda-lined neighbourhood -->
+  <path fill="url(#hill)" d="M0 907q150-91 312-22 123 52 252-8 153-72 280-7 143 75 287 19 137-54 263 5 171 81 322 8 116-56 204-8v186H0Z"/>
+  <g stroke="#81B28F" stroke-opacity=".48" stroke-width="5" stroke-linecap="round">
+    <path d="M51 975 8 887m49 88 14-102m14 102 49-93m-4 94 9-100m74 71-24-74m24 75 39-79m60 88-7-88m20 89 44-74m241 84 12-104m13 102 39-99m17 96 19-99m186 104 28-111m16 111 47-102m11 104 27-88m201 83 4-92m14 95 45-78"/>
+  </g>
+  <!-- Friendly street lights and a jacaranda tree in bloom -->
+  <g stroke="#F5D39A" stroke-width="8" stroke-linecap="round">
+    <path d="M408 946V785m-22 18h44m-22-18 14-15"/>
+    <path d="M1431 931V748m-25 19h50m-25-19 15-17"/>
+  </g>
+  <path fill="#734D89" d="M162 808c-37-33-17-79 17-80-18-38 26-68 57-40 16-41 71-29 71 8 44-13 69 40 36 67 33 37-3 78-41 61-24 42-83 23-79-12-31 25-73 7-61-27Z"/>
+  <path fill="#B286A8" fill-opacity=".72" d="M190 772q18-48 57-34 22-38 48-1 39-15 44 21 34 9 13 39-36 22-78 0-35 24-66 2-27 0-18-27Z"/>
+  <path stroke="#674D62" stroke-width="17" stroke-linecap="round" d="m284 817 15 116m-12-66-49 51m49-37 51 39"/>
+  <!-- Foreground ridge: shapes the horizon without obscuring the scene -->
+  <path fill="#111D39" fill-opacity=".67" d="M0 1010q193-81 351-21 193 74 379 1 162-64 311 1 195 85 372 4 185-83 352-16 88 35 155 15v86H0Z"/>
+  <path stroke="#FFD37D" stroke-opacity=".37" stroke-width="3" d="M0 1008q193-81 351-21 193 74 379 1 162-64 311 1 195 85 372 4 185-83 352-16 88 35 155 15"/>
+</svg>

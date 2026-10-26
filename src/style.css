@@ -109,9 +109,24 @@ small {
 }
 .app {
   min-height: 100svh;
-  background: var(--navy);
+  isolation: isolate;
+  background: transparent;
   position: relative;
   overflow-x: clip;
+}
+.app::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(180deg, #160c2e4d 0%, #1b0b332e 42%, #1b0b33b3 100%),
+    linear-gradient(90deg, #1b0b3355 0%, #1b0b330a 50%, #1b0b332e 100%),
+    url("./assets/mzansi-evening.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .site-header {
   height: 100px;
