@@ -1712,8 +1712,7 @@ function Tutorial({ state: s, onNext }) {
       </div>
       {s.settings.autoAdvance && <Timer state={s} />}
       <button className="btn primary" onClick={onNext}>
-        {s.settings.autoAdvance ? "Start now" : "Let’s do this"}{" "}
-        <Icon name="ArrowRight" />
+        Let’s do this <Icon name="ArrowRight" />
       </button>
     </section>
   );
