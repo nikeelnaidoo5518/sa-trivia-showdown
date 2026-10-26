@@ -325,8 +325,37 @@ function App() {
     };
   }, [settings.sound]);
   useEffect(() => {
-    if (settings.sound && role === "host" && state)
-      cue(state.phase === "event-results" ? "results" : state.phase);
+    if (!settings.sound || role !== "host" || !state) return;
+    if (["results", "event-results"].includes(state.phase)) {
+      const round = state.rounds[state.roundIndex];
+      const competitors = state.results.filter((result) =>
+        state.players.some(
+          (player) => player.id === result.id && !player.audience,
+        ),
+      );
+      const best = Math.max(0, ...competitors.map((result) => result.delta));
+      const hasWinner = competitors.some(
+        (result) => result.delta === best && (result.correct || best > 0),
+      );
+      cue(
+        round && ["map", "braai", "drum"].includes(round.kind)
+          ? hasWinner
+            ? "win"
+            : "miss"
+          : hasWinner
+            ? "win"
+            : competitors.some((result) => result.correct)
+              ? "correct"
+              : "miss",
+      );
+      return;
+    }
+    const round = state.rounds[state.roundIndex];
+    cue(
+      state.phase === "playing" && round?.kind !== "question"
+        ? round?.kind
+        : state.phase,
+    );
   }, [state?.phase, state?.activityId, role, settings.sound]);
   useEffect(() => {
     if (
@@ -433,15 +462,23 @@ function App() {
   function sendAction(action, demoPlayer = false) {
     const s = stateRef.current;
     const envelope = { ...action, activityId: s?.activityId };
+    const feedback = () => {
+      if (!settings.sound) return;
+      cue(action.type === "trick" ? "trick" : "lock");
+    };
     if (demoPlayer) {
       try {
         engine.current.input("demo-you", envelope);
         publish();
+        feedback();
       } catch (e) {
         notify(e.message, true);
       }
     } else
-      transport.current.input(envelope).catch((e) => notify(e.message, true));
+      transport.current
+        .input(envelope)
+        .then(feedback)
+        .catch((e) => notify(e.message, true));
     if (settings.vibration && navigator.vibrate) navigator.vibrate(25);
   }
   function leave() {
@@ -551,7 +588,10 @@ function App() {
           <button
             className="icon-button"
             aria-label={settings.sound ? "Mute sound" : "Enable sound"}
-            onClick={() => setSettings({ ...settings, sound: !settings.sound })}
+            onClick={() => {
+              if (!settings.sound) unlockSound();
+              setSettings({ ...settings, sound: !settings.sound });
+            }}
           >
             <Icon name={settings.sound ? "Volume2" : "VolumeX"} />
           </button>
@@ -1249,7 +1289,7 @@ function Settings({ settings: s, setSettings }) {
             "Random events",
             "Short, optional challenges between rounds",
           ],
-          ["sound", "Sound", "Allow spoken clues and sound controls"],
+          ["sound", "Sound", "Game-show stings, answer cues and spoken clues"],
           [
             "reducedMotion",
             "Reduced animation",
@@ -1274,6 +1314,14 @@ function Settings({ settings: s, setSettings }) {
             />
           </label>
         ))}
+        <button
+          className="btn secondary full"
+          disabled={!s.sound}
+          onClick={() => cue("start")}
+        >
+          <Icon name="Volume2" size={18} />
+          Preview game-show sound
+        </button>
       </section>
       <section className="panel categories-settings">
         <h3>What’s your thing?</h3>
