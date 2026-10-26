@@ -356,11 +356,12 @@ function App() {
       document.removeEventListener("keydown", enable);
     };
   }, [settings.sound]);
+  const musicRoundId = state?.rounds?.[state.roundIndex]?.id || "warmup";
   useEffect(() => {
-    if (settings.sound && role === "host") startGameMusic();
+    if (settings.sound && role === "host") startGameMusic(musicRoundId);
     else stopGameMusic();
-    return stopGameMusic;
-  }, [settings.sound, role]);
+  }, [settings.sound, role, musicRoundId]);
+  useEffect(() => () => stopGameMusic(), []);
   useEffect(() => {
     if (!settings.sound || role !== "host" || !state) return;
     if (["results", "event-results"].includes(state.phase)) {
@@ -1356,7 +1357,7 @@ function Settings({ settings: s, setSettings }) {
           [
             "sound",
             "Sound and music",
-            "Original game music, answer cues, and spoken audio",
+            "A different original game-show theme for each round, answer cues, and spoken audio",
           ],
           [
             "readQuestions",

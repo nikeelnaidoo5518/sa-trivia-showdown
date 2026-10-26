@@ -4,36 +4,162 @@ let musicTimer;
 let musicWanted = false;
 let musicStarting = false;
 let musicBar = 0;
+let musicThemeId = "warmup";
+const musicSources = new Set();
 
-const musicBars = [
-  {
-    bass: 110,
-    fifth: 164.81,
-    chord: [220, 261.63, 329.63],
-    melody: [659.25, null, 523.25, 587.33, 783.99, null, 880, 783.99],
-  },
-  {
-    bass: 87.31,
-    fifth: 130.81,
-    chord: [174.61, 220, 261.63],
-    melody: [698.46, null, 659.25, 523.25, 698.46, null, 783.99, 659.25],
-  },
-  {
-    bass: 130.81,
-    fifth: 196,
-    chord: [196, 261.63, 329.63],
-    melody: [783.99, null, 659.25, 523.25, 587.33, null, 659.25, 880],
-  },
-  {
-    bass: 98,
-    fifth: 146.83,
-    chord: [196, 246.94, 293.66],
-    melody: [587.33, null, 659.25, 783.99, 880, null, 783.99, 659.25],
-  },
-];
-const musicTempo = 116;
-const musicBeat = 60 / musicTempo;
-const musicBarDuration = musicBeat * 4;
+const majorScale = [0, 2, 4, 5, 7, 9, 11, 12];
+const minorScale = [0, 2, 3, 5, 7, 8, 10, 12];
+const pentatonicScale = [0, 2, 4, 7, 9, 12, 14, 16];
+const makeTheme = (
+  tempo,
+  tonic,
+  progression,
+  melody,
+  mode = "major",
+  lead = "triangle",
+) => ({
+  tempo,
+  tonic,
+  progression,
+  melody,
+  scale:
+    mode === "minor"
+      ? minorScale
+      : mode === "pentatonic"
+        ? pentatonicScale
+        : majorScale,
+  chord: mode === "minor" ? [0, 3, 7] : [0, 4, 7],
+  lead,
+});
+
+// Original short game-show themes: each round gets its own key, groove, and hook.
+const musicThemes = {
+  warmup: makeTheme(116, 60, [0, 5, 3, 4], [4, null, 2, 3, 4, null, 5, 4]),
+  province: makeTheme(
+    122,
+    62,
+    [0, 7, 5, 7],
+    [2, 4, 5, null, 4, 2, 1, 2],
+    "major",
+    "square",
+  ),
+  picture: makeTheme(
+    94,
+    55,
+    [0, 3, 5, 7],
+    [0, null, 4, 3, 1, null, 3, 4],
+    "minor",
+    "sine",
+  ),
+  map: makeTheme(
+    132,
+    64,
+    [0, 5, 4, 0],
+    [4, 4, 6, null, 5, 4, 2, 0],
+    "major",
+    "square",
+  ),
+  sound: makeTheme(
+    110,
+    57,
+    [0, 5, 3, 7],
+    [0, 2, 4, null, 3, 1, 2, null],
+    "minor",
+  ),
+  risk: makeTheme(
+    94,
+    54,
+    [0, 3, 6, 5],
+    [0, null, 0, 4, null, 3, 2, null],
+    "minor",
+    "sawtooth",
+  ),
+  huddle: makeTheme(110, 65, [0, 3, 5, 4], [4, 2, 4, 6, 5, null, 4, 2]),
+  braai: makeTheme(
+    126,
+    70,
+    [0, 5, 0, 7],
+    [0, 2, 4, null, 4, 2, 0, 5],
+    "pentatonic",
+    "square",
+  ),
+  mix: makeTheme(132, 63, [0, 4, 5, 7], [4, null, 2, 5, 4, 2, 6, 4]),
+  final: makeTheme(103, 57, [0, 5, 3, 4], [0, null, 3, 4, 5, 4, 3, 1], "minor"),
+  soundEncore: makeTheme(
+    118,
+    59,
+    [0, 7, 5, 3],
+    [0, 3, null, 4, 6, 4, null, 3],
+    "minor",
+    "sine",
+  ),
+  quickfire: makeTheme(
+    140,
+    67,
+    [0, 5, 3, 4],
+    [4, 2, 4, 6, 5, 4, 2, 0],
+    "major",
+    "square",
+  ),
+  picturePuzzle: makeTheme(
+    98,
+    53,
+    [0, 5, 3, 6],
+    [0, 2, null, 3, 1, null, 4, 3],
+    "minor",
+    "sine",
+  ),
+  homeground: makeTheme(
+    124,
+    64,
+    [0, 4, 5, 3],
+    [2, 4, 5, 4, 2, 0, null, 2],
+    "pentatonic",
+  ),
+  drum: makeTheme(
+    128,
+    59,
+    [0, 7, 5, 0],
+    [0, 2, 4, 2, 5, 4, 2, null],
+    "pentatonic",
+    "square",
+  ),
+  mixEncore: makeTheme(134, 65, [0, 5, 4, 3], [5, 4, 2, null, 4, 6, 5, 2]),
+  riskEncore: makeTheme(
+    96,
+    52,
+    [0, 3, 5, 6],
+    [0, null, 3, 1, null, 4, 3, null],
+    "minor",
+    "sawtooth",
+  ),
+  mapEncore: makeTheme(
+    136,
+    62,
+    [0, 5, 3, 7],
+    [4, 6, 4, 2, 5, 4, 2, 0],
+    "major",
+    "square",
+  ),
+  braaiEncore: makeTheme(
+    128,
+    72,
+    [0, 3, 5, 0],
+    [0, 2, 4, 5, 4, 2, 0, null],
+    "pentatonic",
+    "square",
+  ),
+  soundFinale: makeTheme(
+    112,
+    55,
+    [0, 5, 3, 7],
+    [0, 2, 3, null, 5, 4, 2, 0],
+    "minor",
+  ),
+};
+export const ROUND_MUSIC_IDS = Object.keys(musicThemes);
+
+const noteFrequency = (note) => 440 * 2 ** ((note - 69) / 12);
 
 function ensureMusicBus() {
   if (musicBus || !context) return;
@@ -45,6 +171,8 @@ function ensureMusicBus() {
 function musicTone(frequency, at, duration, volume, wave, endFrequency) {
   const oscillator = context.createOscillator();
   const gain = context.createGain();
+  musicSources.add(oscillator);
+  oscillator.onended = () => musicSources.delete(oscillator);
   oscillator.type = wave;
   oscillator.frequency.setValueAtTime(frequency, at);
   if (endFrequency)
@@ -60,27 +188,59 @@ function musicTone(frequency, at, duration, volume, wave, endFrequency) {
   oscillator.stop(at + duration + 0.03);
 }
 
+function clearMusicSources() {
+  for (const oscillator of musicSources) {
+    try {
+      oscillator.stop();
+    } catch {}
+  }
+  musicSources.clear();
+}
+
 function scheduleMusicBar() {
   if (!musicWanted || context?.state !== "running") return;
-  const bar = musicBars[musicBar];
+  const theme = musicThemes[musicThemeId] || musicThemes.warmup;
+  const chordProgression = theme.progression[musicBar];
+  const root = theme.tonic + chordProgression;
+  const beat = 60 / theme.tempo;
+  const barDuration = beat * 4;
   const start = context.currentTime + 0.06;
-  const eighth = musicBeat / 2;
+  const eighth = beat / 2;
 
-  // A four-bar arcade-pop loop: soft chords under a bright, simple hook.
-  bar.chord.forEach((frequency) =>
-    musicTone(frequency, start, musicBarDuration * 0.78, 0.009, "triangle"),
+  theme.chord.forEach((interval) =>
+    musicTone(
+      noteFrequency(root + 12 + interval),
+      start,
+      barDuration * 0.76,
+      0.013,
+      "triangle",
+    ),
   );
   for (let step = 0; step < 8; step++) {
     const at = start + step * eighth;
     if (step === 0 || step === 4)
-      musicTone(bar.bass, at, 0.22, 0.043, "sine", bar.bass * 0.72);
+      musicTone(
+        noteFrequency(root - 24),
+        at,
+        beat * 0.58,
+        0.052,
+        "sine",
+        noteFrequency(root - 26),
+      );
     if (step === 2 || step === 6)
-      musicTone(bar.fifth, at, 0.16, 0.022, "triangle");
-    const note = bar.melody[step];
-    if (note) musicTone(note, at, 0.17, 0.018, "triangle");
-    if (step % 2 === 1) musicTone(1567.98, at, 0.055, 0.0022, "sine");
+      musicTone(noteFrequency(root + 7), at, beat * 0.32, 0.022, "triangle");
+    const degree = theme.melody[step];
+    if (degree !== null)
+      musicTone(
+        noteFrequency(root + 12 + theme.scale[degree]),
+        at,
+        beat * 0.36,
+        0.03,
+        theme.lead,
+      );
+    if (step % 2 === 1) musicTone(1567.98, at, 0.045, 0.0025, "sine");
   }
-  musicBar = (musicBar + 1) % musicBars.length;
+  musicBar = (musicBar + 1) % theme.progression.length;
 }
 
 function beginMusicAfterUnlock() {
@@ -93,9 +253,13 @@ function beginMusicAfterUnlock() {
       if (!musicWanted || musicTimer) return;
       ensureMusicBus();
       musicBus.gain.cancelScheduledValues(context.currentTime);
-      musicBus.gain.setTargetAtTime(0.68, context.currentTime, 0.12);
+      musicBus.gain.setTargetAtTime(0.78, context.currentTime, 0.12);
       scheduleMusicBar();
-      musicTimer = window.setInterval(scheduleMusicBar, musicBarDuration * 1000);
+      const theme = musicThemes[musicThemeId] || musicThemes.warmup;
+      musicTimer = window.setInterval(
+        scheduleMusicBar,
+        (60 / theme.tempo) * 4000,
+      );
     })
     .catch(() => {
       musicStarting = false;
@@ -112,8 +276,20 @@ export function unlockSound() {
     .catch(() => {});
 }
 
-export function startGameMusic() {
+export function startGameMusic(roundId = "warmup") {
   musicWanted = true;
+  const nextTheme = musicThemes[roundId] ? roundId : "warmup";
+  if (nextTheme !== musicThemeId) {
+    musicThemeId = nextTheme;
+    musicBar = 0;
+    if (musicTimer) window.clearInterval(musicTimer);
+    musicTimer = undefined;
+    clearMusicSources();
+    if (musicBus && context?.state === "running") {
+      musicBus.gain.cancelScheduledValues(context.currentTime);
+      musicBus.gain.setTargetAtTime(0, context.currentTime, 0.06);
+    }
+  }
   if (!context) return;
   ensureMusicBus();
   beginMusicAfterUnlock();
@@ -124,6 +300,7 @@ export function stopGameMusic() {
   musicStarting = false;
   if (musicTimer) window.clearInterval(musicTimer);
   musicTimer = undefined;
+  clearMusicSources();
   if (musicBus && context?.state === "running") {
     musicBus.gain.cancelScheduledValues(context.currentTime);
     musicBus.gain.setTargetAtTime(0, context.currentTime, 0.035);
