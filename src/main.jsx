@@ -14,7 +14,13 @@ import {
   cash,
   questionReward,
 } from "./catalog.js";
-import { Avatar, ClueArt, Icon, Landscape } from "./components/Art.jsx";
+import {
+  Avatar,
+  ClueArt,
+  Icon,
+  Landscape,
+  ShowdownMascots,
+} from "./components/Art.jsx";
 import {
   EventGame,
   GameMap,
@@ -663,29 +669,13 @@ function App() {
             </div>
             <div className="hero-scene">
               <Landscape />
+              <ShowdownMascots className="hero-mascots" mood="welcome" />
             </div>
             <div className="floating-chip chip-cash">
               <Icon name="Coins" size={25} />
               <span>
                 KNOW IT. WIN IT.<strong>+ R300</strong>
               </span>
-            </div>
-            <div className="floating-chip chip-party">
-              <span className="tiny-avatars">
-                <Avatar
-                  player={{ avatar: "Sun", colour: COLOURS[0] }}
-                  size={34}
-                />
-                <Avatar
-                  player={{ avatar: "Flame", colour: COLOURS[2] }}
-                  size={34}
-                />
-                <Avatar
-                  player={{ avatar: "Zap", colour: COLOURS[3] }}
-                  size={34}
-                />
-              </span>
-              <span>Better with your people.</span>
             </div>
             <div className="art-sticker">
               HOWZIT,
@@ -963,7 +953,7 @@ function App() {
               />
             ) : (
               <>
-                <RoundBar state={state} />
+                <RoundBar key={state.activityId} state={state} />
                 {state.phase === "tutorial" ? (
                   <Tutorial state={state} onNext={() => hostAction("next")} />
                 ) : state.phase === "select" ? (
@@ -1499,6 +1489,7 @@ function Lobby({ state: s, code, qr, mode, onStart, onDemo }) {
           <h2>The more, the Mzansi-er.</h2>
           <p>Get your people in. The bragging rights are waiting.</p>
         </div>
+        <ShowdownMascots className="lobby-mascots" mood="cheer" compact />
         <span className="pill">
           <Icon name="Users" size={16} />
           {s.players.filter((p) => !p.audience).length}/12 players
@@ -1702,6 +1693,11 @@ function Tutorial({ state: s, onNext }) {
       <div className="round-emblem">
         <Icon name={r.icon} size={58} />
       </div>
+      <ShowdownMascots
+        className="tutorial-mascots"
+        mood={r.caseMode ? "sneaky" : "hype"}
+        compact
+      />
       <p className="eyebrow">{r.eyebrow}</p>
       <h2>{r.name}</h2>
       <p className="stage-description">{r.description}</p>
@@ -1963,6 +1959,11 @@ function RoundWinner({ state: s }) {
   const winners = eligible.filter((r) => r.delta === best && r.correct);
   return (
     <div className="round-winners" role="status">
+      <ShowdownMascots
+        className="winner-mascots"
+        compact
+        mood={winners.length ? "celebrate" : "encourage"}
+      />
       <Icon name="Trophy" size={32} />
       <h3>
         {winners.length
@@ -2093,6 +2094,7 @@ function Final({ state: s, onNext }) {
       <div className="winner-crown">
         <Icon name="Crown" size={80} />
       </div>
+      <ShowdownMascots className="final-mascots" mood="champion" compact />
       <p className="eyebrow">LOCAL KNOWLEDGE. LEGENDARY STATUS.</p>
       <h2>
         {ranked
@@ -2301,6 +2303,11 @@ function Controller({
           <p className="eyebrow">ROUND {s.roundIndex + 1}</p>
           <h2>{round.name}</h2>
           <p>{round.description}</p>
+          <ShowdownMascots
+            className="mobile-mascots"
+            compact
+            mood={round.id === "final" ? "champion" : "welcome"}
+          />
           {round.kind === "question" && (
             <p className="mobile-category-brief">
               {round.count} questions ·{" "}
@@ -2627,6 +2634,11 @@ function Controller({
       ) : s.phase === "final" ? (
         <section className="controller-stage center">
           <Icon name="Crown" size={58} />
+          <ShowdownMascots
+            className="controller-final-mascots"
+            compact
+            mood="champion"
+          />
           <h2>What a showdown!</h2>
           <p>
             You finished with <b className="gold-text">{cash(p.cash)}</b>.

@@ -180,6 +180,282 @@ export function Avatar({ player, size = 48 }) {
     </span>
   );
 }
+export function ShowdownMascots({
+  mood = "welcome",
+  compact = false,
+  className = "",
+}) {
+  return (
+    <div
+      className={`showdown-mascots ${compact ? "compact" : ""} mood-${mood} ${className}`}
+      aria-label="Meet Zola the quiz bot, Pip the rhythm bird, and Sizzle the braai buddy"
+      role="img"
+    >
+      <svg viewBox="0 0 520 220" aria-hidden="true">
+        <ellipse className="mascot-shadow" cx="100" cy="188" rx="54" ry="10" />
+        <ellipse className="mascot-shadow" cx="260" cy="188" rx="57" ry="11" />
+        <ellipse className="mascot-shadow" cx="422" cy="188" rx="53" ry="10" />
+        <g className="mascot mascot-pip">
+          <path
+            d="M77 116c-8-37 8-71 39-76 34-6 56 22 51 57-4 28-24 54-48 54-21 0-37-14-42-35Z"
+            fill="#65c6d8"
+            stroke="#152b43"
+            strokeWidth="7"
+          />
+          <path
+            d="M80 79q-4-48 36-48t48 49"
+            fill="none"
+            stroke="#ad8cff"
+            strokeWidth="10"
+            strokeLinecap="round"
+          />
+          <rect
+            x="70"
+            y="72"
+            width="17"
+            height="36"
+            rx="8"
+            fill="#ffcb60"
+            stroke="#152b43"
+            strokeWidth="5"
+          />
+          <rect
+            x="151"
+            y="72"
+            width="17"
+            height="36"
+            rx="8"
+            fill="#ffcb60"
+            stroke="#152b43"
+            strokeWidth="5"
+          />
+          <path
+            d="M107 43q-4-25 13-29m9 29q2-27 19-22"
+            fill="none"
+            stroke="#65c6d8"
+            strokeWidth="8"
+            strokeLinecap="round"
+          />
+          <path
+            d="m155 88 29 10-28 14"
+            fill="#ff9b62"
+            stroke="#152b43"
+            strokeWidth="5"
+            strokeLinejoin="round"
+          />
+          <ellipse cx="111" cy="79" rx="9" ry="12" fill="#fff6df" />
+          <ellipse
+            className="mascot-eye"
+            cx="114"
+            cy="81"
+            rx="4"
+            ry="6"
+            fill="#172b42"
+          />
+          <path
+            d="M112 105q14 13 27-1"
+            fill="none"
+            stroke="#17304a"
+            strokeWidth="5"
+            strokeLinecap="round"
+          />
+          <path
+            d="m84 103-24 16 12-30m57 44 4 30m-30-27-5 27"
+            fill="none"
+            stroke="#152b43"
+            strokeWidth="7"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="m87 166-11 5m40-4 11 4"
+            stroke="#ffcb60"
+            strokeWidth="8"
+            strokeLinecap="round"
+          />
+          <path d="m99 147 23 1-3 12-18-1Z" fill="#ad8cff" />
+        </g>
+        <g className="mascot mascot-zola">
+          <path
+            d="M231 143v26m54-26v26"
+            stroke="#17304a"
+            strokeWidth="14"
+            strokeLinecap="round"
+          />
+          <path
+            d="M218 172h25m34 0h25"
+            stroke="#ffcb60"
+            strokeWidth="12"
+            strokeLinecap="round"
+          />
+          <path
+            d="m219 104-22 27m104-27 21 23"
+            stroke="#45bfae"
+            strokeWidth="14"
+            strokeLinecap="round"
+          />
+          <path
+            d="M216 98q0-17 17-17h54q17 0 17 17v44q0 15-17 15h-54q-17 0-17-15Z"
+            fill="#51cdb8"
+            stroke="#17304a"
+            strokeWidth="7"
+          />
+          <path
+            d="M202 50q0-23 23-23h70q23 0 23 23v41h-116Z"
+            fill="#ffcb60"
+            stroke="#17304a"
+            strokeWidth="7"
+          />
+          <path d="M218 48q0-11 12-11h59q12 0 12 11v24h-83Z" fill="#172b42" />
+          <circle cx="235" cy="55" r="6" fill="#70e5cf" />
+          <circle cx="282" cy="55" r="6" fill="#70e5cf" />
+          <path
+            d="M238 67q21 16 42 0"
+            fill="none"
+            stroke="#f7f0db"
+            strokeWidth="5"
+            strokeLinecap="round"
+          />
+          <circle
+            cx="199"
+            cy="59"
+            r="10"
+            fill="#ff8e80"
+            stroke="#17304a"
+            strokeWidth="5"
+          />
+          <circle
+            cx="321"
+            cy="59"
+            r="10"
+            fill="#ff8e80"
+            stroke="#17304a"
+            strokeWidth="5"
+          />
+          <path
+            d="M260 26V13"
+            stroke="#17304a"
+            strokeWidth="6"
+            strokeLinecap="round"
+          />
+          <circle
+            cx="260"
+            cy="9"
+            r="9"
+            fill="#ff8e80"
+            stroke="#17304a"
+            strokeWidth="4"
+          />
+          <path
+            d="m250 112 10-17 10 17-10 18Z"
+            fill="#ffcb60"
+            stroke="#17304a"
+            strokeWidth="4"
+            strokeLinejoin="round"
+          />
+          <circle cx="235" cy="126" r="4" fill="#fff6df" />
+          <circle cx="284" cy="126" r="4" fill="#fff6df" />
+        </g>
+        <g className="mascot mascot-sizzle">
+          <path
+            d="M404 63q-6-21 11-34 19 19 13 38"
+            fill="#64c88d"
+            stroke="#17304a"
+            strokeWidth="6"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M407 56q-8-21-29-18 4 21 27 27m21-8q13-19 33-11-9 19-31 20"
+            fill="#64c88d"
+            stroke="#17304a"
+            strokeWidth="5"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M389 64c-24 21-24 70-4 94 17 20 53 18 68-5 15-24 8-65-13-85-15-14-35-15-51-4Z"
+            fill="#ff8b73"
+            stroke="#17304a"
+            strokeWidth="7"
+          />
+          <path
+            d="M386 125q-21-2-26 16m91-18q19 3 22 17"
+            fill="none"
+            stroke="#17304a"
+            strokeWidth="8"
+            strokeLinecap="round"
+          />
+          <ellipse cx="405" cy="97" rx="8" ry="11" fill="#fff6df" />
+          <ellipse
+            className="mascot-eye"
+            cx="407"
+            cy="99"
+            rx="4"
+            ry="6"
+            fill="#17304a"
+          />
+          <ellipse cx="437" cy="97" rx="8" ry="11" fill="#fff6df" />
+          <ellipse
+            className="mascot-eye"
+            cx="439"
+            cy="99"
+            rx="4"
+            ry="6"
+            fill="#17304a"
+          />
+          <path
+            d="M407 119q15 16 30-1"
+            fill="none"
+            stroke="#17304a"
+            strokeWidth="5"
+            strokeLinecap="round"
+          />
+          <path
+            d="m404 157-4 15m34-13 5 13"
+            stroke="#17304a"
+            strokeWidth="8"
+            strokeLinecap="round"
+          />
+          <path
+            d="m394 174-3 7m47-7 4 7"
+            stroke="#ffcb60"
+            strokeWidth="9"
+            strokeLinecap="round"
+          />
+          <path
+            d="m416 67 7 15 11-12"
+            fill="none"
+            stroke="#ffe2aa"
+            strokeWidth="4"
+            strokeLinecap="round"
+          />
+        </g>
+        <path
+          className="mascot-sparkle sparkle-one"
+          d="m184 40 5 12 12 4-12 4-5 12-4-12-12-4 12-4Zm172 22 4 9 9 3-9 3-4 9-3-9-9-3 9-3Z"
+          fill="#ffcb60"
+        />
+        <path
+          className="mascot-sparkle sparkle-two"
+          d="m335 128 3 8 8 3-8 3-3 8-3-8-8-3 8-3Z"
+          fill="#70e5cf"
+        />
+      </svg>
+      {!compact && (
+        <div className="mascot-names">
+          <span>
+            ZOLA <small>QUIZ BOT</small>
+          </span>
+          <span>
+            PIP <small>RHYTHM BIRD</small>
+          </span>
+          <span>
+            SIZZLE <small>BRAAI BUDDY</small>
+          </span>
+        </div>
+      )}
+    </div>
+  );
+}
 export function Landscape({ compact = false }) {
   return (
     <svg

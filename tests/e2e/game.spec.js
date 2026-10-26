@@ -123,6 +123,8 @@ test("TV layouts, QR decode, two phones, manual join, reconnect and all ten roun
   await host.setViewportSize({ width: 1440, height: 900 });
   await host.goto("/");
   await expect(host.getByRole("heading", { name: /SA TRIVIA/ })).toBeVisible();
+  await expect(host.locator(".hero-mascots")).toBeVisible();
+  await expect(host.locator(".mascot-names")).toContainText("ZOLA");
   await host.screenshot({ path: "test-results/menu-1440.png", fullPage: true });
   await host.setViewportSize({ width: 1920, height: 1080 });
   await host.screenshot({
@@ -168,6 +170,7 @@ test("TV layouts, QR decode, two phones, manual join, reconnect and all ten roun
   await phone2.getByRole("button", { name: "Let me in" }).click();
   await phone2.getByRole("button", { name: "I’m ready" }).click();
   await expect(host.locator(".lobby-player")).toHaveCount(2);
+  await expect(host.locator(".lobby-mascots")).toBeVisible();
   await host.screenshot({ path: "test-results/lobby-tv.png", fullPage: true });
   await phone.screenshot({
     path: "test-results/controller-lobby-390.png",
@@ -190,6 +193,14 @@ test("TV layouts, QR decode, two phones, manual join, reconnect and all ten roun
     if (s.phase === "event") events.add(s.event.id);
     if (s.phase === "credits") break;
     if (s.phase === "tutorial") {
+      await expect(host.locator(".tutorial-mascots")).toBeVisible();
+      await expect(phone.locator(".mobile-mascots")).toBeVisible();
+      if (s.roundIndex === 0) {
+        await phone.screenshot({
+          path: "test-results/tutorial-phone-mascots.png",
+          fullPage: true,
+        });
+      }
       await host.getByRole("button", { name: "Let’s do this" }).click();
       continue;
     }
@@ -254,6 +265,7 @@ test("TV layouts, QR decode, two phones, manual join, reconnect and all ten roun
       continue;
     }
     if (s.phase === "results" || s.phase === "event-results") {
+      await expect(host.locator(".winner-mascots")).toBeVisible();
       const round = s.rounds[s.roundIndex];
       const hasNextQuestion =
         s.phase === "results" && s.questionIndex < round.count - 1;
@@ -320,6 +332,12 @@ test("quick demo, credits navigation, settings, small screens and bonus arcade",
   await page.getByLabel("Reduced animation").check();
   await page.getByLabel("Larger text").check();
   await page.getByRole("button", { name: "Back to the party" }).click();
+  await expect(page.locator(".hero-mascots")).toBeVisible();
+  expect(
+    await page
+      .locator(".hero-mascots .mascot-pip")
+      .evaluate((el) => getComputedStyle(el).animationName),
+  ).toBe("none");
   await page.getByRole("button", { name: "Try a playable demo" }).click();
   await page.getByRole("button", { name: "Create room", exact: true }).click();
   await expect(page.locator(".lobby-player")).toHaveCount(4);
@@ -347,7 +365,7 @@ test("team huddle shares the winning vote and host skip changes no cash", async 
   await host.evaluate(() =>
     localStorage.setItem(
       "sa.settings",
-      JSON.stringify({ mode: "teams", events: false }),
+      JSON.stringify({ mode: "teams", events: false, autoAdvance: false }),
     ),
   );
   await host.reload();

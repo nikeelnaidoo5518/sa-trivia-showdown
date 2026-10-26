@@ -44,7 +44,8 @@ Without Firebase configuration, production builds use browser-local demo transpo
 - Six optional events: Load-shedding, Broken Robots, Municipal Mayhem, Taxi Detour, Mystery Envelope, Cash-in-Transit Chaos. Events occur after every completed round, except the final. The event is chosen without repeating until its pool is exhausted.
 - Map, Braai and Drum Beat duels in longer matches; Robot Repair and catch-and-answer challenges in events; Robot Repair, Drum Beat, Picture Puzzle and Goal Rush in the **How to Play → bonus arcade**. Drum Beat gives each tap an original synthesized tone. Arcade practice does not alter match scores.
 - Audience answers and duel-winner predictions, round results, team/player standings, winner/tie celebration, Most Correct, Best Duel, Biggest Comeback, Play Again.
-- Original SVG artwork, self-hosted fonts, high-contrast controls, written audio fallbacks, keyboard input, reduced animation, larger text and optional vibration.
+- Three original animated mascots travel through the menu, lobby, round intros, answer reveals and winner screen: Zola the Quiz Bot, Pip the Rhythm Bird and Sizzle the Braai Buddy. Quick stage fades, case-opening reveals and winner reactions honour the reduced-animation setting and the browser’s reduced-motion preference.
+- Original SVG scenery and artwork, self-hosted fonts, high-contrast controls, written audio fallbacks, keyboard input, larger text and optional vibration.
 
 ## Interactive party update
 
