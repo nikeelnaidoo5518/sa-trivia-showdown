@@ -312,6 +312,17 @@ test("TV layouts, QR decode, two phones, manual join, reconnect and all ten roun
 test("quick demo, credits navigation, settings, small screens and bonus arcade", async ({
   page,
 }) => {
+  await page.addInitScript(() => {
+    const NativeAudioContext = window.AudioContext;
+    if (!NativeAudioContext) return;
+    window.__showdownOscillators = 0;
+    window.AudioContext = class extends NativeAudioContext {
+      createOscillator(...args) {
+        window.__showdownOscillators += 1;
+        return super.createOscillator(...args);
+      }
+    };
+  });
   await page.setViewportSize({ width: 320, height: 568 });
   await page.goto("/");
   await expect(
@@ -342,6 +353,25 @@ test("quick demo, credits navigation, settings, small screens and bonus arcade",
   await page.getByRole("button", { name: "Create room", exact: true }).click();
   await expect(page.locator(".lobby-player")).toHaveCount(4);
   expect((await saved(page)).state.rounds.length).toBe(5);
+  const firstMusicBar = await page.evaluate(
+    () => window.__showdownOscillators,
+  );
+  await page.waitForTimeout(2250);
+  const nextMusicBar = await page.evaluate(
+    () => window.__showdownOscillators,
+  );
+  expect(nextMusicBar).toBeGreaterThan(firstMusicBar);
+  await page.getByRole("button", { name: "Mute sound and music" }).click();
+  const mutedMusic = await page.evaluate(() => window.__showdownOscillators);
+  await page.waitForTimeout(2250);
+  expect(await page.evaluate(() => window.__showdownOscillators)).toBe(
+    mutedMusic,
+  );
+  await page.getByRole("button", { name: "Enable sound and music" }).click();
+  await page.waitForTimeout(100);
+  expect(await page.evaluate(() => window.__showdownOscillators)).toBeGreaterThan(
+    mutedMusic,
+  );
   await page.getByRole("button", { name: "End game", exact: true }).click();
   await page.getByRole("button", { name: "Confirm", exact: true }).click();
   await page.getByRole("button", { name: "Roll the credits" }).click();

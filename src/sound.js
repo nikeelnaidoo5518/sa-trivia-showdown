@@ -1,10 +1,133 @@
 let context;
+let musicBus;
+let musicTimer;
+let musicWanted = false;
+let musicStarting = false;
+let musicBar = 0;
+
+const musicBars = [
+  {
+    bass: 110,
+    fifth: 164.81,
+    chord: [220, 261.63, 329.63],
+    melody: [659.25, null, 523.25, 587.33, 783.99, null, 880, 783.99],
+  },
+  {
+    bass: 87.31,
+    fifth: 130.81,
+    chord: [174.61, 220, 261.63],
+    melody: [698.46, null, 659.25, 523.25, 698.46, null, 783.99, 659.25],
+  },
+  {
+    bass: 130.81,
+    fifth: 196,
+    chord: [196, 261.63, 329.63],
+    melody: [783.99, null, 659.25, 523.25, 587.33, null, 659.25, 880],
+  },
+  {
+    bass: 98,
+    fifth: 146.83,
+    chord: [196, 246.94, 293.66],
+    melody: [587.33, null, 659.25, 783.99, 880, null, 783.99, 659.25],
+  },
+];
+const musicTempo = 116;
+const musicBeat = 60 / musicTempo;
+const musicBarDuration = musicBeat * 4;
+
+function ensureMusicBus() {
+  if (musicBus || !context) return;
+  musicBus = context.createGain();
+  musicBus.gain.value = 0;
+  musicBus.connect(context.destination);
+}
+
+function musicTone(frequency, at, duration, volume, wave, endFrequency) {
+  const oscillator = context.createOscillator();
+  const gain = context.createGain();
+  oscillator.type = wave;
+  oscillator.frequency.setValueAtTime(frequency, at);
+  if (endFrequency)
+    oscillator.frequency.exponentialRampToValueAtTime(
+      endFrequency,
+      at + duration,
+    );
+  gain.gain.setValueAtTime(0.0001, at);
+  gain.gain.exponentialRampToValueAtTime(volume, at + 0.02);
+  gain.gain.exponentialRampToValueAtTime(0.0001, at + duration);
+  oscillator.connect(gain).connect(musicBus);
+  oscillator.start(at);
+  oscillator.stop(at + duration + 0.03);
+}
+
+function scheduleMusicBar() {
+  if (!musicWanted || context?.state !== "running") return;
+  const bar = musicBars[musicBar];
+  const start = context.currentTime + 0.06;
+  const eighth = musicBeat / 2;
+
+  // A four-bar arcade-pop loop: soft chords under a bright, simple hook.
+  bar.chord.forEach((frequency) =>
+    musicTone(frequency, start, musicBarDuration * 0.78, 0.009, "triangle"),
+  );
+  for (let step = 0; step < 8; step++) {
+    const at = start + step * eighth;
+    if (step === 0 || step === 4)
+      musicTone(bar.bass, at, 0.22, 0.043, "sine", bar.bass * 0.72);
+    if (step === 2 || step === 6)
+      musicTone(bar.fifth, at, 0.16, 0.022, "triangle");
+    const note = bar.melody[step];
+    if (note) musicTone(note, at, 0.17, 0.018, "triangle");
+    if (step % 2 === 1) musicTone(1567.98, at, 0.055, 0.0022, "sine");
+  }
+  musicBar = (musicBar + 1) % musicBars.length;
+}
+
+function beginMusicAfterUnlock() {
+  if (!musicWanted || !context || musicTimer || musicStarting) return;
+  musicStarting = true;
+  context
+    .resume()
+    .then(() => {
+      musicStarting = false;
+      if (!musicWanted || musicTimer) return;
+      ensureMusicBus();
+      musicBus.gain.cancelScheduledValues(context.currentTime);
+      musicBus.gain.setTargetAtTime(0.68, context.currentTime, 0.12);
+      scheduleMusicBar();
+      musicTimer = window.setInterval(scheduleMusicBar, musicBarDuration * 1000);
+    })
+    .catch(() => {
+      musicStarting = false;
+    });
+}
 
 export function unlockSound() {
   const Audio = window.AudioContext || window.webkitAudioContext;
   if (!Audio) return;
   context ||= new Audio();
-  context.resume().catch(() => {});
+  context
+    .resume()
+    .then(beginMusicAfterUnlock)
+    .catch(() => {});
+}
+
+export function startGameMusic() {
+  musicWanted = true;
+  if (!context) return;
+  ensureMusicBus();
+  beginMusicAfterUnlock();
+}
+
+export function stopGameMusic() {
+  musicWanted = false;
+  musicStarting = false;
+  if (musicTimer) window.clearInterval(musicTimer);
+  musicTimer = undefined;
+  if (musicBus && context?.state === "running") {
+    musicBus.gain.cancelScheduledValues(context.currentTime);
+    musicBus.gain.setTargetAtTime(0, context.currentTime, 0.035);
+  }
 }
 
 function tone(frequency, delay, duration, options = {}) {

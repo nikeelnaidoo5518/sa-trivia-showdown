@@ -29,7 +29,7 @@ import {
   SequenceGame,
 } from "./components/MiniGames.jsx";
 import "./style.css";
-import { cue, unlockSound } from "./sound.js";
+import { cue, startGameMusic, stopGameMusic, unlockSound } from "./sound.js";
 
 const read = (key, fallback) => {
   try {
@@ -333,6 +333,11 @@ function App() {
     };
   }, [settings.sound]);
   useEffect(() => {
+    if (settings.sound && role === "host") startGameMusic();
+    else stopGameMusic();
+    return stopGameMusic;
+  }, [settings.sound, role]);
+  useEffect(() => {
     if (!settings.sound || role !== "host" || !state) return;
     if (["results", "event-results"].includes(state.phase)) {
       const round = state.rounds[state.roundIndex];
@@ -595,7 +600,9 @@ function App() {
           )}
           <button
             className="icon-button"
-            aria-label={settings.sound ? "Mute sound" : "Enable sound"}
+            aria-label={
+              settings.sound ? "Mute sound and music" : "Enable sound and music"
+            }
             onClick={() => {
               if (!settings.sound) unlockSound();
               setSettings({ ...settings, sound: !settings.sound });
@@ -1306,7 +1313,11 @@ function Settings({ settings: s, setSettings }) {
             "Random events",
             "Short, optional challenges between rounds",
           ],
-          ["sound", "Sound", "Game-show stings, answer cues and spoken clues"],
+          [
+            "sound",
+            "Sound and music",
+            "Original looping game music, answer cues and spoken clues",
+          ],
           [
             "reducedMotion",
             "Reduced animation",
@@ -1327,7 +1338,10 @@ function Settings({ settings: s, setSettings }) {
             <input
               type="checkbox"
               checked={s[key]}
-              onChange={(e) => update(key, e.target.checked)}
+              onChange={(e) => {
+                if (key === "sound" && e.target.checked) unlockSound();
+                update(key, e.target.checked);
+              }}
             />
           </label>
         ))}
