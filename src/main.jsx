@@ -11,7 +11,6 @@ import {
   COLOURS,
   DEFAULT_SETTINGS,
   PROVINCES,
-  ROUNDS,
   cash,
 } from "./catalog.js";
 import { Avatar, ClueArt, Icon, Landscape } from "./components/Art.jsx";
@@ -47,6 +46,7 @@ const normalState = (s) => ({
 function App() {
   const query = new URLSearchParams(location.search);
   const [screen, setScreen] = useState(query.has("room") ? "join" : "menu"),
+    [tvMode, setTvMode] = useState(query.get("tv") === "1"),
     [settings, setSettings] = useState(() => ({
       ...DEFAULT_SETTINGS,
       ...read("sa.settings", {}),
@@ -131,6 +131,48 @@ function App() {
     );
     document.documentElement.classList.toggle("large-text", settings.largeText);
   }, [settings]);
+  useEffect(() => {
+    if (import.meta.env.PROD && "serviceWorker" in navigator) {
+      const worker = new URL("sw.js", document.baseURI);
+      navigator.serviceWorker.register(worker).catch(() => {});
+    }
+  }, []);
+  useEffect(() => {
+    if (role === "player") return;
+    const onRemoteKey = (event) => {
+      if (
+        !tvMode ||
+        !["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(
+          event.key,
+        )
+      )
+        return;
+      const active = document.activeElement;
+      if (
+        active?.matches?.("input, select, textarea, [role='slider']") ||
+        active?.closest?.("[role='application']")
+      )
+        return;
+      const focusable = [
+        ...document.querySelectorAll(
+          'button:not(:disabled),a[href],input:not(:disabled),select:not(:disabled),[tabindex="0"]',
+        ),
+      ].filter((element) => element.getClientRects().length > 0);
+      if (!focusable.length) return;
+      event.preventDefault();
+      const current = focusable.indexOf(active);
+      if (current < 0) {
+        focusable[0].focus();
+        return;
+      }
+      const direction = ["ArrowUp", "ArrowLeft"].includes(event.key) ? -1 : 1;
+      focusable[
+        (current + direction + focusable.length) % focusable.length
+      ].focus();
+    };
+    document.addEventListener("keydown", onRemoteKey);
+    return () => document.removeEventListener("keydown", onRemoteKey);
+  }, [tvMode, role]);
   useEffect(() => {
     if (!settings.sound && "speechSynthesis" in window)
       speechSynthesis.cancel();
@@ -235,7 +277,7 @@ function App() {
                 x: 40 + Math.random() * 40,
                 y: 25 + Math.random() * 40,
               };
-            else if (s.mini?.kind === "braai")
+            else if (["braai", "drum"].includes(s.mini?.kind))
               value = s.mini.sequence.map((v) =>
                 Math.random() > 0.25 ? v : 0,
               );
@@ -431,7 +473,9 @@ function App() {
     (p) => p.id === transport.current?.identity,
   );
   return (
-    <div className={`app ${role === "player" ? "phone-app" : ""}`}>
+    <div
+      className={`app ${role === "player" ? "phone-app" : ""} ${tvMode && role !== "player" ? "tv-mode" : ""}`}
+    >
       <header className="site-header">
         <button
           className="brand"
@@ -477,9 +521,32 @@ function App() {
               )}
             </>
           ) : (
-            <span className="header-tag">
-              <span className="live-dot" /> MADE FOR A GOOD TIME
-            </span>
+            <>
+              <span className="header-tag">
+                <span className="live-dot" /> MADE FOR A GOOD TIME
+              </span>
+              {tvMode ? (
+                <button
+                  className="tv-mode-toggle"
+                  onClick={() => {
+                    setTvMode(false);
+                    history.replaceState(null, "", location.pathname);
+                  }}
+                >
+                  Exit TV view
+                </button>
+              ) : (
+                <button
+                  className="tv-mode-toggle"
+                  onClick={() => {
+                    setTvMode(true);
+                    history.replaceState(null, "", `${location.pathname}?tv=1`);
+                  }}
+                >
+                  TV view
+                </button>
+              )}
+            </>
           )}
           <button
             className="icon-button"
@@ -552,7 +619,9 @@ function App() {
             <div className="art-label">
               <Icon name="MapPin" size={16} /> A WHOLE COUNTRY OF GOOD QUESTIONS
             </div>
-            <Landscape />
+            <div className="hero-scene">
+              <Landscape />
+            </div>
             <div className="floating-chip chip-cash">
               <Icon name="Coins" size={25} />
               <span>
@@ -600,8 +669,8 @@ function App() {
             <div>
               <Icon name="Zap" />
               <span>
-                <b>10 rounds of Mzansi</b>
-                <small>Or keep it quick with 5</small>
+                <b>Up to 20 rounds of Mzansi</b>
+                <small>Quick, standard or long-play lineups</small>
               </span>
             </div>
             <button
@@ -780,6 +849,20 @@ function App() {
                     </button>
                   </>
                 )}
+                <button
+                  className="tv-mode-toggle host-tv-toggle"
+                  onClick={() => {
+                    const next = !tvMode;
+                    setTvMode(next);
+                    history.replaceState(
+                      null,
+                      "",
+                      next ? `${location.pathname}?tv=1` : location.pathname,
+                    );
+                  }}
+                >
+                  {tvMode ? "Exit TV view" : "TV view"}
+                </button>
                 <button
                   className="text-button"
                   onClick={() =>
@@ -960,6 +1043,30 @@ function App() {
                 </button>
               ))}
             </div>
+            <h3 className="setup-subheading">How long should the party run?</h3>
+            <div
+              className="length-options"
+              role="group"
+              aria-label="Match length"
+            >
+              {[
+                [5, "Quick", "5 rounds"],
+                [10, "Standard", "10 rounds"],
+                [15, "Long", "15 rounds"],
+                [20, "All night", "20 rounds"],
+              ].map(([length, name, detail]) => (
+                <button
+                  key={length}
+                  type="button"
+                  className={`length-option ${Number(settings.length) === length ? "selected" : ""}`}
+                  aria-pressed={Number(settings.length) === length}
+                  onClick={() => setSettings({ ...settings, length })}
+                >
+                  <strong>{name}</strong>
+                  <small>{detail}</small>
+                </button>
+              ))}
+            </div>
             <p>
               Answer on your phone. When everyone locks in, the TV reveals the
               answer and round winners.
@@ -971,6 +1078,7 @@ function App() {
               <button
                 className="btn primary"
                 autoFocus
+                aria-label="Create room"
                 onClick={() => {
                   const d = setup.isDemo;
                   setSetup(null);
@@ -978,7 +1086,7 @@ function App() {
                   startGame(d);
                 }}
               >
-                Create room
+                Start {settings.length} rounds
               </button>
             </div>
           </section>
@@ -1085,8 +1193,10 @@ function Settings({ settings: s, setSettings }) {
             value={s.length}
             onChange={(e) => update("length", Number(e.target.value))}
           >
-            <option value="10">Standard · 10 rounds</option>
             <option value="5">Quick Match · 5 rounds</option>
+            <option value="10">Standard · 10 rounds</option>
+            <option value="15">Long Party · 15 rounds</option>
+            <option value="20">All Night · 20 rounds</option>
           </select>
         </label>
         <label>
@@ -1525,7 +1635,7 @@ function Tutorial({ state: s, onNext }) {
             ? "R500 + your wager"
             : "R300 + up to R30 for quick trivia"}
         </span>
-        {["map", "braai"].includes(r.id) && (
+        {["map", "braai", "drum"].includes(r.kind) && (
           <span>
             <Icon name="Eye" size={18} />
             Predict another player for +R50
@@ -1626,6 +1736,19 @@ function HostActivity({ state: s, settings, onResolve }) {
             </p>
           </div>
           <GameMap />
+        </div>
+      ) : r.kind === "drum" ? (
+        <div className="center drum-stage-art">
+          <Icon name="Drum" size={64} />
+          <h2>Catch the beat.</h2>
+          <p>Copy the lit-up rhythm on your phone. Every beat counts.</p>
+          <div className="drum-decoration" aria-hidden="true">
+            {["Drum", "HandCoins", "Target", "Music2"].map((icon) => (
+              <span key={icon}>
+                <Icon name={icon} size={42} />
+              </span>
+            ))}
+          </div>
         </div>
       ) : (
         <div className="center">
@@ -2105,6 +2228,7 @@ function Controller({
                 kind="repair"
                 sequence={[0, 2, 1, 3]}
                 disabled={s.paused}
+                sound={settings.sound}
                 onSubmit={(v) => send({ type: "repair", value: v })}
               />
             </>
@@ -2119,6 +2243,7 @@ function Controller({
                 player={p}
                 onSubmit={submit}
                 disabled={disabled}
+                sound={settings.sound}
               />
             </>
           ) : s.mini?.kind === "map" ? (
@@ -2133,12 +2258,14 @@ function Controller({
                 Lock my pin <Icon name="MapPin" />
               </button>
             </>
-          ) : s.mini?.kind === "braai" ? (
+          ) : ["braai", "drum"].includes(s.mini?.kind) ? (
             <SequenceGame
               key={s.activityId}
+              kind={s.mini.kind}
               sequence={s.mini.sequence}
               revealUntil={s.mini.revealUntil}
               disabled={disabled}
+              sound={settings.sound}
               onSubmit={submit}
             />
           ) : s.question ? (
@@ -2260,7 +2387,7 @@ function Controller({
         </p>
       )}
       {["tutorial", "playing"].includes(s.phase) &&
-        ["map", "braai"].includes(round.id) &&
+        ["map", "braai", "drum"].includes(round.kind) &&
         !s.receipts[p.id] && (
           <details className="prediction">
             <summary>

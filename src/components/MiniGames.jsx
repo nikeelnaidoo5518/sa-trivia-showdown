@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Icon } from "./Art.jsx";
 const BRAAI = ["Mielie", "Pepper", "Mushroom", "Sosatie"],
+  DRUM = ["Bass", "Clap", "Tap", "Shake"],
   SWITCH = ["SUN", "WAVE", "SPARK", "LEAF"];
 export function GameMap({ onSelect, pin, target, disabled = false }) {
   const svg = useRef();
@@ -119,17 +120,43 @@ export function SequenceGame({
   onSubmit,
   disabled,
   limit,
+  sound = true,
 }) {
   const [chosen, setChosen] = useState([]);
-  const labels = kind === "braai" ? BRAAI : SWITCH;
+  const audio = useRef(null);
+  const labels =
+    kind === "braai" ? BRAAI : kind === "drum" ? DRUM : SWITCH;
   const target = sequence.slice(0, limit || sequence.length),
     revealing = false;
+  const playBeat = (index) => {
+    if (!sound || kind !== "drum") return;
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    if (!AudioContext) return;
+    audio.current ||= new AudioContext();
+    const context = audio.current;
+    if (context.state === "suspended") context.resume();
+    const oscillator = context.createOscillator();
+    const volume = context.createGain();
+    const now = context.currentTime;
+    oscillator.type = index === 0 ? "sine" : "triangle";
+    oscillator.frequency.value = [105, 310, 520, 760][index];
+    volume.gain.setValueAtTime(0.001, now);
+    volume.gain.exponentialRampToValueAtTime(0.17, now + 0.008);
+    volume.gain.exponentialRampToValueAtTime(0.001, now + 0.14);
+    oscillator.connect(volume).connect(context.destination);
+    oscillator.start(now);
+    oscillator.stop(now + 0.15);
+  };
   return (
     <div className="mini-controller">
       <p className="mini-instruction">
         {revealing
-          ? "Follow the recipe on screen"
-          : `Follow the visible recipe: tap ${target.length} items in order.`}
+          ? kind === "drum"
+            ? "Copy the rhythm on screen"
+            : "Follow the recipe on screen"
+          : kind === "drum"
+            ? `Copy the rhythm: tap ${target.length} beats in order.`
+            : `Follow the visible recipe: tap ${target.length} items in order.`}
       </p>
       <div className="sequence-display">
         {target.map((v, i) => (
@@ -144,13 +171,18 @@ export function SequenceGame({
             key={label}
             className={`pad pad-${i}`}
             disabled={disabled || revealing || chosen.length === target.length}
-            onClick={() => setChosen((a) => [...a, i])}
+            onClick={() => {
+              playBeat(i);
+              setChosen((a) => [...a, i]);
+            }}
           >
             <Icon
               name={
                 (kind === "braai"
                   ? ["Wheat", "Flame", "Sprout", "Utensils"]
-                  : ["Sun", "Waves", "Zap", "Leaf"])[i]
+                  : kind === "drum"
+                    ? ["Drum", "HandCoins", "Target", "Music2"]
+                    : ["Sun", "Waves", "Zap", "Leaf"])[i]
               }
               size={30}
             />
@@ -177,7 +209,7 @@ export function SequenceGame({
     </div>
   );
 }
-export function EventGame({ event, player, onSubmit, disabled }) {
+export function EventGame({ event, player, onSubmit, disabled, sound = true }) {
   const [value, setValue] = useState(""),
     [caught, setCaught] = useState(false),
     [now, setNow] = useState(Date.now());
@@ -192,6 +224,7 @@ export function EventGame({ event, player, onSubmit, disabled }) {
         kind="repair"
         limit={player?.backup ? 3 : 4}
         revealUntil={event.revealUntil}
+        sound={sound}
         onSubmit={onSubmit}
         disabled={disabled}
       />

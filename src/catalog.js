@@ -40,6 +40,7 @@ export const ROUNDS = [
     icon: "MapPin",
     description: "Vote for a province, then tackle a regional question.",
     kind: "question",
+    provinceVote: true,
     count: 1,
   },
   {
@@ -78,6 +79,7 @@ export const ROUNDS = [
     icon: "Coins",
     description: "Secretly wager up to R300 in game cash, then answer.",
     kind: "question",
+    wager: true,
     count: 1,
   },
   {
@@ -121,6 +123,117 @@ export const ROUNDS = [
   },
 ];
 export const QUICK_ROUNDS = ["warmup", "picture", "map", "braai", "final"];
+const LONG_ROUNDS = [
+  {
+    id: "soundEncore",
+    name: "Sound Stage Encore",
+    eyebrow: "LISTEN CLOSE, ANSWER LOUD",
+    icon: "Headphones",
+    description: "Two audio clues put your ears and Mzansi knowledge to work.",
+    kind: "question",
+    format: "audio",
+    count: 2,
+  },
+  {
+    id: "quickfire",
+    name: "Quickfire Rally",
+    eyebrow: "THREE QUESTIONS. NO WARM-UP",
+    icon: "Zap",
+    description: "Three rapid choice questions. Keep your phone ready.",
+    kind: "question",
+    formatGroup: "choice",
+    fast: true,
+    count: 3,
+  },
+  {
+    id: "picturePuzzle",
+    name: "Picture Puzzle",
+    eyebrow: "LOOK AGAIN",
+    icon: "ScanEye",
+    description: "Two illustrated clues. Spot the local detail.",
+    kind: "question",
+    format: "image",
+    count: 2,
+  },
+  {
+    id: "homeground",
+    name: "Homeground Return",
+    eyebrow: "PICK YOUR PROVINCE",
+    icon: "MapPinned",
+    description: "Vote for a province, then take on a regional question.",
+    kind: "question",
+    provinceVote: true,
+    count: 1,
+  },
+  {
+    id: "drum",
+    name: "Drum Beat Duel",
+    eyebrow: "FEEL THE RHYTHM",
+    icon: "Drum",
+    description: "Copy the bright drum pattern on your phone to score points.",
+    kind: "drum",
+    count: 1,
+  },
+  {
+    id: "mixEncore",
+    name: "The Mzansi Remix",
+    eyebrow: "A FRESH MIX OF LOCAL KNOW-HOW",
+    icon: "Shuffle",
+    description: "Three varied questions from across the country.",
+    kind: "question",
+    count: 3,
+  },
+  {
+    id: "riskEncore",
+    name: "Risk & Reward",
+    eyebrow: "BACK YOUR KNOWLEDGE",
+    icon: "Coins",
+    description: "Lock a secret wager, then take on a high-stakes question.",
+    kind: "question",
+    wager: true,
+    count: 1,
+  },
+  {
+    id: "mapEncore",
+    name: "Map Mzansi: Rematch",
+    eyebrow: "PUT A PIN IN IT",
+    icon: "Map",
+    description: "Race to place another South African city on the map.",
+    kind: "map",
+    count: 1,
+  },
+  {
+    id: "braaiEncore",
+    name: "Braai Battle: Second Serving",
+    eyebrow: "BACK TO THE BRAAI",
+    icon: "Flame",
+    description: "A new visible recipe sequence. Tap the ingredients in order.",
+    kind: "braai",
+    count: 1,
+  },
+  {
+    id: "soundFinale",
+    name: "One More Sound",
+    eyebrow: "TRUST YOUR EARS",
+    icon: "AudioLines",
+    description: "One last audio clue before the cash finale.",
+    kind: "question",
+    format: "audio",
+    count: 1,
+  },
+];
+export function roundsForLength(length = 10) {
+  const requested = Number(length);
+  const rounds = new Map(ROUNDS.map((round) => [round.id, round]));
+  if (requested === 5) return QUICK_ROUNDS.map((id) => rounds.get(id));
+  const size = [10, 15, 20].includes(requested) ? requested : 10;
+  const standard = ROUNDS.filter((round) => round.id !== "final");
+  return [
+    ...standard,
+    ...LONG_ROUNDS.slice(0, size - 10),
+    rounds.get("final"),
+  ];
+}
 export const CARDS = [
   {
     id: "steal",

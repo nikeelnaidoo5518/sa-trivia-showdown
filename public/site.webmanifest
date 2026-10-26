@@ -1,0 +1,21 @@
+{
+  "id": "./",
+  "name": "SA Trivia Showdown",
+  "short_name": "SA Showdown",
+  "description": "A South African party trivia game for the big screen and phone controllers.",
+  "start_url": "./?tv=1",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#101b32",
+  "theme_color": "#101b32",
+  "categories": ["games", "entertainment"],
+  "icons": [
+    {
+      "src": "./art/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

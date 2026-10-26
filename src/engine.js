@@ -1,7 +1,6 @@
 import {
   DEFAULT_SETTINGS,
-  ROUNDS,
-  QUICK_ROUNDS,
+  roundsForLength,
   CARDS,
   EVENTS,
   MAP_CITIES,
@@ -101,9 +100,7 @@ export class GameEngine {
       players: [],
       roundIndex: 0,
       questionIndex: 0,
-      rounds: ROUNDS.filter(
-        (r) => settings.length !== 5 || QUICK_ROUNDS.includes(r.id),
-      ),
+      rounds: roundsForLength(settings.length ?? DEFAULT_SETTINGS.length),
       activityId: id(),
       receipts: {},
       wagerReceipts: {},
@@ -217,19 +214,23 @@ export class GameEngine {
           q.difficulty === "easy" &&
           ["multiple-choice", "true-false"].includes(q.format),
       );
-    if (r.id === "province") narrow((q) => q.region === s.province);
+    if (r.provinceVote) narrow((q) => q.region === s.province);
     if (r.id === "picture") narrow((q) => q.format === "image");
     if (r.id === "sound") narrow((q) => q.format === "audio");
+    if (r.format) narrow((q) => q.format === r.format);
+    if (r.formatGroup === "choice")
+      narrow((q) => ["multiple-choice", "true-false"].includes(q.format));
     if (r.id === "huddle" && s.questionIndex === 1 && s.linkedCategory)
       narrow((q) => q.category === s.linkedCategory);
-    if (r.id === "mix") narrow((q) => !s.mixCategories?.includes(q.category));
-    if (r.id === "mix") {
+    if (["mix", "mixEncore"].includes(r.id))
+      narrow((q) => !s.mixCategories?.includes(q.category));
+    if (["mix", "mixEncore"].includes(r.id)) {
       const wanted = [
         ["short-answer", "scramble"],
         ["ordering", "matching"],
         ["true-false", "multiple-choice"],
       ][s.questionIndex];
-      narrow((q) => wanted.includes(q.format));
+      if (r.id === "mix") narrow((q) => wanted.includes(q.format));
     }
     if (r.id === "final") narrow((q) => q.difficulty !== "easy");
     if (s.settings.difficulty !== "mixed")
@@ -258,7 +259,7 @@ export class GameEngine {
     this.recent = [...this.recent, q.id].slice(-200);
     this.question = q;
     if (r.id === "huddle") s.linkedCategory = q.category;
-    if (r.id === "mix")
+    if (["mix", "mixEncore"].includes(r.id))
       s.mixCategories = [...(s.mixCategories || []), q.category];
     const { answer, acceptedAnswers, source, fact, mapTarget, ...safe } = q;
     s.question = safe;
@@ -308,11 +309,11 @@ export class GameEngine {
   begin() {
     const s = this.state,
       r = this.round;
-    if (r.id === "province" && !s.province) {
+    if (r.provinceVote && !s.province) {
       this.timed("select", 15);
       return;
     }
-    if (["risk", "final"].includes(r.id) && s.phase === "tutorial") {
+    if ((r.wager || r.id === "final") && s.phase === "tutorial") {
       this.timed("wager", 15);
       return;
     }
@@ -329,16 +330,19 @@ export class GameEngine {
       this.recent = [...this.recent, this.question.id].slice(-200);
       s.mini = { kind: "map", target: this.question.answer };
       this.timed("playing", 20);
-    } else if (r.kind === "braai") {
+    } else if (["braai", "drum"].includes(r.kind)) {
       s.mini = {
-        kind: "braai",
+        kind: r.kind,
         sequence: Array.from({ length: 6 }, () => Math.floor(this.rng() * 4)),
         revealUntil: Date.now() + 4500,
       };
       this.timed("playing", 25);
     } else {
       this.pickQuestion();
-      this.timed("playing", r.id === "mix" ? 15 : s.settings.seconds);
+      this.timed(
+        "playing",
+        r.fast ? 13 : ["mix", "mixEncore"].includes(r.id) ? 15 : s.settings.seconds,
+      );
     }
   }
   next() {
@@ -543,7 +547,7 @@ export class GameEngine {
     if (
       action.type === "predict" &&
       ["tutorial", "playing"].includes(s.phase) &&
-      ["map", "braai"].includes(this.round.id)
+      ["map", "braai", "drum"].includes(this.round.kind)
     ) {
       if (s.phase === "playing" && Object.keys(s.receipts).length)
         throw Error("Predictions are locked once play begins.");
@@ -742,7 +746,7 @@ export class GameEngine {
             ? `${Math.round(distance)} map units away · ${delta === 300 ? "spot on" : correct ? "close enough" : "keep exploring"}`
             : "No map pin placed";
         p.duel += delta;
-      } else if (r.kind === "braai") {
+      } else if (["braai", "drum"].includes(r.kind)) {
         const seq = Array.isArray(value) ? value : [];
         let hits = 0;
         for (let i = 0; i < s.mini.sequence.length; i++)
@@ -800,7 +804,7 @@ export class GameEngine {
       }
       results.push({ id: p.id, name: p.name, correct, delta, reason });
     }
-    if (!isEvent && ["map", "braai"].includes(r.id)) {
+    if (!isEvent && ["map", "braai", "drum"].includes(r.kind)) {
       const candidates = results.filter(
         (x) => !s.players.find((p) => p.id === x.id)?.audience,
       );
@@ -838,15 +842,21 @@ export class GameEngine {
       : this.question?.answer ||
         (r.kind === "map"
           ? s.mini.target
-          : s.mini.sequence
-              .map((x) => ["Mielie", "Pepper", "Mushroom", "Sosatie"][x])
+        : s.mini.sequence
+              .map((x) =>
+                (r.kind === "drum"
+                  ? ["BASS", "CLAP", "TAP", "SHAKE"]
+                  : ["Mielie", "Pepper", "Mushroom", "Sosatie"])[x],
+              )
               .join(" → "));
     s.fact = isEvent
       ? "A little teamwork keeps the party going. All rewards are fictional game cash."
       : this.question?.fact ||
         (r.kind === "map"
           ? "Our map is a simplified game map. Accuracy matters more than speed."
-          : "A perfect recipe earns R300. Every correct position earns R40.");
+          : r.kind === "drum"
+            ? "A perfect rhythm earns R300. Every correct beat earns R40."
+            : "A perfect recipe earns R300. Every correct position earns R40.");
     s.source = this.question?.source || null;
     s.mapAnswer =
       !isEvent && r.kind === "map"

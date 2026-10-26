@@ -2,9 +2,9 @@
 
 **Created by Nikeel Naidoo — creator and concept owner.**
 
-A colourful, original South African party game for a shared TV and phone controllers. Compete for fictional game cash with trivia, map and sequence duels, cards and short surprise events. There are no purchases, real-money stakes or cash-outs.
+A colourful, original South African party game for a shared TV and phone controllers. Compete for fictional game cash with trivia, map and rhythm duels, cards and short surprise events. The show now uses layered 3D-style depth and TV-sized typography. There are no purchases, real-money stakes or cash-outs.
 
-**[Play SA Trivia Showdown](https://nikeelnaidoo5518.github.io/sa-trivia-showdown/)** — choose **Start Game** for a TV room and phone controllers, or **Try a playable demo** for bots and an on-screen controller. The Pages workflow includes the public web configuration for the game’s Firebase project.
+**[Play SA Trivia Showdown](https://nikeelnaidoo5518.github.io/sa-trivia-showdown/)** — choose **Start Game** for a TV room and phone controllers, or **Try a playable demo** for bots and an on-screen controller. Open **TV view** for bigger text and remote-control navigation. The Pages workflow includes the public web configuration for the game’s Firebase project.
 
 ![SA Trivia Showdown start menu](docs/screenshots/start-menu.png)
 
@@ -35,12 +35,12 @@ Without Firebase configuration, production builds use browser-local demo transpo
 - Start, Join, How to Play, Settings, dedicated Credits, and post-match End Credits.
 - 1–12 competing players and audience participants, up to 40 room members total.
 - Solo and two-team modes. Teams use average cash so a larger team does not automatically win.
-- Standard ten rounds: Warm-Up, Pick Your Province, Picture This, Mzansi Map Sprint, Sound It Out, Risk It, Team Huddle, Braai Battle, The Mzansi Mix, and Final Showdown.
+- Choose 5, 10, 15 or 20 rounds in the pre-game screen. The 10-round lineup stays Warm-Up, Pick Your Province, Picture This, Mzansi Map Sprint, Sound It Out, Risk It, Team Huddle, Braai Battle, The Mzansi Mix, and Final Showdown. Longer games add two-question audio and picture rounds, province voting, quickfire, wager, map and braai rematches, plus the new phone-controlled Drum Beat Duel. Final Showdown remains last.
 - Five-round Quick Match: Warm-Up, Picture This, Map Sprint, Braai Battle, Final Showdown.
 - Solo Team Huddle has two questions linked by category; teams discuss and vote for one shared answer. Majority wins; tied votes use the earliest submission.
 - Six one-use cards: Steal, Cash Shield, Extra Hint, Double Down, Robot Repair, Power Backup. Each opens an effect/confirmation dialog before use.
 - Six optional events: Load-shedding, Broken Robots, Municipal Mayhem, Taxi Detour, Mystery Envelope, Cash-in-Transit Chaos. Events occur after every completed round, except the final. The event is chosen without repeating until its pool is exhausted.
-- Map and Braai duels in the match; Robot Repair and catch-and-answer challenges in events; Robot Repair, Drum Beat, Picture Puzzle and Goal Rush in the **How to Play → bonus arcade**. Arcade practice does not alter match scores.
+- Map, Braai and Drum Beat duels in longer matches; Robot Repair and catch-and-answer challenges in events; Robot Repair, Drum Beat, Picture Puzzle and Goal Rush in the **How to Play → bonus arcade**. Drum Beat gives each tap an original synthesized tone. Arcade practice does not alter match scores.
 - Audience answers and duel-winner predictions, round results, team/player standings, winner/tie celebration, Most Correct, Best Duel, Biggest Comeback, Play Again.
 - Original SVG artwork, self-hosted fonts, high-contrast controls, written audio fallbacks, keyboard input, reduced animation, larger text and optional vibration.
 
@@ -50,6 +50,8 @@ Without Firebase configuration, production builds use browser-local demo transpo
 - Once all competing players answer, the host reveals results automatically after a 1.5-second confirmation interval. Otherwise the normal timer or host reveal control ends the question. Pausing suspends automatic reveal. The TV and phones display round winners, the correct answer and cash changes.
 - Each competitor has two **Confetti Jam** tricks per match. During a round tutorial, choose a rival and confirm. One trick may be used per player per round; teams can target only opponents. The target clears three bursts or waits up to five seconds after play starts. A Cash Shield blocks the trick. These are original game mechanics and visuals.
 - Original synthesised start, question, countdown, event, trick and results sounds play on the host after a user gesture. The existing sound toggle mutes them.
+- **TV view** enlarges the host layout, adds stronger stage depth, and lets a TV remote's arrow keys move focus between controls. The remote's select/OK button activates the focused control. Phones continue to join as browser controllers.
+- The site includes a web-app manifest and a small cached shell for compatible browsers. On a supported browser, add SA Trivia Showdown to the home screen and launch directly into TV view. TV browser support varies by model and operating system; this repository does not yet contain a signed Fire TV, Android TV, Samsung Tizen or LG webOS store package.
 - Memory-only challenges have been removed from the playable flow. Braai and repair codes remain visible while players follow them; Mystery Envelope is now catch-and-answer. Bonus Market Memory was removed from the menu. Optional mini-game events now appear between every round.
 - The ten-round cash competition, province vote, secret wagers and final cash standings remain the match format; this update does not add a separate tower-climb finale.
 
@@ -165,9 +167,14 @@ Tests cover QR decoding and following the decoded URL, manual joining, ten-round
 | `database.rules.json`          | Firebase access rules                             |
 | `.github/workflows/pages.yml`  | Checks and GitHub Pages deployment                |
 
+## TV app options
+
+The current game can run as a website on a TV with a modern browser. For supported Android/Chromium devices, the manifest provides a home-screen web app that opens in TV view. Try the URL with `?tv=1` to preview the larger layout and remote navigation. A packaged app for an app store is a separate final step: Android TV/Fire TV can use a thin Android wrapper around the hosted game, while Samsung and LG require their own Tizen and webOS packages, signing and device testing. The same Firebase phone controllers can stay in the browser for every option. Keep the TV browser awake and signed in during a game.
+
 ## First-version limits
 
 - The hosted game uses Firebase’s free Spark plan. Availability and player capacity remain subject to the project’s quotas; no paid plan was enabled.
+- TV view and the installable web manifest are included, but no native TV APK or Samsung/LG store package has been built or submitted. Test the actual TV remote, sound, screen overscan and browser compatibility on the target model before a game night.
 - Host authority and the publicly bundled question bank suit friendly in-room games. This is not a cheat-proof competitive platform. A determined developer can inspect the question bundle; hardening requires server-side question delivery and scoring.
 - One host, two fixed teams, one shared display. No account system, matchmaking, chat, host transfer, remote video or persistent global leaderboard.
 - Map geometry is deliberately schematic. Speech quality depends on the browser/device's available voice; text always remains available.
