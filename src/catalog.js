@@ -30,28 +30,31 @@ export const ROUNDS = [
     name: "Warm-Up",
     eyebrow: "LET’S GET THE CASH FLOWING",
     icon: "Sun",
-    description: "An easy opener. Pick the answer on your phone.",
+    description:
+      "Five easy questions from one category. Pick answers on your phone.",
     kind: "question",
-    count: 1,
+    count: 5,
   },
   {
     id: "province",
     name: "Pick Your Province",
     eyebrow: "HOME GROUND ADVANTAGE",
     icon: "MapPin",
-    description: "Vote for a province, then tackle a regional question.",
+    description:
+      "Vote on a province, then take five questions from one local category.",
     kind: "question",
     provinceVote: true,
-    count: 1,
+    count: 5,
   },
   {
     id: "picture",
     name: "Picture This",
     eyebrow: "A LITTLE LOCAL KNOW-HOW",
     icon: "Image",
-    description: "Use the illustration and clues to find the answer.",
+    description:
+      "Five questions from one category, with picture clues when available.",
     kind: "question",
-    count: 1,
+    count: 5,
   },
   {
     id: "map",
@@ -59,9 +62,9 @@ export const ROUNDS = [
     eyebrow: "PUT YOUR PLACE ON THE MAP",
     icon: "Map",
     description:
-      "Tap the map as close to the named city as possible. Accuracy wins.",
+      "Five city challenges. Tap the map close to each place to earn more.",
     kind: "map",
-    count: 1,
+    count: 5,
   },
   {
     id: "sound",
@@ -69,19 +72,22 @@ export const ROUNDS = [
     eyebrow: "LISTEN UP, MZANSI",
     icon: "Volume2",
     description:
-      "Listen to the spoken clue. A written clue is always available.",
+      "Five questions from one category. Play spoken clues where available; a written clue is always there.",
     kind: "question",
-    count: 1,
+    count: 5,
   },
   {
     id: "risk",
-    name: "Risk It",
-    eyebrow: "BACK YOUR KNOWLEDGE",
-    icon: "Coins",
-    description: "Secretly wager up to R300 in game cash, then answer.",
+    name: "Case Crackers",
+    eyebrow: "PICK THE RIGHT CASE",
+    icon: "BriefcaseBusiness",
+    description:
+      "Five questions from one category. Pick an answer case, watch for decoy traps, and lock a secret wager.",
     kind: "question",
     wager: true,
-    count: 1,
+    caseMode: true,
+    formatGroup: "choice",
+    count: 5,
   },
   {
     id: "huddle",
@@ -89,9 +95,9 @@ export const ROUNDS = [
     eyebrow: "GREAT MINDS, ONE ANSWER",
     icon: "Users",
     description:
-      "Teams discuss and vote: majority answer wins. Solo players solve two linked challenges.",
+      "Five questions from one category. Teams discuss and submit one shared answer each time.",
     kind: "question",
-    count: 2,
+    count: 5,
   },
   {
     id: "braai",
@@ -106,21 +112,21 @@ export const ROUNDS = [
   {
     id: "mix",
     name: "The Mzansi Mix",
-    eyebrow: "THREE QUESTIONS. BIG ENERGY.",
+    eyebrow: "FIVE QUESTIONS. BIG ENERGY.",
     icon: "Shuffle",
-    description: "Three quick questions from a mix of categories.",
+    description: "Five quick questions from one category, with varied formats.",
     kind: "question",
-    count: 3,
+    count: 5,
   },
   {
     id: "final",
     name: "Final Showdown",
-    eyebrow: "ONE LAST CHANCE FOR GLORY",
+    eyebrow: "THE CASH-CLIMB FINALE",
     icon: "Crown",
     description:
-      "Secretly wager up to R500. A correct final answer earns R500 plus your wager.",
+      "Seven questions from one category. Rewards climb from R300 to R900, then lock a secret wager on the last question.",
     kind: "question",
-    count: 1,
+    count: 7,
   },
 ];
 export const QUICK_ROUNDS = ["warmup", "picture", "map", "braai", "final"];
@@ -130,41 +136,45 @@ const LONG_ROUNDS = [
     name: "Sound Stage Encore",
     eyebrow: "LISTEN CLOSE, ANSWER LOUD",
     icon: "Headphones",
-    description: "Two audio clues put your ears and Mzansi knowledge to work.",
+    description:
+      "Five questions from one category, with spoken clues where available.",
     kind: "question",
     format: "audio",
-    count: 2,
+    count: 5,
   },
   {
     id: "quickfire",
     name: "Quickfire Rally",
-    eyebrow: "THREE QUESTIONS. NO WARM-UP",
+    eyebrow: "FIVE QUESTIONS. NO WARM-UP",
     icon: "Zap",
-    description: "Three rapid choice questions. Keep your phone ready.",
+    description:
+      "Five rapid questions from one category. Keep your phone ready.",
     kind: "question",
     formatGroup: "choice",
     fast: true,
-    count: 3,
+    count: 5,
   },
   {
     id: "picturePuzzle",
     name: "Picture Puzzle",
     eyebrow: "LOOK AGAIN",
     icon: "ScanEye",
-    description: "Two illustrated clues. Spot the local detail.",
+    description:
+      "Five questions from one category, with illustrated clues where available.",
     kind: "question",
     format: "image",
-    count: 2,
+    count: 5,
   },
   {
     id: "homeground",
     name: "Homeground Return",
     eyebrow: "PICK YOUR PROVINCE",
     icon: "MapPinned",
-    description: "Vote for a province, then take on a regional question.",
+    description:
+      "Vote for a province, then take on five questions from one regional category.",
     kind: "question",
     provinceVote: true,
-    count: 1,
+    count: 5,
   },
   {
     id: "drum",
@@ -180,28 +190,32 @@ const LONG_ROUNDS = [
     name: "The Mzansi Remix",
     eyebrow: "A FRESH MIX OF LOCAL KNOW-HOW",
     icon: "Shuffle",
-    description: "Three varied questions from across the country.",
+    description: "Five varied questions from one category.",
     kind: "question",
-    count: 3,
+    count: 5,
   },
   {
     id: "riskEncore",
     name: "Risk & Reward",
     eyebrow: "BACK YOUR KNOWLEDGE",
     icon: "Coins",
-    description: "Lock a secret wager, then take on a high-stakes question.",
+    description:
+      "Five case questions from one category. Wager before each pick.",
     kind: "question",
     wager: true,
-    count: 1,
+    caseMode: true,
+    formatGroup: "choice",
+    count: 5,
   },
   {
     id: "mapEncore",
     name: "Map Mzansi: Rematch",
     eyebrow: "PUT A PIN IN IT",
     icon: "Map",
-    description: "Race to place another South African city on the map.",
+    description:
+      "Five more city challenges. Place every pin as accurately as you can.",
     kind: "map",
-    count: 1,
+    count: 5,
   },
   {
     id: "braaiEncore",
@@ -217,10 +231,11 @@ const LONG_ROUNDS = [
     name: "One More Sound",
     eyebrow: "TRUST YOUR EARS",
     icon: "AudioLines",
-    description: "One last audio clue before the cash finale.",
+    description:
+      "Five questions from one category, with spoken clues where available.",
     kind: "question",
     format: "audio",
-    count: 1,
+    count: 5,
   },
 ];
 export function roundsForLength(length = 10) {
@@ -229,11 +244,7 @@ export function roundsForLength(length = 10) {
   if (requested === 5) return QUICK_ROUNDS.map((id) => rounds.get(id));
   const size = [10, 15, 20].includes(requested) ? requested : 10;
   const standard = ROUNDS.filter((round) => round.id !== "final");
-  return [
-    ...standard,
-    ...LONG_ROUNDS.slice(0, size - 10),
-    rounds.get("final"),
-  ];
+  return [...standard, ...LONG_ROUNDS.slice(0, size - 10), rounds.get("final")];
 }
 export const CARDS = [
   {
@@ -376,3 +387,5 @@ export const MAP_CITIES = [
   { name: "Upington", x: 20, y: 40 },
 ];
 export const cash = (n) => `R${Math.round(n || 0).toLocaleString("en-ZA")}`;
+export const questionReward = (round, questionIndex = 0) =>
+  round?.id === "final" ? 300 + Math.max(0, questionIndex) * 100 : 300;

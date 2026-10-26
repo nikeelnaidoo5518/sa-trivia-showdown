@@ -51,7 +51,11 @@ test("Firebase anonymous auth, room creation, team vote, private input, host res
     .click();
   await expect(host.locator(".result-answer")).toBeVisible();
   await expect(host.locator(".standing")).toContainText("Ubuntu");
-  await host.getByRole("button", { name: "Keep the party going" }).click();
+  for (let question = 1; question < 5; question++) {
+    await host.getByRole("button", { name: "Next question" }).click();
+    await host.getByRole("button", { name: "Skip", exact: true }).click();
+  }
+  await host.getByRole("button", { name: "Next round" }).click();
   await expect(
     phone.getByRole("heading", { name: "Pick Your Province" }),
   ).toBeVisible();

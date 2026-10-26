@@ -21,7 +21,7 @@ const input = (e, p, type, value, extra = {}) =>
 function completeActivity(e) {
   const s = e.state;
   if (s.phase === "select") {
-    input(e, "a", "vote", "Western Cape");
+    input(e, "a", "vote", s.provinceOptions[0]);
     e.next();
   }
   if (s.phase === "wager") {
@@ -39,26 +39,55 @@ function completeActivity(e) {
     e.next();
   }
 }
-test("all 10 rounds, 3-question mix, linked solo huddle, unique questions, final then credits", () => {
+test("all 10 rounds, five-question categories, unique questions, seven-question final and credits", () => {
   const e = game();
   e.start();
   let steps = 0;
   const visited = new Set();
-  while (e.state.phase !== "credits" && steps++ < 80) {
+  while (e.state.phase !== "credits" && steps++ < 200) {
     visited.add(e.round.id);
     if (e.state.phase === "tutorial") e.next();
     else if (["playing", "wager", "select"].includes(e.state.phase))
       completeActivity(e);
     else e.next();
   }
-  assert.equal(steps < 80, true);
+  assert.equal(steps < 200, true);
   assert.equal(visited.size, 10);
-  assert.equal(e.state.history.length, 13);
+  assert.equal(e.state.history.length, 48);
   assert.equal(new Set(e.used).size, e.used.length);
-  assert.equal(e.state.history.filter((h) => h.round === "huddle").length, 2);
-  assert.equal(e.state.history.filter((h) => h.round === "mix").length, 3);
+  assert.equal(e.state.history.filter((h) => h.round === "huddle").length, 5);
+  assert.equal(e.state.history.filter((h) => h.round === "mix").length, 5);
+  assert.equal(e.state.history.filter((h) => h.round === "final").length, 7);
   assert.equal(e.state.phase, "credits");
   assert.ok(e.state.players[0].cash > 3000);
+});
+test("trivia round counts and category stay fixed; final reward rises to R900", () => {
+  const e = game();
+  e.start();
+  const categories = new Map();
+  for (let steps = 0; e.state.phase !== "credits" && steps < 200; steps++) {
+    if (e.state.phase === "tutorial") e.next();
+    else if (["playing", "wager", "select"].includes(e.state.phase)) {
+      const id = e.round.id;
+      if (e.question?.category) {
+        const seen = categories.get(id) || new Set();
+        seen.add(e.question.category);
+        categories.set(id, seen);
+      }
+      completeActivity(e);
+    } else e.next();
+  }
+  for (const [id, values] of categories) assert.equal(values.size, 1, id);
+  assert.deepEqual(
+    e.state.rounds.filter((r) => r.kind === "question").map((r) => r.count),
+    [5, 5, 5, 5, 5, 5, 5, 7],
+  );
+  assert.equal(e.state.rounds.find((r) => r.id === "risk").caseMode, true);
+  assert.equal(e.state.history.filter((h) => h.round === "final").length, 7);
+  const finalResults = e.state.history.filter((h) => h.round === "final");
+  assert.ok(finalResults[0].results[0].delta >= 300);
+  assert.ok(finalResults[6].results[0].delta >= 1000);
+  assert.ok(finalResults[6].results[0].delta <= 1030);
 });
 test("quick match contains exactly five specified rounds", () => {
   const e = game({ length: 5 });
@@ -87,8 +116,9 @@ test("automatic flow reveals results, advances rounds, and can be paused", () =>
   const resultDeadline = e.state.deadline;
   assert.ok(resultDeadline > Date.now());
   e.tick(resultDeadline + 1);
-  assert.equal(e.state.phase, "tutorial");
-  assert.equal(e.state.roundIndex, 1);
+  assert.equal(e.state.phase, "playing");
+  assert.equal(e.state.roundIndex, 0);
+  assert.equal(e.state.questionIndex, 1);
 });
 test("automatic flow can be disabled for manual progression", () => {
   const e = game({ autoAdvance: false });
@@ -207,7 +237,8 @@ test("team majority is shared, ties use earliest submission; team score uses ave
   assert.equal(e.state.results[1].correct, false);
   assert.equal(standings(e.state)[0].cash, 800);
   e.next();
-  assert.equal(e.round.id, "braai");
+  assert.equal(e.round.id, "huddle");
+  assert.equal(e.state.questionIndex, 1);
 });
 test("all six events resolve, losses bounded, backup reduces required sequence", () => {
   for (const event of EVENTS) {

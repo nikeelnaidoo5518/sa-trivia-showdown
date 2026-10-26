@@ -12,6 +12,7 @@ import {
   DEFAULT_SETTINGS,
   PROVINCES,
   cash,
+  questionReward,
 } from "./catalog.js";
 import { Avatar, ClueArt, Icon, Landscape } from "./components/Art.jsx";
 import {
@@ -142,9 +143,7 @@ function App() {
     const onRemoteKey = (event) => {
       if (
         !tvMode ||
-        !["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(
-          event.key,
-        )
+        !["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(event.key)
       )
         return;
       const active = document.activeElement;
@@ -257,9 +256,12 @@ function App() {
                     ? "wager"
                     : "answer",
               value;
-            if (type === "vote")
-              value = PROVINCES[Math.floor(Math.random() * 9)];
-            else if (type === "wager") value = 100;
+            if (type === "vote") {
+              const options = s.provinceOptions?.length
+                ? s.provinceOptions
+                : PROVINCES;
+              value = options[Math.floor(Math.random() * options.length)];
+            } else if (type === "wager") value = 100;
             else if (s.phase === "event") {
               const ev = s.event;
               value =
@@ -780,15 +782,20 @@ function App() {
             <h3>Team spirit & fair play</h3>
             <p>
               Teams compete on their average player cash, so larger teams have
-              no automatic advantage. In Team Huddle, players discuss and vote
-              for one shared answer. Ties use the earliest submitted vote.
-              Audience players can answer and predict for their own
-              participation cash.
+              no automatic advantage. Every trivia round gives teams and solo
+              players five questions in one announced category. In Team Huddle,
+              teammates discuss and vote for one shared answer each time. Ties
+              use the earliest submitted vote. Audience players can answer and
+              predict for their own participation cash.
             </p>
             <p>
-              Cards are used once per match. Steals and event losses are capped
-              at R100. Risk It wagers are capped at R300; the final at R500. The
-              TV keeps submissions private until results.
+              Case Crackers puts four answer choices into cases on your phone.
+              Wager secretly, pick a case, then see the correct answer and decoy
+              traps revealed on the TV. The seven-question Final Showdown is the
+              cash-climb finale: rewards rise from R300 to R900, with one secret
+              wager on its last question. Cards are used once per match. Steals
+              and event losses are capped at R100. The TV keeps player
+              submissions private until results.
             </p>
           </div>
           <h3>Warm up in the bonus arcade</h3>
@@ -964,9 +971,9 @@ function App() {
                     <Timer state={state} />
                     <Icon name="MapPin" size={60} />
                     <h2>Where are we heading?</h2>
-                    <p>Vote for a province on your phone.</p>
+                    <p>Vote for a province or open the vote to all Mzansi.</p>
                     <div className="province-cloud">
-                      {PROVINCES.map((p) => (
+                      {(state.provinceOptions || PROVINCES).map((p) => (
                         <span key={p}>{p}</span>
                       ))}
                     </div>
@@ -1615,6 +1622,13 @@ function Lobby({ state: s, code, qr, mode, onStart, onDemo }) {
               <span>{String(i + 1).padStart(2, "0")}</span>
               <Icon name={r.icon} />
               <b>{r.name}</b>
+              <small>
+                {r.kind === "map"
+                  ? `${r.count} MAP CHALLENGES`
+                  : r.kind === "question"
+                    ? `${r.count} QUESTIONS`
+                    : "MINI-GAME BREAK"}
+              </small>
             </div>
           ))}
         </div>
@@ -1624,6 +1638,7 @@ function Lobby({ state: s, code, qr, mode, onStart, onDemo }) {
 }
 function RoundBar({ state: s }) {
   const r = s.rounds[s.roundIndex];
+  const category = CATEGORIES.find((c) => c[0] === s.roundCategory);
   return (
     <div className="round-bar">
       <div>
@@ -1633,8 +1648,10 @@ function RoundBar({ state: s }) {
         <div>
           <small>
             ROUND {s.roundIndex + 1} OF {s.rounds.length}
+            {r.count > 1 && ` · QUESTION ${s.questionIndex + 1} OF ${r.count}`}
           </small>
           <h3>{r.name}</h3>
+          {category && <span className="round-category">{category[1]}</span>}
         </div>
       </div>
       <div className="round-dots">
@@ -1679,6 +1696,7 @@ function Timer({ state: s }) {
 }
 function Tutorial({ state: s, onNext }) {
   const r = s.rounds[s.roundIndex];
+  const category = CATEGORIES.find((c) => c[0] === s.roundCategory);
   return (
     <section className="stage tutorial center">
       <div className="round-emblem">
@@ -1687,6 +1705,24 @@ function Tutorial({ state: s, onNext }) {
       <p className="eyebrow">{r.eyebrow}</p>
       <h2>{r.name}</h2>
       <p className="stage-description">{r.description}</p>
+      {r.kind === "question" && (
+        <div className="category-brief">
+          <span>
+            {r.id === "final" ? "THE FINALE CATEGORY" : "THIS ROUND’S CATEGORY"}
+          </span>
+          <b>{category?.[1] || "Vote to choose a local category"}</b>
+          <small>
+            {r.count} questions · same category, fresh question every time
+          </small>
+        </div>
+      )}
+      {r.caseMode && (
+        <p className="case-instruction">
+          Four answer cases on your phone. Wrong answers are decoy traps; your
+          wager is the only cash at risk.
+        </p>
+      )}
+      {r.id === "final" && <FinalLadder questionIndex={s.questionIndex} />}
       <p>
         Choose a Confetti Jam target on your phone before the host starts. Two
         tricks per match.
@@ -1700,7 +1736,7 @@ function Tutorial({ state: s, onNext }) {
         <span>
           <Icon name="Coins" size={18} />
           {r.id === "final"
-            ? "R500 + your wager"
+            ? `${cash(questionReward(r, s.questionIndex))} base · wager on Q7`
             : "R300 + up to R30 for quick trivia"}
         </span>
         {["map", "braai", "drum"].includes(r.kind) && (
@@ -1715,6 +1751,27 @@ function Tutorial({ state: s, onNext }) {
         Let’s do this <Icon name="ArrowRight" />
       </button>
     </section>
+  );
+}
+function FinalLadder({ questionIndex = 0 }) {
+  return (
+    <div className="final-ladder" aria-label="Final round cash ladder">
+      {[0, 1, 2, 3, 4, 5, 6].map((index) => (
+        <div
+          key={index}
+          className={
+            index < questionIndex
+              ? "cleared"
+              : index === questionIndex
+                ? "current"
+                : ""
+          }
+        >
+          <small>Q{index + 1}</small>
+          <b>{cash(questionReward({ id: "final" }, index))}</b>
+        </div>
+      ))}
+    </div>
   );
 }
 function speak(text, enabled) {
@@ -1780,13 +1837,37 @@ function HostActivity({ state: s, settings, onResolve }) {
         </div>
       ) : s.question ? (
         <>
+          {r.id === "final" && (
+            <>
+              <div className="final-reward-strip">
+                <span>FINAL CASH CLIMB</span>
+                <b>{cash(questionReward(r, s.questionIndex))} base reward</b>
+                {s.questionIndex === r.count - 1 && (
+                  <small>Last question · secret wagers</small>
+                )}
+              </div>
+              <FinalLadder questionIndex={s.questionIndex} />
+            </>
+          )}
+          {r.caseMode && (
+            <p className="case-instruction">
+              Answer choices are packed into cases on the phones. Lock a pick to
+              open them together.
+            </p>
+          )}
           <h2 className="question-text">{s.question.prompt}</h2>
           <QuestionMedia q={s.question} settings={settings} />
           {s.question.options && s.question.format !== "ordering" && (
-            <div className="tv-answers">
+            <div
+              className={`tv-answers ${r.caseMode ? "tv-case-answers" : ""}`}
+            >
               {s.question.options.map((o, i) => (
                 <div key={o}>
-                  <span>{String.fromCharCode(65 + i)}</span>
+                  <span>
+                    {r.caseMode
+                      ? `CASE ${String(i + 1).padStart(2, "0")}`
+                      : String.fromCharCode(65 + i)}
+                  </span>
                   {o}
                 </div>
               ))}
@@ -1892,12 +1973,20 @@ function RoundWinner({ state: s }) {
   );
 }
 function Results({ state: s, onNext }) {
+  const r = s.rounds[s.roundIndex];
+  const hasNextQuestion =
+    s.phase === "results" && s.questionIndex < r.count - 1;
   return (
     <section className="stage results-stage">
       <div className="result-answer">
         <span className="success-icon">
           <Icon name="Check" size={31} />
         </span>
+        {r.count > 1 && (
+          <p className="eyebrow">
+            QUESTION {s.questionIndex + 1} OF {r.count}
+          </p>
+        )}
         <p className="eyebrow">THE ANSWER IS</p>
         <h2>{s.answer}</h2>
         <p>{s.fact}</p>
@@ -1912,6 +2001,7 @@ function Results({ state: s, onNext }) {
             Fact reference <Icon name="ExternalLink" size={13} />
           </a>
         )}
+        {r.caseMode && <CaseReveal state={s} />}
       </div>
       <RoundWinner state={s} />
       <div className="result-ledger">
@@ -1937,13 +2027,39 @@ function Results({ state: s, onNext }) {
         )}
         {s.settings.autoAdvance && <Timer state={s} />}
         <button className="btn primary" onClick={onNext}>
-          {s.roundIndex === s.rounds.length - 1
-            ? "The final scores"
-            : "Keep the party going"}
+          {hasNextQuestion
+            ? "Next question"
+            : s.roundIndex === s.rounds.length - 1
+              ? "The final scores"
+              : "Next round"}
           <Icon name="ArrowRight" />
         </button>
       </div>
     </section>
+  );
+}
+function CaseReveal({ state: s }) {
+  const options = s.question?.options || [];
+  if (!options.length) return null;
+  return (
+    <div className="case-reveal">
+      <p className="eyebrow">CASES OPEN · DECOY TRAPS REVEALED</p>
+      <div className="case-grid case-grid-reveal">
+        {options.map((option, i) => {
+          const correct = option === s.answer;
+          return (
+            <div
+              className={`case-card ${correct ? "case-safe" : "case-trap"}`}
+              key={option}
+            >
+              <span>CASE {String(i + 1).padStart(2, "0")}</span>
+              <b>{option}</b>
+              <small>{correct ? "CORRECT ANSWER" : "DECOY TRAP"}</small>
+            </div>
+          );
+        })}
+      </div>
+    </div>
   );
 }
 function Final({ state: s, onNext }) {
@@ -2185,6 +2301,16 @@ function Controller({
           <p className="eyebrow">ROUND {s.roundIndex + 1}</p>
           <h2>{round.name}</h2>
           <p>{round.description}</p>
+          {round.kind === "question" && (
+            <p className="mobile-category-brief">
+              {round.count} questions ·{" "}
+              {CATEGORIES.find((c) => c[0] === s.roundCategory)?.[1] ||
+                "Vote to choose the category"}
+            </p>
+          )}
+          {round.id === "final" && (
+            <FinalLadder questionIndex={s.questionIndex} />
+          )}
           {!p.audience && (
             <div className="trick-panel">
               <h3>Confetti Jam · {p.tricks ?? 2} left</h3>
@@ -2225,12 +2351,15 @@ function Controller({
       ) : s.phase === "select" ? (
         <section className="controller-stage">
           <Timer state={s} />
-          <h2>Pick your province</h2>
+          <h2>Pick a province</h2>
+          <p>
+            Choose a local question set. “All Mzansi” opens the regional vote.
+          </p>
           {locked ? (
             <Locked />
           ) : (
             <div className="province-options">
-              {PROVINCES.map((v) => (
+              {(s.provinceOptions || PROVINCES).map((v) => (
                 <button
                   className="answer"
                   key={v}
@@ -2249,8 +2378,12 @@ function Controller({
       ) : s.phase === "wager" ? (
         <section className="controller-stage">
           <Timer state={s} />
-          <h2>Back yourself.</h2>
+          <h2>{round.id === "final" ? "Final wager." : "Back yourself."}</h2>
           <p>Your wager stays secret.</p>
+          <p className="wager-reward">
+            Correct: {cash(questionReward(round, s.questionIndex))} base reward
+            plus your wager. Incorrect: lose only your wager.
+          </p>
           {s.wagerReceipts[p.id] ? (
             <Locked text="Wager locked. Good luck!" />
           ) : (
@@ -2291,10 +2424,20 @@ function Controller({
         <section className="controller-stage">
           <div className="controller-question-heading">
             <span className="eyebrow">
-              {s.phase === "event" ? s.event.name : round.name}
+              {s.phase === "event"
+                ? s.event.name
+                : round.count > 1
+                  ? `QUESTION ${s.questionIndex + 1} OF ${round.count} · ${CATEGORIES.find((c) => c[0] === s.roundCategory)?.[1] || round.name}`
+                  : round.name}
             </span>
             <Timer state={s} />
           </div>
+          {round.id === "final" && (
+            <p className="controller-reward">
+              This answer: {cash(questionReward(round, s.questionIndex))} base
+              reward
+            </p>
+          )}
           {p.repairActive ? (
             <>
               <h3>Robot Repair</h3>
@@ -2346,6 +2489,12 @@ function Controller({
           ) : s.question ? (
             <>
               <h3>{s.question.prompt}</h3>
+              {round.caseMode && (
+                <p className="case-instruction">
+                  Pick the case holding your answer. Decoys are revealed after
+                  everyone locks in.
+                </p>
+              )}
               {s.settings.mode === "teams" && round.id === "huddle" && (
                 <p className="team-note">
                   Discuss with Team {p.team}, then vote. Your team’s majority
@@ -2360,6 +2509,28 @@ function Controller({
                   onSubmit={submit}
                   disabled={disabled}
                 />
+              ) : round.caseMode && s.question.options ? (
+                <div className="case-grid">
+                  {s.question.options.map((option, i) => (
+                    <button
+                      className={`answer case-choice answer-${i}`}
+                      key={option}
+                      disabled={disabled || s.hints[p.id] === option}
+                      onClick={() => submit(option)}
+                      aria-label={`Case ${i + 1}: ${option}`}
+                    >
+                      <span className="case-number">
+                        <Icon name="BriefcaseBusiness" size={17} />
+                        CASE {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <b>
+                        {s.hints[p.id] === option
+                          ? "Removed by Extra Hint"
+                          : option}
+                      </b>
+                    </button>
+                  ))}
+                </div>
               ) : s.question.options ? (
                 <div className="answers">
                   {s.question.options.map((option, i) => (

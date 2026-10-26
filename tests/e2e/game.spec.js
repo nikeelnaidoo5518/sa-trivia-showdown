@@ -17,7 +17,10 @@ async function answer(phone, e) {
   const s = e.state;
   if (s.phase === "select") {
     await phone
-      .getByRole("button", { name: "Western Cape", exact: true })
+      .getByRole("button", {
+        name: s.provinceOptions?.[0] || "All Mzansi",
+        exact: true,
+      })
       .click();
     return;
   }
@@ -180,7 +183,7 @@ test("TV layouts, QR decode, two phones, manual join, reconnect and all ten roun
   const visited = new Set();
   const events = new Set();
   let steps = 0;
-  while (steps++ < 70) {
+  while (steps++ < 200) {
     const e = await saved(host);
     const s = e.state;
     visited.add(s.rounds[s.roundIndex].id);
@@ -191,6 +194,31 @@ test("TV layouts, QR decode, two phones, manual join, reconnect and all ten roun
       continue;
     }
     if (["select", "wager", "playing", "event"].includes(s.phase)) {
+      if (s.phase === "playing" && s.roundIndex === 5) {
+        await expect(phone.locator(".case-choice")).toHaveCount(4);
+        await phone.screenshot({
+          path: "test-results/case-cards-phone.png",
+          fullPage: true,
+        });
+      }
+      if (
+        s.phase === "playing" &&
+        s.roundIndex === 9 &&
+        s.questionIndex === 0
+      ) {
+        await expect(host.locator(".final-ladder > div")).toHaveCount(7);
+        await expect(phone.locator(".controller-reward")).toContainText(
+          "R300 base reward",
+        );
+        await host.screenshot({
+          path: "test-results/final-question-tv.png",
+          fullPage: true,
+        });
+        await phone.screenshot({
+          path: "test-results/final-question-phone.png",
+          fullPage: true,
+        });
+      }
       if (s.phase === "playing" && s.roundIndex === 0) {
         await host.getByRole("button", { name: "Pause", exact: true }).click();
         await expect(phone.getByText("Host paused the game")).toBeVisible();
@@ -214,15 +242,28 @@ test("TV layouts, QR decode, two phones, manual join, reconnect and all ten roun
       else if (s.phase === "wager")
         await host.getByRole("button", { name: "Reveal the question" }).click();
       else await host.getByRole("button", { name: "Reveal results" }).click();
+      if (s.phase === "playing" && s.roundIndex === 5) {
+        await expect(host.locator(".case-reveal")).toContainText(
+          "DECOY TRAPS REVEALED",
+        );
+        await host.screenshot({
+          path: "test-results/case-reveal-tv.png",
+          fullPage: true,
+        });
+      }
       continue;
     }
     if (s.phase === "results" || s.phase === "event-results") {
+      const round = s.rounds[s.roundIndex];
+      const hasNextQuestion =
+        s.phase === "results" && s.questionIndex < round.count - 1;
       await host
         .getByRole("button", {
-          name:
-            s.roundIndex === s.rounds.length - 1
+          name: hasNextQuestion
+            ? "Next question"
+            : s.roundIndex === s.rounds.length - 1
               ? "The final scores"
-              : "Keep the party going",
+              : "Next round",
         })
         .click();
       continue;
@@ -237,7 +278,7 @@ test("TV layouts, QR decode, two phones, manual join, reconnect and all ten roun
   }
   expect(visited.size).toBe(10);
   expect(events.has("cash")).toBe(true);
-  expect(steps).toBeLessThan(70);
+  expect(steps).toBeLessThan(200);
   await expect(
     host.getByText("Created by Nikeel Naidoo", { exact: true }),
   ).toBeVisible();
@@ -331,13 +372,20 @@ test("team huddle shares the winning vote and host skip changes no cash", async 
   }
   await host.getByRole("button", { name: "Let the showdown begin" }).click();
   let steps = 0;
-  while (steps++ < 40) {
+  while (steps++ < 100) {
     const e = await saved(host);
     if (e.state.roundIndex === 6 && e.state.phase === "playing") break;
     if (e.state.phase === "tutorial")
       await host.getByRole("button", { name: "Let’s do this" }).click();
     else if (e.state.phase === "results")
-      await host.getByRole("button", { name: "Keep the party going" }).click();
+      await host
+        .getByRole("button", {
+          name:
+            e.state.questionIndex < e.state.rounds[e.state.roundIndex].count - 1
+              ? "Next question"
+              : "Next round",
+        })
+        .click();
     else await host.getByRole("button", { name: "Skip", exact: true }).click();
   }
   const e = await saved(host);
@@ -392,7 +440,7 @@ test("five-round demo is playable through the on-screen phone and credits", asyn
   await page.getByRole("button", { name: "Create room", exact: true }).click();
   await page.getByRole("button", { name: "Let the showdown begin" }).click();
   const visited = new Set();
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 75; i++) {
     const e = await saved(page);
     visited.add(e.state.rounds[e.state.roundIndex].id);
     if (e.state.phase === "credits") break;
@@ -413,9 +461,11 @@ test("five-round demo is playable through the on-screen phone and credits", asyn
       await page
         .getByRole("button", {
           name:
-            e.state.roundIndex === 4
-              ? "The final scores"
-              : "Keep the party going",
+            e.state.questionIndex < e.state.rounds[e.state.roundIndex].count - 1
+              ? "Next question"
+              : e.state.roundIndex === 4
+                ? "The final scores"
+                : "Next round",
         })
         .click();
     else if (e.state.phase === "final")

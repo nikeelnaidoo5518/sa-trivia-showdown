@@ -5,6 +5,7 @@ import {
   EVENTS,
   MAP_CITIES,
   PROVINCES,
+  questionReward,
 } from "./catalog.js";
 import { uuid } from "./ids.js";
 export const normalise = (s) =>
@@ -102,6 +103,8 @@ export class GameEngine {
       players: [],
       roundIndex: 0,
       questionIndex: 0,
+      roundCategory: null,
+      provinceOptions: [],
       rounds: roundsForLength(settings.length ?? DEFAULT_SETTINGS.length),
       activityId: id(),
       receipts: {},
@@ -140,6 +143,116 @@ export class GameEngine {
   }
   get round() {
     return this.state.rounds[this.state.roundIndex];
+  }
+  requiredQuestionCount() {
+    return this.state.rounds.reduce(
+      (total, round) => total + (round.kind === "question" ? round.count : 0),
+      0,
+    );
+  }
+  validateQuestionCapacity() {
+    const s = this.state;
+    const available = this.bank.filter(
+      (q) =>
+        q.format !== "map" &&
+        s.settings.categories.includes(q.category) &&
+        (s.settings.age !== "all" || q.age === "all"),
+    ).length;
+    if (available < this.requiredQuestionCount())
+      throw Error(
+        `This match needs ${this.requiredQuestionCount()} unique trivia questions. Select more categories or a shorter match.`,
+      );
+    const mapNeeded = s.rounds.reduce(
+      (total, round) => total + (round.kind === "map" ? round.count : 0),
+      0,
+    );
+    const mapAvailable = this.bank.filter(
+      (q) => q.format === "map" && !this.used.includes(q.id),
+    ).length;
+    if (mapAvailable < mapNeeded)
+      throw Error("This match needs more unused map questions.");
+    const caseNeeded = s.rounds.reduce(
+      (total, round) => total + (round.caseMode ? round.count : 0),
+      0,
+    );
+    const caseAvailable = this.bank.filter(
+      (q) =>
+        q.format !== "map" &&
+        q.format === "multiple-choice" &&
+        s.settings.categories.includes(q.category) &&
+        (s.settings.age !== "all" || q.age === "all"),
+    ).length;
+    if (caseAvailable < caseNeeded)
+      throw Error(
+        "Case Crackers needs more unused answer choices. Select more categories or a shorter match.",
+      );
+  }
+  availableProvinces() {
+    const s = this.state;
+    const required = this.round.count;
+    const pool = this.bank.filter(
+      (q) =>
+        !this.used.includes(q.id) &&
+        q.format !== "map" &&
+        s.settings.categories.includes(q.category) &&
+        (s.settings.age !== "all" || q.age === "all") &&
+        (!this.round.caseMode || q.format === "multiple-choice"),
+    );
+    const available = PROVINCES.filter((province) =>
+      s.settings.categories.some(
+        (category) =>
+          pool.filter((q) => q.region === province && q.category === category)
+            .length >= required,
+      ),
+    );
+    return [...available, "All Mzansi"];
+  }
+  chooseRoundCategory() {
+    const s = this.state;
+    const r = this.round;
+    if (r.kind === "map") {
+      s.roundCategory = "places";
+      return;
+    }
+    if (r.kind === "braai") {
+      s.roundCategory = "food";
+      return;
+    }
+    const region =
+      r.provinceVote && s.province && s.province !== "All Mzansi"
+        ? s.province
+        : null;
+    let pool = this.bank.filter(
+      (q) =>
+        !this.used.includes(q.id) &&
+        q.format !== "map" &&
+        s.settings.categories.includes(q.category) &&
+        (s.settings.age !== "all" || q.age === "all") &&
+        (!region || q.region === region) &&
+        (!r.caseMode || q.format === "multiple-choice"),
+    );
+    const required = r.count - s.questionIndex;
+    const candidates = s.settings.categories.filter(
+      (category) =>
+        pool.filter((q) => q.category === category).length >= required,
+    );
+    if (!candidates.length)
+      throw Error(
+        "There are not enough unused questions for this round. Select more categories or shorten the match.",
+      );
+    const usedByCategory = {};
+    for (const used of this.used) {
+      const q = this.bank.find((item) => item.id === used);
+      if (q) usedByCategory[q.category] = (usedByCategory[q.category] || 0) + 1;
+    }
+    const leastUsed = Math.min(
+      ...candidates.map((category) => usedByCategory[category] || 0),
+    );
+    const balanced = candidates.filter(
+      (category) => (usedByCategory[category] || 0) === leastUsed,
+    );
+    s.roundCategory =
+      balanced[Math.floor(this.rng() * balanced.length)] || candidates[0];
   }
   snapshot() {
     return structuredClone(this.state);
@@ -192,11 +305,13 @@ export class GameEngine {
   pickQuestion() {
     const s = this.state,
       r = this.round;
+    if (!s.roundCategory) this.chooseRoundCategory();
     let pool = this.bank.filter(
       (q) =>
         !this.used.includes(q.id) &&
         q.format !== "map" &&
         s.settings.categories.includes(q.category) &&
+        q.category === s.roundCategory &&
         (s.settings.age !== "all" || q.age === "all"),
     );
     if (!pool.length)
@@ -208,6 +323,7 @@ export class GameEngine {
       const next = preferred.filter(fn);
       if (next.length) preferred = next;
     };
+    if (r.caseMode) narrow((q) => q.format === "multiple-choice");
     if (s.settings.difficulty !== "mixed")
       narrow((q) => q.difficulty === s.settings.difficulty);
     if (r.id === "warmup")
@@ -216,30 +332,32 @@ export class GameEngine {
           q.difficulty === "easy" &&
           ["multiple-choice", "true-false"].includes(q.format),
       );
-    if (r.provinceVote) narrow((q) => q.region === s.province);
+    if (r.provinceVote && s.province !== "All Mzansi")
+      narrow((q) => q.region === s.province);
     if (r.id === "picture") narrow((q) => q.format === "image");
     if (r.id === "sound") narrow((q) => q.format === "audio");
     if (r.format) narrow((q) => q.format === r.format);
     if (r.formatGroup === "choice")
       narrow((q) => ["multiple-choice", "true-false"].includes(q.format));
-    if (r.id === "huddle" && s.questionIndex === 1 && s.linkedCategory)
-      narrow((q) => q.category === s.linkedCategory);
-    if (["mix", "mixEncore"].includes(r.id))
-      narrow((q) => !s.mixCategories?.includes(q.category));
     if (["mix", "mixEncore"].includes(r.id)) {
       const wanted = [
         ["short-answer", "scramble"],
         ["ordering", "matching"],
         ["true-false", "multiple-choice"],
-      ][s.questionIndex];
-      if (r.id === "mix") narrow((q) => wanted.includes(q.format));
+      ][s.questionIndex % 3];
+      if (r.id === "mix" && wanted) narrow((q) => wanted.includes(q.format));
     }
     if (r.id === "final") narrow((q) => q.difficulty !== "easy");
     if (s.settings.difficulty !== "mixed")
       narrow((q) => q.difficulty === s.settings.difficulty);
     else if (r.id !== "warmup")
-      narrow(
-        (q) => q.difficulty === ["medium", "easy", "hard"][s.roundIndex % 3],
+      narrow((q) =>
+        r.id === "final"
+          ? q.difficulty ===
+            ["medium", "medium", "hard", "medium", "hard", "hard", "hard"][
+              s.questionIndex
+            ]
+          : q.difficulty === ["medium", "easy", "hard"][s.roundIndex % 3],
       );
     narrow((q) => !this.recent.includes(q.id));
     const seenCategories = {};
@@ -260,18 +378,19 @@ export class GameEngine {
     this.used.push(q.id);
     this.recent = [...this.recent, q.id].slice(-200);
     this.question = q;
-    if (r.id === "huddle") s.linkedCategory = q.category;
-    if (["mix", "mixEncore"].includes(r.id))
-      s.mixCategories = [...(s.mixCategories || []), q.category];
     const { answer, acceptedAnswers, source, fact, mapTarget, ...safe } = q;
     s.question = safe;
   }
   start() {
     if (!this.state.players.some((p) => !p.audience))
       throw Error("Add at least one player or try the demo.");
+    this.validateQuestionCapacity();
     this.state.phase = "tutorial";
     this.state.questionIndex = 0;
+    this.state.roundCategory = null;
+    this.state.province = null;
     this.newActivity();
+    if (!this.round.provinceVote) this.chooseRoundCategory();
     this.setAutoCountdown(TUTORIAL_SECONDS);
   }
   setAutoCountdown(seconds) {
@@ -324,10 +443,12 @@ export class GameEngine {
     const s = this.state,
       r = this.round;
     if (r.provinceVote && !s.province) {
+      s.provinceOptions = this.availableProvinces();
       this.timed("select", 15);
       return;
     }
-    if ((r.wager || r.id === "final") && s.phase === "tutorial") {
+    const finalWager = r.id === "final" && s.questionIndex === r.count - 1;
+    if ((r.wager || finalWager) && ["tutorial", "results"].includes(s.phase)) {
       this.timed("wager", 15);
       return;
     }
@@ -355,7 +476,11 @@ export class GameEngine {
       this.pickQuestion();
       this.timed(
         "playing",
-        r.fast ? 13 : ["mix", "mixEncore"].includes(r.id) ? 15 : s.settings.seconds,
+        r.fast
+          ? 13
+          : ["mix", "mixEncore"].includes(r.id)
+            ? 15
+            : s.settings.seconds,
       );
     }
   }
@@ -371,18 +496,18 @@ export class GameEngine {
         );
         s.province =
           Object.keys(counts).sort((a, b) => counts[b] - counts[a])[0] ||
-          "Western Cape";
+          s.provinceOptions?.[0] ||
+          "National";
         this.inputs = {};
         s.receipts = {};
+        s.roundCategory = null;
+        this.chooseRoundCategory();
       }
       return this.begin();
     }
     if (s.phase === "playing" || s.phase === "event") return this.resolve();
     if (s.phase === "results") {
-      const count =
-        this.round.id === "huddle" && s.settings.mode === "teams"
-          ? 1
-          : this.round.count;
+      const count = this.round.count;
       if (s.questionIndex < count - 1) {
         s.questionIndex++;
         this.newActivity();
@@ -413,8 +538,11 @@ export class GameEngine {
     s.roundIndex++;
     s.questionIndex = 0;
     s.province = null;
+    s.provinceOptions = [];
+    s.roundCategory = null;
     this.newActivity();
     s.phase = "tutorial";
+    if (!this.round.provinceVote) this.chooseRoundCategory();
     this.setAutoCountdown(TUTORIAL_SECONDS);
   }
   pause() {
@@ -606,7 +734,9 @@ export class GameEngine {
     }
     if (action.type === "vote" && s.phase === "select") {
       if (s.receipts[pid]) throw Error("Vote already locked.");
-      if (!PROVINCES.includes(action.value))
+      if (
+        !(s.provinceOptions || this.availableProvinces()).includes(action.value)
+      )
         throw Error("Choose a province from the list.");
       this.inputs[pid] = { value: String(action.value) };
       s.receipts[pid] = true;
@@ -791,7 +921,7 @@ export class GameEngine {
         correct = value !== undefined && scoreAnswer(this.question, value);
         const wager = this.wagers[p.id] || 0;
         delta = correct
-          ? (r.id === "final" ? 500 : 300) + wager + (p.double ? 200 : 0)
+          ? questionReward(r, s.questionIndex) + wager + (p.double ? 200 : 0)
           : -(wager + (p.double ? 100 : 0));
         reason = correct
           ? `${r.id === "huddle" && s.settings.mode === "teams" ? "Shared team answer" : "Correct answer"}${wager ? ` + R${wager} wager` : ""}${p.double ? " + Double Down" : ""}`
@@ -875,10 +1005,11 @@ export class GameEngine {
         (r.kind === "map"
           ? s.mini.target
           : s.mini.sequence
-              .map((x) =>
-                (r.kind === "drum"
-                  ? ["BASS", "CLAP", "TAP", "SHAKE"]
-                  : ["Mielie", "Pepper", "Mushroom", "Sosatie"])[x],
+              .map(
+                (x) =>
+                  (r.kind === "drum"
+                    ? ["BASS", "CLAP", "TAP", "SHAKE"]
+                    : ["Mielie", "Pepper", "Mushroom", "Sosatie"])[x],
               )
               .join(" → "));
     s.fact = isEvent
