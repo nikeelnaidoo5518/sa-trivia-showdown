@@ -356,12 +356,12 @@ export const AVATARS = [
   "Star",
 ];
 export const COLOURS = [
-  "#50d5c0",
-  "#ffcb60",
-  "#ff8b80",
-  "#b5a0ff",
-  "#80c9ff",
-  "#e8a6d0",
+  "#41e3f5",
+  "#ffd64a",
+  "#ff50c7",
+  "#a855f7",
+  "#61baff",
+  "#ee84dc",
 ];
 export const PROVINCES = [
   "Eastern Cape",

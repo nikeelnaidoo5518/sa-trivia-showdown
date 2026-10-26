@@ -27,9 +27,9 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
     private static final String GAME_URL = "https://nikeelnaidoo5518.github.io/sa-trivia-showdown/?tv=1";
     private static final String GAME_ORIGIN = "https://nikeelnaidoo5518.github.io/sa-trivia-showdown/";
-    private static final int NAVY = Color.rgb(16, 27, 50);
-    private static final int CREAM = Color.rgb(255, 248, 229);
-    private static final int GOLD = Color.rgb(255, 202, 91);
+    private static final int NAVY = Color.rgb(22, 11, 41);
+    private static final int CREAM = Color.rgb(251, 247, 255);
+    private static final int GOLD = Color.rgb(255, 214, 74);
 
     private FrameLayout root;
     private WebView webView;

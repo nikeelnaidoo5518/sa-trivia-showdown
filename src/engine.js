@@ -43,7 +43,7 @@ export function standings(state) {
         id: team,
         name: team,
         avatar: team === "Ubuntu" ? "Sun" : "Flame",
-        colour: team === "Ubuntu" ? "#50d5c0" : "#ff8b80",
+        colour: team === "Ubuntu" ? "#41e3f5" : "#ff50c7",
         cash: ps.length
           ? Math.round(ps.reduce((n, p) => n + p.cash, 0) / ps.length)
           : 0,
@@ -283,7 +283,7 @@ export class GameEngine {
       id: pid,
       name,
       avatar: profile.avatar || "Sun",
-      colour: profile.colour || "#50d5c0",
+      colour: profile.colour || "#41e3f5",
       team: profile.team === "Eish!" ? "Eish!" : "Ubuntu",
       audience:
         !!profile.audience ||

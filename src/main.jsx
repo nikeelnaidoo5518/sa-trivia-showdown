@@ -229,7 +229,7 @@ function App() {
     QRCode.toDataURL(url.href, {
       width: 260,
       margin: 2,
-      color: { dark: "#101b32", light: "#ffffff" },
+      color: { dark: "#160b29", light: "#ffffff" },
       errorCorrectionLevel: "M",
     }).then(setQr);
   }, [code, role]);
