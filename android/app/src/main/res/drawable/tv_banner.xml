@@ -3,7 +3,7 @@
     android:height="180dp"
     android:viewportWidth="320"
     android:viewportHeight="180">
-    <path android:fillColor="#160B29" android:pathData="M0,0h320v180h-320z" />
+    <path android:fillColor="#1B0B33" android:pathData="M0,0h320v180h-320z" />
     <path android:fillColor="#26103F" android:pathData="M0,136l68,-46 60,28 74,-64 118,65v61h-320z" />
     <path android:fillColor="#35205B" android:pathData="M0,151l78,-31 67,24 80,-55 95,49v42h-320z" />
     <path android:fillColor="#A855F7" android:pathData="M140,45h40v25c0,17 -40,17 -40,0z" />

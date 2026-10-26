@@ -8,10 +8,10 @@
 :root {
   font-family: "DM Sans", sans-serif;
   color: #fbf7ff;
-  background: #160b29;
+  background: #1b0b33;
   font-synthesis: none;
   font-size: 16px;
-  --navy: #160b29;
+  --navy: #1b0b33;
   --panel: #241038;
   --border: #51346a;
   --muted: #baacce;
@@ -27,6 +27,7 @@
 }
 body {
   margin: 0;
+  background: var(--navy);
 }
 button,
 input,
@@ -108,9 +109,7 @@ small {
 }
 .app {
   min-height: 100svh;
-  background:
-    radial-gradient(ellipse at 78% 24%, #8b32f32c, transparent 42%),
-    radial-gradient(ellipse at 8% 84%, #21c8e814, transparent 42%);
+  background: var(--navy);
   position: relative;
   overflow-x: clip;
 }
@@ -2221,16 +2220,6 @@ input[type="range"] {
 }
 .hero-art {
   isolation: isolate;
-}
-.hero-art::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: 3% -5% 8%;
-  pointer-events: none;
-  border-radius: 50%;
-  background: radial-gradient(ellipse, #a838f43d 0%, #7627cd20 40%, transparent 72%);
-  filter: blur(24px);
 }
 .landscape {
   filter: drop-shadow(0 15px 40px #6b24aa40);
