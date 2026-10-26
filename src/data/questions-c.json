@@ -4455,5 +4455,78 @@
       "url": "https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx",
       "note": "Self-contained calculation or deduction. Numbers and scenario are fictional; answer independently recomputed. CAPS provides educational context only."
     }
+  },
+  {
+    "id": "languages-061",
+    "category": "languages",
+    "difficulty": "medium",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which language is included in SA History Online’s list of languages spoken in South African Indian communities?",
+    "answer": "Gujarati",
+    "fact": "The source lists languages including Hindi, Tamil, Telugu, Urdu, Punjabi and Gujarati.",
+    "source": {
+      "title": "SA History Online: Indian South Africans",
+      "url": "https://sahistory.org.za/article/indian-south-africans",
+      "note": "Historical and cultural details checked against SA History Online; wording is original and keeps the regional context explicit."
+    },
+    "options": ["Gujarati", "Swahili", "French", "Shona"]
+  },
+  {
+    "id": "languages-062",
+    "category": "languages",
+    "difficulty": "medium",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "According to SA History Online, what is the first language for most South African Indians?",
+    "answer": "English",
+    "fact": "SA History Online notes that English is the first language for most South African Indians.",
+    "source": {
+      "title": "SA History Online: Indian South Africans",
+      "url": "https://sahistory.org.za/article/indian-south-africans",
+      "note": "Historical and cultural details checked against SA History Online; wording is original and keeps the regional context explicit."
+    },
+    "options": ["English", "Hindi", "Tamil", "Gujarati"]
+  },
+  {
+    "id": "languages-063",
+    "category": "languages",
+    "difficulty": "easy",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which Hindu festival is also known as Deepavali?",
+    "answer": "Diwali",
+    "fact": "Diwali, also called Deepavali, is a Hindu festival celebrated by many South Africans.",
+    "source": {
+      "title": "SA History Online: Indian South Africans",
+      "url": "https://sahistory.org.za/article/indian-south-africans",
+      "note": "Historical and cultural details checked against SA History Online; wording is original and keeps the regional context explicit."
+    },
+    "options": ["Diwali", "Eid al-Fitr", "Vaisakhi", "Christmas"]
+  },
+  {
+    "id": "languages-064",
+    "category": "languages",
+    "difficulty": "hard",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which festival noted by SA History Online is associated with Tamil communities in South Africa?",
+    "answer": "Thai Poosam Kavady",
+    "fact": "SA History Online identifies Thai Poosam Kavady among festivals celebrated in South African Indian communities.",
+    "source": {
+      "title": "SA History Online: Indian South Africans",
+      "url": "https://sahistory.org.za/article/indian-south-africans",
+      "note": "Historical and cultural details checked against SA History Online; wording is original and keeps the regional context explicit."
+    },
+    "options": [
+      "Thai Poosam Kavady",
+      "Eid al-Adha",
+      "Vaisakhi",
+      "Rosh Hashanah"
+    ]
   }
 ]

@@ -48,6 +48,7 @@ Without Firebase configuration, production builds use browser-local demo transpo
 
 - Start Game and the demo open a keyboard-accessible Easy / Medium / Hard / Mixed difficulty picker before room creation. Selected difficulty is prioritised before special question formats.
 - Once all competing players answer, the host reveals results automatically after a 1.5-second confirmation interval. Otherwise the normal timer or host reveal control ends the question. Pausing suspends automatic reveal. The TV and phones display round winners, the correct answer and cash changes.
+- **Automatic round flow** is enabled by default: tutorials begin after six seconds and result screens move on after eight seconds. The host can pause the countdown, continue early, or turn automatic flow off in Settings.
 - Each competitor has two **Confetti Jam** tricks per match. During a round tutorial, choose a rival and confirm. One trick may be used per player per round; teams can target only opponents. The target clears three bursts or waits up to five seconds after play starts. A Cash Shield blocks the trick. These are original game mechanics and visuals.
 - Original synthesized game-show stings now vary by lobby, question, vote, wager, map duel, braai, drum, event, answer lock, correct/wrong result and winner. Drum taps play short notes on the phone. Sound starts only after a user gesture; the volume button and Settings sound switch mute spoken clues and effects together.
 - **TV view** enlarges the host layout, adds stronger stage depth, and lets a TV remote's arrow keys move focus between controls. The remote's select/OK button activates the focused control. Phones continue to join as browser controllers.
@@ -57,7 +58,7 @@ Without Firebase configuration, production builds use browser-local demo transpo
 
 ## Controls and scoring
 
-The host starts each round after its tutorial. During a timed activity the host can **Pause**, **Resume**, **Skip**, **Reveal results**, or **End game**. Skipping changes no cash. End game goes to current final scores, then credits. The host can start with unready players if necessary.
+The host can let tutorials and result screens advance automatically, continue early, or pause and resume the countdown. During a timed activity the host can **Pause**, **Resume**, **Skip**, or **End game**. Skipping changes no cash. End game goes to current final scores, then credits. Automatic progression can be disabled in Settings. The host can start with unready players if necessary.
 
 Phone buttons only submit the current activity. A confirmation appears after input is accepted. A locked answer or wager cannot be changed. Players receive R500 starting cash. Ordinary correct trivia earns R300; final trivia earns R500. Individual correct trivia answers earn a small speed bonus of up to R30, based on host-received submission time. Team Huddle and audience answers do not earn speed bonuses. A risk wager is capped at R300, and a final wager at R500, also capped by current cash. Wrong answers lose the wager, plus R100 if Double Down was used. A correct Double Down adds R200. Balances cannot fall below zero.
 
@@ -123,14 +124,14 @@ Pages is configured to deploy through GitHub Actions. A repository administrator
 1. In GitHub **Settings → Pages → Build and deployment**, select **GitHub Actions**.
 2. Under **Settings → Secrets and variables → Actions → Variables**, add the five public `VITE_FIREBASE_*` values above. When unset, this repository’s workflow uses the hosted game’s public Firebase configuration. Local builds without `.env.local` still use demo transport.
 3. Push to `main`, or run **Test and deploy GitHub Pages** manually from Actions.
-4. The workflow installs dependencies, validates all 600 questions, runs engine tests, browser tests and Firebase emulator tests, builds `dist`, then deploys it to Pages. PRs run checks without deploying.
+4. The workflow installs dependencies, validates the full question bank, runs engine tests, browser tests and Firebase emulator tests, builds `dist`, then deploys it to Pages. PRs run checks without deploying.
 5. The live URL is <https://nikeelnaidoo5518.github.io/sa-trivia-showdown/>. The demo was checked on this public URL on 24 October 2026, including a full Quick Match, scoring, end credits and the mobile join page. Live Firebase room creation, joining from an independent browser, answer delivery and host/phone reconnection were also verified.
 
 Vite uses relative asset URLs and joining uses query parameters, so repository subpaths and QR links work without SPA rewrite rules. Firebase rules must be published separately; the Pages workflow never receives Firebase admin credentials.
 
 ## Question library
 
-`src/data/questions-a.json`, `questions-b.json`, and `questions-c.json` contain **600 questions**, exactly **60 in each of ten categories**. The launch collection has 527 multiple-choice, 10 true/false, 6 image clues, 10 spoken audio clues, 10 map questions, 12 short answers, 8 scrambles, 9 ordering and 8 matching questions. Matching questions ask players to identify the correctly matched pair.
+`src/data/questions-a.json`, `questions-b.json`, and `questions-c.json` contain **629 questions** across ten categories. Every category has at least 60 questions. The bank has 554 multiple-choice, 12 true/false, 6 image clues, 10 spoken audio clues, 10 map questions, 12 short answers, 8 scrambles, 9 ordering and 8 matching questions. Matching questions ask players to identify the correctly matched pair. The new KZN additions cover Durban and Pietermaritzburg as well as South African Indian history, festivals, languages, food and cultural heritage.
 
 Every entry includes ID, category, difficulty, region, age suitability, format, answer, an interesting fact, and a source title, URL and verification note. Explicit accepted variants are supported. Text grading ignores case, punctuation, whitespace and diacritics; it does not use an AI judge. Original arithmetic/word puzzles have self-contained premises and notes rather than fabricated historical claims. Images are stylised original clue illustrations, not portraits or photographic identification. Audio uses original spoken clues rather than copyrighted tracks.
 
@@ -141,7 +142,7 @@ Some factual references were checked from web excerpts; others cite stable refer
 ## Tests
 
 ```sh
-npm run validate       # all 600 entries, categories, formats, options, sources
+npm run validate       # all 629 entries, categories, formats, options, sources
 npm test               # engine, scoring, rounds, cards, events, privacy, reconnect
 npx playwright install --with-deps chromium
 npm run test:e2e        # real browser TV + independent phone sessions and local relay

@@ -3324,5 +3324,478 @@
     "options": ["Spotted hyena", "Meerkat", "Warthog", "Jackal"],
     "audioText": "I am a spotted scavenger and hunter. Some of my calls sound like laughter. Which animal am I?",
     "clue": "Spotted coat; hunts and scavenges; famous for laughter-like calls."
+  },
+  {
+    "id": "places-061",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which river reaches the coast at Durban and forms part of the city’s northern edge?",
+    "answer": "Umgeni River",
+    "fact": "Durban lies at the mouth of the Umgeni River, which also forms a natural boundary along parts of the northern city.",
+    "source": {
+      "title": "Durban Tourism: Geographical Information",
+      "url": "https://visitdurban.travel/page/geographical-information",
+      "note": "Durban location and harbour details checked against the city tourism authority reference."
+    },
+    "options": ["Umgeni River", "Tugela River", "Vaal River", "Berg River"]
+  },
+  {
+    "id": "places-062",
+    "category": "places",
+    "difficulty": "medium",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which South African port is described by Durban Tourism as the country’s busiest?",
+    "answer": "Durban Harbour",
+    "fact": "Durban Harbour is South Africa’s busiest port, according to the city’s tourism authority.",
+    "source": {
+      "title": "Durban Tourism: Geographical Information",
+      "url": "https://visitdurban.travel/page/geographical-information",
+      "note": "Durban location and harbour details checked against the city tourism authority reference."
+    },
+    "options": [
+      "Durban Harbour",
+      "Port of Saldanha Bay",
+      "Port of Ngqura",
+      "Port of Mossel Bay"
+    ]
+  },
+  {
+    "id": "places-063",
+    "category": "places",
+    "difficulty": "medium",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What name did Vasco da Gama give Durban Bay after passing it on Christmas Day in 1497?",
+    "answer": "Rio de Natal",
+    "fact": "Durban Tourism records that da Gama named the bay Rio de Natal, meaning Christmas River.",
+    "source": {
+      "title": "Durban Tourism: History of Durban",
+      "url": "https://visitdurban.travel/page/history-of-durban",
+      "note": "The date and historical place name are reported by Durban Tourism; question wording is original."
+    },
+    "options": ["Rio de Natal", "Algoa Bay", "Delagoa Bay", "Table Bay"]
+  },
+  {
+    "id": "places-064",
+    "category": "places",
+    "difficulty": "easy",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which KwaZulu-Natal city is home to the KwaZulu-Natal National Botanical Garden?",
+    "answer": "Pietermaritzburg",
+    "fact": "SANBI’s KwaZulu-Natal National Botanical Garden is in Pietermaritzburg.",
+    "source": {
+      "title": "SANBI: KwaZulu-Natal National Botanical Garden history",
+      "url": "https://www.sanbi.org/gardens/kwazulu-natal/history/",
+      "note": "Garden dates and named horticultural details checked against SANBI’s history page."
+    },
+    "options": ["Pietermaritzburg", "Richards Bay", "Newcastle", "Ladysmith"]
+  },
+  {
+    "id": "places-065",
+    "category": "places",
+    "difficulty": "medium",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In which Pietermaritzburg suburb is the Comrades Museum located?",
+    "answer": "Scottsville",
+    "fact": "The Comrades Museum is at 18 Connaught Road in Scottsville, Pietermaritzburg.",
+    "source": {
+      "title": "Comrades Marathon: Comrades Museum",
+      "url": "https://www.comrades.com/comrades-museum",
+      "note": "Museum location and opening details checked against the Comrades Marathon museum page."
+    },
+    "options": ["Scottsville", "Howick", "Hilton", "Wartburg"]
+  },
+  {
+    "id": "places-066",
+    "category": "places",
+    "difficulty": "hard",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which road address does the Comrades Museum list in Pietermaritzburg?",
+    "answer": "18 Connaught Road",
+    "fact": "The museum’s listed address is 18 Connaught Road, Scottsville, Pietermaritzburg.",
+    "source": {
+      "title": "Comrades Marathon: Comrades Museum",
+      "url": "https://www.comrades.com/comrades-museum",
+      "note": "Museum location and opening details checked against the Comrades Marathon museum page."
+    },
+    "options": [
+      "18 Connaught Road",
+      "1 Chief Albert Luthuli Street",
+      "10 Loop Street",
+      "25 Church Street"
+    ]
+  },
+  {
+    "id": "history-061",
+    "category": "history",
+    "difficulty": "easy",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "true-false",
+    "prompt": "The first indentured Indian workers arrived in Natal in 1860.",
+    "answer": "True",
+    "fact": "The first ship carrying indentured Indian workers arrived in Natal in November 1860.",
+    "source": {
+      "title": "SA History Online: Indian South Africans",
+      "url": "https://sahistory.org.za/article/indian-south-africans",
+      "note": "Historical and cultural details checked against SA History Online; wording is original and keeps the regional context explicit."
+    },
+    "options": ["True", "False"]
+  },
+  {
+    "id": "history-062",
+    "category": "history",
+    "difficulty": "easy",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Many indentured Indian workers in colonial Natal were recruited to work on which industry’s plantations?",
+    "answer": "Sugar",
+    "fact": "SA History Online describes indentured Indian workers labouring on Natal’s sugar plantations.",
+    "source": {
+      "title": "SA History Online: Indian South Africans",
+      "url": "https://sahistory.org.za/article/indian-south-africans",
+      "note": "Historical and cultural details checked against SA History Online; wording is original and keeps the regional context explicit."
+    },
+    "options": ["Sugar", "Diamond", "Coal", "Gold"]
+  },
+  {
+    "id": "history-063",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which organisation did Mahatma Gandhi establish in Natal in 1894 to oppose discrimination against Indian traders?",
+    "answer": "Natal Indian Congress",
+    "fact": "The Natal Indian Congress (NIC) was established in 1894 to fight discrimination against Indian traders in Natal.",
+    "source": {
+      "title": "SA History Online: Natal Indian Congress (NIC)",
+      "url": "https://sahistory.org.za/article/natal-indian-congress-nic",
+      "note": "Dates, leaders and campaign details checked against the SA History Online account of the Natal Indian Congress."
+    },
+    "options": [
+      "Natal Indian Congress",
+      "South African Native National Congress",
+      "African People’s Organisation",
+      "Transvaal Indian Association"
+    ]
+  },
+  {
+    "id": "history-064",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What issue was the Natal Indian Congress founded to challenge?",
+    "answer": "Discrimination against Indian traders in Natal",
+    "fact": "The NIC organised against discrimination directed at Indian traders in Natal.",
+    "source": {
+      "title": "SA History Online: Natal Indian Congress (NIC)",
+      "url": "https://sahistory.org.za/article/natal-indian-congress-nic",
+      "note": "Dates, leaders and campaign details checked against the SA History Online account of the Natal Indian Congress."
+    },
+    "options": [
+      "Discrimination against Indian traders in Natal",
+      "Restrictions on gold mining in Johannesburg",
+      "Compulsory schooling in the Cape",
+      "The closure of Durban Harbour"
+    ]
+  },
+  {
+    "id": "history-065",
+    "category": "history",
+    "difficulty": "hard",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "A petition to Lord Ripon opposed a bill threatening Indian political rights in Natal. About how many signatures did it gather?",
+    "answer": "10,000",
+    "fact": "The NIC campaign gathered a petition with 10,000 signatures within a month.",
+    "source": {
+      "title": "SA History Online: Natal Indian Congress (NIC)",
+      "url": "https://sahistory.org.za/article/natal-indian-congress-nic",
+      "note": "Dates, leaders and campaign details checked against the SA History Online account of the Natal Indian Congress."
+    },
+    "options": ["10,000", "1,000", "25,000", "100,000"]
+  },
+  {
+    "id": "history-066",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "true-false",
+    "prompt": "The indentured labour system in Natal ended in 1911.",
+    "answer": "True",
+    "fact": "SA History Online dates the end of the indentured labour system to 1911.",
+    "source": {
+      "title": "SA History Online: Indian South Africans",
+      "url": "https://sahistory.org.za/article/indian-south-africans",
+      "note": "Historical and cultural details checked against SA History Online; wording is original and keeps the regional context explicit."
+    },
+    "options": ["True", "False"]
+  },
+  {
+    "id": "history-067",
+    "category": "history",
+    "difficulty": "hard",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Approximately how many indentured workers arrived in Natal between 1860 and 1911?",
+    "answer": "152,184",
+    "fact": "SA History Online gives the total as nearly 152,184 indentured workers.",
+    "source": {
+      "title": "SA History Online: Indian South Africans",
+      "url": "https://sahistory.org.za/article/indian-south-africans",
+      "note": "Historical and cultural details checked against SA History Online; wording is original and keeps the regional context explicit."
+    },
+    "options": ["152,184", "15,218", "52,184", "512,840"]
+  },
+  {
+    "id": "history-068",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In Natal’s migration history, what best describes a “passenger” Indian?",
+    "answer": "Someone who paid their own passage, often to work as a trader",
+    "fact": "Passenger or free Indians travelled at their own expense, and many came as traders.",
+    "source": {
+      "title": "SA History Online: Indian South Africans",
+      "url": "https://sahistory.org.za/article/indian-south-africans",
+      "note": "Historical and cultural details checked against SA History Online; wording is original and keeps the regional context explicit."
+    },
+    "options": [
+      "Someone who paid their own passage, often to work as a trader",
+      "A worker assigned a railway ticket by a mine",
+      "A person born aboard a ship",
+      "A soldier travelling with a regiment"
+    ]
+  },
+  {
+    "id": "history-069",
+    "category": "history",
+    "difficulty": "hard",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In 1919, the Natal Indian Congress joined other regional Indian congresses to form which organisation?",
+    "answer": "South African Indian Congress",
+    "fact": "The Natal, Transvaal and Cape Indian Congresses merged to form the South African Indian Congress in 1919.",
+    "source": {
+      "title": "SA History Online: Natal Indian Congress (NIC)",
+      "url": "https://sahistory.org.za/article/natal-indian-congress-nic",
+      "note": "Dates, leaders and campaign details checked against the SA History Online account of the Natal Indian Congress."
+    },
+    "options": [
+      "South African Indian Congress",
+      "South African Congress of Trade Unions",
+      "United Democratic Front",
+      "African National Congress"
+    ]
+  },
+  {
+    "id": "history-070",
+    "category": "history",
+    "difficulty": "medium",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which campaign did Dr G.M. Naicker lead the Natal Indian Congress in during 1946?",
+    "answer": "Indian Passive Resistance Campaign",
+    "fact": "Naicker led the NIC during the 1946 Indian Passive Resistance Campaign in Durban.",
+    "source": {
+      "title": "SA History Online: Natal Indian Congress (NIC)",
+      "url": "https://sahistory.org.za/article/natal-indian-congress-nic",
+      "note": "Dates, leaders and campaign details checked against the SA History Online account of the Natal Indian Congress."
+    },
+    "options": [
+      "Indian Passive Resistance Campaign",
+      "Defiance Campaign",
+      "Rivonia Trial campaign",
+      "Women’s March"
+    ]
+  },
+  {
+    "id": "history-071",
+    "category": "history",
+    "difficulty": "hard",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In which year was the Natal Indian Congress revived with a focus on civic work?",
+    "answer": "1971",
+    "fact": "The NIC was revived in 1971 and focused on civic work.",
+    "source": {
+      "title": "SA History Online: Natal Indian Congress (NIC)",
+      "url": "https://sahistory.org.za/article/natal-indian-congress-nic",
+      "note": "Dates, leaders and campaign details checked against the SA History Online account of the Natal Indian Congress."
+    },
+    "options": ["1971", "1946", "1956", "1994"]
+  },
+  {
+    "id": "nature-061",
+    "category": "nature",
+    "difficulty": "medium",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "On what date was Pietermaritzburg Botanic Garden founded?",
+    "answer": "3 March 1874",
+    "fact": "SANBI records the garden’s founding as 3 March 1874.",
+    "source": {
+      "title": "SANBI: KwaZulu-Natal National Botanical Garden history",
+      "url": "https://www.sanbi.org/gardens/kwazulu-natal/history/",
+      "note": "Garden dates and named horticultural details checked against SANBI’s history page."
+    },
+    "options": [
+      "3 March 1874",
+      "16 June 1910",
+      "24 September 1899",
+      "1 May 1932"
+    ]
+  },
+  {
+    "id": "nature-062",
+    "category": "nature",
+    "difficulty": "hard",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Who planted the well-known plane-tree avenue at Pietermaritzburg Botanic Garden in 1908?",
+    "answer": "W.E. Marriott",
+    "fact": "SANBI credits curator W.E. Marriott with planting the plane-tree avenue in 1908.",
+    "source": {
+      "title": "SANBI: KwaZulu-Natal National Botanical Garden history",
+      "url": "https://www.sanbi.org/gardens/kwazulu-natal/history/",
+      "note": "Garden dates and named horticultural details checked against SANBI’s history page."
+    },
+    "options": [
+      "W.E. Marriott",
+      "G.W. Mitchell",
+      "Paul Kruger",
+      "Mahatma Gandhi"
+    ]
+  },
+  {
+    "id": "nature-063",
+    "category": "nature",
+    "difficulty": "medium",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "What was one early purpose of Pietermaritzburg Botanic Garden?",
+    "answer": "Growing trees for distribution in Natal",
+    "fact": "The early garden focused largely on growing trees for distribution in Natal.",
+    "source": {
+      "title": "SANBI: KwaZulu-Natal National Botanical Garden history",
+      "url": "https://www.sanbi.org/gardens/kwazulu-natal/history/",
+      "note": "Garden dates and named horticultural details checked against SANBI’s history page."
+    },
+    "options": [
+      "Growing trees for distribution in Natal",
+      "Training racehorses for the Comrades Marathon",
+      "Storing ships’ cargo from Durban Harbour",
+      "Mining medicinal minerals"
+    ]
+  },
+  {
+    "id": "nature-064",
+    "category": "nature",
+    "difficulty": "hard",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Who connected the two halves of Pietermaritzburg Botanic Garden in 1894?",
+    "answer": "G.W. Mitchell",
+    "fact": "SANBI’s garden history credits G.W. Mitchell with connecting the two halves in 1894.",
+    "source": {
+      "title": "SANBI: KwaZulu-Natal National Botanical Garden history",
+      "url": "https://www.sanbi.org/gardens/kwazulu-natal/history/",
+      "note": "Garden dates and named horticultural details checked against SANBI’s history page."
+    },
+    "options": ["G.W. Mitchell", "W.E. Marriott", "Lord Ripon", "G.M. Naicker"]
+  },
+  {
+    "id": "nature-065",
+    "category": "nature",
+    "difficulty": "hard",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which plant did President Paul Kruger plant at Pietermaritzburg Botanic Garden in April 1891?",
+    "answer": "Camellia japonica",
+    "fact": "SANBI records that Kruger planted a Camellia japonica at the garden in April 1891.",
+    "source": {
+      "title": "SANBI: KwaZulu-Natal National Botanical Garden history",
+      "url": "https://www.sanbi.org/gardens/kwazulu-natal/history/",
+      "note": "Garden dates and named horticultural details checked against SANBI’s history page."
+    },
+    "options": [
+      "Camellia japonica",
+      "King protea",
+      "Wild banana",
+      "Natal cycad"
+    ]
+  },
+  {
+    "id": "nature-066",
+    "category": "nature",
+    "difficulty": "medium",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which SANBI garden introduces visitors to four themes of traditional Zulu plant use?",
+    "answer": "Zulu Demonstration Garden",
+    "fact": "The Zulu Demonstration Garden presents themes including medicine, arts and crafts, charms, and kitchen gardening.",
+    "source": {
+      "title": "SANBI: Zulu Demonstration Garden",
+      "url": "https://www.sanbi.org/gardens/kwazulu-natal/information-7/zulu-demonstration-garden/",
+      "note": "The garden themes and plant-use descriptions are checked against SANBI’s visitor information."
+    },
+    "options": [
+      "Zulu Demonstration Garden",
+      "Harold Porter Garden",
+      "Kirstenbosch Garden",
+      "Walter Sisulu Garden"
+    ]
+  },
+  {
+    "id": "nature-067",
+    "category": "nature",
+    "difficulty": "easy",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "In the Zulu Demonstration Garden, which theme focuses on medicinal plants?",
+    "answer": "Zulu Pharmacy",
+    "fact": "SANBI describes the Zulu Pharmacy as the medicinal-plant section of the demonstration garden.",
+    "source": {
+      "title": "SANBI: Zulu Demonstration Garden",
+      "url": "https://www.sanbi.org/gardens/kwazulu-natal/information-7/zulu-demonstration-garden/",
+      "note": "The garden themes and plant-use descriptions are checked against SANBI’s visitor information."
+    },
+    "options": [
+      "Zulu Pharmacy",
+      "Zulu Arts and Crafts",
+      "Zulu Kitchen Garden",
+      "Zulu Magic and Charms"
+    ]
   }
 ]

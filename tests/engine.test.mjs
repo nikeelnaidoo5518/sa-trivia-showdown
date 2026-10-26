@@ -67,6 +67,53 @@ test("quick match contains exactly five specified rounds", () => {
     ["warmup", "picture", "map", "braai", "final"],
   );
 });
+test("automatic flow reveals results, advances rounds, and can be paused", () => {
+  const e = game();
+  e.start();
+  assert.equal(e.state.phase, "tutorial");
+  assert.ok(e.state.deadline > Date.now());
+  e.pause();
+  const heldDeadline = e.state.deadline;
+  e.tick(heldDeadline + 1);
+  assert.equal(e.state.phase, "tutorial");
+  e.pause();
+  e.tick(e.state.deadline + 1);
+  assert.equal(e.state.phase, "playing");
+
+  input(e, "a", "answer", e.question.answer);
+  input(e, "b", "answer", e.question.answer);
+  e.next();
+  assert.equal(e.state.phase, "results");
+  const resultDeadline = e.state.deadline;
+  assert.ok(resultDeadline > Date.now());
+  e.tick(resultDeadline + 1);
+  assert.equal(e.state.phase, "tutorial");
+  assert.equal(e.state.roundIndex, 1);
+});
+test("automatic flow can be disabled for manual progression", () => {
+  const e = game({ autoAdvance: false });
+  e.start();
+  assert.equal(e.state.deadline, 0);
+  e.tick(Date.now() + 100000);
+  assert.equal(e.state.phase, "tutorial");
+  e.next();
+  assert.equal(e.state.phase, "playing");
+});
+test("automatic results advance to the next question inside a multi-question round", () => {
+  const e = game();
+  e.state.roundIndex = 8;
+  e.start();
+  e.tick(e.state.deadline + 1);
+  assert.equal(e.round.id, "mix");
+  assert.equal(e.state.questionIndex, 0);
+  input(e, "a", "answer", e.question.answer);
+  input(e, "b", "answer", e.question.answer);
+  e.next();
+  e.tick(e.state.deadline + 1);
+  assert.equal(e.round.id, "mix");
+  assert.equal(e.state.questionIndex, 1);
+  assert.equal(e.state.phase, "playing");
+});
 test("pause freezes timeout, rejects input; skip preserves balances; end reaches final", () => {
   const e = game();
   e.start();

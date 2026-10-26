@@ -16,6 +16,7 @@ export const DEFAULT_SETTINGS = {
   difficulty: "mixed",
   age: "all",
   events: true,
+  autoAdvance: true,
   sound: true,
   reducedMotion: false,
   largeText: false,

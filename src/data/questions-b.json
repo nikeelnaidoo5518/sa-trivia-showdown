@@ -3332,5 +3332,22 @@
       "url": "https://www.britannica.com/topic/food",
       "note": "Original question wording. Stable factual reference supplied for editorial verification; not a quotation. Historical achievements are date-bounded."
     }
+  },
+  {
+    "id": "food-061",
+    "category": "food",
+    "difficulty": "medium",
+    "region": "KwaZulu-Natal",
+    "age": "all",
+    "format": "multiple-choice",
+    "prompt": "Which Durban dish does SA History Online identify as an intrinsic part of Natal cuisine?",
+    "answer": "Bunny chow",
+    "fact": "SA History Online describes bunny chow as a distinctive Durban dish within Natal cuisine.",
+    "source": {
+      "title": "SA History Online: Indian South Africans",
+      "url": "https://sahistory.org.za/article/indian-south-africans",
+      "note": "Historical and cultural details checked against SA History Online; wording is original and keeps the regional context explicit."
+    },
+    "options": ["Bunny chow", "Gatsby", "Waterblommetjiebredie", "Umngqusho"]
   }
 ]

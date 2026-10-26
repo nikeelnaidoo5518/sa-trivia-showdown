@@ -870,24 +870,30 @@ function App() {
                     : "LIVE FROM YOUR LIVING ROOM"}
               </span>
               <div className="host-controls">
+                {(["playing", "event", "wager", "select"].includes(
+                  state.phase,
+                ) ||
+                  (state.settings.autoAdvance &&
+                    ["tutorial", "results", "event-results"].includes(
+                      state.phase,
+                    ))) && (
+                  <button
+                    className="btn compact secondary"
+                    onClick={() => hostAction("pause")}
+                  >
+                    <Icon name={state.paused ? "Play" : "Pause"} size={16} />
+                    {state.paused ? "Resume" : "Pause"}
+                  </button>
+                )}
                 {["playing", "event", "wager", "select"].includes(
                   state.phase,
                 ) && (
-                  <>
-                    <button
-                      className="btn compact secondary"
-                      onClick={() => hostAction("pause")}
-                    >
-                      <Icon name={state.paused ? "Play" : "Pause"} size={16} />
-                      {state.paused ? "Resume" : "Pause"}
-                    </button>
-                    <button
-                      className="btn compact secondary"
-                      onClick={() => hostAction("skip")}
-                    >
-                      Skip
-                    </button>
-                  </>
+                  <button
+                    className="btn compact secondary"
+                    onClick={() => hostAction("skip")}
+                  >
+                    Skip
+                  </button>
                 )}
                 <button
                   className="tv-mode-toggle host-tv-toggle"
@@ -1279,6 +1285,20 @@ function Settings({ settings: s, setSettings }) {
             <option value="40">40 seconds · relaxed</option>
             <option value="60">60 seconds · extra thinking time</option>
           </select>
+        </label>
+        <label className="toggle-row">
+          <span>
+            <b>Automatic round flow</b>
+            <small>
+              Reveal results, then move on after a short countdown. Host can
+              pause or continue early.
+            </small>
+          </span>
+          <input
+            type="checkbox"
+            checked={s.autoAdvance}
+            onChange={(e) => update("autoAdvance", e.target.checked)}
+          />
         </label>
       </section>
       <section className="panel">
@@ -1690,8 +1710,10 @@ function Tutorial({ state: s, onNext }) {
           </span>
         )}
       </div>
+      {s.settings.autoAdvance && <Timer state={s} />}
       <button className="btn primary" onClick={onNext}>
-        Let’s do this <Icon name="ArrowRight" />
+        {s.settings.autoAdvance ? "Start now" : "Let’s do this"}{" "}
+        <Icon name="ArrowRight" />
       </button>
     </section>
   );
@@ -1909,6 +1931,12 @@ function Results({ state: s, onNext }) {
       </div>
       {s.notice && <p className="notice">{s.notice}</p>}
       <div className="center">
+        {s.settings.autoAdvance && (
+          <p className="caption">
+            {s.paused ? "Auto-advance paused" : "Next up in"}
+          </p>
+        )}
+        {s.settings.autoAdvance && <Timer state={s} />}
         <button className="btn primary" onClick={onNext}>
           {s.roundIndex === s.rounds.length - 1
             ? "The final scores"
@@ -2412,8 +2440,18 @@ function Controller({
             <small>Correct answer</small>
             <b>{s.answer}</b>
           </div>
+          {s.settings.autoAdvance && (
+            <>
+              <p className="caption">
+                {s.paused
+                  ? "The host paused the countdown."
+                  : "Next round starts in"}
+              </p>
+              <Timer state={s} />
+            </>
+          )}
           <p className="caption">
-            Look up for the standings. The host continues.
+            Look up for the standings. The host can continue early.
           </p>
         </section>
       ) : s.phase === "final" ? (

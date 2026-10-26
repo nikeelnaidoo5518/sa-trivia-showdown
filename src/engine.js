@@ -22,6 +22,8 @@ const shuffle = (a, rng = Math.random) => {
   return result;
 };
 const id = uuid;
+const TUTORIAL_SECONDS = 6;
+const RESULTS_SECONDS = 8;
 export function scoreAnswer(q, value) {
   return [q.answer, ...(q.acceptedAnswers || [])].some(
     (a) => normalise(a) === normalise(value),
@@ -270,6 +272,18 @@ export class GameEngine {
     this.state.phase = "tutorial";
     this.state.questionIndex = 0;
     this.newActivity();
+    this.setAutoCountdown(TUTORIAL_SECONDS);
+  }
+  setAutoCountdown(seconds) {
+    const s = this.state;
+    if (s.settings.autoAdvance) {
+      s.deadline = Date.now() + seconds * 1000;
+      s.remaining = seconds * 1000;
+    } else {
+      s.deadline = 0;
+      s.remaining = 0;
+    }
+    s.paused = false;
   }
   newActivity() {
     const s = this.state;
@@ -401,10 +415,18 @@ export class GameEngine {
     s.province = null;
     this.newActivity();
     s.phase = "tutorial";
+    this.setAutoCountdown(TUTORIAL_SECONDS);
   }
   pause() {
     const s = this.state;
-    if (!["playing", "event", "wager", "select"].includes(s.phase)) return;
+    const autoFlowPhase =
+      s.settings.autoAdvance &&
+      ["tutorial", "results", "event-results"].includes(s.phase);
+    if (
+      !autoFlowPhase &&
+      !["playing", "event", "wager", "select"].includes(s.phase)
+    )
+      return;
     s.paused = !s.paused;
     if (s.paused) {
       s.remaining = Math.max(0, s.deadline - Date.now());
@@ -448,6 +470,16 @@ export class GameEngine {
       this.next();
       changed = true;
     }
+    if (
+      !s.paused &&
+      s.settings.autoAdvance &&
+      ["tutorial", "results", "event-results"].includes(s.phase) &&
+      s.deadline > 0 &&
+      now >= s.deadline
+    ) {
+      this.next();
+      return true;
+    }
     return changed;
   }
   skip() {
@@ -463,7 +495,7 @@ export class GameEngine {
       s.answer = this.question?.answer || "Activity skipped";
       s.fact = "The host skipped this activity.";
       s.phase = s.phase === "event" ? "event-results" : "results";
-      s.deadline = 0;
+      this.setAutoCountdown(RESULTS_SECONDS);
     } else this.next();
   }
   end() {
@@ -842,7 +874,7 @@ export class GameEngine {
       : this.question?.answer ||
         (r.kind === "map"
           ? s.mini.target
-        : s.mini.sequence
+          : s.mini.sequence
               .map((x) =>
                 (r.kind === "drum"
                   ? ["BASS", "CLAP", "TAP", "SHAKE"]
@@ -869,7 +901,6 @@ export class GameEngine {
       results,
     });
     s.phase = isEvent ? "event-results" : "results";
-    s.deadline = 0;
-    s.paused = false;
+    this.setAutoCountdown(RESULTS_SECONDS);
   }
 }
