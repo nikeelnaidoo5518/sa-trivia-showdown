@@ -183,6 +183,30 @@ function App() {
       speechSynthesis.cancel();
   }, [settings.sound]);
   useEffect(() => {
+    const prompt = state?.question?.prompt;
+    if (!prompt || !("speechSynthesis" in window)) return;
+    speechSynthesis.cancel();
+    if (
+      screen === "game" &&
+      role !== "player" &&
+      state.phase === "playing" &&
+      !state.paused &&
+      settings.sound &&
+      settings.readQuestions
+    )
+      speak(`Question. ${prompt}`, true);
+    return () => speechSynthesis.cancel();
+  }, [
+    screen,
+    role,
+    state?.phase,
+    state?.paused,
+    state?.activityId,
+    state?.question?.prompt,
+    settings.sound,
+    settings.readQuestions,
+  ]);
+  useEffect(() => {
     if (!confirmation && !practice && !setup) return;
     const previous = document.activeElement;
     const oldOverflow = document.body.style.overflow;
@@ -750,7 +774,7 @@ function App() {
               [
                 "Tv",
                 "1. Put us on the big screen",
-                "Start a room on your TV or laptop. A host guides the game and can pause at any time.",
+                "Start a room on your TV or laptop. Zola reads trivia aloud when sound is on, and the host can pause at any time.",
               ],
               [
                 "QrCode",
@@ -966,6 +990,11 @@ function App() {
                 ) : state.phase === "select" ? (
                   <div className="stage center">
                     <Timer state={state} />
+                    <ShowdownMascots
+                      className="phase-host-mascots"
+                      mood="cheer"
+                      compact
+                    />
                     <Icon name="MapPin" size={60} />
                     <h2>Where are we heading?</h2>
                     <p>Vote for a province or open the vote to all Mzansi.</p>
@@ -987,6 +1016,11 @@ function App() {
                 ) : state.phase === "wager" ? (
                   <div className="stage center">
                     <Timer state={state} />
+                    <ShowdownMascots
+                      className="phase-host-mascots"
+                      mood="hype"
+                      compact
+                    />
                     <Icon name="Coins" size={65} />
                     <h2>Back yourself.</h2>
                     <p>
@@ -1016,6 +1050,12 @@ function App() {
                     state={state}
                     settings={settings}
                     onResolve={() => hostAction("next")}
+                    onRepeat={() =>
+                      speak(
+                        `Question. ${state.question?.prompt || ""}`,
+                        settings.sound,
+                      )
+                    }
                   />
                 ) : ["results", "event-results"].includes(state.phase) ? (
                   <Results state={state} onNext={() => hostAction("next")} />
@@ -1316,7 +1356,12 @@ function Settings({ settings: s, setSettings }) {
           [
             "sound",
             "Sound and music",
-            "Original looping game music, answer cues and spoken clues",
+            "Original game music, answer cues, and spoken audio",
+          ],
+          [
+            "readQuestions",
+            "Read questions aloud",
+            "Zola reads every TV trivia question. A listen-again button is on screen.",
           ],
           [
             "reducedMotion",
@@ -1789,7 +1834,11 @@ function speak(text, enabled) {
     speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
     u.lang = "en-ZA";
-    u.rate = 0.9;
+    u.rate = 0.92;
+    u.pitch = 1.04;
+    const voices = speechSynthesis.getVoices?.() || [];
+    u.voice =
+      voices.find((voice) => voice.lang.toLowerCase() === "en-za") || null;
     speechSynthesis.speak(u);
   }
 }
@@ -1818,9 +1867,27 @@ function QuestionMedia({ q, settings }) {
     </>
   );
 }
-function HostActivity({ state: s, settings, onResolve }) {
+function HostActivity({ state: s, settings, onResolve, onRepeat }) {
   const r = s.rounds[s.roundIndex],
     event = s.phase === "event";
+  const hostName = event
+    ? "Sizzle · surprise host"
+    : r.kind === "map" || r.kind === "drum"
+      ? "Pip · challenge host"
+      : r.kind === "braai"
+        ? "Sizzle · braai host"
+        : "Zola · quiz host";
+  const hostLine = s.question
+    ? "Listen up, Mzansi!"
+    : event
+      ? "A little surprise is here. Keep your eyes on the phones."
+      : r.kind === "map"
+        ? "Find the place. Race your phones."
+        : r.kind === "drum"
+          ? "Catch the beat and tap along."
+          : r.kind === "braai"
+            ? "Follow Sizzle’s recipe on your phone."
+            : "Ready for the next challenge?";
   return (
     <section className={`stage question-stage ${event ? "event-stage" : ""}`}>
       <div className="stage-top">
@@ -1832,6 +1899,36 @@ function HostActivity({ state: s, settings, onResolve }) {
               : "PHONE-CONTROLLED DUEL"}
         </span>
         <Timer state={s} />
+      </div>
+      <div className="scene-announcer">
+        <ShowdownMascots
+          className="scene-announcer-mascots"
+          mood={
+            event
+              ? "sneaky"
+              : r.kind === "braai"
+                ? "celebrate"
+                : r.kind === "map" || r.kind === "drum"
+                  ? "cheer"
+                  : "hype"
+          }
+          compact
+        />
+        <div className="scene-announcer-copy" aria-live="polite">
+          <span>{hostName}</span>
+          <strong>{hostLine}</strong>
+        </div>
+        {s.question && (
+          <button
+            className="btn compact secondary scene-repeat"
+            onClick={onRepeat}
+            disabled={!settings.sound}
+            aria-label="Read the question aloud again"
+          >
+            <Icon name="Volume2" size={18} />
+            {settings.readQuestions ? "Hear again" : "Read question"}
+          </button>
+        )}
       </div>
       {event ? (
         <div className="center">

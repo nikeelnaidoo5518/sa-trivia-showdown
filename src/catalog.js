@@ -18,6 +18,7 @@ export const DEFAULT_SETTINGS = {
   events: true,
   autoAdvance: true,
   sound: true,
+  readQuestions: true,
   reducedMotion: false,
   largeText: false,
   vibration: true,

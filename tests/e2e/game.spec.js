@@ -353,13 +353,9 @@ test("quick demo, credits navigation, settings, small screens and bonus arcade",
   await page.getByRole("button", { name: "Create room", exact: true }).click();
   await expect(page.locator(".lobby-player")).toHaveCount(4);
   expect((await saved(page)).state.rounds.length).toBe(5);
-  const firstMusicBar = await page.evaluate(
-    () => window.__showdownOscillators,
-  );
+  const firstMusicBar = await page.evaluate(() => window.__showdownOscillators);
   await page.waitForTimeout(2250);
-  const nextMusicBar = await page.evaluate(
-    () => window.__showdownOscillators,
-  );
+  const nextMusicBar = await page.evaluate(() => window.__showdownOscillators);
   expect(nextMusicBar).toBeGreaterThan(firstMusicBar);
   await page.getByRole("button", { name: "Mute sound and music" }).click();
   const mutedMusic = await page.evaluate(() => window.__showdownOscillators);
@@ -369,9 +365,9 @@ test("quick demo, credits navigation, settings, small screens and bonus arcade",
   );
   await page.getByRole("button", { name: "Enable sound and music" }).click();
   await page.waitForTimeout(100);
-  expect(await page.evaluate(() => window.__showdownOscillators)).toBeGreaterThan(
-    mutedMusic,
-  );
+  expect(
+    await page.evaluate(() => window.__showdownOscillators),
+  ).toBeGreaterThan(mutedMusic);
   await page.getByRole("button", { name: "End game", exact: true }).click();
   await page.getByRole("button", { name: "Confirm", exact: true }).click();
   await page.getByRole("button", { name: "Roll the credits" }).click();
@@ -470,6 +466,45 @@ test("team huddle shares the winning vote and host skip changes no cash", async 
   expect(after.state.players.every((p) => p.cash === 800)).toBe(true);
   await expect(host.locator(".standing")).toContainText("R800");
   for (const c of contexts) await c.close();
+});
+
+test("quiz host characters speak questions and can repeat them", async ({
+  page,
+}) => {
+  await page.addInitScript(() => {
+    window.__spokenQuestions = [];
+    window.SpeechSynthesisUtterance = class {
+      constructor(text) {
+        this.text = text;
+      }
+    };
+    Object.defineProperty(window, "speechSynthesis", {
+      configurable: true,
+      value: {
+        cancel() {},
+        speak(utterance) {
+          window.__spokenQuestions.push(utterance.text);
+        },
+      },
+    });
+  });
+  await page.goto("/");
+  await page.getByRole("button", { name: "Try a playable demo" }).click();
+  await page.getByRole("button", { name: "Create room", exact: true }).click();
+  await page.getByRole("button", { name: "Let the showdown begin" }).click();
+  await page.getByRole("button", { name: "Let’s do this" }).click();
+  await phase(page, "playing");
+  const prompt = (await saved(page)).state.question.prompt;
+  await expect(page.locator(".scene-announcer-mascots")).toBeVisible();
+  await expect
+    .poll(async () => page.evaluate(() => window.__spokenQuestions))
+    .toContain(`Question. ${prompt}`);
+  await page
+    .getByRole("button", { name: "Read the question aloud again" })
+    .click();
+  await expect
+    .poll(async () => page.evaluate(() => window.__spokenQuestions.length))
+    .toBe(2);
 });
 
 test("five-round demo is playable through the on-screen phone and credits", async ({

@@ -67,7 +67,7 @@ Phone buttons only submit the current activity. A confirmation appears after inp
 
 Map Sprint awards R300 within 8 schematic map units, R200 within 16, R75 within 25. Braai Battle awards R40 per correct position and R60 for a perfect sequence. Predictions reward R50 for a winning player, including tied duel winners. Audience participants earn R50 for a correct selected activity; their cash does not enter competitive standings. Robot Repair adds R100 to the round ledger. A steal takes at most R100 from the leading opponent, and a shield blocks one steal or event loss. The highest event loss is R50.
 
-Phone map controls: tap the map, then **Lock my pin**. Keyboard users focus the map, move with arrow keys, press Enter to place the pin, then activate the lock button. Ordering challenges use buttons in the chosen order; Reset allows changes before submission. Spoken clues play only after a tap and when sound is enabled.
+Phone map controls: tap the map, then **Lock my pin**. Keyboard users focus the map, move with arrow keys, press Enter to place the pin, then activate the lock button. Ordering challenges use buttons in the chosen order; Reset allows changes before submission. When sound is enabled, Zola reads each TV trivia question aloud automatically; the host can replay it with **Hear again**. Turn this off with **Read questions aloud** in Settings. Browser voices and pronunciation vary by device. Spoken clues remain optional and play only after a tap.
 
 ## Firebase for internet multiplayer
 
