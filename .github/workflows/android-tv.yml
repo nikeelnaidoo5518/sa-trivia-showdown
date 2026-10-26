@@ -2,9 +2,6 @@ name: Build Android TV APK
 on:
   push:
     branches: [main]
-    paths:
-      - "android/**"
-      - ".github/workflows/android-tv.yml"
   workflow_dispatch:
 permissions:
   contents: write
@@ -36,8 +33,14 @@ jobs:
           version="1.0.${GITHUB_RUN_NUMBER}"
           apk="SA-Trivia-Showdown-TV.apk"
           cp android/app/build/outputs/apk/debug/app-debug.apk "$apk"
-          gh release create "$tag" "$apk#SA Trivia Showdown TV APK" \
-            --target "$GITHUB_SHA" \
-            --title "SA Trivia Showdown TV v${version}" \
-            --notes "Landscape Android TV / Google TV / Fire TV package. Requires an internet connection and loads the live game. Install by sideloading the attached APK." \
-            --latest
+          notes="Landscape Android TV / Google TV / Fire TV package. Requires an internet connection and loads the live game. Install by sideloading the attached APK."
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" "$apk#SA Trivia Showdown TV APK" --clobber
+            gh release edit "$tag" --title "SA Trivia Showdown TV v${version}" --notes "$notes" --latest
+          else
+            gh release create "$tag" "$apk#SA Trivia Showdown TV APK" \
+              --target "$GITHUB_SHA" \
+              --title "SA Trivia Showdown TV v${version}" \
+              --notes "$notes" \
+              --latest
+          fi
